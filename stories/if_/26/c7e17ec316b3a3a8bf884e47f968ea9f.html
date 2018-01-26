@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+    <!--[if IE 7]><html class="ie ie7" lang="en-US"><![endif]-->
+    <!--[if IE 8]><html class="ie ie8" lang="en-US"><![endif]-->
+    <!--[if !(IE 7) | !(IE 8)  ]><!--><html lang="en-US"><!--<![endif]-->
+    <head><script type="text/javascript" src="/static/js/analytics.js?v=1513849547.0" charset="utf-8"></script>
+
+<script type="text/javascript">archive_analytics.values.service='wb';archive_analytics.values.server_name='wwwb-app17.us.archive.org';archive_analytics.values.server_ms=334;</script><script type="text/javascript" src="/static/js/wbhack.js?v=1513849547.0" charset="utf-8"></script>
+
+<script type="text/javascript">
+__wbhack.init('http://web.archive.org/web');
+</script>
+<link rel="stylesheet" type="text/css" href="/static/css/banner-styles.css?v=1513849547.0" />
+<link rel="stylesheet" type="text/css" href="/static/css/iconochive.css?v=1513849547.0" />
+
+<!-- End Wayback Rewrite JS Include -->
+        <meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+        <title>In Kenilworth, a D.C. neighborhood on the brink of gentrification, the past is about to meet the future. | The Washington Post</title>                
+                
+        <meta property="fb:app_id" content="41245586762"/>
+        <meta property="article:publisher" content="https://www.facebook.com/washingtonpost"/>
+        <meta name="twitter:site" value="@WashingtonPost"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="og:title" content="'Why would I leave? It's my home.'">
+        <meta property="og:image" content="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/10/kenilworth1.jpg">
+        <meta property="og:url" content="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/sf/local/2016/11/25/why-would-i-leave-its-my-home/">
+        <meta property="og:site_name" content="Washington Post">
+        <meta property="og:type" content="article">
+        <meta property="og:description" content="In Kenilworth, a D.C. neighborhood on the brink of gentrification, the past is about to meet the future.">
+
+        <meta name="description" content="In Kenilworth, a D.C. neighborhood on the brink of gentrification, the past is about to meet the future.">
+        <meta name="keywords" content="dc gentrification, kenilworth, washington dc neighborhoods, washington dc gentrification">
+        <meta name="news_keywords" content="dc gentrification, kenilworth, washington dc neighborhoods, washington dc gentrification">
+
+        
+         <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-57-precomposed.png">
+
+                
+        		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/web.archive.org\/web\/20161126064730\/http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/web.archive.org\/web\/20161126064730\/http:\/\/www.washingtonpost.com\/sf\/local\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.7"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="rs-plugin-settings-css" href="http://web.archive.org/web/20161126064730cs_/http://www.washingtonpost.com/sf/local/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.1" type="text/css" media="all"/>
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<link rel="stylesheet" id="wp-bootstrap-min-css" href="http://web.archive.org/web/20161126064730cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-responsive-css" href="http://web.archive.org/web/20161126064730cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap-responsive.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-fonts-css" href="http://web.archive.org/web/20161126064730cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/fonts.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-inline-css" href="http://web.archive.org/web/20161126064730cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/inline.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-font-awesome-min-css" href="http://web.archive.org/web/20161126064730cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-v4.2-min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-enterprise-theme-style-css" href="http://web.archive.org/web/20161126064730cs_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/style.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-pretty-comments-css" href="http://web.archive.org/web/20161126064730cs_/http://css.wpdigital.net/wp-srv/graphics/css/pretty-comments.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="print-css" href="http://web.archive.org/web/20161126064730cs_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/css/print.css?ver=0.3.1.5" type="text/css" media="print"/>
+<!--[if IE]>
+<link rel='stylesheet' id='wp-general-ie-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/iefonts.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='wp-font-awesome-ie-min-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-ie7.min.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript" src="http://web.archive.org/web/20161126064730js_/http://www.washingtonpost.com/sf/local/wp-includes/js/jquery/jquery.js?ver=1.11.2"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161126064730js_/http://www.washingtonpost.com/sf/local/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161126064730js_/http://www.washingtonpost.com/sf/local/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161126064730js_/http://www.washingtonpost.com/sf/local/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161126064730js_/http://js.washingtonpost.com/1h/twp-scripts.js?ver=4.2.7"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161126064730js_/http://js.washingtonpost.com/1h/twp-internal.js?ver=4.2.7"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ET_OM = {"omniture":"local","wp_page_num":"1 of 1","wp_blogname":"","wp_author":"Paul Duggan,Michael S. Williamson,Katherine Lee","commercialNode":"local"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://web.archive.org/web/20161126064730js_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme-ad-scripts.js?ver=1418247459"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161126064730js_/http://js.washingtonpost.com/pb/resources/js/utils/control-mod.js?ver=4.2.7"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.washingtonpost.com/sf/local/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.washingtonpost.com/sf/local/wp-includes/wlwmanifest.xml"/> 
+<link rel="prev" title="The Loving Legacy" href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/sf/local/2016/10/28/the-loving-legacy/"/>
+<meta name="generator" content="WordPress 4.2.7"/>
+<link rel="canonical" href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/sf/local/2016/11/25/why-would-i-leave-its-my-home/"/>
+<link rel="shortlink" href="http://www.washingtonpost.com/sf/local/?p=4336"/>
+<meta name="generator" content="Piklist 0.9.9.7c"/>
+<link rel="https://github.com/WP-API/WP-API" href="http://www.washingtonpost.com/sf/local/wp-json/"/>
+        <script type="text/javascript">
+          var ET_ASSETS = {
+            'post_title': '&#8216;Why would I leave? It&#8217;s my home.&#8217;',
+            'post_url': 'http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/sf/local/2016/11/25/why-would-i-leave-its-my-home/',
+          };
+        </script>
+      <meta name="generator" content="Powered by Slider Revolution 5.2.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."/>
+        
+        <script>
+          var $ = jQuery.noConflict();
+        </script>
+
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/css/ie-fix.css" />
+        <![endif]-->
+    </head>
+    <body class="single single-post postid-4336 single-format-standard ipad"> 
+        <div id="et-nav" style="top:0px">
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-sections-dropdown">
+                    <div id="et-nav-sections-regular-dropdown-wrapper" class="hidden-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-full-click"> 
+                            <div class="pull-left">Sections</div>
+                            <div class="share-icon pull-left"><i class="fa fa-reorder"></i></div>
+                        </a>
+                    </div>
+                    <div id="et-nav-sections-reduced-dropdown-wrapper" class="visible-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-reduced-click">
+                            <span class="share-icon pull-left"><i class="fa fa-reorder"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-company-icon">
+                    <a class="branding" href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/">
+                        <img id="branding-at-top" src="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/images/wp_full_white.png"/>
+                        <img id="branding-during-scroll" src="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/images/wp_logo_white.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="pull-left border-left hidden-phone no-left-margin-padding" id="et-title-wrap">
+                <div id="et-nav-story-title" class="hide-title-indent">
+                    <a href="#"><p>&#8216;Why would I leave? It&#8217;s my home.&#8217;</p></a>
+                </div>
+            </div>
+
+
+                        
+            <div class="pull-right hidden-phone" id="share-series">
+                
+                <div class="pull-left border-left relative">
+                    <div id="et-nav-share-dropdown">
+                        <a href="#" class="clearfix pull-right">
+                            <div class="pull-left">
+                                <p class="pull-left">Share</p>
+                                <p class="share-icon pull-left"><i class="fa fa-share"></i></p>
+                            </div>
+                        </a>
+                        <ul class="et-dropdown hidden no-series-nav">
+                          <li><a target="_blank" href="http://web.archive.org/web/20161126064730/https://facebook.com/dialog/feed?app_id=41245586762&amp;link=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Flocal%2F2016%2F11%2F25%2Fwhy-would-i-leave-its-my-home%2F&amp;name=%27Why+would+I+leave%3F+It%27s+my+home.%27&amp;redirect_uri=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Flocal%2F2016%2F11%2F25%2Fwhy-would-i-leave-its-my-home%2F"><i class="fa fa-facebook"></i><span class="social-name">Facebook</span></a></li>
+                          <li><a target="_blank" href="http://web.archive.org/web/20161126064730/https://twitter.com/intent/tweet?text=%27Why+would+I+leave%3F+It%27s+my+home.%27 http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Flocal%2F2016%2F11%2F25%2Fwhy-would-i-leave-its-my-home%2F"><i class="fa fa-twitter"></i><span class="social-name">Twitter</span></a></li>
+                          <li><a href="http://web.archive.org/web/20161126064730/mailto:?subject='Why would I leave? It's my home.' from the Washington Post&amp;body=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Flocal%2F2016%2F11%2F25%2Fwhy-would-i-leave-its-my-home%2F"><i class="fa fa-envelope"></i><span class="social-name">Email</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                            </div> 
+
+                    </div>
+
+    	<div id="main-container" style="padding-top: 50px">
+	<div class="sections">
+					<div class="home section" id="section-home">                <div class=" no-border graphic bg-none graphicPadTB30" id="raw">
+        <link href="//web.archive.org/web/20161126064730cs_/http://www.washingtonpost.com/wp-stat/enterprise-raw-code/image-overlay/image-overlay.css" rel="stylesheet" type="text/css">
+
+<style>
+.img--lead {
+    background-image: url('http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/10/kenilworth1.jpg'); /* IMAGE URL */
+    display: none;
+}
+
+.img--small{
+   display:block;
+   max-width: calc(100% + 40px);
+   margin-left: -20px;
+}
+
+.overlay-title {
+    font-family: 'PostoniDisplay', Georgia; 
+
+}
+.overlay-blurb {
+    font-family: 'FranklinITCProLight', Helvetica, Arial;
+
+}
+
+.hidden-deck{
+    display: none;
+}
+
+
+/* These styles only apply to bigger screens because we have set style for tablets and smaller */
+/* This is where you set the font size for overlay-title and overlay-blurb as well as the width of your overlay */ 
+@media (min-width: 980px) {
+
+.overlay {
+    width: 100%;
+    bottom: 8%;
+
+}
+
+.hidden-deck{
+    display: block;
+    font-size: 2.5em;
+    font-family: "FranklinITCProThin";
+    margin-top: -8px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 29px;
+    line-height: 1.25em;
+}
+
+.overlay-title {
+    font-size: 7vw;
+    line-height: 5.5vw;
+    text-align: center
+}
+.overlay-blurb {  
+    font-size: 2vw;
+    line-height: 2.5vw;
+    display: none;
+}
+
+
+.img--small{
+   display:none;
+}
+
+.img--lead{display:block;}
+
+}
+</style>
+
+<div class="posrel">
+    <div class="img--lead"></div>
+    <img class="img--small" src="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/10/kenilworth1.jpg" alt="">
+    <div class="overlay">
+        <h2 class="overlay-title">‘Why would I leave? It’s my home.’</h2>
+           <h1 class="overlay-blurb">In Kenilworth, a D.C. neighborhood on the brink of gentrification, the past is about to meet the future.</h1>
+    </div>
+    <div class="clear"></div>
+</div>
+
+        </div>
+                <div class="container background"><div class="row first">
+            <div class="span4 pull-right padB10 marB10">
+              <div class="bylines bTB1S padTB10 marB10">
+                                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <a href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/people/paul-duggan"><span class="name">Paul Duggan</span></a>                                                    <a href="http://web.archive.org/web/20161126064730/mailto:dugganp@washpost.com"><i class="fa fa-envelope"></i></a>                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Photos by</span>
+                                                                                                <span class="name">Michael S. Williamson</span>                                                                        </div>
+                      </div>
+              <div class="publish-date">Published on November 25, 2016</div>
+              
+              <!-- <div class=" utility-tools-wrapper">
+                <div class="utility-tools-primary margin-top">
+                  <div class="social-tools ">
+                    <div class="textresizer tool first mobile">
+                      <span class="hideText" tabindex="_tbidx_">Resize Text</span>
+                      <span class="fa fa-font"></span>
+                    </div>
+                    <a onclick="window.print();" tabindex="_tbidx_">
+                      <div class="print tool mobile">
+                        <span class="hideText">Print Article</span>
+                        <span class="fa fa-print"></span>
+                      </div>
+                    </a>
+                    <a href="#comments" tabindex="_tbidx_">
+                      <div class="comments tool last mobile">
+                        <span class="hideText">Comments</span>
+                        <span class="fa fa-comments"></span>
+                        <span id="echo_container" class="echo_container comment-vars echo-counter text" guid="http://www.washingtonpost.com/sf/local/2016/11/25/why-would-i-leave-its-my-home/">0</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div> -->
+              
+            </div>
+            
+        <div class="span8 col">
+<h1 class="hidden-deck">In Kenilworth, a D.C. neighborhood on the brink of gentrification, the past is about to meet the future.</h1>
+<p>Hardly a month goes by, Frank Matthews says, that he doesn’t step onto the narrow porch of his modest, century-old house, open his mailbox and find yet another letter from a real estate speculator.</p>
+<p>Or they call or knock at his door.</p>
+</div></div><div class="row">        <div class="note pull-right col span4">
+            <p> <strong>Above:</strong> <span class="text ">The Douglas Street home of Eduardo Laguerre is right next door to the Kenilworth Courts housing projects at left. (Michael S. Williamson/The Washington Post)</span></p>
+        </div>
+        <div class="span8 col">
+<p>“They all want to buy the place,” says Matthews, a retired federal worker. “And the reason is, they know this whole area’s getting ready to pick up big-time.”</p>
+<p>His property, just above the District’s eastern tip, is on Douglas Street NE, a tumbledown block these days, but once a tidy enclave of middle-class African Americans. Here, for almost 100 years, three generations of the Matthews clan, including Frank, witnessed the sweep of D.C. history from the same wood-frame, farmhouse-style abode.</p>
+<p>In the new Washington that emerged from 1990s fiscal chaos, an influx of affluent professionals, mainly white, has altered the character of neighborhoods close to downtown. Now, as the tide of gentrification rolls toward outlying sections of the city, Matthews sees it lapping at his doorstep in the long-forsaken Kenilworth-Parkside area.</p>
+<p>What’s occurring on Douglas Street, among the prosperous and the poor, is the story of gentrification in the nation’s capital — a saga of huge change writ small along a third of a mile of cracked and patched pavement. As in many parts of the District that are undergoing transformation, anxiety and tension are rife.</p>
+<p>And it’s a tale of one man’s perseverance, his hope for renewal.</p>
+</div></div></div></div>                <div class="section" id="section-1">
+                    <div class="container background">
+                                <div class="row">
+                                    <div class="span12 bTB1S marT10 padTB30 marT10 marB0 padB10small">
+                    
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/10/kenilworth2.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+                                    <div class="text-container container ">
+        <div class="text-overlay">
+        <div class="text">
+                        </div>
+        </div>
+        </div>
+                    
+        </div>
+
+        
+                            </div>
+                                <div class="span4 col pull-right">
+                                                <div class="marT30 marT10small">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Frank Matthews has lived in his home on Douglas Street since he was born. The house was bought by his grandfather in 1919. Matthews says that he has no intention of selling his home to developers or speculators. (Michael S. Williamson/The Washington Post)                                                                        </p>
+                                    </div>
+                                    </div>
+        <div class="span8 marT30 col">
+<p>“Oh, they’ll do a cash deal,” says Matthews, 66, who scoffs at the notion of selling his boyhood home. He waves a hand dismissively. “Same thing every time. &#8230; ‘Oh, I can give you $250,000 for it. &#8230; I don’t even have to look inside.’”</p>
+<p>If all goes as planned, the city next year will begin razing the blighted Kenilworth Courts public housing complex, across the road from Matthews, and replacing it with a larger, upscale project of stylish design, including not only public housing but nicer apartments for middle-class renters and townhomes for sale at market prices.</p>
+<p>Gone will be 26 low-slung blockhouses separated by shadowy labyrinths of courtyards and alleys. Although the city has vowed that the impoverished tenants will be allowed back in when the work is done, many of them are skeptical. And even if the promise holds true, the residents, who depend on one another daily for help, dread the loss of their mini-communities, their vital support networks within the buildings.</p>
+<p>“A lot of times, I can’t get up to go to the store,” says Delories Williams, 61, who is slowed by chronic back pain. “I’ll give the money to Miss Kim,” meaning a longtime friend in an adjacent apartment. “Miss Kim will go get the things we need.”</p>
+<p>Meanwhile, the first gentrifiers have arrived, a German-born white woman and her husband, a native New Yorker of Puerto Rican descent. Kyra Szanto and Eduardo Laguerre, both college educated and profitably employed, bought a remodeled century-old house directly opposite Matthews and next to Kenilworth Courts.</p>
+<p>The couple, who have befriended Williams and other nearby tenants, are burdened by angst. On Douglas Street, living at the intersection of the city’s future and past, they worry that their neighbors quietly resent them for the looming disruption. “We are the poster children of gentrification,” Szanto, 42, says uneasily.</p>
+<p>As for Matthews, he is cheered by the thought of a neighborhood resurrection, and he passes his days untroubled, alone in the house where he was raised, where his father grew up and where his paternal granddaddy rooted the family ages back.</p>
+<p>“It’s been awhile since things were looking up around here,” he says.</p>
+</div></div><div class="row">        <div class="photo-right span4 col pull-right ">
+                                                    <div class="spinner">
+            <img class=" image " data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/10/oldhouse1.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/10/oldhouse1.jpg&amp;w=1040&amp;authapi-mob-redir=0"/>
+                    </div>
+                                                            <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    This photo is from the Official Personnel File of Frank Matthews, Department of the Interior. He started work for the Interior Department as a laborer in 1909 and remained a federal employee into the Depression years. (The National Archives/St. Louis)                                                                        </p>
+                                    </div>
+                            </div>
+        <div class="span8 col">
+<h3 class="subhead">Humble beginnings</h3>
+<p>Before he died in 1947 at age 75, Granddaddy Frank Matthews could gaze out at Douglas Street from that narrow porch and ponder the measure of dignity he had achieved despite the bedrock racism of his times.</p>
+<p>Born a decade after Emancipation, he was sworn in as a civil servant, an Interior Department laborer, in 1909. His pay, $480 a year, was paltry even then. By 1920, he was an elevator conductor in the grand Old Post Office building, four blocks from the White House, and his wages, still meager, had nearly doubled.</p>
+<p>On May 14, 1919, with a $1,900 loan, he and his wife, Sadie, bought their piece of the dream: a little house on a quarter-acre in a countrified corner of the capital.</p>
+<p><b></b>Today’s Kenilworth-Parkside area, two miles long and a half-mile across at its widest, includes five neighborhoods between Benning Road NE and the Maryland border, flanked by the Anacostia River and the Anacostia Freeway. When the first community was built there, a tiny suburb-within-the-city dubbed Kenilworth, blacks could buy property on one block in an otherwise whites-only subdivision.</p>
+<p>Although the road was labeled “Douglass Avenue,” as in Frederick Douglass, on a 1903 planning map, it was Douglas Street when Matthews moved in, and he could ride a trolley six miles to downtown, where he stayed on the federal payroll into the Depression years.</p>
+<p>His son, Thomas, joined Interior as a laborer in 1934. After military service in World War II, he returned to the workforce as a lithographer in the Navy’s map-making Hydrographic Office with a salary that afforded his growing family a middle-class lifestyle.</p>
+<p>He and his wife took over the Douglas Street house, and the youngest of their three kids, born in 1951, was named Frank after his late granddaddy.</p>
+</div></div><div class="row">        <div class=" marT10">
+          <div class="span12    bTB1S padTB30">
+              <div class="row">
+                              <div class="span6 package-photo  marT0 marT0small">
+                <div class="spinner">
+                    <img class="lazy-image image" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/10/oldhouse_right.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </div>
+        
+            <div class="span6 package-photo package-photo-small marT0 marT0small marT12small">
+                <div class="spinner">
+                    <img class="lazy-image image" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/10/oldhouse_left.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </div>
+                      </div>
+          </div>
+                  </div>
+        <div class="span8 marT30 col">
+</div></div><div class="row">        <div class="note pull-right col span4">
+            <p> <strong>Note:</strong> </p>
+<p><b><span class="oldhouse-caption-top"></span></b>Frank Matthews&#8217;s father Thomas and mother Beatrice out for a walk in the 1950s. Matthews&#8217;s family has owned the Douglas Street home in Northeast D.C. for nearly a century.<br/>
+<b><span class="oldhouse-caption-bottom"></span></b>Matthews got a bike for Christmas, circa 1956. (Family photo)</p>
+</p>
+        </div>
+        <div class="span8 col">
+<p>Frank Matthews recalls an idyllic ’50s boyhood on a tranquil block, the homes a mix of farmhouse styles and stout brick Colonials. There were African American businessmen and civil servants; there was a dean of the D.C. Teachers College; there was a dapper nightclub owner whom Frank addressed as “Mr. Collins,” always with a Cadillac and a roll of cash, who’d peel off a five and tip a kid for wiping his windshield.</p>
+<p>But a great social upheaval, vaguely noticed by young Frank, had already begun.</p>
+<p>Nationwide in the 1950s, postwar-era government housing programs and the lure of open space spurred white flight to suburbia. Racist real estate practices prevented most African Americans from joining the exodus. Black families, many of them middle class, gradually filled up formerly all-white D.C. neighborhoods, including Kenilworth. By decade’s end, the city’s African American population, 35 percent in 1950, had climbed to 54 percent.</p>
+<p>Whites in Kenilworth were especially apprehensive about the growth of a community just to their south: Eastland Gardens, developed by and for blacks in the late 1930s, was the second of the five neighborhoods built in Kenilworth-Parkside.</p>
+<p>In 1954, the U.S. Supreme Court outlawed segregation in public schools, causing more white families to flee urban America. As for Douglas Street, its middle-class African American character endured — until the late ’50s, when Frank, standing on the porch one day, saw earth-moving machines clearing the woods across from his home.</p>
+<p>That tree-filled acreage had been his playground. But Frank overheard some unhappy grown-ups saying that the city needed the land. “Public housing,” they grumbled.</p>
+</div></div></div></div>                <div class="section" id="section-2">
+                    <div class="container background">
+                                <div class="row">
+                                    <div class="span12 bTB1S marT10 padTB30 marT10 marB0 padB10small">
+                    
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/10/kenilworth3.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+                                    <div class="text-container container ">
+        <div class="text-overlay">
+        <div class="text">
+                        </div>
+        </div>
+        </div>
+                    
+        </div>
+
+        
+                            </div>
+                                <div class="span4 col pull-right">
+                                                <div class="marT30 marT10small">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    The Kenilworth Courts housing project will eventually be torn down and redeveloped. (Michael S. Williamson/The Washington Post)                                                                        </p>
+                                    </div>
+                                    </div>
+        <div class="span8 marT30 col">
+<h3 class="subhead">The rise of public housing</h3>
+<p>Kenilworth Courts, opened in 1959, was a larger complex then. Today, it is 290 apartments in 26 squat brick buildings spread across 14 acres on the north side of Douglas Street, right outside Frank’s front door.</p>
+<p>Conceived in the New Deal era, public housing was meant to create construction jobs and provide decent living quarters for people who were bruised by the Depression yet still able to pay modest rents.</p>
+<p>The District erected its first complex in 1938 and built about 50 more in the next quarter-century. There were plenty of working-class white tenants in the early years. But after Congress lowered the income ceiling in the late 1940s, America’s public housing population turned steadily poorer and overwhelmingly black.</p>
+<p>Along Douglas Street, the moneyless newcomers came face-to-face with a long-settled community of working- and middle-class African Americans. Although Frank found playmates in the complex, he also encountered class resentment. More than once, he says, he was waylaid by “project kids” he barely knew.</p>
+</div></div><div class="row">                <div class="span12 bTB1S marT10 no-border graphic bg-none graphicPadTB30" id="raw">
+        <div id="g-oldhouse-web-box" class="ai2html">
+	<!-- Generated by ai2html v0.55 - 2016-10-20 - 11:01 -->
+	<!-- ai file: oldhouse-web -->
+
+	<style type="text/css" media="screen,print">
+		.g-artboard {
+			margin:0 auto;
+		}
+	</style>
+
+
+	<style type="text/css" media="screen,print">
+		/*text shadow*/
+        .g-aiPstyle0, .g-aiPstyle1, .g-aiPstyle2, .g-aiPstyle3, .g-aiPstyle4, .g-aiPstyle5, .g-aiPstyle6, .g-aiPstyle7, .g-aiPstyle8, .g-aiPstyle9, .g-aiPstyle10, .g-aiPstyle11, .g-aiPstyle12, .g-aiPstyle13, .g-aiPstyle14, .g-aiPstyle15 {
+            text-shadow: 1px 1px 1px rgba(255,255,255,0.6),-1px 1px 1px rgba(255,255,255,0.6),1px -1px 1px rgba(255,255,255,0.6),-1px -1px 1px rgba(255,255,255,0.6);
+        }
+
+		/* Custom CSS block 1 */
+		
+		#pgcontent{
+		max-width: 1000px;
+		}
+		
+		
+		#g-oldhouse-web-1000 {
+		display:block;
+		margin:0 auto;
+		}
+		
+		#g-oldhouse-web-600,
+		#g-oldhouse-web-280 {
+		display:none;
+		margin:0 auto;
+		}
+		
+		@media (max-width: 1140px) {
+			#g-oldhouse-web-1000 {
+			display:none;
+			}
+			#g-oldhouse-web-600 {
+			display:block;
+			}
+		 }
+		
+		@media (max-width: 650px) {
+			#g-oldhouse-web-600 {
+			display:none;
+			}
+			#g-oldhouse-web-280 {
+			display:block;
+			margin: 0 auto;
+			}
+		 }
+	</style>
+
+	<!-- Artboard: 280 -->
+	<div id="g-oldhouse-web-280" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-oldhouse-web-280{
+				position:relative;
+				overflow:hidden;
+				width:280px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-oldhouse-web-280 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-oldhouse-web-280 .g-aiPstyle0 {
+				font-family:PostoniDisplay, PostoniDisplay-Regular, Postoni, Georgia,serif;
+				font-size:35px;
+				line-height:39px;
+				color:#000000;
+			}
+			#g-oldhouse-web-280 .g-aiPstyle1 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-280 .g-aiPstyle2 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:14px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-280 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#6d6e70;
+			}
+			#g-oldhouse-web-280 .g-aiPstyle4 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-280 .g-aiPstyle5 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:9px;
+				line-height:8px;
+				font-style:italic;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-280 .g-aiPstyle6 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:18px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-280 .g-aiPstyle7 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:18px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-280 .g-aiPstyle8 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:18px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-280 .g-aiPstyle9 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-280 .g-aiPstyle10 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-280 .g-aiPstyle11 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-280 .g-aiPstyle12 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-280 .g-aiPstyle13 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:16px;
+				color:#000000;
+			}
+			#g-oldhouse-web-280 .g-aiPstyle14 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:16px;
+				text-align:right;
+				color:#000000;
+			}
+		</style>
+		<div id="g-oldhouse-web-280-graphic">
+			<img id="g-ai0-0" class="g-aiImg" src="http://web.archive.org/web/20161126064730im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/old-house/oldhouse-web-280.png?c=122"/>
+			<div id="g-ai0-1" class="g-labels_copy_2 g-aiAbs" style="top:-0.5512%;left:0.4984%;">
+				<p class="g-aiPstyle0">A neighborhood&rsquo;s </p>
+				<p class="g-aiPstyle0">past meets its future</p>
+			</div>
+			<div id="g-ai0-2" class="g-labels_copy_2 g-aiAbs" style="top:10.8037%;left:0.7125%;width:99.9547%;">
+				<p class="g-aiPstyle1">As the tide of gentrification reaches the Kenilworth-Parkside area of Northeast D.C., some residents welcome change, while others fear it.</p>
+			</div>
+			<div id="g-ai0-3" class="g-labels_copy_2 g-aiAbs" style="top:19.7334%;left:1.1000%;">
+				<p class="g-aiPstyle2">Year built</p>
+			</div>
+			<div id="g-ai0-4" class="g-labels_copy_2 g-aiAbs" style="top:24.1430%;left:15.0422%;">
+				<p class="g-aiPstyle2">1940</p>
+			</div>
+			<div id="g-ai0-5" class="g-labels_copy_2 g-aiAbs" style="top:24.1430%;left:34.3687%;">
+				<p class="g-aiPstyle2">1960</p>
+			</div>
+			<div id="g-ai0-6" class="g-labels_copy_2 g-aiAbs" style="top:24.1430%;left:52.7598%;">
+				<p class="g-aiPstyle2">2000</p>
+			</div>
+			<div id="g-ai0-7" class="g-labels_copy_2 g-aiAbs" style="top:30.4268%;left:78.9328%;width:17.5767%;margin-left:-8.7884%;">
+				<p class="g-aiPstyle3">D.C.</p>
+			</div>
+			<div id="g-ai0-8" class="g-labels_copy_2 g-aiAbs" style="top:30.4268%;left:92.6456%;width:17.4407%;margin-left:-8.7204%;">
+				<p class="g-aiPstyle3">MD.</p>
+			</div>
+			<div id="g-ai0-9" class="g-labels_copy_2 g-aiAbs" style="top:31.4190%;right:63.0800%;">
+				<p class="g-aiPstyle4">Kenilworth-</p>
+				<p class="g-aiPstyle4">Parkside</p>
+			</div>
+			<div id="g-ai0-10" class="g-labels_copy_2 g-aiAbs" style="top:35.7185%;left:19.7203%;">
+				<p class="g-aiPstyle5">NW</p>
+			</div>
+			<div id="g-ai0-11" class="g-labels_copy_2 g-aiAbs" style="top:35.7185%;left:27.3961%;">
+				<p class="g-aiPstyle5">NE</p>
+			</div>
+			<div id="g-ai0-12" class="g-labels_copy_2 g-aiAbs" style="top:37.5926%;left:19.7304%;">
+				<p class="g-aiPstyle5">SW</p>
+			</div>
+			<div id="g-ai0-13" class="g-labels_copy_2 g-aiAbs" style="top:37.5926%;left:27.4062%;">
+				<p class="g-aiPstyle5">SE</p>
+			</div>
+			<div id="g-ai0-14" class="g-labels_copy_2 g-aiAbs" style="top:38.6950%;left:47.7961%;">
+				<p class="g-aiPstyle6">Kenilworth</p>
+			</div>
+			<div id="g-ai0-15" class="g-labels_copy_2 g-aiAbs" style="top:42.2228%;left:60.9288%;width:53.6021%;margin-left:-26.8011%;">
+				<p class="g-aiPstyle7">Eastland</p>
+				<p class="g-aiPstyle7">Gardens</p>
+			</div>
+			<div id="g-ai0-16" class="g-labels_copy_2 g-aiAbs" style="top:49.3885%;left:38.9247%;width:54.5396%;margin-left:-27.2698%;">
+				<p class="g-aiPstyle7">Parkside</p>
+			</div>
+			<div id="g-ai0-17" class="g-labels_copy_2 g-aiAbs" style="top:51.4831%;left:24.2468%;width:34.3018%;margin-left:-17.1509%;">
+				<p class="g-aiPstyle8">Pepco</p>
+				<p class="g-aiPstyle8">plant</p>
+			</div>
+			<div id="g-ai0-18" class="g-labels_copy_2 g-aiAbs" style="top:57.4362%;left:52.1052%;">
+				<p class="g-aiPstyle9">5 MILES</p>
+			</div>
+			<div id="g-ai0-19" class="g-labels_copy_2 g-aiAbs" style="top:61.5151%;left:49.3818%;width:94.4385%;margin-left:-47.2192%;">
+				<p class="g-aiPstyle10">Kenilworth Courts </p>
+				<p class="g-aiPstyle10">Public Housing</p>
+			</div>
+			<div id="g-ai0-20" class="g-labels_copy_2 g-aiAbs" style="top:65.1531%;right:74.1905%;">
+				<p class="g-aiPstyle11">Delories</p>
+				<p class="g-aiPstyle11">Williams</p>
+			</div>
+			<div id="g-ai0-21" class="g-labels_copy_2 g-aiAbs" style="top:66.6965%;left:41.3818%;">
+				<p class="g-aiPstyle12">Eduardo Laguerre </p>
+				<p class="g-aiPstyle12">and Kyra Szanto</p>
+			</div>
+			<div id="g-ai0-22" class="g-labels_copy_2 g-aiAbs" style="top:77.2798%;right:52.1868%;">
+				<p class="g-aiPstyle11">Frank Matthews</p>
+			</div>
+			<div id="g-ai0-23" class="g-labels_copy_2 g-aiAbs" style="top:81.3587%;left:0.4464%;width:98.3918%;">
+				<p class="g-aiPstyle1">Three generations of Frank Matthews&rsquo;s family have lived in a middle-class home on Douglas Street NE. Now, public housing across the street will be replaced by a mixed-income complex, and speculators are trying to buy his property.</p>
+			</div>
+			<div id="g-ai0-24" class="g-labels_copy_2 g-aiAbs" style="top:96.2414%;left:0.9483%;">
+				<p class="g-aiPstyle13">Sources: D.C. Office of Tax and Revenue, DC GIS</p>
+			</div>
+			<div id="g-ai0-25" class="g-labels_copy_2 g-aiAbs" style="top:98.1155%;right:15.5235%;">
+				<p class="g-aiPstyle14">DARLA CAMERON/THE WASHINGTON POST</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Artboard: 600 -->
+	<div id="g-oldhouse-web-600" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-oldhouse-web-600{
+				position:relative;
+				overflow:hidden;
+				width:600px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-oldhouse-web-600 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle0 {
+				font-family:PostoniDisplay, PostoniDisplay-Regular, Postoni, Georgia,serif;
+				font-size:35px;
+				line-height:39px;
+				color:#000000;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle1 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle2 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:14px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle4 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:16px;
+				font-style:italic;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle5 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:18px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle6 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#6d6e70;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle7 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle8 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:18px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle9 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:16px;
+				font-style:italic;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle10 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:9px;
+				line-height:8px;
+				font-style:italic;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle11 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:12px;
+				letter-spacing:-0.00416666666667em;
+				color:#6d6e70;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle12 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:18px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle13 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:18px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle14 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle15 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle16 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:16px;
+				text-align:right;
+				color:#000000;
+			}
+			#g-oldhouse-web-600 .g-aiPstyle17 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:16px;
+				color:#000000;
+			}
+		</style>
+		<div id="g-oldhouse-web-600-graphic">
+			<img id="g-ai1-0" class="g-aiImg" src="http://web.archive.org/web/20161126064730im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/old-house/oldhouse-web-600.png?c=995"/>
+			<div id="g-ai1-1" class="g-labels_copy g-aiAbs" style="top:-0.7170%;left:0.6797%;">
+				<p class="g-aiPstyle0">A neighborhood&rsquo;s past meets its future</p>
+			</div>
+			<div id="g-ai1-2" class="g-labels_copy g-aiAbs" style="top:6.8827%;left:0.1123%;width:81.5207%;">
+				<p class="g-aiPstyle1">As the tide of gentrification reaches the Kenilworth-Parkside area of Northeast D.C., some residents welcome change, while others fear it.</p>
+			</div>
+			<div id="g-ai1-3" class="g-labels_copy g-aiAbs" style="top:14.9126%;left:0.6828%;">
+				<p class="g-aiPstyle2">Year built</p>
+			</div>
+			<div id="g-ai1-4" class="g-labels_copy g-aiAbs" style="top:15.4861%;left:73.8994%;">
+				<p class="g-aiPstyle3">5 MILES</p>
+			</div>
+			<div id="g-ai1-5" class="g-labels_copy g-aiAbs" style="top:17.9238%;right:37.6748%;">
+				<p class="g-aiPstyle4">Kenilworth</p>
+				<p class="g-aiPstyle4">Aquatic Gardens</p>
+			</div>
+			<div id="g-ai1-6" class="g-labels_copy g-aiAbs" style="top:19.7878%;left:71.6720%;">
+				<p class="g-aiPstyle5">Kenilworth Courts </p>
+				<p class="g-aiPstyle5">Public Housing</p>
+			</div>
+			<div id="g-ai1-7" class="g-labels_copy g-aiAbs" style="top:20.6482%;left:7.1891%;">
+				<p class="g-aiPstyle2">1940</p>
+			</div>
+			<div id="g-ai1-8" class="g-labels_copy g-aiAbs" style="top:20.6482%;left:16.2082%;">
+				<p class="g-aiPstyle2">1960</p>
+			</div>
+			<div id="g-ai1-9" class="g-labels_copy g-aiAbs" style="top:20.6482%;left:24.7907%;">
+				<p class="g-aiPstyle2">2000</p>
+			</div>
+			<div id="g-ai1-10" class="g-labels_copy g-aiAbs" style="top:25.9536%;left:89.3698%;width:8.2025%;margin-left:-4.1012%;">
+				<p class="g-aiPstyle6">D.C.</p>
+			</div>
+			<div id="g-ai1-11" class="g-labels_copy g-aiAbs" style="top:25.9536%;left:96.6031%;width:8.1390%;margin-left:-4.0695%;">
+				<p class="g-aiPstyle6">MD.</p>
+			</div>
+			<div id="g-ai1-12" class="g-labels_copy g-aiAbs" style="top:27.3875%;right:81.1701%;">
+				<p class="g-aiPstyle7">Kenilworth-</p>
+				<p class="g-aiPstyle7">Parkside</p>
+			</div>
+			<div id="g-ai1-13" class="g-labels_copy g-aiAbs" style="top:28.3912%;left:58.0758%;">
+				<p class="g-aiPstyle8">Kenilworth</p>
+			</div>
+			<div id="g-ai1-14" class="g-labels_copy g-aiAbs" style="top:32.1194%;left:50.8296%;width:24.2845%;margin-left:-12.1423%;">
+				<p class="g-aiPstyle9">Kenilworth </p>
+				<p class="g-aiPstyle9">Park</p>
+			</div>
+			<div id="g-ai1-15" class="g-labels_copy g-aiAbs" style="top:33.6967%;left:9.5391%;">
+				<p class="g-aiPstyle10">NW</p>
+			</div>
+			<div id="g-ai1-16" class="g-labels_copy g-aiAbs" style="top:33.6967%;left:13.1211%;">
+				<p class="g-aiPstyle10">NE</p>
+			</div>
+			<div id="g-ai1-17" class="g-labels_copy g-aiAbs" style="top:34.1268%;left:84.3771%;">
+				<p class="g-aiPstyle11">DEANWOOD</p>
+			</div>
+			<div id="g-ai1-18" class="g-labels_copy g-aiAbs" style="top:35.9909%;left:9.5436%;">
+				<p class="g-aiPstyle10">SW</p>
+			</div>
+			<div id="g-ai1-19" class="g-labels_copy g-aiAbs" style="top:35.9909%;left:13.1257%;">
+				<p class="g-aiPstyle10">SE</p>
+			</div>
+			<div id="g-ai1-20" class="g-labels_copy g-aiAbs" style="top:39.5757%;left:61.6442%;width:25.0137%;margin-left:-12.5068%;">
+				<p class="g-aiPstyle12">Eastland</p>
+				<p class="g-aiPstyle12">Gardens</p>
+			</div>
+			<div id="g-ai1-21" class="g-labels_copy g-aiAbs" style="top:39.7190%;left:38.6489%;width:32.8652%;margin-left:-16.4326%;">
+				<p class="g-aiPstyle12">Paradise at</p>
+				<p class="g-aiPstyle12">Parkside</p>
+			</div>
+			<div id="g-ai1-22" class="g-labels_copy g-aiAbs" style="top:49.1828%;left:47.2028%;width:27.6204%;margin-left:-13.8102%;">
+				<p class="g-aiPstyle12">Mayfair</p>
+				<p class="g-aiPstyle12">Mansions</p>
+			</div>
+			<div id="g-ai1-23" class="g-labels_copy g-aiAbs" style="top:58.6465%;left:40.3614%;width:25.4515%;margin-left:-12.7257%;">
+				<p class="g-aiPstyle12">Parkside</p>
+			</div>
+			<div id="g-ai1-24" class="g-labels_copy g-aiAbs" style="top:63.9520%;left:26.4842%;width:31.0449%;margin-left:-15.5225%;">
+				<p class="g-aiPstyle13">Pepco</p>
+				<p class="g-aiPstyle13">Power Plant</p>
+			</div>
+			<div id="g-ai1-25" class="g-labels_copy g-aiAbs" style="top:63.8086%;left:31.7746%;">
+				<p class="g-aiPstyle11">MINNESOTA AVE.</p>
+			</div>
+			<div id="g-ai1-26" class="g-labels_copy g-aiAbs" style="top:71.8384%;left:68.5610%;">
+				<p class="g-aiPstyle14">Eduardo Laguerre </p>
+				<p class="g-aiPstyle14">and Kyra Szanto</p>
+			</div>
+			<div id="g-ai1-27" class="g-labels_copy g-aiAbs" style="top:71.8384%;right:33.3761%;">
+				<p class="g-aiPstyle15">Delories</p>
+				<p class="g-aiPstyle15">Williams</p>
+			</div>
+			<div id="g-ai1-28" class="g-labels_copy g-aiAbs" style="top:79.0079%;left:0.3376%;width:49.0828%;">
+				<p class="g-aiPstyle1">Three generations of Frank Matthews&rsquo;s family have lived in a middle-class home on Douglas Street NE. Now, public housing across the street will be replaced by a mixed-income complex, and speculators are trying to buy his property.</p>
+			</div>
+			<div id="g-ai1-29" class="g-labels_copy g-aiAbs" style="top:91.7696%;right:27.1333%;">
+				<p class="g-aiPstyle15">Frank Matthews</p>
+			</div>
+			<div id="g-ai1-30" class="g-labels_copy g-aiAbs" style="top:97.6486%;right:0.5270%;">
+				<p class="g-aiPstyle16">DARLA CAMERON/THE WASHINGTON POST</p>
+			</div>
+			<div id="g-ai1-31" class="g-labels_copy g-aiAbs" style="top:97.6486%;left:0.1668%;">
+				<p class="g-aiPstyle17">Sources: D.C. Office of Tax and Revenue, DC GIS</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Artboard: 1000 -->
+	<div id="g-oldhouse-web-1000" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-oldhouse-web-1000{
+				position:relative;
+				overflow:hidden;
+				width:1000px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-oldhouse-web-1000 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle0 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:16px;
+				font-style:italic;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle1 {
+				font-family:PostoniDisplay, PostoniDisplay-Regular, Postoni, Georgia,serif;
+				font-size:35px;
+				line-height:39px;
+				color:#000000;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle2 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:18px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle4 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:14px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle5 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#6d6e70;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle6 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:18px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle7 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:16px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle8 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle9 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:12px;
+				letter-spacing:-0.00416666666667em;
+				color:#6d6e70;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle10 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:9px;
+				line-height:8px;
+				font-style:italic;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle11 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle12 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle13 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:12px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#6d6e70;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle14 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:18px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle15 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle16 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:16px;
+				text-align:right;
+				color:#000000;
+			}
+			#g-oldhouse-web-1000 .g-aiPstyle17 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:16px;
+				color:#000000;
+			}
+		</style>
+		<div id="g-oldhouse-web-1000-graphic">
+			<img id="g-ai2-0" class="g-aiImg" src="http://web.archive.org/web/20161126064730im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/old-house/oldhouse-web-1000.png?c=197"/>
+			<div id="g-ai2-1" class="g-labels g-aiAbs" style="top:2.0367%;left:64.4903%;width:21.6596%;margin-left:-10.8298%;">
+				<p class="g-aiPstyle0">Kenilworth </p>
+				<p class="g-aiPstyle0">Aquatic Gardens</p>
+			</div>
+			<div id="g-ai2-2" class="g-labels g-aiAbs" style="top:2.1821%;left:1.9277%;">
+				<p class="g-aiPstyle1">A neighborhood&rsquo;s past meets its future</p>
+			</div>
+			<div id="g-ai2-3" class="g-labels g-aiAbs" style="top:7.7102%;left:77.2700%;width:32.0979%;margin-left:-16.0489%;">
+				<p class="g-aiPstyle2">Kenilworth Courts </p>
+				<p class="g-aiPstyle2">Public Housing</p>
+			</div>
+			<div id="g-ai2-4" class="g-labels g-aiAbs" style="top:9.8924%;left:1.5873%;width:48.9124%;">
+				<p class="g-aiPstyle3">As the tide of gentrification reaches the Kenilworth-Parkside area of Northeast D.C., some residents welcome change, while others fear it.</p>
+			</div>
+			<div id="g-ai2-5" class="g-labels g-aiAbs" style="top:17.0207%;left:1.6630%;">
+				<p class="g-aiPstyle4">Year built</p>
+			</div>
+			<div id="g-ai2-6" class="g-labels_copy g-aiAbs" style="top:18.0390%;left:92.1752%;width:4.9215%;margin-left:-2.4607%;">
+				<p class="g-aiPstyle5">D.C.</p>
+			</div>
+			<div id="g-ai2-7" class="g-labels_copy g-aiAbs" style="top:18.0390%;left:96.5152%;width:4.8834%;margin-left:-2.4417%;">
+				<p class="g-aiPstyle5">MD.</p>
+			</div>
+			<div id="g-ai2-8" class="g-labels g-aiAbs" style="top:21.8214%;left:44.8510%;width:13.8613%;margin-left:-6.9307%;">
+				<p class="g-aiPstyle0">Kenilworth</p>
+				<p class="g-aiPstyle0">Park</p>
+			</div>
+			<div id="g-ai2-9" class="g-labels g-aiAbs" style="top:22.9852%;left:5.5668%;">
+				<p class="g-aiPstyle4">1940</p>
+			</div>
+			<div id="g-ai2-10" class="g-labels g-aiAbs" style="top:22.9852%;left:10.9782%;">
+				<p class="g-aiPstyle4">1960</p>
+			</div>
+			<div id="g-ai2-11" class="g-labels g-aiAbs" style="top:22.9852%;left:16.1277%;">
+				<p class="g-aiPstyle4">2000</p>
+			</div>
+			<div id="g-ai2-12" class="g-labels g-aiAbs" style="top:23.7126%;left:65.2947%;">
+				<p class="g-aiPstyle6">Kenilworth</p>
+			</div>
+			<div id="g-ai2-13" class="g-labels g-aiAbs" style="top:27.2040%;right:39.9388%;width:13.5640%;">
+				<p class="g-aiPstyle7">Some of the single-family homes in Eastland Gardens have been remodeled.</p>
+			</div>
+			<div id="g-ai2-14" class="g-labels g-aiAbs" style="top:30.6954%;right:87.5917%;">
+				<p class="g-aiPstyle8">Kenilworth-</p>
+				<p class="g-aiPstyle8">Parkside</p>
+			</div>
+			<div id="g-ai2-15" class="g-labels g-aiAbs" style="top:32.1502%;left:81.1635%;">
+				<p class="g-aiPstyle9">DEANWOOD</p>
+			</div>
+			<div id="g-ai2-16" class="g-labels g-aiAbs" style="top:36.9509%;left:6.8338%;">
+				<p class="g-aiPstyle10">NW</p>
+			</div>
+			<div id="g-ai2-17" class="g-labels g-aiAbs" style="top:36.9509%;left:8.9830%;">
+				<p class="g-aiPstyle10">NE</p>
+			</div>
+			<div id="g-ai2-18" class="g-labels g-aiAbs" style="top:38.4057%;left:38.5427%;width:19.7193%;margin-left:-9.8597%;">
+				<p class="g-aiPstyle2">Paradise at</p>
+				<p class="g-aiPstyle2">Parkside</p>
+			</div>
+			<div id="g-ai2-19" class="g-labels g-aiAbs" style="top:38.6966%;left:63.6399%;width:15.0086%;margin-left:-7.5043%;">
+				<p class="g-aiPstyle2">Eastland</p>
+				<p class="g-aiPstyle2">Gardens</p>
+			</div>
+			<div id="g-ai2-20" class="g-labels g-aiAbs" style="top:39.2785%;left:6.8365%;">
+				<p class="g-aiPstyle10">SW</p>
+			</div>
+			<div id="g-ai2-21" class="g-labels g-aiAbs" style="top:39.2785%;left:8.9857%;">
+				<p class="g-aiPstyle10">SE</p>
+			</div>
+			<div id="g-ai2-22" class="g-labels g-aiAbs" style="top:43.4973%;right:67.8196%;width:17.2640%;">
+				<p class="g-aiPstyle7">Mayfair Mansions was one of the first federally </p>
+				<p class="g-aiPstyle7">subsidized housing projects built for blacks in the 1940s. Parkside has redeveloped and newly built mixed-</p>
+				<p class="g-aiPstyle7">income housing.</p>
+			</div>
+			<div id="g-ai2-23" class="g-labels g-aiAbs" style="top:48.1526%;left:83.3664%;">
+				<p class="g-aiPstyle11">Eduardo Laguerre </p>
+				<p class="g-aiPstyle11">and Kyra Szanto</p>
+			</div>
+			<div id="g-ai2-24" class="g-labels g-aiAbs" style="top:48.1526%;right:18.4031%;">
+				<p class="g-aiPstyle12">Delories</p>
+				<p class="g-aiPstyle12">Williams</p>
+			</div>
+			<div id="g-ai2-25" class="g-labels g-aiAbs" style="top:53.8261%;left:47.2750%;width:16.5723%;margin-left:-8.2861%;">
+				<p class="g-aiPstyle2">Mayfair</p>
+				<p class="g-aiPstyle2">Mansions</p>
+			</div>
+			<div id="g-ai2-26" class="g-labels g-aiAbs" style="top:64.4459%;right:13.5835%;">
+				<p class="g-aiPstyle12">Frank Matthews</p>
+			</div>
+			<div id="g-ai2-27" class="g-labels g-aiAbs" style="top:68.9556%;left:41.7702%;width:15.2709%;margin-left:-7.6354%;">
+				<p class="g-aiPstyle2">Parkside</p>
+			</div>
+			<div id="g-ai2-28" class="g-labels g-aiAbs" style="top:69.5375%;left:75.1320%;width:21.3497%;">
+				<p class="g-aiPstyle3">Three generations of Frank Matthews&rsquo;s family have lived in a middle-class home on </p>
+				<p class="g-aiPstyle3">Douglas Street NE. Now, public housing across the street will be replaced by a mixed-income complex, and speculators are trying to buy his property.</p>
+			</div>
+			<div id="g-ai2-29" class="g-labels g-aiAbs" style="top:75.9385%;right:50.4112%;">
+				<p class="g-aiPstyle13">MINNESOTA AVE.</p>
+			</div>
+			<div id="g-ai2-30" class="g-labels g-aiAbs" style="top:77.5387%;left:26.1438%;width:18.6270%;margin-left:-9.3135%;">
+				<p class="g-aiPstyle14">Pepco</p>
+				<p class="g-aiPstyle14">Power Plant</p>
+			</div>
+			<div id="g-ai2-31" class="g-labels g-aiAbs" style="top:94.2685%;left:1.5277%;">
+				<p class="g-aiPstyle15">2 MILES</p>
+			</div>
+			<div id="g-ai2-32" class="g-labels g-aiAbs" style="top:97.6144%;right:-0.2373%;">
+				<p class="g-aiPstyle16">DARLA CAMERON/THE WASHINGTON POST</p>
+			</div>
+			<div id="g-ai2-33" class="g-labels g-aiAbs" style="top:97.6144%;left:0.9538%;">
+				<p class="g-aiPstyle17">Sources: D.C. Office of Tax and Revenue, DC GIS</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- End ai2html - 2016-10-20 - 11:01 -->
+</div>
+        </div>
+                <div class="span8 marT30 col">
+<p>“I realize now it was because I lived over here and they lived over there, and we had a house and they didn’t,” he says. “It’s still that way to a certain degree. &#8230; People feel like you’re upping them in some kind of way.”</p>
+<p>Like other homeowners on the block, his father, Thomas, was leery of the tenants, especially after the battery vanished from his Oldsmobile.</p>
+<p>Clad in a suit and fedora, Thomas Matthews, a hard-nosed man who wouldn’t tolerate laziness, marched to the complex and canvassed the courtyards. “They thought he was a cop,” Frank recalls. “He’d ask them who was doing what. Asked guys what their names were. Because if there was any problem, he wanted to know who the problem people were.”</p>
+<p>In the 1960s, urban riots across America fueled more white flight. Violent unrest after the assassination of the Rev. Martin Luther King Jr. in 1968 left vast swaths of the District in ruins. While his father stood guard over his property, Frank, then 17, watched from the porch as looters streamed out of Kenilworth Courts, bound for a nearby Safeway, and hurried back with all the groceries they could steal in overflowing carts.</p>
+<p>“It was like a parade of people,” he remembers. “Some people didn’t have carts. Some just had stuff all up to their armpits, carrying them and running.”</p>
+<p>The Kenilworth Courts populace, once just mostly black, was virtually all African American by then, and desperately impoverished.</p>
+<p>Thomas Matthews, on the other hand, was making the equivalent of $68,000 a year in today’s money before he retired in 1966 from the U.S. Naval Oceanographic Office. If he hadn’t been busy protecting his home during the rioting, his son says, he almost certainly would have been off playing golf.</p>
+<p>As they sat together out front, taking in the mayhem that April night in 1968, Frank recalls, his father turned to him, quietly seething: “You don’t ever get caught up in nonsense like this, you understand? It’s disgusting.”</p>
+<p>A year later, Frank would finish high school, join the Marines and go off to war. For the time being, though, in a city in flames, he could only pace and idle at home.</p>
+<p>For three days, his father wouldn’t allow him beyond the porch.</p>
+</div></div></div></div>                <div class="section" id="section-3">
+                    <div class="container background">
+                                <div class="row">
+                                    <div class="span12 bTB1S marT10 padTB30 marT10 marB0 padB10small">
+                    
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/10/kenilworth6.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+                                    <div class="text-container container ">
+        <div class="text-overlay">
+        <div class="text">
+                        </div>
+        </div>
+        </div>
+                    
+        </div>
+
+        
+                            </div>
+                                <div class="span4 col pull-right">
+                                                <div class="marT30 marT10small">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Frank Matthews has lived in his home on Douglas Street since he was born. The house was purchased by his grandfather in 1919. (Michael S. Williamson/The Washington Post)                                                                        </p>
+                                    </div>
+                                    </div>
+        <div class="span8 marT30 col">
+<h3 class="subhead">‘Hell on Earth’</h3>
+<p>The view across Douglas Street got uglier while Frank was overseas.</p>
+<p>When he came home in 1973, he was 22 and restless, freighted by the memories of what he had seen in the jungles of Vietnam. After moving to Maryland, to a place of his own, he joined the federal workforce as a mail clerk with the U.S. Commission on Civil Rights.</p>
+<p>He dropped in regularly to check on his parents. And from their porch, looking at Kenilworth Courts, he saw a perilous wasteland, a crimescape of guns and heroin with few ways out: by handcuffs, by gurney. In 1971, the city’s chief of housing programs had publicly declared the complex “hell on Earth.”</p>
+<p>“The guys I used to know over there,” Frank says, “they just got older and crazier.”</p>
+<p>In the 1970s, black Washingtonians, then numbering 7 in 10 residents, enjoyed a new sense of self-determination. Empowered by Congress, which granted the city partial home rule, voters elected an African American mayor and a predominantly black city council. But a fault line ran beneath the buoyant mood.</p>
+<p>Fair housing laws and liberalizing racial attitudes had opened suburbia to middle-class blacks, who followed whites in abandoning cities. From 1978 to 1998, the District’s population would fall by 100,000, to fewer than 600,000 people, a dire percentage of them poor. The eroding tax base, combined with official mismanagement and a staggering demand for costly social services, would eventually cripple the D.C. government.</p>
+<p>During his visits, Frank noticed Douglas Street sliding downhill. One by one, the old families left, and several of the houses, sold cheap, fell into disrepair. Some were razed, and the lots turned to grassy fields.</p>
+<p>Alone after his wife, Beatrice, died in 1975, Thomas Matthews refused to quit the neighborhood, his son says. “This was his house, period.” Thomas was 72 when he died of a heart attack in 1984, and he wasn’t long buried before Frank moved back in. He has lived there by himself ever since.</p>
+<p>The corner of the District he returned to was a hardscrabble patch of an ailing city tumbling toward the brink of bankruptcy.</p>
+<p>The lucrative crack trade and the feverish homicide rates it spawned, starting in the mid-1980s, stamped Washington as “America’s murder capital.” In the neighborhoods of Kenilworth-Parkside, gunshots and sirens pierced the nights.</p>
+<p>On Douglas Street, Kenilworth Courts was a hive of violent dopers.</p>
+<p>To the south, below the aging enclave of Eastland Gardens, police made thousands of drug arrests in the side-by-side neighborhoods of Mayfair and Paradise, comprised entirely of sprawling, privately owned apartment complexes for low-income tenants.</p>
+<p>And south of there, in the Parkside neighborhood, a small public housing building stood in a treacherous no man’s land, surrounded by weed-choked empty lots and desolate streets swirling with litter.</p>
+<p>As his father had done, Frank kept a vigilant eye on his property, through the 1980s and into the ’90s, confronting any crack slinger or pipehead who encroached.</p>
+<p>“I remember the police used to come around, putting all these guys down on the ground,” he recalls. “I’d be standing on the porch, and the cops would look at me, they’d be like: ‘How can you live here, man? Why do you stay?’­ ”</p>
+<p>“And I’d be like: ‘Why would I leave? It’s my home.’­ ”</p>
+</div></div><div class="row">            <div class="bg-none  text-center padTB10  bTB1S">
+                <!--SPECIAL AD 0 BEGIN-->
+                <div id="slug_enterprise" data-ad-type="enterprise" style="display:none;" class="advertisement"></div>
+
+                <div id="slug_mob_enterprise" data-ad-type="mob_enterprise" style="display:none;" class="advertisement"></div>
+                <!--SPECIAL AD 0 END-->
+            </div>
+                <div class="span8 marT30 col">
+<h3 class="subhead">‘The people were nice’</h3>
+<p>Delories Williams was 10 miles from Douglas Street in 1997, sharing a $475-a-month apartment with her boyfriend, Bobby Riles. They worked as janitors, and three of Williams’s grandchildren, the oldest in middle school, lived with them.</p>
+<p>Then one night their roof collapsed.</p>
+<p>After years on the public-housing waiting list, Williams was bumped to the top, and she and Riles got a place: four bedrooms in Kenilworth Courts for the standard public-housing rent, roughly 30 percent of their incomes.</p>
+<p id="U11202003586236WqC">Williams, who grew up poor, had a daughter in prison then. “It was a whole lot of things got her into drugs,” is pretty much all she’ll say about it. “I took the kids.” And so there she was at age 42, a low-wage worker with three young mouths to feed. Their names were Adrian, Tyree and Marquell.</p>
+<p>Compared with the “slum” they had been living in, she recalls, the Kenilworth apartment felt deluxe. And “by me being a friendly person, you know, the people were nice.”</p>
+<p>Meanwhile, the D.C government had bottomed out.</p>
+<p>With the city facing bankruptcy, unable to pay its bills, Congress in 1995 created a financial control board to manage the municipal purse strings, empowered to veto decisions by the mayor and city council.</p>
+<p>Six years later, the board chairman, economist Alice Rivlin, declared that the city was back from the dead, its revenue adequate, its budget balanced. As D.C. officials reassumed the reins of government, she wrote in 2001, they should focus on growing the tax base by attracting 100,000 additional residents. The more money they had, the better.</p>
+<p>For this reason, and many others, gentrification took hold in the nation’s capital.</p>
+</div></div></div></div>                <div class="section" id="section-4">
+                    <div class="container background">
+                                <div class="row">
+                                    <div class="span12 bTB1S marT10 padTB30 marT10 marB0 padB10small">
+                    
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/10/kenilworth4.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+                                    <div class="text-container container ">
+        <div class="text-overlay">
+        <div class="text">
+                        </div>
+        </div>
+        </div>
+                    
+        </div>
+
+        
+                            </div>
+                                <div class="span4 col pull-right">
+                                                <div class="marT30 marT10small">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Delories Williams lived with her grandson Tyree Williams, age 26. She holds a sign that was tacked onto her unit advertising a zoning meeting regarding the fate of Kenilworth Courts. (Michael S. Williamson/The Washington Post)                                                                        </p>
+                                    </div>
+                                    </div>
+        <div class="span8 marT30 col">
+<p>Following a strategy laid out by Rivlin to entice new city dwellers, the District adopted policies favoring entertainment, restaurant and high-rise apartment and condo development in the downtown area. At the same time, it helped immensely that the local job market stayed relatively strong through the post-2007 recession.</p>
+<p>The results were remarkable.</p>
+<p>In the 2000s, for the first time since World War II, the District’s population grew, topping 600,000, an increase of 30,000 people. It has since gone up again, by 70,000, amid a forest of construction cranes near the city’s core. About 40 percent of newcomers in the late 2000s settled in the Shaw, Dupont Circle, Penn Quarter and Chinatown areas, according to a study in the Journal of Urban Affairs.</p>
+<p>As a consequence, though, many longtime residents of modest means are anxious about rising rents and escalating property values that lead to heftier tax bills.</p>
+<p>There is cultural disruption, too, as newcomers of all races, but largely affluent whites, settle in communities where deeply rooted neighbors have lived in rhythm for years, relying on one another when times are hard. After 60 years in the majority, blacks now account for 49 percent of the D.C. population.</p>
+<p>Among those who tipped the balance were Kyra Szanto and her husband.</p>
+<p>Szanto was studying at Hotelschool The Hague in 2000 when she traveled to Washington as a Ritz-Carlton intern. She chose to stay, working as a purchasing director at the Mandarin Oriental, where she met Eddie Laguerre, an IT specialist.</p>
+<p>“I have never lived outside the city, never once,” says Szanto, who moved several times in her early years in the District. It was a point of pride for her to alight in decidedly unhot neighborhoods before other young professionals discovered them.</p>
+</div></div><div class="row">        <div class="photo-right span4 col pull-right ">
+                                                    <div class="spinner">
+            <img class=" image " data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/10/kenilworth8.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/10/kenilworth8.jpg&amp;w=1040&amp;authapi-mob-redir=0"/>
+                    </div>
+                                                            <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Kyra Szanto attends a planning meeting regarding the fate of the Kenilworth Courts housing project. The project sits directly behind her home. (Michael S. Williamson/The Washington Post)                                                                        </p>
+                                    </div>
+                            </div>
+        <div class="span8 col">
+<p>She and Laguerre, now parents of a 4-year-old girl, were renters until 2012, when Szanto was pregnant and the two started shopping for a house.</p>
+<p id="U11202003586236qpE">“Oh, my God, she makes a spreadsheet for everything,” her husband says. “Literally, it had crime statistics, neighborhoods, prices, schools in the area, park space — I mean, there were flow charts, PowerPoint presentations.”</p>
+<p>One place stood out: a small three-bedroom with a big back yard, built in 1915 and handed down through generations of the original owner’s family, then fully remodeled in 2011 after a speculator bought it. The couple would pay $230,000 to live in the shadow of public housing, but so what? Szanto never shied from an authentic urban experience.</p>
+<p>“We are the reason gentrification happens,” she says with mixed emotions. “We are the poster children of gentrification.”</p>
+<p>Newly ensconced on Douglas Street, they met Delories Williams (Miss D, as she’s known), whose Kenilworth Courts apartment is steps from their front door. Chatting over the black iron fence at the border of their separate worlds, Szanto and Williams, the neighborhood’s future and its past, got to be friends.</p>
+<p>“We bonded,” says Williams. “You can feel the love coming from her.”</p>
+<p id="U112020035862361oF">Delories was a widow by then, having married Bobby Riles in 2009, two months before he died of stomach cancer. Of the grandkids she had parented, only Tyree Williams still lived with her as an adult, because he had little choice.</p>
+<p>On an autumn night in 2003, when Tyree was 13, he was riding in a car in a neighborhood that he had been warned to stay out of. When gunfire went off, a bullet caught him in the spine, paralyzing him below the waist.</p>
+<p>And his grandmother became his nurse.</p>
+</div></div></div></div>                <div class="section" id="section-5">
+                    <div class="container background">
+                                <div class="row">
+                                    <div class="span12 bTB1S marT10 padTB30 marT10 marB0 padB10small">
+                    
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/10/kenilworth5.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+                                    <div class="text-container container ">
+        <div class="text-overlay">
+        <div class="text">
+                        </div>
+        </div>
+        </div>
+                    
+        </div>
+
+        
+                            </div>
+                                <div class="span4 col pull-right">
+                                                <div class="marT30 marT10small">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Delories Williams with her grandson Tyree Williams, 26. Tyree was badly injured in a shooting when he was 13. Delories lives in a multi-room apartment at Kenilworth Courts and fears that she will have to relocate when the area's redevelopment begins. (Michael S. Williamson/The Washington Post)                                                                        </p>
+                                    </div>
+                                    </div>
+        <div class="span8 marT30 col">
+<h3 class="subhead">Through the generations</h3>
+<p>In 2016, the view of Douglas Street from Frank Matthews’s front porch isn’t much different than it was 20 years ago — not yet. But lately, when he looks out a rear window, south toward Kenilworth Avenue, he takes in a landscape undergoing rebirth.</p>
+<p>Where once there were loiterers and felons, he sees moms pushing strollers; he sees joggers and bicyclists; he sees millennials in officewear hurrying to the Deanwood Metro.</p>
+<p>He knows change is headed his way, again, spreading outward along H Street and Benning Road from downtown, gentrification’s ground zero.</p>
+<p id="U11202003586236lk">At the bottom of Kenilworth-Parkside, the once-forlorn Parkside neighborhood is a model of mixed-income redevelopment, filled with moderate-rent apartments and market-priced townhomes. In Mayfair and Paradise, the subsidized housing complexes have been overhauled and rebranded.</p>
+<p>And in Eastland Gardens, Siraaj Hasan, 38, typifies a new generation of homeowners in his neighborhood. He’s a cybersecurity consultant with Booz Allen Hamilton, married to the D.C. government’s acting director of health-care reform.</p>
+<p>“The older people are passing on and their houses are being sold or their children or grandchildren are moving in,” Hasan says. “My best friend around the corner is chief of staff for one of the council members. There’s an IT professional across the street. There’s an Asian couple. There are several white families.”</p>
+<p id="U11202003586236BXB">Adrianne Todman, director of the D.C. Housing Authority, says she knows what’s happening in Kenilworth-Parkside. That’s why the authority and two developers intend to demolish the 290 apartments of Kenilworth Courts and build a 530-unit mixed-income complex. In her office downtown, with a map spread before her, Todman, who is African American, circles the five neighborhoods with a finger.</p>
+<p>“This entire footprint is going to be different in the future,” she says. “Years from now, the affordable housing we build today might be the only affordable housing that’s there.”</p>
+<p id="U11202003586236PTB">As for the market-priced townhomes included in the redevelopment, the revenue from those, and from the moderate-rent apartments, will help pay for the upkeep of the 290 replacement public-housing units, Todman says.</p>
+<p>So late next year, as when Matthews was a boy, earth-movers will roll into Kenilworth.</p>
+<p>Kyra Szanto runs her own business now, decluttering and organizing her clients’ homes and offices, and Laguerre works for a defense contractor. The two were already settled on Douglas Street when they heard about the plan for Kenilworth Courts. By then, they had hosted barbecues for the neighbors, befriending Williams and others (Miss Kim, Miss Mildred) from the blockhouse abutting their property.</p>
+<p>“There’s a happy dance involved from an equity standpoint,” Szanto says of the project. “And that was followed by: What about Miss D? What about Miss Mildred?”</p>
+<p>These days, when the gentrifiers and the tenants chat over the fence, no one mentions the future. “I haven’t touched the subject,” says Szanto, frowning. “Because I don’t even know how to touch it. Because . . . <i>how</i>?”</p>
+</div></div><div class="row">                <div class="span12 bTB1S marT10 no-border graphic bg-none graphicPadTB30" id="raw">
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://web.archive.org/web/20161126064730if_/https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/294462010&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>        </div>
+                <div class="span8 marT30 col">
+<p>Williams, who hurt her back in a car crash and survives on disability payments, says she harbors no resentment toward the couple next door.</p>
+<p>Yet she’s distraught over the looming break up of her community.</p>
+<p>“With Miss Mildred, I rely on her clothesline, because my dryer’s broke,” she says. “Me being a missionary at my church, I get a whole lot of food, and I’ll put it out around the neighborhood. . . . Or Miss Kim, she has that car, she’ll take me to the doctor’s.”</p>
+<p>One morning last month, Williams woke up depressed, so Kim Wallace suggested that they go for a drive, to take her mind off things. Hours later, when Williams returned to her apartment, she found Tyree, 26, slumped in his wheelchair, dead from what a police detective told her was an apparent drug overdose.</p>
+<p>Sweeping out her grandson’s bedroom the next day, she says in a tired voice: “These are the things that happen. He’s a product of Kenilworth, you know.”</p>
+<p>And Frank Matthews:</p>
+<p>There’s a lilt in his voice as he strolls the length of Douglas Street, pointing to this lot and that lot, sharing tales of neighbors long gone.</p>
+<p>By the time he retired last year from the Department of Homeland Security — a third-generation career civil servant — he was a budget analyst with a bachelor’s degree and a salary in the low six figures. Now he speaks of better days for his block.</p>
+<p>Back home, upbeat, he climbs the steps to the porch.</p>
+<p>In granddaddy’s house, settled on its century-old cinder-block foundation, dust from ancient coal still lines the basement bins. But solar panels cover the roof now, the vinyl siding is pale green, and there’s a 20-foot motorboat in the side yard.</p>
+<p>He checks his mail and heads inside.</p>
+<p>Letters from speculators “go in the trash,” he says. And those phone calls and visits: “They’ll all be like, ‘Oh, Mr. Matthews, we’ve been trying to get in touch with you!’ And this and that.” He smiles.</p>
+<p>“No, sir. Not now, not ever. The place ain’t for sale.”</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/10/kenilworth7.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Frank Matthews has lived in his home on Douglas Street since he was born. The house was bought by his grandfather in 1919. (Michael S. Williamson/The Washington Post)                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+</div></div><div class="row">                <div class="span4 col pull-right right-content no-border graphic bg-none graphicPadTB30" id="raw">
+        <!-- Updated 12/7/15 by EY to fix a bug with single quotes --> 
+
+<link rel="stylesheet" href="//web.archive.org/web/20161126064730cs_/http://css.washingtonpost.com/wp-stat/enterprise-raw-code/sharebar/enterprise-sharebar.css?v3"/>
+
+<!-- To switch to grayscale share buttons, remove the 'color-top' class from top-sharebar-wrapper div -->
+
+<div class="top-sharebar-wrapper color-top large-8 large-centered columns cf" id="top-sharebar_123534312321">
+<div class="social-tools-wrapper">
+    <div class="social-tools-primary ">
+        <div class="social-tools ">
+            <!-- FB -->
+            <a id="facebook-raw-share" data-service="facebook" onclick="" tabindex="1">
+                <div class="facebook tool first mobile"><span class="hideText">Share on Facebook</span><span class="fa fa-facebook-square"></span></div>
+            </a>
+            <!-- Twitter -->
+            <a id="twitter-raw-share" data-service="twitter" onclick="" tabindex="2">
+                <div class="twitter tool mobile"><span class="hideText">Share on Twitter</span><span class="fa fa-twitter"></span></div>
+            </a>
+            <!-- Google Plus -->
+            <a id="google-plus-raw-share" data-service="google-plus" onclick="" tabindex="3">
+                <div class="google-plus tool mobile"><span class="hideText">Share on Google Plus</span><span class="fa fa-google-plus"></span></div>
+            </a>
+            <!-- Email -->
+            <a id="email-raw-share" data-service="email" href="" tabindex="4">
+                <div class="email tool mobile"><span class="hideText">Share via Email</span><span class="fa fa-envelope"></span></div>
+            </a>
+            <!-- More -->
+            <a onclick="return false;">
+                <div class="more last tool mobile"><span class="hideText" tabindex="5">More Options</span><span class="fa fa-plus"> </span></div>
+            </a>
+        </div>
+    </div>
+    <div class="social-tools-additional">
+        <div class="social-tools ">
+            <!-- LinkedIn -->
+<!--             <a id="linkedIn-raw-share" data-service="linkedin" onclick="" tabindex="6">
+                <div class="linkedin tool mobile first"><span class="hideText">Share on LinkedIn</span><span class="fa fa-linkedin"></span></div>
+            </a> -->
+            <!-- Pinterest -->
+            <a id="pinterest-raw-share" data-service="pinterest" onclick="" tabindex="7">
+                <div class="pinterest tool mobile first"><span class="hideText">Share on Pinterest</span><span class="fa fa-pinterest"></span></div>
+            </a>
+            <!-- Tumblr  -->
+            <a id="tumblr-raw-share" data-service="tumblr" onclick="" tabindex="8">
+                <div class="tumblr tool mobile last"><span class="hideText">Share on Tumblr</span><span class="fa fa-tumblr"></span></div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+</div>
+
+
+
+        </div>
+                <div class="span8 col">
+                <div class="et-pagination">
+                        <div class="clearfix"></div>
+        </div>
+        </div> <!-- Close off span 8 -->
+        </div> <!-- Close off row -->
+        </div>
+        <div class="bT1S padT30 padB10small padB30">
+        <div class="container">
+            <h4 class="light-black marB20 franklin-bold marT0">Editor's picks:</h4>
+        <div class="row">
+                <div class="span6">
+        <div class="row-fluid">
+        <div class="span6">
+            <a href="http://web.archive.org/web/20161126064730/https://www.washingtonpost.com/local/social-issues/the-homeless-man-who-graduated-from-harvard-law-school-with-chief-justice-john-roberts/2015/07/13/63257b5c-20ca-11e5-bf41-c23f5d3face1_story.html">
+                <div class="spinner">
+                    <img class="lazy-image image pick" data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/08/POSTELL__5291436469430.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </a>
+        </div>
+        <div class="span6">
+            <h4 class="franklin-bold marT0 marT10small"><a href="http://web.archive.org/web/20161126064730/https://www.washingtonpost.com/local/social-issues/the-homeless-man-who-graduated-from-harvard-law-school-with-chief-justice-john-roberts/2015/07/13/63257b5c-20ca-11e5-bf41-c23f5d3face1_story.html" class="light-black">The homeless man who went to Harvard</a></h4>
+            <p class="franklin-light size-fourteen lh18em light-grey">He graduated from law school with U.S. Chief Justice John Roberts and now lives on the streets            <a href="http://web.archive.org/web/20161126064730/https://www.washingtonpost.com/local/social-issues/the-homeless-man-who-graduated-from-harvard-law-school-with-chief-justice-john-roberts/2015/07/13/63257b5c-20ca-11e5-bf41-c23f5d3face1_story.html" class="light-black">
+                <span class="fa fa-circle-arrow-right"></span>
+            </a>
+            </p>
+        </div>
+        </div>
+        </div>
+        </p>
+        <div class="span6">
+        <div class="row-fluid">
+        <div class="span6">
+            <a href="http://web.archive.org/web/20161126064730/https://www.washingtonpost.com/local/social-issues/the-mystery-of-why-the-best-african-american-figure-skater-in-history-went-bankrupt-and-lives-in-a-trailer/2016/02/25/a191972c-ce99-11e5-abc9-ea152f0b9561_story.html">
+                <div class="spinner">
+                    <img class="lazy-image image pick" data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/10/2016/08/Thomas011453916531.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161126064730im_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </a>
+        </div>
+        <div class="span6">
+            <h4 class="franklin-bold marT0 marT10small"><a href="http://web.archive.org/web/20161126064730/https://www.washingtonpost.com/local/social-issues/the-mystery-of-why-the-best-african-american-figure-skater-in-history-went-bankrupt-and-lives-in-a-trailer/2016/02/25/a191972c-ce99-11e5-abc9-ea152f0b9561_story.html" class="light-black">The Debi Thomas Story</a></h4>
+            <p class="franklin-light size-fourteen lh18em light-grey">The mystery of how the best African American skater in history went bankrupt            <a href="http://web.archive.org/web/20161126064730/https://www.washingtonpost.com/local/social-issues/the-mystery-of-why-the-best-african-american-figure-skater-in-history-went-bankrupt-and-lives-in-a-trailer/2016/02/25/a191972c-ce99-11e5-abc9-ea152f0b9561_story.html" class="light-black">
+                <span class="fa fa-circle-arrow-right"></span>
+            </a>
+            </p>
+        </div>
+        </div>
+        </div>
+                </div>
+        </div>
+        </div>
+        
+<style>
+.note strong {
+    display: none;
+}
+.oldhouse-caption-top::before{
+   content:"LEFT: ";
+}
+
+.oldhouse-caption-bottom::before{
+   content:"RIGHT: "
+}
+
+.dropcap::first-letter{
+font-family: PostoniTitling, Times, serif, Georgia;
+    float: left;
+    color: #fb6547;
+    font-size: 625%;
+    line-height: 77%;
+    padding: 5px 10px 0 0;
+	}
+
+.top15{margin-top:1.5em;}
+
+
+.ff34 #raw4, .ff33 #raw4, .ff32 #raw4, .ff31 #raw4, .ff30 #raw4 {
+            display:none !important;
+        }
+
+
+#raw3 {display:none !important;}
+
+        .ff34 #raw3, .ff33 #raw3, .ff32 #raw3, .ff31 #raw3, .ff30 #raw3 {
+            display:block !important;
+        }.aging-subhead{color:#2a2a2a}
+
+
+@media (max-width: 768px) {
+
+.oldhouse-caption-top::before{
+   content:"TOP: ";
+}
+
+.oldhouse-caption-bottom::before{
+   content:"ABOVE: "
+}
+
+}
+
+</style>												</div> <!-- home/section -->
+				            <div id="section-comments" class="mobile-inactive bT1S bT0small">
+            <div class="container background">
+            <div class="row last">
+            <div class="span4 col pull-right credits">
+                <h4 class="franklin-bold light-black marT0">Credits</h4>
+                                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <a href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/people/paul-duggan"><span class="name">Paul Duggan</span></a>                                                    <a href="http://web.archive.org/web/20161126064730/mailto:dugganp@washpost.com"><i class="fa fa-envelope"></i></a>                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Photos by</span>
+                                                                                                <span class="name">Michael S. Williamson</span>                                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Design by</span>
+                                                                                                <span class="name">Katherine Lee</span>                                                                        </div>
+                    </div>
+            <div id="comments" class="span8 col pretty-comments">
+                          <div class="pretty-comments">
+                  <div id="echo_container" class="echo_container count submitbox stream comment-vars" guid="http://www.washingtonpost.com/sf/local/2016/11/25/why-would-i-leave-its-my-home/" maxitemstop="5" sectionid="/conversations" isallcomments="true" includeshare="false">
+                  </div>
+              </div>
+                        <!-- auto-assigns guid from page url -->
+            <!--script type="text/javascript">document.getElementById('echo_container').setAttribute('guid', document.location.href);</script -->
+            <!-- end comments -->
+            </div>
+            </div>
+            </div>
+            </div>
+        			</div> <!-- sections -->
+		</div> <!-- main container -->
+		<div id="et-nav-series-off-canvas">
+			<div id="et-nav-series-inner-off-canvas">
+	            	            	            
+	            	        </div>
+        </div>
+        <div id="et-sections-dropdown-list">
+            <ul class="et-dropdown sections-dropdown et-off-canvas">
+                <li><a href="http://web.archive.org/web/20161126064730/http://www.posttv.com/">Video</a></li>
+                <li><a href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/politics">Politics</a></li>
+                <li><a href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/opinions">Opinions</a></li>
+                <li><a href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/local">Local</a></li>
+                <li><a href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/sports">Sports</a></li>
+                <li><a href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/national">National</a></li>
+                <li><a href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/world">World</a></li>
+                <li><a href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/business">Business</a></li>
+                <li><a href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/business/technology">Tech</a></li>
+                <li><a href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/lifestyle">Lifestyle</a></li>
+                <li><a href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/entertainment">Entertainment</a></li>
+                <li><a href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/classifieds">Classifieds</a></li>
+                <li><a href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/jobs">Jobs</a></li>
+                <li><a href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/realestate">Real Estate</a></li>
+                <li><a href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/events">Events</a></li>
+			</ul>
+			<div class="copyright-details">
+				<p><a class="franklin-bold" href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/">washingtonpost.com</a></p>
+				<p style="font-size: 12px" class="franklin-thin smaller-size">&copy; 1996-2016 The Washington Post</p>
+				<br/>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/terms-of-service/2011/11/18/gIQAldiYiN_story.html">Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/privacy-policy/2011/11/18/gIQASIiaiN_story.html">Privacy Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/discussion-and-submission-guidelines/2011/11/21/gIQAuvIbiN_story.html">Submission and Discussion Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/rss-terms-of-service/2012/01/16/gIQAadFYAQ_story.html">RSS Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161126064730/http://www.washingtonpost.com/how-can-i-opt-out-of-online-advertising-cookies/2011/11/18/gIQABECbiN_story.html">Ad Choices</a></p>
+			</div>
+		</div>
+		       <script type="text/javascript">
+        // Omniture variables
+        var wp_page_name = 'local:article - 20161125 - why-would-i-leave-its-my-home';
+        var wp_track_scrolling = true;
+
+        // etc.
+        // chartbeat variables
+        _sf_async_config={
+          sections: wp_channel,
+          path:document.location.pathname, // defaults to document.location.pathname if you don't pass it.
+          title:document.title,
+          useCanonical:true // defaults to true if you don't pass it.
+        };
+        </script>
+
+        <script type="text/javascript" src="http://web.archive.org/web/20161126064730js_/http://www.washingtonpost.com/wp-srv/analytics/main.js"></script>
+        <script type="text/javascript">
+          //TWP.Analytics.init();
+          // FOR PREPRODUCTION
+          //TWP.Analytics.init( {suite:"preproduction",service:{omniture:true,omnitureTest:false,comscore:false,chartbeat:false}} );
+          TWP.Analytics.init({suite:"production"});
+        </script>
+
+        <!-- COMSCORE NOSCRIPT -->
+        <noscript><img src="http://web.archive.org/web/20161126064730im_/http://b.scorecardresearch.com/p?c1=2&amp;c2=3005617&amp;cv=2.0&amp;cj=1"/></noscript>
+        <!-- COMSCORE NOSCRIPT/Mobile -->
+        <!--<noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=3005617&c4=m.washingtonpost.com/nojs.html" /> </noscript>-->
+        
+        <noscript><img src="//web.archive.org/web/20161126064730im_/http://me.effectivemeasure.net/em_image" alt="" style="position:absolute; left:-5px;"/></noscript>
+        
+      <link rel="stylesheet" id="wapo-footnote-plugin-css" href="http://web.archive.org/web/20161126064730cs_/http://www.washingtonpost.com/sf/local/wp-content/plugins/wapo-footnote/parts/css/plugin.css?ver=1.0.0" type="text/css" media="screen, projection"/>
+<script type="text/javascript" src="http://web.archive.org/web/20161126064730js_/http://js.washingtonpost.com/1d/twp-comments.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161126064730js_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/js/lib/html5.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161126064730js_/http://www.washingtonpost.com/sf/local/wp-content/plugins/wapo-footnote/parts/js/plugin.js?ver=1.0.0"></script>
+  
+              <script type="text/javascript" src="http://web.archive.org/web/20161126064730js_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme.js?1"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161126064730js_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/js/build/enterprise-theme-nav.js?1"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20161126064730js_/http://js.washingtonpost.com/posttv/resources/js/posttv/vendor/pubsub.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161126064730js_/https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20161126064730js_/http://js.washingtonpost.com/posttv/resources/js/posttv/posttv-player.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161126064730js_/http://www.washingtonpost.com/sf/local/wp-content/themes/enterprise-theme-nav/js/build/embedded-content-video.js"></script>
+              <script src="http://web.archive.org/web/20161126064730js_/http://js.washingtonpost.com/wp-srv/ad/loaders/latest/js/min/loader.min.js" data-ad-site="wp" data-ad-page-type="responsive"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20161126064730js_/http://js.washingtonpost.com/wp-stat/enterprise-raw-code/sharebar/enterprise-sharebar.js"></script>              <script type="text/javascript">
+$(document).ready(function() {
+
+    //append social buttons to bylines
+    $('.bylines').parent().append($('.top-sharebar-wrapper').parent());
+
+    //store metadata
+    var ogTitleSelector = document.querySelector('meta[property="og:title"]');
+    var ogTitleContent = (encodeURIComponent(ogTitleSelector && ogTitleSelector.getAttribute("content"))).replace(/'/g, "%27");
+
+    var ogImageSelector = document.querySelector('meta[property="og:image"]');
+    var ogImageContent = ogImageSelector && ogImageSelector.getAttribute("content");
+
+    var ogURLSelector = document.querySelector('meta[property="og:url"]');
+    var ogURLContent = encodeURI(ogURLSelector && ogURLSelector.getAttribute("content"));
+
+    var ogDescriptionSelector = document.querySelector('meta[property="og:description"]');
+    var ogDescriptionContent = (encodeURIComponent(ogDescriptionSelector && ogDescriptionSelector.getAttribute("content"))).replace(/'/g, "%27");
+
+    //populate share button click events with metadata
+    var facebookString = "window.open('http://web.archive.org/web/20161126064730/https://www.facebook.com/sharer/sharer.php?u="+ogURLContent+"','share_facebook','width=658,height=354,scrollbars=no');return false;";
+    $('#facebook-raw-share')[0].setAttribute("onclick", facebookString);
+
+    var twitterString = "window.open('http://web.archive.org/web/20161126064730/https://twitter.com/share?url="+ogURLContent+"&amp;text="+ogTitleContent+"','share_twitter','width=550, height=350, scrollbars=no');return false;";
+    $('#twitter-raw-share')[0].setAttribute("onclick", twitterString);
+
+    var googlePlusString = "window.open('http://web.archive.org/web/20161126064730/https://plus.google.com/share?url="+ogURLContent+"','share_google-plus','width=832,height=472,scrollbars=no');return false;"; 
+    $('#google-plus-raw-share')[0].setAttribute("onclick", googlePlusString);
+
+    var emailString = "mailto:?subject="+ogTitleContent+" from the Washington Post&body="+ogURLContent+""; 
+    $('#email-raw-share')[0].setAttribute("href", emailString);
+
+    // var linkedInString = "window.open('http://web.archive.org/web/20161126064730/http://www.linkedin.com/shareArticle?mini=true&amp;url="+ogURLContent+"&amp;title=','share_linkedin','width=830,height=460,scrollbars=no');return false;"; 
+    // $('#linkedIn-raw-share')[0].setAttribute("onclick", linkedInString);
+
+    var pinterestString = "window.open('//web.archive.org/web/20161126064730/http://pinterest.com/pin/create/bookmarklet/?url="+ogURLContent+"&amp;media="+ogImageContent+"&amp;description=','share_pinterest','width=550,height=450,scrollbars=no');return false;"; 
+    $('#pinterest-raw-share')[0].setAttribute("onclick", pinterestString);
+
+    var tumblrString = "window.open('http://web.archive.org/web/20161126064730/http://www.tumblr.com/share/link?url="+ogURLContent+"&amp;name="+ogTitleContent+"&amp;description="+ogDescriptionContent+"','share_tumblr','width=550,height=450,scrollbars=no');return false;"; 
+    $('#tumblr-raw-share')[0].setAttribute("onclick", tumblrString);
+}); 
+</script>    
+<!-- This website is powered by Piklist. Learn more at http://piklist.com/ -->
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"707aabbc5c","applicationID":"4157428","transactionName":"MlABYUsACEJXARVaXgsaIlZNCAlfGQsPV1Qd","queueTime":0,"applicationTime":687,"ttGuid":"","agentToken":"","atts":"HhcCFwMaG0w=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

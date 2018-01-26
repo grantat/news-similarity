@@ -1,0 +1,2292 @@
+<!DOCTYPE html>
+    <!--[if IE 7]><html class="ie ie7" lang="en-US"><![endif]-->
+    <!--[if IE 8]><html class="ie ie8" lang="en-US"><![endif]-->
+    <!--[if !(IE 7) | !(IE 8)  ]><!--><html lang="en-US"><!--<![endif]-->
+    <head><script type="text/javascript" src="/static/js/analytics.js?v=1513849547.0" charset="utf-8"></script>
+
+<script type="text/javascript">archive_analytics.values.service='wb';archive_analytics.values.server_name='wwwb-app22.us.archive.org';archive_analytics.values.server_ms=389;</script><script type="text/javascript" src="/static/js/wbhack.js?v=1513849547.0" charset="utf-8"></script>
+
+<script type="text/javascript">
+__wbhack.init('http://web.archive.org/web');
+</script>
+<link rel="stylesheet" type="text/css" href="/static/css/banner-styles.css?v=1513849547.0" />
+<link rel="stylesheet" type="text/css" href="/static/css/iconochive.css?v=1513849547.0" />
+
+<!-- End Wayback Rewrite JS Include -->
+        <meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+        <title>ISIS has been a catastrophe for Sunnis in Iraq and Syria | The Washington Post</title>                
+                
+        <meta property="fb:app_id" content="41245586762"/>
+        <meta property="article:publisher" content="https://www.facebook.com/washingtonpost"/>
+        <meta name="twitter:site" value="@WashingtonPost"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="og:title" content="The Islamic State has been a catastrophe for Sunnis">
+        <meta property="og:image" content="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunnislede_stretch.jpg">
+        <meta property="og:url" content="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/sf/world/2016/11/23/isis-a-catastrophe-for-sunnis/">
+        <meta property="og:site_name" content="Washington Post">
+        <meta property="og:type" content="article">
+        <meta property="og:description" content="Many have suffered under ISIS, but the misery inflicted on Sunnis will resonate for generations.">
+
+        <meta name="description" content="ISIS has been a catastrophe for Sunnis in Iraq and Syria">
+        <meta name="keywords" content="Islamic State, ISIS, Iraq, Syria, Daesh, ISIL, Rabia, Tikrit, Diyala, Islamist terrorism, terrorism, difference between sunni and shiite muslim">
+        <meta name="news_keywords" content="Islamic State, ISIS, Iraq, Syria, Daesh, ISIL, Rabia, Tikrit, Diyala, Islamist terrorism, terrorism, difference between sunni and shiite muslim">
+
+        
+         <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-57-precomposed.png">
+
+                
+        		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/web.archive.org\/web\/20161127073116\/http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/web.archive.org\/web\/20161127073116\/http:\/\/www.washingtonpost.com\/sf\/world\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.7"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="rs-plugin-settings-css" href="http://web.archive.org/web/20161127073116cs_/http://www.washingtonpost.com/sf/world/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.1" type="text/css" media="all"/>
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<link rel="stylesheet" id="wp-bootstrap-min-css" href="http://web.archive.org/web/20161127073116cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-responsive-css" href="http://web.archive.org/web/20161127073116cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap-responsive.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-fonts-css" href="http://web.archive.org/web/20161127073116cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/fonts.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-inline-css" href="http://web.archive.org/web/20161127073116cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/inline.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-font-awesome-min-css" href="http://web.archive.org/web/20161127073116cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-v4.2-min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-enterprise-theme-style-css" href="http://web.archive.org/web/20161127073116cs_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/style.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-pretty-comments-css" href="http://web.archive.org/web/20161127073116cs_/http://css.wpdigital.net/wp-srv/graphics/css/pretty-comments.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="print-css" href="http://web.archive.org/web/20161127073116cs_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/css/print.css?ver=0.3.1.5" type="text/css" media="print"/>
+<!--[if IE]>
+<link rel='stylesheet' id='wp-general-ie-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/iefonts.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='wp-font-awesome-ie-min-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-ie7.min.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript" src="http://web.archive.org/web/20161127073116js_/http://www.washingtonpost.com/sf/world/wp-includes/js/jquery/jquery.js?ver=1.11.2"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161127073116js_/http://www.washingtonpost.com/sf/world/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161127073116js_/http://www.washingtonpost.com/sf/world/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161127073116js_/http://www.washingtonpost.com/sf/world/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161127073116js_/http://js.washingtonpost.com/1h/twp-scripts.js?ver=4.2.7"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161127073116js_/http://js.washingtonpost.com/1h/twp-internal.js?ver=4.2.7"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ET_OM = {"omniture":"world","wp_page_num":"1 of 1","wp_blogname":"","wp_author":"Liz Sly,Alice Martins,Virginia Singarayar","commercialNode":"world"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://web.archive.org/web/20161127073116js_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme-ad-scripts.js?ver=1418247459"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161127073116js_/http://js.washingtonpost.com/pb/resources/js/utils/control-mod.js?ver=4.2.7"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.washingtonpost.com/sf/world/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.washingtonpost.com/sf/world/wp-includes/wlwmanifest.xml"/> 
+<link rel="prev" title="El Salvador’s conflict with gangs is beginning to look like a war" href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/sf/world/2016/10/28/el-salvadors-conflict-with-gangs-is-beginning-to-look-like-a-war/"/>
+<meta name="generator" content="WordPress 4.2.7"/>
+<link rel="canonical" href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/sf/world/2016/11/23/isis-a-catastrophe-for-sunnis/"/>
+<link rel="shortlink" href="http://www.washingtonpost.com/sf/world/?p=2910"/>
+<meta name="generator" content="Piklist 0.9.9.7c"/>
+<link rel="https://github.com/WP-API/WP-API" href="http://www.washingtonpost.com/sf/world/wp-json/"/>
+        <script type="text/javascript">
+          var ET_ASSETS = {
+            'post_title': 'The Islamic State has been a catastrophe for Sunnis',
+            'post_url': 'http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/sf/world/2016/11/23/isis-a-catastrophe-for-sunnis/',
+          };
+        </script>
+      <meta name="generator" content="Powered by Slider Revolution 5.2.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."/>
+        
+        <script>
+          var $ = jQuery.noConflict();
+        </script>
+
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/css/ie-fix.css" />
+        <![endif]-->
+    </head>
+    <body class="single single-post postid-2910 single-format-standard iphone mobile"> 
+        <div id="et-nav" style="top:0px">
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-sections-dropdown">
+                    <div id="et-nav-sections-regular-dropdown-wrapper" class="hidden-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-full-click"> 
+                            <div class="pull-left">Sections</div>
+                            <div class="share-icon pull-left"><i class="fa fa-reorder"></i></div>
+                        </a>
+                    </div>
+                    <div id="et-nav-sections-reduced-dropdown-wrapper" class="visible-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-reduced-click">
+                            <span class="share-icon pull-left"><i class="fa fa-reorder"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-company-icon">
+                    <a class="branding" href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/">
+                        <img id="branding-at-top" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/wp_full_white.png"/>
+                        <img id="branding-during-scroll" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/wp_logo_white.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="pull-left border-left hidden-phone no-left-margin-padding" id="et-title-wrap">
+                <div id="et-nav-story-title" class="hide-title-indent">
+                    <a href="#"><p>The Islamic State has been a catastrophe for Sunnis</p></a>
+                </div>
+            </div>
+
+
+                        
+            <div class="pull-right hidden-phone" id="share-series">
+                
+                <div class="pull-left border-left relative">
+                    <div id="et-nav-share-dropdown">
+                        <a href="#" class="clearfix pull-right">
+                            <div class="pull-left">
+                                <p class="pull-left">Share</p>
+                                <p class="share-icon pull-left"><i class="fa fa-share"></i></p>
+                            </div>
+                        </a>
+                        <ul class="et-dropdown hidden no-series-nav">
+                          <li><a target="_blank" href="http://web.archive.org/web/20161127073116/https://facebook.com/dialog/feed?app_id=41245586762&amp;link=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Fworld%2F2016%2F11%2F23%2Fisis-a-catastrophe-for-sunnis%2F&amp;name=The+Islamic+State+has+been+a+catastrophe+for+Sunnis&amp;redirect_uri=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Fworld%2F2016%2F11%2F23%2Fisis-a-catastrophe-for-sunnis%2F"><i class="fa fa-facebook"></i><span class="social-name">Facebook</span></a></li>
+                          <li><a target="_blank" href="http://web.archive.org/web/20161127073116/https://twitter.com/intent/tweet?text=The+Islamic+State+has+been+a+catastrophe+for+Sunnis http%3A%2F%2Fwapo.st%2Fsunnis"><i class="fa fa-twitter"></i><span class="social-name">Twitter</span></a></li>
+                          <li><a href="http://web.archive.org/web/20161127073116/mailto:/?subject=The Islamic State has been a catastrophe for Sunnis from the Washington Post&amp;body=http%3A%2F%2Fwapo.st%2Fsunnis"><i class="fa fa-envelope"></i><span class="social-name">Email</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                            </div> 
+
+                    </div>
+
+    	<div id="main-container" style="padding-top: 50px">
+	<div class="sections">
+					<div class="home section" id="section-home">                <div class=" no-border graphic bg-none graphicPadTB30" id="raw">
+        <link href="//web.archive.org/web/20161127073116cs_/http://www.washingtonpost.com/wp-stat/enterprise-raw-code/image-overlay/image-overlay.css" rel="stylesheet" type="text/css">
+
+<style>
+.img--lead {
+    background-image: url('http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunnislede_stretch.jpg'); /* IMAGE URL */
+}
+.overlay-title {
+    font-family: 'PostoniTitling', Georgia; 
+}
+.overlay-blurb {
+    font-family: 'FranklinITCProLight', Helvetica, Arial;
+}
+.sf-top {
+    padding-top: 5vh;
+    top: auto;
+}
+
+
+/* These styles only apply to bigger screens because we have set style for tablets and smaller */
+/* This is where you set the font size for overlay-title and overlay-blurb as well as the width of your overlay */ 
+@media (min-width: 980px) {
+.overlay {
+    width: auto;
+    position: relative;
+}
+.overlay-title {
+    font-size: 5vw;
+    line-height: 5.5vw;
+    color: #000000;
+}
+.overlay-blurb {  
+    font-size: 2vw;
+    line-height: 2.5vw;
+    color: #000000;
+    padding-bottom: 15px;
+}
+}
+@media (min-width: 768px){
+.container.background {
+   margin-top: 20px;
+   border-top: 1px solid #CCC;
+}
+}
+
+/* Use this style if you want a different image for smalls screens. Delete if not changing the image URL. */
+@media (max-width: 767px) {
+    .img--lead {
+        background-image: url('http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunnislede_stretch.jpg'); 
+    }
+.overlay-blurb {
+    padding-bottom: 15px;
+}
+}
+</style>
+
+<div class="posrel">
+    <div class="overlay sf-top sf-horizontal-center">
+        <h2 class="overlay-title">ISIS: A catastrophe for Sunnis</h2>
+        <h1 class="overlay-blurb">Many have suffered under the Islamic State, but the misery inflicted on Sunnis will resonate for generations</h1>
+    </div>
+    <div class="img--lead"></div>
+    <div class="clear"></div>
+</div>
+
+        </div>
+                <div class="container background"><div class="row first">
+            <div class="span4 pull-right padB10 marB10">
+              <div class="bylines bTB1S padTB10 marB10">
+                                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <a href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/people/liz-sly"><span class="name">Liz Sly</span></a>                                                    <a href="http://web.archive.org/web/20161127073116/mailto:liz.sly@washpost.com"><i class="fa fa-envelope"></i></a>                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Photos by</span>
+                                                                                                <span class="name">Alice Martins</span>                                                                        </div>
+                      </div>
+              <div class="publish-date">Published on November 23, 2016</div>
+              
+              <!-- <div class=" utility-tools-wrapper">
+                <div class="utility-tools-primary margin-top">
+                  <div class="social-tools ">
+                    <div class="textresizer tool first mobile">
+                      <span class="hideText" tabindex="_tbidx_">Resize Text</span>
+                      <span class="fa fa-font"></span>
+                    </div>
+                    <a onclick="window.print();" tabindex="_tbidx_">
+                      <div class="print tool mobile">
+                        <span class="hideText">Print Article</span>
+                        <span class="fa fa-print"></span>
+                      </div>
+                    </a>
+                    <a href="#comments" tabindex="_tbidx_">
+                      <div class="comments tool last mobile">
+                        <span class="hideText">Comments</span>
+                        <span class="fa fa-comments"></span>
+                        <span id="echo_container" class="echo_container comment-vars echo-counter text" guid="http://www.washingtonpost.com/sf/world/2016/11/23/isis-a-catastrophe-for-sunnis/">0</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div> -->
+              
+            </div>
+            
+        <div class="span8 col">
+<p style="text-align: right"><em>TIKRIT, Iraq</em></p>
+<p class="firstgraf">The Islamic State is being crushed, its fighters are in retreat and the caliphate it sought to build in the image of a bygone glory is crumbling.</p>
+<p>The biggest losers, however, are not the militants, who will fulfill their dreams of death or slink into the desert to regroup, but the millions of ordinary Sunnis whose lives have been ravaged by their murderous rampage.</p>
+<p>No religious or ethnic group was left unscathed by the Islamic State’s sweep through Iraq and Syria. Shiites, Kurds, Christians and the tiny Yazidi minority have all been victims of a campaign of atrocities, and they now are fighting and dying in the battles to defeat the militants.</p>
+<p>But the vast majority of the territory overrun by the Islamic State was historically populated by Sunni Arabs, adherents of the branch of Islam that the group claims to champion and whose interests the militants profess to represent. The vast majority of the 4.2 million Iraqis who have been displaced from their homes by the Islamic State’s war are Sunnis. And as the offensives get underway to capture Mosul, Iraq’s biggest Sunni city, and Raqqa, the group’s self-proclaimed capital in Syria, more Sunni towns and villages are being demolished, and more Sunni livelihoods are being destroyed.</p>
+</div></div><div class="row">                <div class="span4 col pull-right right-content no-border graphic bg-none graphicPadTB30" id="raw">
+        <!-- Updated 12/7/15 by EY to fix a bug with single quotes --> 
+
+<link rel="stylesheet" href="//web.archive.org/web/20161127073116cs_/http://css.washingtonpost.com/wp-stat/enterprise-raw-code/sharebar/enterprise-sharebar.css?v3"/>
+
+<!-- To switch to grayscale share buttons, remove the 'color-top' class from top-sharebar-wrapper div -->
+
+<div class="top-sharebar-wrapper color-top large-8 large-centered columns cf" id="top-sharebar_123534312321">
+<div class="social-tools-wrapper">
+    <div class="social-tools-primary ">
+        <div class="social-tools ">
+            <!-- FB -->
+            <a id="facebook-raw-share" data-service="facebook" onclick="" tabindex="1">
+                <div class="facebook tool first mobile"><span class="hideText">Share on Facebook</span><span class="fa fa-facebook-square"></span></div>
+            </a>
+            <!-- Twitter -->
+            <a id="twitter-raw-share" data-service="twitter" onclick="" tabindex="2">
+                <div class="twitter tool mobile"><span class="hideText">Share on Twitter</span><span class="fa fa-twitter"></span></div>
+            </a>
+            <!-- Google Plus -->
+            <a id="google-plus-raw-share" data-service="google-plus" onclick="" tabindex="3">
+                <div class="google-plus tool mobile"><span class="hideText">Share on Google Plus</span><span class="fa fa-google-plus"></span></div>
+            </a>
+            <!-- Email -->
+            <a id="email-raw-share" data-service="email" href="" tabindex="4">
+                <div class="email tool mobile"><span class="hideText">Share via Email</span><span class="fa fa-envelope"></span></div>
+            </a>
+            <!-- More -->
+            <a onclick="return false;">
+                <div class="more last tool mobile"><span class="hideText" tabindex="5">More Options</span><span class="fa fa-plus"> </span></div>
+            </a>
+        </div>
+    </div>
+    <div class="social-tools-additional">
+        <div class="social-tools ">
+            <!-- LinkedIn -->
+<!--             <a id="linkedIn-raw-share" data-service="linkedin" onclick="" tabindex="6">
+                <div class="linkedin tool mobile first"><span class="hideText">Share on LinkedIn</span><span class="fa fa-linkedin"></span></div>
+            </a> -->
+            <!-- Pinterest -->
+            <a id="pinterest-raw-share" data-service="pinterest" onclick="" tabindex="7">
+                <div class="pinterest tool mobile first"><span class="hideText">Share on Pinterest</span><span class="fa fa-pinterest"></span></div>
+            </a>
+            <!-- Tumblr  -->
+            <a id="tumblr-raw-share" data-service="tumblr" onclick="" tabindex="8">
+                <div class="tumblr tool mobile last"><span class="hideText">Share on Tumblr</span><span class="fa fa-tumblr"></span></div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+</div>
+
+
+
+        </div>
+                <div class="span8 col">
+<p>Most Sunnis played no part in the militants’ rise. All are paying a heavy price for the sake of those who did, accelerating and deepening a reversal in the fortunes of the majority sect of Islam that had ruled the region for most of the past 1,400 years.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S-phone padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox" data-ad-type="bigbox" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p>“ISIS was a tsunami that swept away the Sunnis,” said Sheik Ghazi Mohammed Hamoud, a Sunni tribal leader in the northwestern Iraqi town of Rabia, which was briefly overrun by the Islamic State in 2014 and is now under Kurdish control. “We lost everything. Our homes, our businesses, our lives.”</p>
+<p>Across the border in Syria, where the war against the Islamic State is entangled with the complicated conflict between rebels and the government of President Bashar al-Assad, Sunnis are also bearing the brunt of the violence and dislocation. Sunni towns and neighborhoods are being leveled by Syrian and Russian airstrikes. The effort to crush the mostly Sunni rebellion relies heavily on Shiite fighters from Iran, Lebanon and Iraq. Sunnis comprise the vast majority of the 5 million refugees scattered around the region and in Europe, according to the United Nations and the governments of the countries that are hosting them.</p>
+<p>The dangers are clear, analysts and Iraqis say. Sunnis are at risk of becoming a dispossessed and resentful underclass in lands they once ruled, creating fertile conditions for a repeat of the cycle of marginalization and radicalization that gave rise to the Islamic State in the first place.</p>
+</div></div><div class="row">                <div class="span12 bTB1S marT10 no-border graphic bg-none graphicPadTB30" id="raw">
+        <div id="g-EthnoIraqmapmain-box" class="ai2html">
+	<!-- Generated by ai2html v0.55 - 2016-11-26 - 09:08 -->
+	<!-- ai file: EthnoIraqmapmain -->
+
+	<style type="text/css" media="screen,print">
+		.g-artboard {
+			margin:0 auto;
+		}
+	</style>
+
+
+	<style type="text/css" media="screen,print">
+		/* Custom CSS block 1 */
+		
+		.g-aiPstyle5, .g-aiPstyle0, .g-aiPstyle6, .g-aiPstyle3, .g-aiPstyle9, .g-aiPstyle7, .g-aiPstyle8{
+		    text-shadow: 0px 0px 2px #fff;
+		}
+		
+		#g-EthnoIraqmapmain-980 {
+			display:block;
+			margin:0 auto;
+		}
+		
+		#g-EthnoIraqmapmain-600,
+		#g-EthnoIraqmapmain-280 {
+			display:none;
+			margin:0 auto;
+		}
+		
+		@media (max-width: 1020px) {
+			#g-EthnoIraqmapmain-980 {
+				display:none;
+			}
+			#g-EthnoIraqmapmain-600 {
+				display:block;
+			}
+		 }
+		
+		@media (max-width: 650px) {
+			#g-EthnoIraqmapmain-600 {
+				display:none;
+			}
+			#g-EthnoIraqmapmain-280 {
+				display:block;
+			}
+		 }
+	</style>
+
+	<!-- Artboard: 280 -->
+	<div id="g-EthnoIraqmapmain-280" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-EthnoIraqmapmain-280{
+				position:relative;
+				overflow:hidden;
+				width:280px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-EthnoIraqmapmain-280 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-EthnoIraqmapmain-280 .g-aiPstyle0 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:24px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-280 .g-aiPstyle1 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:10px;
+				padding-bottom:10px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-280 .g-aiPstyle2 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:8px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-280 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:8px;
+				letter-spacing:-0.00416666666667em;
+				color:#58595b;
+			}
+			#g-EthnoIraqmapmain-280 .g-aiPstyle4 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:8px;
+				letter-spacing:-0.00416666666667em;
+				color:#66686a;
+			}
+			#g-EthnoIraqmapmain-280 .g-aiPstyle5 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:12px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-280 .g-aiPstyle6 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:24px;
+				text-align:center;
+				letter-spacing:0.12916666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-280 .g-aiPstyle7 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:12px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-280 .g-aiPstyle8 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:12px;
+				font-style:italic;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-280 .g-aiPstyle9 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:8px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-280 .g-aiPstyle10 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:14px;
+				padding-bottom:10px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-280 .g-aiPstyle11 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:11px;
+				line-height:19px;
+				letter-spacing:-0.00416666666667em;
+				color:#58595b;
+			}
+			#g-EthnoIraqmapmain-280 .g-aiPstyle12 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:11px;
+				line-height:12px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-280 .g-aiPstyle13 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:12px;
+				line-height:12px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+		</style>
+		<div id="g-EthnoIraqmapmain-280-graphic">
+			<img id="g-ai0-0" class="g-aiImg" src="http://web.archive.org/web/20161127073116im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/ISISsunnis/EthnoIraqmapmain-280.jpg?c=666"/>
+			<div id="g-ai0-1" class="g-Graphic_type g-aiAbs" style="top:-0.2277%;left:1.1396%;">
+				<p class="g-aiPstyle0">Ethno-religious groups in Iraq</p>
+			</div>
+			<div id="g-ai0-2" class="g-Graphic_type g-aiAbs" style="top:7.5154%;left:7.4719%;width:28.9547%;">
+				<p class="g-aiPstyle1">Sunni Arab</p>
+				<p class="g-aiPstyle1">Shiite Arab</p>
+			</div>
+			<div id="g-ai0-3" class="g-Graphic_type g-aiAbs" style="top:7.5154%;left:39.4767%;width:36.4954%;">
+				<p class="g-aiPstyle1">Kurdish groups</p>
+				<p class="g-aiPstyle1">Turkoman</p>
+				
+			</div>
+			<div id="g-ai0-4" class="g-Graphic_type g-aiAbs" style="top:7.5154%;left:79.8363%;width:20.1637%;">
+				<p class="g-aiPstyle1">Christian</p>
+				<p class="g-aiPstyle1">Mixed</p>
+				
+			</div>
+			<div id="g-ai0-5" class="g-MapTypeGeo g-aiAbs" style="top:17.9914%;left:21.9332%;width:29.3119%;margin-left:-14.6559%;">
+				<p class="g-aiPstyle2">Rabia</p>
+			</div>
+			<div id="g-ai0-6" class="g-MapTypeGeo g-aiAbs" style="top:25.5068%;left:6.0784%;">
+				<p class="g-aiPstyle3">SYRIA</p>
+			</div>
+			<div id="g-ai0-7" class="g-MapTypeGeo g-aiAbs" style="top:25.5068%;left:80.0773%;">
+				<p class="g-aiPstyle3">IRAN</p>
+			</div>
+			<div id="g-ai0-8" class="g-MapTypeGeo g-aiAbs" style="top:31.8835%;left:57.4473%;">
+				<p class="g-aiPstyle4">Irbil</p>
+			</div>
+			<div id="g-ai0-9" class="g-MapTypeGeo g-aiAbs" style="top:32.3389%;left:34.9622%;">
+				<p class="g-aiPstyle4">Mosul</p>
+			</div>
+			<div id="g-ai0-10" class="g-MapTypeGeo g-aiAbs" style="top:38.9434%;left:65.1214%;">
+				<p class="g-aiPstyle5">Salman</p>
+				<p class="g-aiPstyle5">Beg</p>
+			</div>
+			<div id="g-ai0-11" class="g-MapTypeGeo g-aiAbs" style="top:41.2208%;left:29.6640%;width:31.2842%;margin-left:-15.6421%;">
+				<p class="g-aiPstyle6">IRAQ</p>
+			</div>
+			<div id="g-ai0-12" class="g-MapTypeGeo g-aiAbs" style="top:50.3303%;right:50.5948%;">
+				<p class="g-aiPstyle7">Tikrit</p>
+			</div>
+			<div id="g-ai0-13" class="g-MapTypeGeo g-aiAbs" style="top:63.0837%;left:64.1134%;">
+				<p class="g-aiPstyle8">DIYALA</p>
+			</div>
+			<div id="g-ai0-14" class="g-MapTypeGeo g-aiAbs" style="top:64.2224%;left:34.5164%;">
+				<p class="g-aiPstyle4">Ramadi</p>
+			</div>
+			<div id="g-ai0-15" class="g-MapTypeGeo g-aiAbs" style="top:69.6881%;left:53.1430%;">
+				<p class="g-aiPstyle9">Baghdad</p>
+			</div>
+			<div id="g-ai0-16" class="g-Graphic_type g-aiAbs" style="top:71.7378%;left:3.0554%;width:43.2352%;">
+				<p class="g-aiPstyle10">Extent of Islamic State control or influence since 2014.</p>
+			</div>
+			<div id="g-ai0-17" class="g-MapTypeGeo g-aiAbs" style="top:78.7977%;left:66.4901%;">
+				<p class="g-aiPstyle11">100 MILES</p>
+			</div>
+			<div id="g-ai0-18" class="g-Graphic_type g-aiAbs" style="top:85.6299%;left:2.5005%;">
+				<p class="g-aiPstyle12">Source: Michael Izady at</p>
+				<p class="g-aiPstyle12">http://gulf2000.columbia.edu/maps.shtml</p>
+			</div>
+			<div id="g-ai0-19" class="g-Graphic_type g-aiAbs" style="top:94.9672%;left:2.5989%;">
+				<p class="g-aiPstyle13">LARIS KARKLIS/THE WASHINGTON POST</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Artboard: 600 -->
+	<div id="g-EthnoIraqmapmain-600" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-EthnoIraqmapmain-600{
+				position:relative;
+				overflow:hidden;
+				width:600px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-EthnoIraqmapmain-600 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-EthnoIraqmapmain-600 .g-aiPstyle0 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:24px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-600 .g-aiPstyle1 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				padding-bottom:11px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-600 .g-aiPstyle2 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:24px;
+				text-align:center;
+				letter-spacing:0.12916666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-600 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:19px;
+				letter-spacing:-0.00416666666667em;
+				color:#66686a;
+			}
+			#g-EthnoIraqmapmain-600 .g-aiPstyle4 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:15px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#ffffff;
+			}
+			#g-EthnoIraqmapmain-600 .g-aiPstyle5 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:19px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-600 .g-aiPstyle6 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:19px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-600 .g-aiPstyle7 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:31px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-600 .g-aiPstyle8 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:13px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-600 .g-aiPstyle9 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:19px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-600 .g-aiPstyle10 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:11px;
+				line-height:19px;
+				letter-spacing:-0.00416666666667em;
+				color:#58595b;
+			}
+			#g-EthnoIraqmapmain-600 .g-aiPstyle11 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:19px;
+				font-style:italic;
+				letter-spacing:0.1625em;
+				color:#58595b;
+			}
+			#g-EthnoIraqmapmain-600 .g-aiPstyle12 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				padding-bottom:10px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-600 .g-aiPstyle13 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:11px;
+				line-height:12px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#ffffff;
+			}
+			#g-EthnoIraqmapmain-600 .g-aiPstyle14 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:12px;
+				line-height:16px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-600 .g-aiPstyle15 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:12px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+		</style>
+		<div id="g-EthnoIraqmapmain-600-graphic">
+			<img id="g-ai1-0" class="g-aiImg" src="http://web.archive.org/web/20161127073116im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/ISISsunnis/EthnoIraqmapmain-600.jpg?c=666"/>
+			<div id="g-ai1-1" class="g-Graphic_type g-aiAbs" style="top:1.3154%;left:6.4547%;">
+				<p class="g-aiPstyle0">Ethno-religious groups in Iraq</p>
+			</div>
+			<div id="g-ai1-2" class="g-Graphic_type g-aiAbs" style="top:4.9795%;left:11.6774%;width:14.2643%;">
+				<p class="g-aiPstyle1">Sunni Arab</p>
+				<p class="g-aiPstyle1">Shiite Arab</p>
+			</div>
+			<div id="g-ai1-3" class="g-Graphic_type g-aiAbs" style="top:4.9795%;left:34.7132%;width:17.8617%;">
+				<p class="g-aiPstyle1">Kurdish groups</p>
+				<p class="g-aiPstyle1">Turkoman</p>
+				
+			</div>
+			<div id="g-ai1-4" class="g-Graphic_type g-aiAbs" style="top:4.9795%;left:60.8027%;width:19.7370%;">
+				<p class="g-aiPstyle1">Christian</p>
+				<p class="g-aiPstyle1">Mixed</p>
+				
+			</div>
+			<div id="g-ai1-5" class="g-MapTypeGeo g-aiAbs" style="top:11.2744%;left:45.0157%;width:23.8133%;margin-left:-11.9067%;">
+				<p class="g-aiPstyle2">TURKEY</p>
+			</div>
+			<div id="g-ai1-6" class="g-MapTypeGeo g-aiAbs" style="top:19.1665%;left:36.6261%;">
+				<p class="g-aiPstyle3">Dahuk</p>
+			</div>
+			<div id="g-ai1-7" class="g-MapTypeGeo g-aiAbs" style="top:20.2940%;left:9.3327%;width:17.8229%;margin-left:-8.9115%;">
+				<p class="g-aiPstyle2">SYRIA</p>
+			</div>
+			<div id="g-ai1-8" class="g-Graphic_type g-aiAbs" style="top:20.9516%;left:22.9393%;width:2.5306%;margin-left:-1.2653%;">
+				<p class="g-aiPstyle4">1</p>
+			</div>
+			<div id="g-ai1-9" class="g-MapTypeGeo g-aiAbs" style="top:22.6428%;left:21.0895%;">
+				<p class="g-aiPstyle5">Rabia</p>
+			</div>
+			<div id="g-ai1-10" class="g-MapTypeGeo g-aiAbs" style="top:22.7368%;left:87.2131%;width:14.7152%;margin-left:-7.3576%;">
+				<p class="g-aiPstyle2">IRAN</p>
+			</div>
+			<div id="g-ai1-11" class="g-MapTypeGeo g-aiAbs" style="top:24.9917%;left:24.8596%;">
+				<p class="g-aiPstyle3">Tall Afar</p>
+			</div>
+			<div id="g-ai1-12" class="g-MapTypeGeo g-aiAbs" style="top:25.4614%;left:38.1683%;">
+				<p class="g-aiPstyle6">Mosul</p>
+			</div>
+			<div id="g-ai1-13" class="g-MapTypeGeo g-aiAbs" style="top:27.4344%;left:15.1450%;">
+				<p class="g-aiPstyle3">Sinjar</p>
+			</div>
+			<div id="g-ai1-14" class="g-MapTypeGeo g-aiAbs" style="top:27.9042%;left:56.4483%;">
+				<p class="g-aiPstyle3">Irbil</p>
+			</div>
+			<div id="g-ai1-15" class="g-MapTypeGeo g-aiAbs" style="top:34.0112%;left:25.9289%;width:20.6219%;margin-left:-10.3110%;">
+				<p class="g-aiPstyle7">Extent of</p>
+				<p class="g-aiPstyle7">Islamic State</p>
+				<p class="g-aiPstyle7">control</p>
+				<p class="g-aiPstyle7">or influence</p>
+				<p class="g-aiPstyle7">since 2014.</p>
+			</div>
+			<div id="g-ai1-16" class="g-MapTypeGeo g-aiAbs" style="top:36.8298%;left:63.1944%;">
+				<p class="g-aiPstyle3">Kirkuk</p>
+			</div>
+			<div id="g-ai1-17" class="g-MapTypeGeo g-aiAbs" style="top:36.9238%;left:46.8534%;width:14.5993%;margin-left:-7.2996%;">
+				<p class="g-aiPstyle2">IRAQ</p>
+			</div>
+			<div id="g-ai1-18" class="g-MapTypeGeo g-aiAbs" style="top:39.6484%;left:49.0077%;">
+				<p class="g-aiPstyle3">Hawija</p>
+			</div>
+			<div id="g-ai1-19" class="g-MapTypeGeo g-aiAbs" style="top:43.5945%;right:35.0146%;">
+				<p class="g-aiPstyle8">Salman</p>
+				<p class="g-aiPstyle8">Beg</p>
+			</div>
+			<div id="g-ai1-20" class="g-Graphic_type g-aiAbs" style="top:45.3796%;left:67.7067%;width:2.7896%;margin-left:-1.3948%;">
+				<p class="g-aiPstyle4">2</p>
+			</div>
+			<div id="g-ai1-21" class="g-MapTypeGeo g-aiAbs" style="top:47.8224%;right:52.0982%;">
+				<p class="g-aiPstyle9">Tikrit</p>
+			</div>
+			<div id="g-ai1-22" class="g-Graphic_type g-aiAbs" style="top:48.0103%;left:50.1511%;width:2.8677%;margin-left:-1.4338%;">
+				<p class="g-aiPstyle4">3</p>
+			</div>
+			<div id="g-ai1-23" class="g-MapTypeGeo g-aiAbs" style="top:51.2987%;left:68.7696%;">
+				<p class="g-aiPstyle3">Jalawla</p>
+			</div>
+			<div id="g-ai1-24" class="g-MapTypeGeo g-aiAbs" style="top:52.8959%;left:43.9485%;">
+				<p class="g-aiPstyle3">Samarra</p>
+			</div>
+			<div id="g-ai1-25" class="g-MapTypeGeo g-aiAbs" style="top:58.0633%;left:66.8409%;">
+				<p class="g-aiPstyle3">Baqubah</p>
+			</div>
+			<div id="g-ai1-26" class="g-MapTypeGeo g-aiAbs" style="top:59.3787%;left:6.0085%;">
+				<p class="g-aiPstyle10">50 MILES</p>
+			</div>
+			<div id="g-ai1-27" class="g-MapTypeGeo g-aiAbs" style="top:60.7880%;left:71.5117%;">
+				<p class="g-aiPstyle11">DIYALA</p>
+			</div>
+			<div id="g-ai1-28" class="g-MapTypeGeo g-aiAbs" style="top:61.3517%;left:34.5203%;">
+				<p class="g-aiPstyle3">Ramadi</p>
+			</div>
+			<div id="g-ai1-29" class="g-MapTypeGeo g-aiAbs" style="top:62.0094%;left:58.3521%;">
+				<p class="g-aiPstyle6">Baghdad</p>
+			</div>
+			<div id="g-ai1-30" class="g-MapTypeGeo g-aiAbs" style="top:62.2912%;left:44.5766%;">
+				<p class="g-aiPstyle3">Fallujah</p>
+			</div>
+			<div id="g-ai1-31" class="g-Graphic_type g-aiAbs" style="top:63.1368%;left:77.0400%;width:2.8089%;margin-left:-1.4045%;">
+				<p class="g-aiPstyle4">4</p>
+			</div>
+			<div id="g-ai1-32" class="g-MapTypeGeo g-aiAbs" style="top:71.1229%;left:47.5065%;">
+				<p class="g-aiPstyle3">Karbala</p>
+			</div>
+			<div id="g-ai1-33" class="g-Graphic_type g-aiAbs" style="top:75.2568%;left:7.0976%;width:88.3744%;">
+				<p class="g-aiPstyle12">Kurdish authorities have ruled this Sunni town since recapturing it from the Islamic State in October 2014 and have placed restrictions on Sunni travel in the area.</p>
+				<p class="g-aiPstyle12">Shiite militias that pushed out the Islamic State are suspicious of the town&rsquo;s original Sunni residents and have denied them access to their homes.</p>
+				<p class="g-aiPstyle12">Most residents have returned to this Sunni town in the 18 months since the Islamic State was ejected. But much of the city is in ruins and services have not been fully restored.</p>
+				<p class="g-aiPstyle12">Old Sunni-Shiite tensions have flared since Shiite militias reclaimed control of this predominantly Sunni province. Among the issues: revenge killings and displacement.</p>
+			</div>
+			<div id="g-ai1-34" class="g-Graphic_type g-aiAbs" style="top:75.5387%;left:4.0730%;width:2.0244%;margin-left:-1.0122%;">
+				<p class="g-aiPstyle13">1</p>
+			</div>
+			<div id="g-ai1-35" class="g-Graphic_type g-aiAbs" style="top:80.9880%;left:4.0730%;width:2.2316%;margin-left:-1.1158%;">
+				<p class="g-aiPstyle13">2</p>
+			</div>
+			<div id="g-ai1-36" class="g-Graphic_type g-aiAbs" style="top:84.9340%;left:4.0730%;width:2.2941%;margin-left:-1.1471%;">
+				<p class="g-aiPstyle13">3</p>
+			</div>
+			<div id="g-ai1-37" class="g-Graphic_type g-aiAbs" style="top:90.6652%;left:4.0730%;width:2.2472%;margin-left:-1.1236%;">
+				<p class="g-aiPstyle13">4</p>
+			</div>
+			<div id="g-ai1-38" class="g-Graphic_type g-aiAbs" style="top:96.6782%;left:2.4923%;width:56.0294%;">
+				<p class="g-aiPstyle14">Source: Michael Izady at</p>
+				<p class="g-aiPstyle14">http://gulf2000.columbia.edu/maps.shtml</p>
+			</div>
+			<div id="g-ai1-39" class="g-Graphic_type g-aiAbs" style="top:98.2754%;right:0.8236%;">
+				<p class="g-aiPstyle15">LARIS KARKLIS/THE WASHINGTON POST</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Artboard: 980 -->
+	<div id="g-EthnoIraqmapmain-980" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-EthnoIraqmapmain-980{
+				position:relative;
+				overflow:hidden;
+				width:980px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-EthnoIraqmapmain-980 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-EthnoIraqmapmain-980 .g-aiPstyle0 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-980 .g-aiPstyle1 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				padding-bottom:11px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-980 .g-aiPstyle2 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:17px;
+				line-height:24px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-980 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:24px;
+				text-align:center;
+				letter-spacing:0.12916666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-980 .g-aiPstyle4 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:11px;
+				line-height:19px;
+				letter-spacing:-0.00416666666667em;
+				color:#58595b;
+			}
+			#g-EthnoIraqmapmain-980 .g-aiPstyle5 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:24px;
+				letter-spacing:-0.00416666666667em;
+				color:#6d6e70;
+			}
+			#g-EthnoIraqmapmain-980 .g-aiPstyle6 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:18px;
+				line-height:24px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-980 .g-aiPstyle7 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:24px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-980 .g-aiPstyle8 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:20px;
+				line-height:24px;
+				text-align:center;
+				letter-spacing:0.12916666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-980 .g-aiPstyle9 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:18px;
+				line-height:16px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-980 .g-aiPstyle10 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:24px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#6d6e70;
+			}
+			#g-EthnoIraqmapmain-980 .g-aiPstyle11 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:18px;
+				line-height:24px;
+				font-style:italic;
+				text-align:right;
+				letter-spacing:0.1625em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-980 .g-aiPstyle12 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:16px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-EthnoIraqmapmain-980 .g-aiPstyle13 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:12px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+		</style>
+		<div id="g-EthnoIraqmapmain-980-graphic">
+			<img id="g-ai2-0" class="g-aiImg" src="http://web.archive.org/web/20161127073116im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/ISISsunnis/EthnoIraqmapmain-980.jpg?c=666"/>
+			<div id="g-ai2-1" class="g-Graphic_type g-aiAbs" style="top:7.9393%;left:68.2627%;width:16.7433%;">
+				<p class="g-aiPstyle0">Extent of Islamic State control or influence since 2014</p>
+			</div>
+			<div id="g-ai2-2" class="g-Graphic_type g-aiAbs" style="top:8.0229%;left:21.4768%;width:8.7333%;">
+				<p class="g-aiPstyle1">Sunni Arab</p>
+				<p class="g-aiPstyle1">Shiite Arab</p>
+			</div>
+			<div id="g-ai2-3" class="g-Graphic_type g-aiAbs" style="top:8.0229%;left:35.5804%;width:10.9357%;">
+				<p class="g-aiPstyle1">Kurdish groups</p>
+				<p class="g-aiPstyle1">Turkoman</p>
+				
+			</div>
+			<div id="g-ai2-4" class="g-Graphic_type g-aiAbs" style="top:8.0229%;left:51.5535%;width:8.4897%;">
+				<p class="g-aiPstyle1">Christian</p>
+				<p class="g-aiPstyle1">Mixed</p>
+				
+			</div>
+			<div id="g-ai2-5" class="g-Graphic_type g-aiAbs" style="top:7.6050%;left:3.6900%;">
+				<p class="g-aiPstyle2">Ethno-religious</p>
+				<p class="g-aiPstyle2">groups in Iraq</p>
+			</div>
+			<div id="g-ai2-6" class="g-MapTypeGeo g-aiAbs" style="top:14.3743%;left:46.1866%;width:14.5797%;margin-left:-7.2898%;">
+				<p class="g-aiPstyle3">TURKEY</p>
+			</div>
+			<div id="g-ai2-7" class="g-MapTypeGeo g-aiAbs" style="top:14.3743%;left:4.1555%;">
+				<p class="g-aiPstyle4">50 MILES</p>
+			</div>
+			<div id="g-ai2-8" class="g-MapTypeGeo g-aiAbs" style="top:20.6421%;left:77.7320%;width:19.2880%;">
+				<p class="g-aiPstyle0">Shiite militias that pushed out the Islamic State are suspicious of the town&rsquo;s original Sunni residents and have denied them access to their homes.</p>
+				
+			</div>
+			<div id="g-ai2-9" class="g-MapTypeGeo g-aiAbs" style="top:22.3136%;left:37.3587%;">
+				<p class="g-aiPstyle5">Dahuk</p>
+			</div>
+			<div id="g-ai2-10" class="g-MapTypeGeo g-aiAbs" style="top:23.2329%;right:74.5149%;">
+				<p class="g-aiPstyle6">Rabia</p>
+			</div>
+			<div id="g-ai2-11" class="g-MapTypeGeo g-aiAbs" style="top:28.8321%;left:28.3537%;">
+				<p class="g-aiPstyle5">Tall Afar</p>
+			</div>
+			<div id="g-ai2-12" class="g-MapTypeGeo g-aiAbs" style="top:30.7543%;left:36.3779%;">
+				<p class="g-aiPstyle7">Mosul</p>
+			</div>
+			<div id="g-ai2-13" class="g-MapTypeGeo g-aiAbs" style="top:31.4228%;left:20.9190%;">
+				<p class="g-aiPstyle5">Sinjar</p>
+			</div>
+			<div id="g-ai2-14" class="g-MapTypeGeo g-aiAbs" style="top:31.5900%;left:52.2646%;">
+				<p class="g-aiPstyle5">Irbil</p>
+			</div>
+			<div id="g-ai2-15" class="g-MapTypeGeo g-aiAbs" style="top:37.3564%;left:9.2940%;width:10.9120%;margin-left:-5.4560%;">
+				<p class="g-aiPstyle3">SYRIA</p>
+			</div>
+			<div id="g-ai2-16" class="g-MapTypeGeo g-aiAbs" style="top:41.6186%;left:21.6002%;width:16.6235%;">
+				<p class="g-aiPstyle0">Kurdish authorities have ruled this Sunni town since recapturing it from the Islamic State in October 2014 and have placed restrictions on Sunni travel in the area.</p>
+			</div>
+			<div id="g-ai2-17" class="g-MapTypeGeo g-aiAbs" style="top:42.2036%;left:44.9750%;width:12.0444%;margin-left:-6.0222%;">
+				<p class="g-aiPstyle8">IRAQ</p>
+			</div>
+			<div id="g-ai2-18" class="g-MapTypeGeo g-aiAbs" style="top:42.1200%;left:88.4997%;width:9.0093%;margin-left:-4.5046%;">
+				<p class="g-aiPstyle3">IRAN</p>
+			</div>
+			<div id="g-ai2-19" class="g-MapTypeGeo g-aiAbs" style="top:43.1228%;left:57.9478%;">
+				<p class="g-aiPstyle5">Kirkuk</p>
+			</div>
+			<div id="g-ai2-20" class="g-MapTypeGeo g-aiAbs" style="top:45.0450%;left:46.8343%;">
+				<p class="g-aiPstyle5">Hawija</p>
+			</div>
+			<div id="g-ai2-21" class="g-MapTypeGeo g-aiAbs" style="top:50.2264%;right:40.0121%;">
+				<p class="g-aiPstyle9">Salman</p>
+				<p class="g-aiPstyle9">Beg</p>
+			</div>
+			<div id="g-ai2-22" class="g-MapTypeGeo g-aiAbs" style="top:53.9036%;right:53.6731%;">
+				<p class="g-aiPstyle6">Tikrit</p>
+			</div>
+			<div id="g-ai2-23" class="g-MapTypeGeo g-aiAbs" style="top:54.5721%;left:77.7320%;width:17.9997%;">
+				<p class="g-aiPstyle0">Old Sunni-Shiite tensions have flared since Shiite militias reclaimed control of this predominantly Sunni province. Among the issues: revenge killings and displacement.</p>
+				
+			</div>
+			<div id="g-ai2-24" class="g-MapTypeGeo g-aiAbs" style="top:57.9986%;right:33.0821%;">
+				<p class="g-aiPstyle10">Jalawla</p>
+			</div>
+			<div id="g-ai2-25" class="g-MapTypeGeo g-aiAbs" style="top:60.0043%;left:50.3697%;">
+				<p class="g-aiPstyle5">Samarra</p>
+			</div>
+			<div id="g-ai2-26" class="g-MapTypeGeo g-aiAbs" style="top:65.6036%;left:60.4822%;">
+				<p class="g-aiPstyle5">Baqubah</p>
+			</div>
+			<div id="g-ai2-27" class="g-MapTypeGeo g-aiAbs" style="top:67.0243%;left:3.6900%;width:19.7464%;">
+				<p class="g-aiPstyle0">Most residents have returned to this Sunni town in the 18 months since the Islamic State was ejected. But much of the city is in ruins and services have not been fully restored.</p>
+			</div>
+			<div id="g-ai2-28" class="g-MapTypeGeo g-aiAbs" style="top:69.0300%;right:27.8237%;">
+				<p class="g-aiPstyle11">DIYALA</p>
+			</div>
+			<div id="g-ai2-29" class="g-MapTypeGeo g-aiAbs" style="top:69.1136%;right:58.8053%;">
+				<p class="g-aiPstyle10">Ramadi</p>
+			</div>
+			<div id="g-ai2-30" class="g-MapTypeGeo g-aiAbs" style="top:69.9493%;left:53.9856%;">
+				<p class="g-aiPstyle7">Baghdad</p>
+			</div>
+			<div id="g-ai2-31" class="g-MapTypeGeo g-aiAbs" style="top:70.2000%;right:51.2360%;">
+				<p class="g-aiPstyle10">Fallujah</p>
+			</div>
+			<div id="g-ai2-32" class="g-MapTypeGeo g-aiAbs" style="top:79.2257%;left:3.6900%;width:28.5609%;">
+				<p class="g-aiPstyle12">Source: Michael Izady at</p>
+				<p class="g-aiPstyle12">http://gulf2000.columbia.edu/maps.shtml</p>
+			</div>
+			<div id="g-ai2-33" class="g-MapTypeGeo g-aiAbs" style="top:81.3150%;left:52.5648%;">
+				<p class="g-aiPstyle5">Karbala</p>
+			</div>
+			<div id="g-ai2-34" class="g-Graphic_type g-aiAbs" style="top:84.0728%;left:3.7350%;">
+				<p class="g-aiPstyle13">LARIS KARKLIS/THE WASHINGTON POST</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- End ai2html - 2016-11-26 - 09:08 -->
+</div>
+        </div>
+                <div class="span8 marT30 col">
+<p>“It’s not just taking territory; you have to govern it properly, otherwise we’re just going to have a long-term Islamic State insurgency,” said Robert Ford, a former U.S. ambassador to Syria who is now with the Washington-based Middle East Institute. “If the new rulers don’t have local support, the Islamic State will always be able to recruit people, especially if the water isn’t turned on, the schools aren’t open and the electricity is off.”</p>
+<p>Aid workers and diplomats say that is a worst-case scenario that need not come to pass if the war ends with reconstruction, rehabilitation and reconciliation. In Iraq, where the biggest gains against the militants have been made, the prospect that they soon may be defeated holds the promise of a moment of hope and opportunity, for Sunnis as much as for the Shiites and Kurds leading the fight — a chance to reset relations and find a new accommodation with neighbors.</p>
+<p>The nature of the accommodation is in question, however. The obstacles are immense, resources are scarce, and the prospects for real reconciliation still seem remote.</p>
+<p>A journey through many of the towns and villages in Iraq that have been liberated from Islamic State control, most of them well over a year ago, reveals the enormous scale of the challenge. From the Syrian border in the west to the Iranian border in the east, there are wrecked villages, half-empty towns and people whose lives have been torn apart, perhaps irrevocably.</p>
+</div></div><div class="row">                                        <div class="visible-phone span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunnies_4chapter1.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Many predominantly Sunni towns and villages reclaimed from the Islamic State are now governed by the groups that liberated them. In Rabia, a member of the Shammar tribe stands guard near the Syrian border as smoke billows in the background.                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col photo-small">
+</div></div><div class="row">        <div class=" visible-tablet visible-desktop marT10">
+          <div class="span12    bTB1S padTB30">
+              <div class="row">
+                  
+            <div class="span12 package-photo package-photo-no-top-margin">
+                <div class="spinner">
+                    <img class="lazy-image image" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunnies_4chapter1.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </div>
+        
+            <div class="span6 package-photo  package-photo-top-margin">
+                <div class="spinner">
+                    <img class="lazy-image image" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunnies_3chapter1.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </div>
+        
+            <div class="span6 package-photo package-photo-small package-photo-top-margin marT12small">
+                <div class="spinner">
+                    <img class="lazy-image image" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunnies_6chapter1.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </div>
+                      </div>
+          </div>
+                        <div class="span4 col pull-right">
+              <div class="marT30 marT10small light-grey size-fourteen franklin-light">
+                  Many predominantly Sunni towns and villages reclaimed from the Islamic State are now governed by the groups that liberated them. In Rabia, near the Syrian border, a member of the Shammar tribe occupies a lookout post, top, as smoke billows in the background. Kurdish peshmerga soldiers control a checkpoint in Rabia. In the nearby town of Bashir, a member of a Shiite militia climbs into a pickup truck weeks after the town was recaptured from the militants.        
+              </div>
+              </div>
+                  </div>
+        <div class="span8 marT30 col">
+<h3>New rulers, new challenges</h3>
+<p>Although the territory seized by the Islamic State is mostly Sunni, the fighters wresting it back are overwhelmingly Shiite or Kurd. In some places, liberators with no previous ties to the communities they have freed remain behind after the battles have been won, filling the security vacuum, guarding against a return of the militants and also redrawing the map in ways that could unleash future disputes over land, power and politics.</p>
+<p>One such place is Rabia, a Sunni town on the Syrian border that was seized by the Islamic State in August 2014 and was recaptured two months later by Kurdish peshmerga units. A town once governed by the central government in Baghdad is now administered by the semiautonomous region of Kurdistan.</p>
+<p>Two years on, the Sunni residents are mostly just relieved that they are safe and that they were spared the prolonged battles that occurred in places such as Fallujah and Ramadi, where whole neighborhoods were flattened. Young men from the biggest local tribe, the Shammar, have formed a militia that helps the Kurdish forces control the town and flies the yellow-sun Kurdish flag at its checkpoints.</p>
+</div></div><div class="row">                <div class="span4 col pull-right right-content no-border graphic bg-none graphicPadTB30" id="raw">
+        <div id="g-TimelinesRabia280-box" class="ai2html">
+	<!-- Generated by ai2html v0.55 - 2016-11-22 - 17:03 -->
+	<!-- ai file: TimelinesRabia280 -->
+
+	<style type="text/css" media="screen,print">
+		.g-artboard {
+			margin:0 auto;
+		}
+	</style>
+
+
+	<style type="text/css" media="screen,print">
+		/* Custom CSS block 1 */
+		.g-aiPstyle5, .g-aiPstyle0, .g-aiPstyle6, .g-aiPstyle3, .g-aiPstyle9, .g-aiPstyle7, .g-aiPstyle8{
+		    text-shadow: 0px 0px 2px #fff;
+		}
+		
+		#g-TimelinesRabia280-280{
+			display:block;
+			margin:0 auto;
+		}
+		
+		
+	</style>
+
+	<!-- Artboard: 280 -->
+	<div id="g-TimelinesRabia280-280" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-TimelinesRabia280-280{
+				position:relative;
+				overflow:hidden;
+				width:280px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-TimelinesRabia280-280 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-TimelinesRabia280-280 .g-aiPstyle0 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:17px;
+				line-height:20px;
+				color:#000000;
+			}
+			#g-TimelinesRabia280-280 .g-aiPstyle1 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:19px;
+				color:#000000;
+			}
+			#g-TimelinesRabia280-280 .g-aiPstyle2 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:11px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-TimelinesRabia280-280 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:11px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#525252;
+			}
+			#g-TimelinesRabia280-280 .g-aiPstyle4 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:11px;
+				text-align:center;
+				letter-spacing:0.04583333333333em;
+				color:#525252;
+			}
+			#g-TimelinesRabia280-280 .g-aiPstyle5 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:11px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-TimelinesRabia280-280 .g-aiPstyle6 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:11px;
+				text-align:center;
+				letter-spacing:0.07916666666667em;
+				color:#000000;
+			}
+			#g-TimelinesRabia280-280 .g-aiPstyle7 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:13px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-TimelinesRabia280-280 .g-aiPstyle8 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:15px;
+				letter-spacing:-0.00416666666667em;
+				color:#626366;
+			}
+			#g-TimelinesRabia280-280 .g-aiPstyle9 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:13px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#626366;
+			}
+		</style>
+		<div id="g-TimelinesRabia280-280-graphic">
+			<img id="g-ai0-0" class="g-aiImg" src="http://web.archive.org/web/20161127073116im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/ISISsunnis/TimelinesRabia280-280.jpg?c=218"/>
+			<div id="g-ai0-1" class="g-Patches g-aiAbs" style="top:2.7641%;left:1.9711%;width:94.5970%;">
+				<p class="g-aiPstyle0">Rabia</p>
+				<p class="g-aiPstyle1">Suspicions between Sunni residents, new Kurdish rulers.</p>
+			</div>
+			<div id="g-ai0-2" class="g-Map_type g-aiAbs" style="top:30.4050%;left:61.8780%;width:31.2660%;margin-left:-15.6330%;">
+				<p class="g-aiPstyle2">Rabia</p>
+			</div>
+			<div id="g-ai0-3" class="g-Map_type g-aiAbs" style="top:30.7999%;right:61.4340%;">
+				<p class="g-aiPstyle3">Raqqa</p>
+			</div>
+			<div id="g-ai0-4" class="g-Map_type g-aiAbs" style="top:38.3024%;left:38.2744%;width:30.2794%;margin-left:-15.1397%;">
+				<p class="g-aiPstyle4">SYRIA</p>
+			</div>
+			<div id="g-ai0-5" class="g-Map_type g-aiAbs" style="top:46.5947%;right:74.5414%;">
+				<p class="g-aiPstyle3">Damascus</p>
+			</div>
+			<div id="g-ai0-6" class="g-Map_type g-aiAbs" style="top:52.5178%;right:38.5592%;">
+				<p class="g-aiPstyle5">Baghdad</p>
+			</div>
+			<div id="g-ai0-7" class="g-Map_type g-aiAbs" style="top:61.2049%;left:65.2867%;width:26.6769%;margin-left:-13.3384%;">
+				<p class="g-aiPstyle6">IRAQ</p>
+			</div>
+			<div id="g-ai0-8" class="g-Map_type g-aiAbs" style="top:64.3639%;left:3.6862%;">
+				<p class="g-aiPstyle7">Rabia controlled by</p>
+				<p class="g-aiPstyle7">Islamic State</p>
+			</div>
+			<div id="g-ai0-9" class="g-Map_type g-aiAbs" style="top:84.8972%;left:1.8345%;">
+				<p class="g-aiPstyle8">Jan.</p>
+				<p class="g-aiPstyle8">2014 </p>
+			</div>
+			<div id="g-ai0-10" class="g-Map_type g-aiAbs" style="top:84.8972%;left:36.3429%;">
+				<p class="g-aiPstyle8">Jan.</p>
+				<p class="g-aiPstyle8">2015</p>
+			</div>
+			<div id="g-ai0-11" class="g-Map_type g-aiAbs" style="top:84.8972%;left:69.5128%;">
+				<p class="g-aiPstyle8">Jan.</p>
+				<p class="g-aiPstyle8">2016</p>
+			</div>
+			<div id="g-ai0-12" class="g-Patches g-aiAbs" style="top:85.6869%;right:1.5107%;">
+				<p class="g-aiPstyle9">Oct.</p>
+				<p class="g-aiPstyle9">2016</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- End ai2html - 2016-11-22 - 17:03 -->
+</div>
+        </div>
+                <div class="span8 col">
+<p>“When we were occupied by ISIS, the Kurds helped us, so now we have to stand with them to repay them for their sacrifice,” said Mohammed Khudeir, a leader of the Shammar Battalion.</p>
+<p>The relationship between the residents and their new rulers is nonetheless fraught with suspicion and doubt. The Kurdish authorities require every resident to secure permission before traveling in or out of the town, an onerous burden for people who thrived on trade with nearby Syria before the war, many locals complain.</p>
+<p>The requirement is necessary, said Capt. Mohammed Sadiq Sayid, the local commander of the Asayish, the Kurdish security forces, because so many residents are thought to be sympathetic to the Islamic State. “We have a big list of suspicious people,” he said. “We know who they are, and we are watching them.”</p>
+<p>Tens of thousands of people who lived in surrounding villages are being prevented from returning to their homes, most of which in any case no longer exist. The ruins of wrecked buildings are strung out along the roads north and south of Rabia, watched over by peshmerga checkpoints. War may have caused some of the destruction, but the uniformity of the damage suggests sabotage, too.</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunnies_2chapter1.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    The Sunni Arab village of Kazukha has been completely destroyed.                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<p>In one village, Kazukha, on the road leading south toward the Yazidi district of Sinjar, three peshmerga fighters escorted Washington Post journalists around the derelict homes. They described using TNT and bulldozers to ensure none could ever be inhabited again, by employing just enough explosives to collapse the roof of each building.</p>
+<p>The residents belonged to a tribe that supported the Islamic State and will never be allowed to return, said Capt. Aziz Haji Khalaf, a Yazidi who heads the Asayish in the nearby town of Snuny, once home to Arabs and members of the Yazidi minority.</p>
+<p>“They wouldn’t even dare to come back,” he said. Using the Arabic acronym for the Islamic State, he continued: “They were all with Daesh, and they participated in the massacres of Yazidis. For this reason, we cannot live with Arabs ever again.”</p>
+<p>Many Sunnis in the area did indeed support the Islamic State, at least at first, as a welcome alternative to the repression and discrimination of the central government in Baghdad, acknowledged Hamoud, the tribal leader in Rabia.</p>
+<p>“If there was no support here, they wouldn’t have survived one hour. The Sunnis were very happy in the beginning. They did not know who they were, and they welcomed them as saviors,” he said. “Now we consider them a disaster.”</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunnis_5chapter2.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Louay Rashed, his wife Amal Saleh, and their eight children live in a trailer outside Tuz Khurmatu after being forced to flee their home in the Sunni village of Salman Beg.                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<h3>‘They say all Sunnis are Daesh’</h3>
+<p>The belt of destroyed towns and villages continues for hundreds of miles along the jagged perimeter of the Islamic State’s shrinking domain. Where all the people who once lived in these emptied places have gone can only be guessed.</p>
+<p>Some will have escaped alongside retreating Islamic State fighters and are among the 2 million to 3 million people thought by the United Nations and the Iraqi government still to be living under Islamic State control, including in the city of Mosul. Some may have died, in the fighting and in airstrikes, but U.N. and government casualty figures for Iraq do not include those killed in Islamic State areas.</p>
+</div></div><div class="row">        <div class="visible-tablet visible-desktop photo-right span4 col pull-right ">
+                                                    <div class="spinner">
+            <img class=" image " data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunnis_1chapter3.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunnis_1chapter3.jpg&amp;w=1040&amp;authapi-mob-redir=0"/>
+                    </div>
+                                                            <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Men from villages recently recaptured by Iraqi security forces are detained at the Dibaga refugee camp, some allegedly for months, while Kurdish authorities investigate any links they may have to the Islamic State.<br/>
+                                                                        </p>
+                                    </div>
+                            </div>
+        <div class="span8 col">
+<p>Many more — at least 4.2 million — fled in the opposite direction, away from the militants and sometimes straight into the arms of the oncoming forces. An Amnesty International report in October accused Iraqi militias and government forces of detaining thousands of people, mostly men, who were trying to flee the fighting.</p>
+<p>The figures mean that not only do Sunnis comprise a majority of the victims of the war with the Islamic State, but also that a majority of the Sunni community has been afflicted. Sunnis represent about 20 percent of Iraq’s population of 32.5 million, according to CIA figures for 2014 — or about 7 million people — and U.N. figures suggest that as many as 6 million of them either have been displaced or their villages and towns occupied by the Islamic State.</p>
+<p>Where towns once were wholly Sunni, there is a good chance that families that had no ties to the militants will be able to return after those communities have been liberated, aid agencies say. Some 900,000 displaced people have gone home in the past two years, mostly to Sunni cities such as Fallujah, Ramadi and Tikrit, according to figures compiled for the United Nations and the United States by the International Organization for Migration.</p>
+<p>But in places where Sunnis once lived in proximity to Shiites or Kurds, hundreds of thousands are unable to return to their homes, even though the Islamic State has gone. They are living in limbo, in camps or in makeshift accommodations, unsure of their future in an Iraq where Sunnis are regarded with suspicion as potential Islamic State sympathizers.</p>
+</div></div><div class="row">                <div class="span4 col pull-right right-content no-border graphic bg-none graphicPadTB30" id="raw">
+        <div id="g-TimelinesSalmanBeg280-box" class="ai2html">
+	<!-- Generated by ai2html v0.55 - 2016-11-22 - 16:47 -->
+	<!-- ai file: TimelinesSalmanBeg280 -->
+
+	<style type="text/css" media="screen,print">
+		.g-artboard {
+			margin:0 auto;
+		}
+	</style>
+
+
+	<style type="text/css" media="screen,print">
+		/* Custom CSS block 1 */
+		.g-aiPstyle5, .g-aiPstyle0, .g-aiPstyle6, .g-aiPstyle3, .g-aiPstyle9, .g-aiPstyle7, .g-aiPstyle8{
+		    text-shadow: 0px 0px 2px #fff;
+		}
+		
+		#g-TimelinesSalmanBeg280-280{
+			display:block;
+			margin:0 auto;
+		}
+		
+		
+	</style>
+
+	<!-- Artboard: 280 -->
+	<div id="g-TimelinesSalmanBeg280-280" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-TimelinesSalmanBeg280-280{
+				position:relative;
+				overflow:hidden;
+				width:280px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-TimelinesSalmanBeg280-280 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-TimelinesSalmanBeg280-280 .g-aiPstyle0 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:17px;
+				line-height:20px;
+				color:#000000;
+			}
+			#g-TimelinesSalmanBeg280-280 .g-aiPstyle1 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:19px;
+				color:#000000;
+			}
+			#g-TimelinesSalmanBeg280-280 .g-aiPstyle2 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:11px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#525252;
+			}
+			#g-TimelinesSalmanBeg280-280 .g-aiPstyle3 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:11px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-TimelinesSalmanBeg280-280 .g-aiPstyle4 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:11px;
+				text-align:center;
+				letter-spacing:0.04583333333333em;
+				color:#525252;
+			}
+			#g-TimelinesSalmanBeg280-280 .g-aiPstyle5 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:11px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-TimelinesSalmanBeg280-280 .g-aiPstyle6 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:11px;
+				text-align:center;
+				letter-spacing:0.07916666666667em;
+				color:#000000;
+			}
+			#g-TimelinesSalmanBeg280-280 .g-aiPstyle7 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:13px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-TimelinesSalmanBeg280-280 .g-aiPstyle8 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:15px;
+				letter-spacing:-0.00416666666667em;
+				color:#626366;
+			}
+			#g-TimelinesSalmanBeg280-280 .g-aiPstyle9 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:13px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#626366;
+			}
+		</style>
+		<div id="g-TimelinesSalmanBeg280-280-graphic">
+			<img id="g-ai0-0" class="g-aiImg" src="http://web.archive.org/web/20161127073116im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/ISISsunnis/TimelinesSalmanBeg280-280.jpg?c=389"/>
+			<div id="g-ai0-1" class="g-Patches g-aiAbs" style="top:2.3600%;left:1.9711%;width:99.4575%;">
+				<p class="g-aiPstyle0">Salman Beg </p>
+				<p class="g-aiPstyle1">Hundreds of thousands are unable to return home.</p>
+			</div>
+			<div id="g-ai0-2" class="g-Map_type g-aiAbs" style="top:28.3205%;right:61.3447%;">
+				<p class="g-aiPstyle2">Raqqa</p>
+			</div>
+			<div id="g-ai0-3" class="g-Map_type g-aiAbs" style="top:33.4339%;left:74.1674%;width:64.1082%;margin-left:-32.0541%;">
+				<p class="g-aiPstyle3">Salman Beg</p>
+			</div>
+			<div id="g-ai0-4" class="g-Map_type g-aiAbs" style="top:36.1873%;left:38.2744%;width:30.2794%;margin-left:-15.1397%;">
+				<p class="g-aiPstyle4">SYRIA</p>
+			</div>
+			<div id="g-ai0-5" class="g-Map_type g-aiAbs" style="top:44.8408%;right:74.2439%;">
+				<p class="g-aiPstyle2">Damascus</p>
+			</div>
+			<div id="g-ai0-6" class="g-Map_type g-aiAbs" style="top:50.3475%;right:38.4998%;">
+				<p class="g-aiPstyle5">Baghdad</p>
+			</div>
+			<div id="g-ai0-7" class="g-Map_type g-aiAbs" style="top:59.3944%;left:66.1795%;width:26.6769%;margin-left:-13.3384%;">
+				<p class="g-aiPstyle6">IRAQ</p>
+			</div>
+			<div id="g-ai0-8" class="g-Map_type g-aiAbs" style="top:64.1144%;left:3.0484%;">
+				<p class="g-aiPstyle7">Salman Beg controlled</p>
+				<p class="g-aiPstyle7">by Islamic State</p>
+			</div>
+			<div id="g-ai0-9" class="g-Map_type g-aiAbs" style="top:84.9615%;left:1.8345%;">
+				<p class="g-aiPstyle8">Jan.</p>
+				<p class="g-aiPstyle8">2014 </p>
+			</div>
+			<div id="g-ai0-10" class="g-Map_type g-aiAbs" style="top:84.9615%;left:36.3429%;">
+				<p class="g-aiPstyle8">Jan.</p>
+				<p class="g-aiPstyle8">2015</p>
+			</div>
+			<div id="g-ai0-11" class="g-Map_type g-aiAbs" style="top:84.9615%;left:69.5128%;">
+				<p class="g-aiPstyle8">Jan.</p>
+				<p class="g-aiPstyle8">2016</p>
+			</div>
+			<div id="g-ai0-12" class="g-Patches g-aiAbs" style="top:85.7481%;right:1.5107%;">
+				<p class="g-aiPstyle9">Oct.</p>
+				<p class="g-aiPstyle9">2016</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- End ai2html - 2016-11-22 - 16:47 -->
+</div>
+        </div>
+                <div class="span8 col">
+<p>“They say all Sunnis are Daesh, but it isn’t true,” said former truck driver Jassem Nouri, 50. Nouri has spent the past two years living on a building site in the northeast of Salahuddin province; his home, in the Sunni village of Salman Beg, is just six miles away, but the Shiite militias that ejected the Islamic State from the area over two years ago have refused to allow any of the residents to return. Last year, his two sons, former university students, were detained by masked men in unmarked uniforms and accused of working with the Islamic State. Nouri insists that they are innocent, but he has not been able to secure their release.</p>
+<p>“The one thing that is breaking my heart is that my sons are in jail and I can’t prove their innocence,” he said. “If this government doesn’t change, there will never be security and stability in Iraq, just an endless blind revenge.”</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunnis_7chapter3.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Members of the Shiite Hashd al-Shaabi, or Popular Mobilization Forces, pray in a frontline position in the Sunni village of Sufaya, south of Mosul, after it was recaptured from the Islamic State.                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<h3>The worst-case scenario</h3>
+<p>In the province of Diyala, bordering Iran to the east, a new cycle of violence is already underway. With its mixed Shiite, Sunni and Kurdish population, Diyala is considered a microcosm of Iraq. If it also is a bellwether for the country’s post-Islamic State future, its signals are gloomy.</p>
+<p>In the 18 months since Islamic State fighters were driven out by Shiite militias, the old tensions between Shiites and Sunnis that helped fuel the Islamic State’s rise have resurfaced. Islamic State cells have re-infiltrated areas from which they were supposedly ejected, carrying out suicide bombings against mosques and cafes that have killed scores of Shiites. Revenge killings by shadowy militias have targeted Sunnis. At least 172,000 Sunnis who fled the initial Islamic State surge have returned, but there are still 82,000 who have been refused permission to go home. Some who did go back are fleeing again.</p>
+<p>Among them is Abu Mohammed, a 46-year-old electrician who gathered up his nine young daughters and left three months ago after a spate of sinister killings in his village outside the Sunni town of Mahmudiyah.</p>
+</div></div><div class="row">        <div class="visible-tablet visible-desktop photo-right span4 col pull-right ">
+                                                    <div class="spinner">
+            <img class=" image " data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunnis_4chapter3.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunnis_4chapter3.jpg&amp;w=1040&amp;authapi-mob-redir=0"/>
+                    </div>
+                                                            <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Manal Ismail Issa, wife of Abu Mohammed, sits with her daughters in the tent that is now the family's home in the Qura Tu camp.                                                                        </p>
+                                    </div>
+                            </div>
+        <div class="span8 col">
+<p>Back in the same tented refugee camp of Qura Tu in the north of the province, where he had taken refuge from the Islamic State a year earlier, he checked off the killings that had prompted his second flight from the town. A man who sold canisters of cooking gas was shot by unknown assailants on a motorbike. A neighbor’s mutilated body was found dumped in a nearby village. Then another neighbor went into town and never came back. Finally came the brazen killing of three men, one of them a cousin of Abu Mohammed’s, by armed men who showed up in the village and shot the men as they went out one evening to buy food.</p>
+<p>The gunmen “wear black and they wear masks. Nobody knows who they are, where they came from or where they went,” Abu Mohammed said.</p>
+<p>“The Sunnis are being targeted, and states are behind this policy,” he added, echoing a view widespread among Sunnis that Shiite Iran is encouraging a deliberate attempt by Iraq’s Shiite majority to ethnically cleanse Sunnis from the areas of eastern Iraq that border Iran. “They are displacing a whole sect in order to bring about demographic change, and that isn’t an easy thing to do.”</p>
+</div></div><div class="row">                <div class="span4 col pull-right right-content no-border graphic bg-none graphicPadTB30" id="raw">
+        <div id="g-TimelinesDiyala280-box" class="ai2html">
+	<!-- Generated by ai2html v0.55 - 2016-11-22 - 16:46 -->
+	<!-- ai file: TimelinesDiyala280 -->
+
+	<style type="text/css" media="screen,print">
+		.g-artboard {
+			margin:0 auto;
+		}
+	</style>
+
+
+	<style type="text/css" media="screen,print">
+		/* Custom CSS block 1 */
+		.g-aiPstyle5, .g-aiPstyle0, .g-aiPstyle6, .g-aiPstyle3, .g-aiPstyle9, .g-aiPstyle7, .g-aiPstyle8{
+		    text-shadow: 0px 0px 2px #fff;
+		}
+		
+		#g-TimelinesDiyala280-280{
+			display:block;
+			margin:0 auto;
+		}
+		
+		
+	</style>
+
+	<!-- Artboard: 280 -->
+	<div id="g-TimelinesDiyala280-280" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-TimelinesDiyala280-280{
+				position:relative;
+				overflow:hidden;
+				width:280px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-TimelinesDiyala280-280 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-TimelinesDiyala280-280 .g-aiPstyle0 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:17px;
+				line-height:20px;
+				color:#000000;
+			}
+			#g-TimelinesDiyala280-280 .g-aiPstyle1 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:19px;
+				color:#000000;
+			}
+			#g-TimelinesDiyala280-280 .g-aiPstyle2 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:11px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#525252;
+			}
+			#g-TimelinesDiyala280-280 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:11px;
+				text-align:center;
+				letter-spacing:0.04583333333333em;
+				color:#525252;
+			}
+			#g-TimelinesDiyala280-280 .g-aiPstyle4 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:11px;
+				font-style:italic;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-TimelinesDiyala280-280 .g-aiPstyle5 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:11px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-TimelinesDiyala280-280 .g-aiPstyle6 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:11px;
+				text-align:center;
+				letter-spacing:0.07916666666667em;
+				color:#000000;
+			}
+			#g-TimelinesDiyala280-280 .g-aiPstyle7 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:13px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-TimelinesDiyala280-280 .g-aiPstyle8 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:15px;
+				letter-spacing:-0.00416666666667em;
+				color:#626366;
+			}
+			#g-TimelinesDiyala280-280 .g-aiPstyle9 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:13px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#626366;
+			}
+		</style>
+		<div id="g-TimelinesDiyala280-280-graphic">
+			<img id="g-ai0-0" class="g-aiImg" src="http://web.archive.org/web/20161127073116im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/ISISsunnis/TimelinesDiyala280-280.jpg?c=440"/>
+			<div id="g-ai0-1" class="g-Patches g-aiAbs" style="top:2.3484%;left:1.9223%;width:90.2277%;">
+				<p class="g-aiPstyle0">Diyala</p>
+				<p class="g-aiPstyle1">A new cycle of violence is already underway.</p>
+			</div>
+			<div id="g-ai0-2" class="g-Map_type g-aiAbs" style="top:29.3550%;right:61.4828%;">
+				<p class="g-aiPstyle2">Raqqa</p>
+			</div>
+			<div id="g-ai0-3" class="g-Map_type g-aiAbs" style="top:36.7917%;left:38.2255%;width:30.2794%;margin-left:-15.1397%;">
+				<p class="g-aiPstyle3">SYRIA</p>
+			</div>
+			<div id="g-ai0-4" class="g-Map_type g-aiAbs" style="top:41.8799%;left:69.4043%;">
+				<p class="g-aiPstyle4">DIYALA</p>
+			</div>
+			<div id="g-ai0-5" class="g-Map_type g-aiAbs" style="top:45.4025%;right:74.2929%;">
+				<p class="g-aiPstyle2">Damascus</p>
+			</div>
+			<div id="g-ai0-6" class="g-Map_type g-aiAbs" style="top:50.0993%;right:38.5922%;">
+				<p class="g-aiPstyle5">Baghdad</p>
+			</div>
+			<div id="g-ai0-7" class="g-Map_type g-aiAbs" style="top:60.6671%;left:66.0057%;width:26.6769%;margin-left:-13.3384%;">
+				<p class="g-aiPstyle6">IRAQ</p>
+			</div>
+			<div id="g-ai0-8" class="g-Map_type g-aiAbs" style="top:64.1897%;left:2.7192%;">
+				<p class="g-aiPstyle7">Diyala Province</p>
+				<p class="g-aiPstyle7">controlled by Islamic State</p>
+			</div>
+			<div id="g-ai0-9" class="g-Map_type g-aiAbs" style="top:85.3253%;left:1.7857%;">
+				<p class="g-aiPstyle8">Jan.</p>
+				<p class="g-aiPstyle8">2014 </p>
+			</div>
+			<div id="g-ai0-10" class="g-Map_type g-aiAbs" style="top:85.3253%;left:36.2941%;">
+				<p class="g-aiPstyle8">Jan.</p>
+				<p class="g-aiPstyle8">2015</p>
+			</div>
+			<div id="g-ai0-11" class="g-Map_type g-aiAbs" style="top:85.3253%;left:69.4639%;">
+				<p class="g-aiPstyle8">Jan.</p>
+				<p class="g-aiPstyle8">2016</p>
+			</div>
+			<div id="g-ai0-12" class="g-Patches g-aiAbs" style="top:86.1081%;right:1.5595%;">
+				<p class="g-aiPstyle9">Oct.</p>
+				<p class="g-aiPstyle9">2016</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- End ai2html - 2016-11-22 - 16:46 -->
+</div>
+        </div>
+                <div class="span8 col">
+<p>It isn’t only killings that drive people away, said Adnan Salem Dawood, 46, who lived in an area that was never seized by the Islamic State. He was driven away by Shiite militia members after they had defeated the militants elsewhere, and he has spent the past year living in a tent in the Qura Tu camp.</p>
+<p>“They come to your house at night and ask you silly questions, like, ‘Do you know this man? Do you know that man?’ ” he said. “They beat you in front of your wife and children till the blood pours from your mouth and you are humiliated. They don’t tell you honestly to leave. What they do is make your life miserable so that you are grateful to leave.”</p>
+<p>“I don’t like living here, but I can’t go back,” he added. “We don’t have any future in Iraq.”</p>
+<p>Kareem Nouri, spokesman for the Badr Organization, the largest Shiite military group in Diyala, which also controls the provincial government, acknowledged the problems. But he denied that there is any deliberate attempt to displace Sunnis from the province or from any other part of Iraq.</p>
+<p><img class="aligncenter size-large wp-image-2972" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/SunniDistrMap2300-1024x616.jpg" alt="SunniDistrMap2300" width="1024" height="616"/></p>
+<p>If Sunnis are being refused permission to return home, it is because their villages or towns are near battle zones and aren’t safe, or because they or their families are suspected of affiliation with the Islamic State, he said.</p>
+<p>If some are being squeezed out again by threats or violence, it is because of tribal problems that are beyond the capacity of the Badr Organization or the central government to solve. “There is revenge taking place between tribes. There are individuals who are seeking revenge, but they only represent themselves,” he said. “There are some Shiite gangs, but they don’t have our support, and we reject them.”</p>
+<p>“The Sunnis are the ones who have been harmed most by ISIS, and they will never be deceived again,” Nouri said. “We know we can’t push the Sunnis aside. ISIS has united us all.”</p>
+<p>But don’t look at Diyala, he urged. “Look at Tikrit. Tikrit is a success. It is a success because we managed to reach an understanding with the people of the city. We expelled the terrorist elements, and we didn’t allow them back.”</p>
+</div></div><div class="row">                                        <div class="visible-phone span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/intro_sunnis1_full.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Many areas liberated from Islamic State control still lie in ruins, such as the graves and shrines at the Tikrit cemetery.                                                                         </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col photo-small">
+</div></div><div class="row">        <div class=" visible-tablet visible-desktop marT10">
+          <div class="span12    bTB1S padTB30">
+              <div class="row">
+                  
+            <div class="span12 package-photo package-photo-no-top-margin">
+                <div class="spinner">
+                    <img class="lazy-image image" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/intro_sunnis1_full.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </div>
+        
+            <div class="span6 package-photo  package-photo-top-margin">
+                <div class="spinner">
+                    <img class="lazy-image image" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunis_5chapter4.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </div>
+        
+            <div class="span6 package-photo package-photo-small package-photo-top-margin marT12small">
+                <div class="spinner">
+                    <img class="lazy-image image" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunis_2chapter4.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </div>
+                      </div>
+          </div>
+                        <div class="span4 col pull-right">
+              <div class="marT30 marT10small light-grey size-fourteen franklin-light">
+                  Many areas liberated from Islamic State control still lie in ruins, such as the graves and shrines at the Tikrit cemetery. Outside of the city, recently displaced Sunni Arabs wait in line to be screened and registered. Evidence of new Shiite influence in Tikrit can been seen on a billboard displaying the three most powerful Shiite militia leaders.        
+              </div>
+              </div>
+                  </div>
+        <div class="span8 marT30 col">
+<h3>A success; a long way to go</h3>
+<p>If Tikrit is a success, it is a relative one. Almost all of the residents have returned since the Islamic State was defeated 18 months ago. The home town of the former Sunni dictator Saddam Hussein has come to terms, at least for now, with the Shiite militias that drove ISIS out and now maintain a visible presence.</p>
+<p>Shiite flags fly at the checkpoints controlling access to the city and over the compound of palaces built by Hussein. Where once a statue of the dictator greeted visitors as they arrived on the road from Baghdad, there now is a billboard featuring the three most powerful Shiite militia leaders, Hadi al-Ameri, Abu Mahdi al-Muhandis and Qais al-Khazali.</p>
+<p>“This is an official way of saying thank you to the people who liberated Tikrit,” said Tikrit’s mayor, Omar al Shindakh, explaining why the town’s local Sunni leaders erected the billboard. “They suffered a lot of dead and wounded for us.”</p>
+<p>Large swaths of the city are still in ruins, however. Although basic services have been restored, there is no money to rebuild the shattered infrastructure, the shops, the government buildings or the hospital. More than 90 percent of the prewar population has returned, and “by that measure, Tikrit is a success,” said Lisa Grande, the United Nations’ chief humanitarian coordinator in Iraq. “But it does not mean you are looking at an entirely restored or recovered community. You are not. Not by a long shot.”</p>
+</div></div><div class="row">                <div class="span4 col pull-right right-content no-border graphic bg-none graphicPadTB30" id="raw">
+        <div id="g-TimelinesTikrit280-box" class="ai2html">
+	<!-- Generated by ai2html v0.55 - 2016-11-22 - 16:45 -->
+	<!-- ai file: TimelinesTikrit280 -->
+
+	<style type="text/css" media="screen,print">
+		.g-artboard {
+			margin:0 auto;
+		}
+	</style>
+
+
+	<style type="text/css" media="screen,print">
+		/* Custom CSS block 1 */
+		.g-aiPstyle5, .g-aiPstyle0, .g-aiPstyle6, .g-aiPstyle3, .g-aiPstyle9, .g-aiPstyle7, .g-aiPstyle8{
+		    text-shadow: 0px 0px 2px #fff;
+		}
+		
+		#g-TimelinesTikrit280-280{
+			display:block;
+			margin:0 auto;
+		}
+		
+		
+	</style>
+
+	<!-- Artboard: 280 -->
+	<div id="g-TimelinesTikrit280-280" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-TimelinesTikrit280-280{
+				position:relative;
+				overflow:hidden;
+				width:280px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-TimelinesTikrit280-280 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-TimelinesTikrit280-280 .g-aiPstyle0 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:17px;
+				line-height:20px;
+				color:#000000;
+			}
+			#g-TimelinesTikrit280-280 .g-aiPstyle1 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:19px;
+				color:#000000;
+			}
+			#g-TimelinesTikrit280-280 .g-aiPstyle2 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:11px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#525252;
+			}
+			#g-TimelinesTikrit280-280 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:11px;
+				text-align:center;
+				letter-spacing:0.04583333333333em;
+				color:#525252;
+			}
+			#g-TimelinesTikrit280-280 .g-aiPstyle4 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:11px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-TimelinesTikrit280-280 .g-aiPstyle5 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:11px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-TimelinesTikrit280-280 .g-aiPstyle6 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:11px;
+				text-align:center;
+				letter-spacing:0.07916666666667em;
+				color:#000000;
+			}
+			#g-TimelinesTikrit280-280 .g-aiPstyle7 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:13px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-TimelinesTikrit280-280 .g-aiPstyle8 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:15px;
+				letter-spacing:-0.00416666666667em;
+				color:#626366;
+			}
+			#g-TimelinesTikrit280-280 .g-aiPstyle9 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:13px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#626366;
+			}
+		</style>
+		<div id="g-TimelinesTikrit280-280-graphic">
+			<img id="g-ai0-0" class="g-aiImg" src="http://web.archive.org/web/20161127073116im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/ISISsunnis/TimelinesTikrit280-280.jpg?c=603"/>
+			<div id="g-ai0-1" class="g-Patches g-aiAbs" style="top:1.2771%;left:1.9711%;width:99.4575%;">
+				<p class="g-aiPstyle0">Tikrit</p>
+				<p class="g-aiPstyle1">A city in ruins, and no money to rebuild.</p>
+			</div>
+			<div id="g-ai0-2" class="g-Map_type g-aiAbs" style="top:24.6903%;right:62.4015%;">
+				<p class="g-aiPstyle2">Raqqa</p>
+			</div>
+			<div id="g-ai0-3" class="g-Map_type g-aiAbs" style="top:32.3529%;left:37.3412%;width:30.2794%;margin-left:-15.1397%;">
+				<p class="g-aiPstyle3">SYRIA</p>
+			</div>
+			<div id="g-ai0-4" class="g-Map_type g-aiAbs" style="top:33.2043%;left:66.5727%;width:28.1965%;margin-left:-14.0982%;">
+				<p class="g-aiPstyle4">Tikrit</p>
+			</div>
+			<div id="g-ai0-5" class="g-Map_type g-aiAbs" style="top:42.1439%;right:74.0939%;">
+				<p class="g-aiPstyle2">Damascus</p>
+			</div>
+			<div id="g-ai0-6" class="g-Map_type g-aiAbs" style="top:47.2522%;right:38.7088%;">
+				<p class="g-aiPstyle5">Baghdad</p>
+			</div>
+			<div id="g-ai0-7" class="g-Map_type g-aiAbs" style="top:58.7460%;left:66.2612%;width:26.6769%;margin-left:-13.3384%;">
+				<p class="g-aiPstyle6">IRAQ</p>
+			</div>
+			<div id="g-ai0-8" class="g-Map_type g-aiAbs" style="top:61.7259%;left:10.6824%;">
+				<p class="g-aiPstyle7">Tikrit controlled</p>
+				<p class="g-aiPstyle7">by Islamic State</p>
+			</div>
+			<div id="g-ai0-9" class="g-Map_type g-aiAbs" style="top:84.2877%;left:1.9238%;">
+				<p class="g-aiPstyle8">Jan.</p>
+				<p class="g-aiPstyle8">2014 </p>
+			</div>
+			<div id="g-ai0-10" class="g-Map_type g-aiAbs" style="top:84.2877%;left:35.6374%;">
+				<p class="g-aiPstyle8">Jan.</p>
+				<p class="g-aiPstyle8">2015</p>
+			</div>
+			<div id="g-ai0-11" class="g-Map_type g-aiAbs" style="top:84.2877%;left:69.1556%;">
+				<p class="g-aiPstyle8">Jan.</p>
+				<p class="g-aiPstyle8">2016</p>
+			</div>
+			<div id="g-ai0-12" class="g-Patches g-aiAbs" style="top:85.1391%;right:1.8679%;">
+				<p class="g-aiPstyle9">Oct.</p>
+				<p class="g-aiPstyle9">2016</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- End ai2html - 2016-11-22 - 16:45 -->
+</div>
+        </div>
+                <div class="span8 col">
+<p>When that might happen is in question. The ISIS conquests coincided almost exactly with a collapse in the price of oil, Iraq’s chief source of revenue. Overnight, the government lost nearly half its income, just as it had to gear up for a major military campaign. There is no money to rebuild what is being destroyed, in Tikrit or anywhere else in Iraq, said government spokesman Saad al-Hadithi.</p>
+<p>“Because of the scale of the destruction, the priority of fighting terrorism and the financial situation, it is impossible to cover these expenses right now,” he said.</p>
+<p>On the streets of Tikrit, people say they are glad to be home, but they wonder where their country is heading and whether their lives will ever be as they were.</p>
+<p>“Even those who didn’t lose their loved ones lost their life savings and investments. All the work we put in all our lives is gone,” said Hassan Adnan, a merchant in the bazaar who fled the Islamic State, then returned to find that his home and shop had been burned, his merchandise looted and there was no hope of compensation.</p>
+<p>“The problem is that the government is spending not even one dinar to help us rebuild. If they can’t solve this simple thing, how can they solve the big problems of the country?” he said.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S-phone padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_2" data-ad-type="bigbox|2" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p>That is a question many, not just Sunnis, are asking. Iraqi Prime Minister Haider al-Abadi has proved to be more conciliatory than his predecessor, Nouri al-Maliki, whose starkly sectarian worldview has been widely blamed for the conditions that enabled the Islamic State to thrive. But Abadi is weaker than Maliki was and is beholden to a large extent to the growing power of the Shiite militias that have played a major role in the anti-ISIS fight.</p>
+<p>“The challenges facing Iraq are massive, on so many levels, and I don’t think we have seen the kind of historic leadership that rises to this challenge,” said Fawaz Gerges, a professor at the London School of Economics and author of the book “<a href="http://web.archive.org/web/20161127073116/https://read.amazon.com/kp/embed?asin=B017I2M820&amp;preview=newtab&amp;linkCode=kpe&amp;ref_=cm_sw_r_kb_dp_DTPiybAG6DSFZ&amp;tag=thewaspos09-20" target="_blank">ISIS: A History</a>.”</p>
+<p>Ahmed al-Kareem, the head of the provincial council in Tikrit, sees hope. There is a realization among most Sunnis that extremist groups will not solve their problems, he said, as well as a recognition by most Shiites that they need to accommodate Sunnis if they are to avoid yet another incarnation of the insurgency that gave rise to the Islamic State.</p>
+<p>“But it is hard,” he said. “There is mistrust. The whole policy of the country needs to change. We need to separate religion from politics. We need 10 years or more.”</p>
+<p>And in the meantime?</p>
+<p>“That is our concern,” he said. “What is coming after Daesh? What is going to be the next chapter?”</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunis_1chapter4.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    The question of how and when basic services will be restored and the city of Tikrit rebuilt remains unanswered.                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<p><em>Mustafa Salim and Zakaria Zakaria contributed to this report.</em></p>
+                <div class="et-pagination">
+                        <div class="clearfix"></div>
+        </div>
+        </div> <!-- Close off span 8 -->
+        </div> <!-- Close off row -->
+        </div>
+        <div class="bT1S padT30 padB10small padB30">
+        <div class="container">
+            <h4 class="light-black marB20 franklin-bold marT0">Editor's Picks</h4>
+        <div class="row">
+        <br/>
+        <div class="span6">
+        <div class="row-fluid">
+        <div class="span6">
+            <a href="http://web.archive.org/web/20161127073116/https://www.washingtonpost.com/world/middle_east/the-unbearable-grief-of-a-village-that-lost-its-boys-to-a-suicide-bomber/2016/04/07/e7fb2e8a-faa4-11e5-813a-90ab563f0dde_story.html">
+                <div class="spinner">
+                    <img class="lazy-image image pick" data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=https://img.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2016/08/02/Others/Images/2016-08-02/RTX2EY4T1470159971.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </a>
+        </div>
+        <div class="span6">
+            <h4 class="franklin-bold marT0 marT10small"><a href="http://web.archive.org/web/20161127073116/https://www.washingtonpost.com/world/middle_east/the-unbearable-grief-of-a-village-that-lost-its-boys-to-a-suicide-bomber/2016/04/07/e7fb2e8a-faa4-11e5-813a-90ab563f0dde_story.html" class="light-black">‘It was a children’s soccer game. Of course he knew he was going to kill children.’</a></h4>
+            <p class="franklin-light size-fourteen lh18em light-grey">Of all the horrors that have befallen Iraq, the Islamic State bombing that killed 29 children on a soccer field is one of the most shocking            <a href="http://web.archive.org/web/20161127073116/https://www.washingtonpost.com/world/middle_east/the-unbearable-grief-of-a-village-that-lost-its-boys-to-a-suicide-bomber/2016/04/07/e7fb2e8a-faa4-11e5-813a-90ab563f0dde_story.html" class="light-black">
+                <span class="fa fa-circle-arrow-right"></span>
+            </a>
+            </p>
+        </div>
+        </div>
+        </div>
+        </p>
+        <div class="span6">
+        <div class="row-fluid">
+        <div class="span6">
+            <a href="http://web.archive.org/web/20161127073116/https://www.washingtonpost.com/world/middle_east/with-isis-on-the-run-new-conflicts-could-erupt-among-the-militants-opponents/2016/08/11/ead5ca88-5829-11e6-8b48-0cb344221131_story.html">
+                <div class="spinner">
+                    <img class="lazy-image image pick" data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=https://img.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2016/04/07/Foreign/Images/IMG_316014600461851460048410.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161127073116im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </a>
+        </div>
+        <div class="span6">
+            <h4 class="franklin-bold marT0 marT10small"><a href="http://web.archive.org/web/20161127073116/https://www.washingtonpost.com/world/middle_east/with-isis-on-the-run-new-conflicts-could-erupt-among-the-militants-opponents/2016/08/11/ead5ca88-5829-11e6-8b48-0cb344221131_story.html" class="light-black">With ISIS on the run, new wars could erupt in Iraq</a></h4>
+            <p class="franklin-light size-fourteen lh18em light-grey">Iraq’s problems have been set aside, but not resolved, to defeat the militants.            <a href="http://web.archive.org/web/20161127073116/https://www.washingtonpost.com/world/middle_east/with-isis-on-the-run-new-conflicts-could-erupt-among-the-militants-opponents/2016/08/11/ead5ca88-5829-11e6-8b48-0cb344221131_story.html" class="light-black">
+                <span class="fa fa-circle-arrow-right"></span>
+            </a>
+            </p>
+        </div>
+        </div>
+        </div>
+        <br/>
+        </div>
+        </div>
+        </div>
+        
+<!-- /////////////////////// -->
+<!-- DROP CAP | Added 7/6/15 -->
+
+
+<style type="text/css">
+.firstgraf::first-letter{
+     font-size:600%;
+     float:left;
+     margin-top:.3em;
+     margin-bottom: .1em;
+     font-family: 'PostoniTitling', Times, serif, Georgia;
+     padding-right: 5px;
+     color:#8c8c8c; /* CHANGE ME */
+}
+
+.firefox .firstgraf::first-letter{
+     font-size: 600%;
+     float: left;
+     margin-top: 0.1em;
+     margin-bottom: 0.1em;
+     font-family: "PostoniTitling",Times,serif,Georgia;
+     padding-right: 5px;
+     color: #8c8c8c;
+}
+</style>
+
+<!-- END DROP CAP -->
+<!-- //////////// -->												</div> <!-- home/section -->
+				            <div id="section-comments" class="mobile-inactive bT1S bT0small">
+            <div class="container background">
+            <div class="row last">
+            <div class="span4 col pull-right credits">
+                <h4 class="franklin-bold light-black marT0">Credits</h4>
+                                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <a href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/people/liz-sly"><span class="name">Liz Sly</span></a>                                                    <a href="http://web.archive.org/web/20161127073116/mailto:liz.sly@washpost.com"><i class="fa fa-envelope"></i></a>                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Photos by</span>
+                                                                                                <span class="name">Alice Martins</span>                                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Design by</span>
+                                                                                                <span class="name">Virginia Singarayar</span>                                                                        </div>
+                    </div>
+            <div id="comments" class="span8 col pretty-comments">
+                          <div class="pretty-comments">
+                  <div id="echo_container" class="echo_container count submitbox stream comment-vars" guid="http://www.washingtonpost.com/sf/world/2016/11/23/isis-a-catastrophe-for-sunnis/" maxitemstop="5" sectionid="/conversations" isallcomments="true" includeshare="false">
+                  </div>
+              </div>
+                        <!-- auto-assigns guid from page url -->
+            <!--script type="text/javascript">document.getElementById('echo_container').setAttribute('guid', document.location.href);</script -->
+            <!-- end comments -->
+            </div>
+            </div>
+            </div>
+            </div>
+        			</div> <!-- sections -->
+		</div> <!-- main container -->
+		<div id="et-nav-series-off-canvas">
+			<div id="et-nav-series-inner-off-canvas">
+	            	            	            
+	            	        </div>
+        </div>
+        <div id="et-sections-dropdown-list">
+            <ul class="et-dropdown sections-dropdown et-off-canvas">
+                <li><a href="http://web.archive.org/web/20161127073116/http://www.posttv.com/">Video</a></li>
+                <li><a href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/politics">Politics</a></li>
+                <li><a href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/opinions">Opinions</a></li>
+                <li><a href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/local">Local</a></li>
+                <li><a href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/sports">Sports</a></li>
+                <li><a href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/national">National</a></li>
+                <li><a href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/world">World</a></li>
+                <li><a href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/business">Business</a></li>
+                <li><a href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/business/technology">Tech</a></li>
+                <li><a href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/lifestyle">Lifestyle</a></li>
+                <li><a href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/entertainment">Entertainment</a></li>
+                <li><a href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/classifieds">Classifieds</a></li>
+                <li><a href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/jobs">Jobs</a></li>
+                <li><a href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/realestate">Real Estate</a></li>
+                <li><a href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/events">Events</a></li>
+			</ul>
+			<div class="copyright-details">
+				<p><a class="franklin-bold" href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/">washingtonpost.com</a></p>
+				<p style="font-size: 12px" class="franklin-thin smaller-size">&copy; 1996-2016 The Washington Post</p>
+				<br/>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/terms-of-service/2011/11/18/gIQAldiYiN_story.html">Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/privacy-policy/2011/11/18/gIQASIiaiN_story.html">Privacy Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/discussion-and-submission-guidelines/2011/11/21/gIQAuvIbiN_story.html">Submission and Discussion Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/rss-terms-of-service/2012/01/16/gIQAadFYAQ_story.html">RSS Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161127073116/http://www.washingtonpost.com/how-can-i-opt-out-of-online-advertising-cookies/2011/11/18/gIQABECbiN_story.html">Ad Choices</a></p>
+			</div>
+		</div>
+		       <script type="text/javascript">
+        // Omniture variables
+        var wp_page_name = 'world:article - 20161123 - isis-a-catastrophe-for-sunnis';
+        var wp_track_scrolling = true;
+
+        // etc.
+        // chartbeat variables
+        _sf_async_config={
+          sections: wp_channel,
+          path:document.location.pathname, // defaults to document.location.pathname if you don't pass it.
+          title:document.title,
+          useCanonical:true // defaults to true if you don't pass it.
+        };
+        </script>
+
+        <script type="text/javascript" src="http://web.archive.org/web/20161127073116js_/http://www.washingtonpost.com/wp-srv/analytics/main.js"></script>
+        <script type="text/javascript">
+          //TWP.Analytics.init();
+          // FOR PREPRODUCTION
+          //TWP.Analytics.init( {suite:"preproduction",service:{omniture:true,omnitureTest:false,comscore:false,chartbeat:false}} );
+          TWP.Analytics.init({suite:"production"});
+        </script>
+
+        <!-- COMSCORE NOSCRIPT -->
+        <noscript><img src="http://web.archive.org/web/20161127073116im_/http://b.scorecardresearch.com/p?c1=2&amp;c2=3005617&amp;cv=2.0&amp;cj=1"/></noscript>
+        <!-- COMSCORE NOSCRIPT/Mobile -->
+        <!--<noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=3005617&c4=m.washingtonpost.com/nojs.html" /> </noscript>-->
+        
+        <noscript><img src="//web.archive.org/web/20161127073116im_/http://me.effectivemeasure.net/em_image" alt="" style="position:absolute; left:-5px;"/></noscript>
+        
+      <link rel="stylesheet" id="wapo-footnote-plugin-css" href="http://web.archive.org/web/20161127073116cs_/http://www.washingtonpost.com/sf/world/wp-content/plugins/wapo-footnote/parts/css/plugin.css?ver=1.0.0" type="text/css" media="screen, projection"/>
+<script type="text/javascript" src="http://web.archive.org/web/20161127073116js_/http://js.washingtonpost.com/1d/twp-comments.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161127073116js_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/js/lib/html5.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161127073116js_/http://www.washingtonpost.com/sf/world/wp-content/plugins/wapo-footnote/parts/js/plugin.js?ver=1.0.0"></script>
+  
+              <script type="text/javascript" src="http://web.archive.org/web/20161127073116js_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme.js?1"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161127073116js_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/js/build/enterprise-theme-nav.js?1"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20161127073116js_/http://js.washingtonpost.com/posttv/resources/js/posttv/vendor/pubsub.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161127073116js_/https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20161127073116js_/http://js.washingtonpost.com/posttv/resources/js/posttv/posttv-player.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161127073116js_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/js/build/embedded-content-video.js"></script>
+              <script src="http://web.archive.org/web/20161127073116js_/http://js.washingtonpost.com/wp-srv/ad/loaders/latest/js/min/loader.min.js" data-ad-site="wp" data-ad-page-type="responsive"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20161127073116js_/http://js.washingtonpost.com/wp-stat/enterprise-raw-code/sharebar/enterprise-sharebar.js"></script>              <script type="text/javascript">
+$(document).ready(function() {
+
+    //append social buttons to bylines
+    $('.bylines').parent().append($('.top-sharebar-wrapper').parent());
+
+    //store metadata
+    var ogTitleSelector = document.querySelector('meta[property="og:title"]');
+    var ogTitleContent = (encodeURIComponent(ogTitleSelector && ogTitleSelector.getAttribute("content"))).replace(/'/g, "%27");
+
+    var ogImageSelector = document.querySelector('meta[property="og:image"]');
+    var ogImageContent = ogImageSelector && ogImageSelector.getAttribute("content");
+
+    var ogURLSelector = document.querySelector('meta[property="og:url"]');
+    var ogURLContent = encodeURI(ogURLSelector && ogURLSelector.getAttribute("content"));
+
+    var ogDescriptionSelector = document.querySelector('meta[property="og:description"]');
+    var ogDescriptionContent = (encodeURIComponent(ogDescriptionSelector && ogDescriptionSelector.getAttribute("content"))).replace(/'/g, "%27");
+
+    //populate share button click events with metadata
+    var facebookString = "window.open('http://web.archive.org/web/20161127073116/https://www.facebook.com/sharer/sharer.php?u="+ogURLContent+"','share_facebook','width=658,height=354,scrollbars=no');return false;";
+    $('#facebook-raw-share')[0].setAttribute("onclick", facebookString);
+
+    var twitterString = "window.open('http://web.archive.org/web/20161127073116/https://twitter.com/share?url="+ogURLContent+"&amp;text="+ogTitleContent+"','share_twitter','width=550, height=350, scrollbars=no');return false;";
+    $('#twitter-raw-share')[0].setAttribute("onclick", twitterString);
+
+    var googlePlusString = "window.open('http://web.archive.org/web/20161127073116/https://plus.google.com/share?url="+ogURLContent+"','share_google-plus','width=832,height=472,scrollbars=no');return false;"; 
+    $('#google-plus-raw-share')[0].setAttribute("onclick", googlePlusString);
+
+    var emailString = "mailto:?subject="+ogTitleContent+" from the Washington Post&body="+ogURLContent+""; 
+    $('#email-raw-share')[0].setAttribute("href", emailString);
+
+    // var linkedInString = "window.open('http://web.archive.org/web/20161127073116/http://www.linkedin.com/shareArticle?mini=true&amp;url="+ogURLContent+"&amp;title=','share_linkedin','width=830,height=460,scrollbars=no');return false;"; 
+    // $('#linkedIn-raw-share')[0].setAttribute("onclick", linkedInString);
+
+    var pinterestString = "window.open('//web.archive.org/web/20161127073116/http://pinterest.com/pin/create/bookmarklet/?url="+ogURLContent+"&amp;media="+ogImageContent+"&amp;description=','share_pinterest','width=550,height=450,scrollbars=no');return false;"; 
+    $('#pinterest-raw-share')[0].setAttribute("onclick", pinterestString);
+
+    var tumblrString = "window.open('http://web.archive.org/web/20161127073116/http://www.tumblr.com/share/link?url="+ogURLContent+"&amp;name="+ogTitleContent+"&amp;description="+ogDescriptionContent+"','share_tumblr','width=550,height=450,scrollbars=no');return false;"; 
+    $('#tumblr-raw-share')[0].setAttribute("onclick", tumblrString);
+}); 
+</script>              <script>
+if ($.browser.mozilla) { $('body').addClass('firefox'); }
+</script>    
+<!-- This website is powered by Piklist. Learn more at http://piklist.com/ -->
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"707aabbc5c","applicationID":"4157428","transactionName":"MlABYUsACEJXARVaXgsaIlZNCAlfGQsPV1Qd","queueTime":0,"applicationTime":635,"ttGuid":"","agentToken":"","atts":"HhcCFwMaG0w=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
