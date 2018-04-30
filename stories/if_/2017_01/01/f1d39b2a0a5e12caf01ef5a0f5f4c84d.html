@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+    <!--[if IE 7]><html class="ie ie7" lang="en-US"><![endif]-->
+    <!--[if IE 8]><html class="ie ie8" lang="en-US"><![endif]-->
+    <!--[if !(IE 7) | !(IE 8)  ]><!--><html lang="en-US"><!--<![endif]-->
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app17.us.archive.org';v.server_ms=338;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/static/js/wbhack.js?v=1521067262.0" charset="utf-8"></script>
+
+<script type="text/javascript">
+__wbhack.init('http://web.archive.org/web');
+</script>
+<link rel="stylesheet" type="text/css" href="/static/css/banner-styles.css?v=1521067262.0" />
+<link rel="stylesheet" type="text/css" href="/static/css/iconochive.css?v=1521067262.0" />
+
+<!-- End Wayback Rewrite JS Include -->
+        <meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+        <title>Curtain call for the legendary writers, musicians, actors and artists that the world lost in 2016 | The Washington Post</title>                
+                
+        <meta property="fb:app_id" content="41245586762"/>
+        <meta property="article:publisher" content="https://www.facebook.com/washingtonpost"/>
+        <meta name="twitter:site" value="@WashingtonPost"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="og:title" content="Curtain call for the legendary writers, musicians, actors and artists that the world lost in 2016">
+        <meta property="og:image" content="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/ObitBowie.jpg">
+        <meta property="og:url" content="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/sf/style/2016/12/30/curtain-call-for-the-legendary-writers-musicians-actors-and-artists-that-the-world-lost-this-year/">
+        <meta property="og:site_name" content="Washington Post">
+        <meta property="og:type" content="article">
+        <meta property="og:description" content="They touched the world in diverse, indelible ways: David Bowie, Prince, Leonard Cohen, George Michael, Carrie Fisher, Glenn Frey, Phife Dawg and Merle Haggard. The Washington Post writers gather their thoughts for a final appreciation of these and other.">
+
+        <meta name="description" content="Curtain call for the legendary writers, musicians, actors and artists that the world lost in 2016">
+        <meta name="keywords" content="arts and entertainment deaths 2016, David Bowie, Prince, Maurice White, Edward Albee, Harper Lee, Leonard Cohen, Florence Henderson, Glenn Frey, George Martin, Phife Dawg, Garry Shandling, Zaha Hadid, Merle Haggard, George Michael, Carrie Fisher.">
+        <meta name="news_keywords" content="arts and entertainment deaths 2016, David Bowie, Prince, Maurice White, Edward Albee, Harper Lee, Leonard Cohen, Florence Henderson, Glenn Frey, George Martin, Phife Dawg, Garry Shandling, Zaha Hadid, Merle Haggard, George Michael, Carrie Fisher.">
+
+        
+         <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-57-precomposed.png">
+
+                
+        		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/web.archive.org\/web\/20170101050428\/http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/web.archive.org\/web\/20170101050428\/http:\/\/www.washingtonpost.com\/sf\/style\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.7"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="rs-plugin-settings-css" href="http://web.archive.org/web/20170101050428cs_/http://www.washingtonpost.com/sf/style/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.1" type="text/css" media="all"/>
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<link rel="stylesheet" id="wp-bootstrap-min-css" href="http://web.archive.org/web/20170101050428cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-responsive-css" href="http://web.archive.org/web/20170101050428cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap-responsive.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-fonts-css" href="http://web.archive.org/web/20170101050428cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/fonts.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-inline-css" href="http://web.archive.org/web/20170101050428cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/inline.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-font-awesome-min-css" href="http://web.archive.org/web/20170101050428cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-v4.2-min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-enterprise-theme-style-css" href="http://web.archive.org/web/20170101050428cs_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/style.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-pretty-comments-css" href="http://web.archive.org/web/20170101050428cs_/http://css.wpdigital.net/wp-srv/graphics/css/pretty-comments.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="print-css" href="http://web.archive.org/web/20170101050428cs_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/css/print.css?ver=0.3.1.5" type="text/css" media="print"/>
+<!--[if IE]>
+<link rel='stylesheet' id='wp-general-ie-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/iefonts.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='wp-font-awesome-ie-min-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-ie7.min.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript" src="http://web.archive.org/web/20170101050428js_/http://www.washingtonpost.com/sf/style/wp-includes/js/jquery/jquery.js?ver=1.11.2"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101050428js_/http://www.washingtonpost.com/sf/style/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101050428js_/http://www.washingtonpost.com/sf/style/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101050428js_/http://www.washingtonpost.com/sf/style/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101050428js_/http://js.washingtonpost.com/1h/twp-scripts.js?ver=4.2.7"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101050428js_/http://js.washingtonpost.com/1h/twp-internal.js?ver=4.2.7"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ET_OM = {"omniture":"lifestyle","wp_page_num":"1 of 1","wp_blogname":"","wp_author":"Victoria Fogg,Washington Post staff","commercialNode":"lifestyle\/entertainment"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101050428js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme-ad-scripts.js?ver=1418247459"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101050428js_/http://js.washingtonpost.com/pb/resources/js/utils/control-mod.js?ver=4.2.7"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.washingtonpost.com/sf/style/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.washingtonpost.com/sf/style/wp-includes/wlwmanifest.xml"/> 
+<link rel="prev" title="Washington’s high life" href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/sf/style/2016/12/08/washingtons-high-life/"/>
+<meta name="generator" content="WordPress 4.2.7"/>
+<link rel="canonical" href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/sf/style/2016/12/30/curtain-call-for-the-legendary-writers-musicians-actors-and-artists-that-the-world-lost-this-year/"/>
+<link rel="shortlink" href="http://www.washingtonpost.com/sf/style/?p=12294"/>
+<meta name="generator" content="Piklist 0.9.9.7c"/>
+<link rel="https://api.w.org/" href="http://www.washingtonpost.com/sf/style/wp-json/"/>
+        <script type="text/javascript">
+          var ET_ASSETS = {
+            'post_title': 'Curtain call for the legendary writers, musicians, actors and artists that the world lost this year',
+            'post_url': 'http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/sf/style/2016/12/30/curtain-call-for-the-legendary-writers-musicians-actors-and-artists-that-the-world-lost-this-year/',
+          };
+        </script>
+      <meta name="generator" content="Powered by Slider Revolution 5.2.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."/>
+        
+        <script>
+          var $ = jQuery.noConflict();
+        </script>
+
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/css/ie-fix.css" />
+        <![endif]-->
+    </head>
+    <body class="single single-post postid-12294 single-format-standard ipad"> 
+        <div id="et-nav" style="top:0px">
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-sections-dropdown">
+                    <div id="et-nav-sections-regular-dropdown-wrapper" class="hidden-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-full-click"> 
+                            <div class="pull-left">Sections</div>
+                            <div class="share-icon pull-left"><i class="fa fa-reorder"></i></div>
+                        </a>
+                    </div>
+                    <div id="et-nav-sections-reduced-dropdown-wrapper" class="visible-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-reduced-click">
+                            <span class="share-icon pull-left"><i class="fa fa-reorder"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-company-icon">
+                    <a class="branding" href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/">
+                        <img id="branding-at-top" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/wp_full_white.png"/>
+                        <img id="branding-during-scroll" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/wp_logo_white.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="pull-left border-left hidden-phone no-left-margin-padding" id="et-title-wrap">
+                <div id="et-nav-story-title" class="hide-title-indent">
+                    <a href="#"><p>Curtain call for the legendary writers, musicians, actors and artists that the world lost this year</p></a>
+                </div>
+            </div>
+
+
+                        
+            <div class="pull-right hidden-phone" id="share-series">
+                
+                <div class="pull-left border-left relative">
+                    <div id="et-nav-share-dropdown">
+                        <a href="#" class="clearfix pull-right">
+                            <div class="pull-left">
+                                <p class="pull-left">Share</p>
+                                <p class="share-icon pull-left"><i class="fa fa-share"></i></p>
+                            </div>
+                        </a>
+                        <ul class="et-dropdown hidden no-series-nav">
+                          <li><a target="_blank" href="http://web.archive.org/web/20170101050428/https://facebook.com/dialog/feed?app_id=41245586762&amp;link=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Fstyle%2F2016%2F12%2F30%2Fcurtain-call-for-the-legendary-writers-musicians-actors-and-artists-that-the-world-lost-this-year%2F&amp;name=Curtain+call+for+the+legendary+writers%2C+musicians%2C+actors+and+artists+that+the+world+lost+in+2016&amp;redirect_uri=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Fstyle%2F2016%2F12%2F30%2Fcurtain-call-for-the-legendary-writers-musicians-actors-and-artists-that-the-world-lost-this-year%2F"><i class="fa fa-facebook"></i><span class="social-name">Facebook</span></a></li>
+                          <li><a target="_blank" href="http://web.archive.org/web/20170101050428/https://twitter.com/intent/tweet?text=Curtain+call+for+the+legendary+writers%2C+musicians%2C+actors+and+artists+that+the+world+lost+in+2016 http%3A%2F%2Fwapo.st%2Fartslegends2016"><i class="fa fa-twitter"></i><span class="social-name">Twitter</span></a></li>
+                          <li><a href="http://web.archive.org/web/20170101050428/mailto:/?subject=Curtain call for the legendary writers, musicians, actors and artists that the world lost in 2016 from the Washington Post&amp;body=http%3A%2F%2Fwapo.st%2Fartslegends2016"><i class="fa fa-envelope"></i><span class="social-name">Email</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                            </div> 
+
+                    </div>
+
+    	<div id="main-container" style="padding-top: 50px">
+	<div class="sections">
+					<div class="home section" id="section-home"><div class="container first">                <div class="row">
+                <div class="span12 bT1S marTB0 padT30 no-border graphic bg-none graphicPadTB30" id="raw">
+        <style>
+
+
+
+
+
+
+/* FADE BEGIN */
+
+#crossfadewrapper {
+    padding: 30%;
+    z-index: 2;
+    background-color: #FFFFFF;
+}
+
+#crossfadewrappersmall {
+    display: none;
+}
+
+/* ////// USE THIS SPREADSHEET TO CALCULATE ANIMATION TIMING:
+
+http://bit.ly/1PntEdd
+
+/////// */
+
+
+#crossfade img {
+    position: absolute; 
+    left: 0;
+    top: 0;
+    animation-name: xfade;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 21s; /* BASE ANIMATION DURATION */
+}
+
+/* ///// NOTE: Your final "nth-of-type(x)" should be 1 less than the total number of images you're fading. For example, if you have a total of 5 images, you should have ONLY "nth-of-type" (1), (2), (3), and (4). //// */ 
+
+#crossfade img:nth-of-type(1) {animation-delay: 18s;}
+#crossfade img:nth-of-type(2) {animation-delay: 15s;}
+#crossfade img:nth-of-type(3) {animation-delay: 12s;}
+#crossfade img:nth-of-type(4) {animation-delay: 9s;}
+#crossfade img:nth-of-type(5) {animation-delay: 6s;}
+#crossfade img:nth-of-type(6) {animation-delay: 3s;}
+
+/* USE THE KEYFRAME FIGURES FROM THE SPREADSHEET TO UPDATE ONLY THE PERCENTAGES */
+
+@keyframes xfade {
+	0% { opacity:1; }
+	12% { opacity:1; }
+	14% { opacity:0; }
+	98% { opacity:0; }
+	100% { opacity:1; }
+}
+
+/*FADE OVER */
+
+
+
+
+
+
+
+.overlay {
+    z-index: 3; 
+}
+
+
+
+.overlay-title {
+    position: relative; 
+    /*left: 60%;*/
+    bottom: 8.5%;
+    font-size: 5vw;
+    font-family: PostoniDisplay, Times, serif, Georgia;
+    color: #000;
+    /*letter-spacing: 5px;*/
+    text-rendering: optimizeLegibility !important;
+    width: 100%;
+    line-height: 125%;
+    text-align: center;
+    padding-top:12px;
+}
+
+.overlay-blurb {
+    position: relative; 
+    /*left: 60%;*/
+    bottom: 1.5%;
+    display: block;
+    width: 70%;
+    margin: 15px auto;
+    font-size: 1.5vw;
+    font-family: FranklinITCProThin, Helvetica, Arial;
+    text-rendering: optimizeLegibility !important;
+    color: #000;
+    line-height: 120%;
+    text-align: center;
+    padding-bottom:8px;
+}
+
+/* CHANGES BLURB FONT FROM THIN TO LIGHT */
+@media (max-width: 1400px) {
+    .overlay-blurb {
+        font-family: FranklinITCProLight, Helvetica, Arial;
+    }
+}
+
+
+@media (max-width: 979px) {
+        .overlay-title {
+        position: relative; 
+        width: 724px; 
+        display: block;
+        margin: 0 auto;
+        font-family: PostoniDisplay, Georgia, Times, serif;
+        color: #000;
+        font-size: 7vw;
+        margin-top: 25px;
+        left: 0;
+        text-shadow: none;
+        text-align: center;
+    }
+    .overlay-blurb {
+        font-family: FranklinITCProLight, Helvetica, Arial;
+		text-rendering: optimizeLegibility !important;
+        font-size: 3.5vw;
+        width: 900px;
+        /*width: 100%;*/
+        position: relative;
+        text-shadow: none;
+        color: #000;
+        left: 0;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 767px) {
+    #crossfadewrapper {
+        display: none;
+    }
+
+    #crossfadewrappersmall {
+        display: block;
+        z-index: 2;
+        background-color: #000;
+        margin-right: -20px; 
+        margin-left: -20px;
+        height: 56vw;
+        width: 100vw;
+    }
+
+    #crossfade img {
+        margin-left: -20px;
+        max-height: 80vw;
+        max-width: 100vw;
+    }
+
+
+    .overlay-title {
+        width: 100%;
+        font-size: 350%;
+    }
+
+    .overlay-blurb {
+        font-size: 175%;
+        margin-top: 5px;
+        width: 100%;
+        left:0;
+    }
+
+    .introline::first-letter {
+    font-size: 100px;
+    line-height: 45px;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .overlay-blurb {
+        font-size: 6vw;
+        margin-top: 5px;
+        width: 100%;
+        left:0;
+    }
+}
+
+</style>
+
+
+<!-- !!!!!!!! BEGIN HEADLINES !!!!!!!!! -->
+
+<body class="single single-post postid-10 single-format-standard logged-in">
+
+    <div id="main-container">
+        <div class="sections">
+            <div class="home section" id="section-home">
+                        <h2 class="overlay overlay-title">A final curtain call</h2>
+                        <h1 class="overlay overlay-blurb">Appreciations for the legendary writers, musicians, actors and artists that the world lost in 2016</h1>
+                <div class="posrel cf">
+                <!--BEGIN CROSSFADE-->
+                <div id="crossfadewrapper">
+                        <div id="crossfade">
+                            <img src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/ObitFisher.jpg"/>
+                            <img src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/5/2016/12/ObitMichael.jpg"/>
+                            <img src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/5/2016/12/ObitCohen.jpg"/>
+                            <img src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/5/2016/12/ObitPrince.jpg"/>
+                            <img src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/5/2016/12/ObitHaggard.jpg"/>
+                            <img src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/5/2016/12/ObitDawg.jpg"/>
+                            <img src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/5/2016/12/ObitBowie.jpg"/>
+                        </div>
+                </div>
+                <!--THE CODE BELOW IS FOR MOBILE IMAGES-->
+                    <div id="crossfadewrappersmall">
+                        <div id="crossfade">
+                            <img src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/ObitBowie.jpg"/>
+                            <img src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/5/2016/12/ObitDawg.jpg"/>
+                            <img src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/5/2016/12/ObitHaggard.jpg"/>
+                            <img src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/5/2016/12/ObitPrince.jpg"/>
+                            <img src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/5/2016/12/ObitCohen.jpg"/>
+                            <img src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/5/2016/12/ObitMichael.jpg"/>
+                            <img src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/local/wp-content/uploads/sites/5/2016/12/ObitFisher.jpg"/>
+                        </div>
+                    </div>
+   		<!--END CROSSFADE-->
+        </div>
+                </div>
+                <div class="row first">
+            <div class="span4 pull-right padB10 marB10">
+              <div class="bylines bTB1S padTB10 marB10">
+                                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <span class="name">Washington Post staff</span>                                                                        </div>
+                      </div>
+              <div class="publish-date">Published on December 30, 2016</div>
+              
+              <!-- <div class=" utility-tools-wrapper">
+                <div class="utility-tools-primary margin-top">
+                  <div class="social-tools ">
+                    <div class="textresizer tool first mobile">
+                      <span class="hideText" tabindex="_tbidx_">Resize Text</span>
+                      <span class="fa fa-font"></span>
+                    </div>
+                    <a onclick="window.print();" tabindex="_tbidx_">
+                      <div class="print tool mobile">
+                        <span class="hideText">Print Article</span>
+                        <span class="fa fa-print"></span>
+                      </div>
+                    </a>
+                    <a href="#comments" tabindex="_tbidx_">
+                      <div class="comments tool last mobile">
+                        <span class="hideText">Comments</span>
+                        <span class="fa fa-comments"></span>
+                        <span id="echo_container" class="echo_container comment-vars echo-counter text" guid="http://www.washingtonpost.com/sf/style/2016/12/30/curtain-call-for-the-legendary-writers-musicians-actors-and-artists-that-the-world-lost-this-year/">0</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div> -->
+              
+            </div>
+            
+        <div class="span8 col">
+<p class="firstgraf">They touched the world in diverse, indelible ways. Larger-than-life pop stars David Bowie, Prince and George Michael. Singular writers Harper Lee and Edward Albee. Stars of screens small and large Florence Henderson and Carrie Fisher. Washington Post writers gather their thoughts for a final appreciation of some of those that left us in 2016.</p>
+<div id="david-bowie" style="width: 2610px" class="wp-caption alignleft"><img class="wp-image-12438 size-full" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/davidweb.jpg" alt="David Bowie performing in Norway in 2002." width="2600" height="1694"/><p class="wp-caption-text">(Heiko Junge/European Pressphoto Agency)</p></div>
+<h3>David Bowie: The limitless potential of renewal</h3>
+<h4>By Chris Richards | Jan. 11</h4>
+</div></div><div class="row">        <div class="note pull-right col span4 visible-tablet visible-desktop">
+            <p> <strong>Sixteen legends:</strong> <span class="note--headline">SIXTEEN LEGENDS</span><br/>
+<span class="note--headline">David Bowie:</span> <a href="#david-bowie">The limitless potential of renewal</a><br/>
+<span class="note--headline">Glenn Frey:</span> <a href="#glenn-frey">&#8220;The one who started it all&#8221;</a><br/>
+<span class="note--headline">Maurice White:</span> <a href="#maurice-white">He shaped the essential playlist of black lives</a><br/>
+<span class="note--headline">Harper Lee:</span> <a href="#harper-lee">How she lost control of her legacy</a><br/>
+<span class="note--headline">George Martin:</span> <a href="#george-martin">One of his best decisions</a><br/>
+<span class="note--headline">Phife Dawg:</span> <a href="#phife-dawg">Humor and humanity for A Tribe Called Quest</a><br/>
+<span class="note--headline">Garry Shandling:</span> <a href="#garry-shandling">Father of the cringeworthy</a><br/>
+<span class="note--headline">Zaha Hadid:</span> <a href="#zaha-hadid">The mixed legacy of the unstoppable architect</a><br/>
+<span class="note--headline">Merle Haggard:</span> <a href="#merle-haggard">Carrying life&#8217;s burdens to the end of the road</a><br/>
+<span class="note--headline">Prince:</span> <a href="#prince">We&#8217;ve lost our single greatest pop star</a><br/>
+<span class="note--headline">Edward Albee:</span> <a href="#edward-albee">The last of the giants</a><br/>
+<span class="note--headline">Leonard Cohen:</span> <a href="#leonard-cohen">Conversations with the void</a><br/>
+<span class="note--headline">Florence Henderson:</span> <a href="#florence-henderson">A reassuring sense of adulthood</a><br/>
+<span class="note--headline">George Michael:</span> <a href="#george-michael">Absolutely serious about pop</a><br/>
+<span class="note--headline">Carrie Fisher:</span> <a href="#carrie-fisher">Distinctive honesty</a><br/>
+<span class="note--headline">Debbie Reynolds:</span> <a href="#carrie-fisher">A trouper all the way</a></p>
+        </div>
+        <div class="span8 col">
+<p>Mourning David Bowie requires tremendous energy because there are so many David Bowies to mourn. The lost cosmonaut. The alien balladeer. The pansexual glamourpuss. The rake. The maestro. The fashionista. The freak. He was humanity’s ultimate and most giving rock star. A chameleon bearing gifts.</p>
+<p>For five decades, Bowie — who died Jan. 10 at age 69 — reimagined himself over and over again, colorfully implying that music should change while quietly insisting that human beings can change. In that sense, Bowie’s mutations were a manifestation of his generosity. Being yourself is fine, but being every iteration of yourself is living. Renewal is possible. Still. Always.</p>
+<p>He made sure that we learned that big lesson with our eyes as well as our ears. As rock’s greatest shape-shifter, Bowie always had fresh ideas about love, alienation, pleasure and progress churning beneath each new haircut. With an imagination deeper than his wardrobe, he was an omni-star, casually drifting across a vast terrain at high speeds. <a href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/lifestyle/style/david-bowie-taught-us-the-limitless-potential-of-renewal/2016/01/11/b68fb16a-b87b-11e5-829c-26ffb874a18d_story.html?utm_term=.ecb53d85030b/">Read complete story</a></p>
+<div id="glenn-frey" style="width: 2610px" class="wp-caption alignleft"><img class="wp-image-12341 size-full" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2015/12/eaglesforweb.jpg" alt="The Eagles in the mid-70s, from left: Bernie Leadon, Glenn Frey, Don Henley, Randy Meisner, Don Felder" width="2600" height="1792"/><p class="wp-caption-text">(Gems/Redferns/Getty Images)</p></div>
+<h3>Glenn Frey: ‘The one who started it all’ with the Eagles</h3>
+<h4>By Geoff Edgers | Jan. 18</h4>
+<p>It was 1971, and Jackson Browne was working on a new song that he just couldn’t finish. Frustrated, he told his buddy, Glenn Frey, to give it a try. And with a single phrase — “It’s a girl, my Lord, in a flatbed Ford�? — Frey invented the California country-rock sound and launched one of the biggest bands of all time.</p>
+<p>“Take It Easy,�? recorded by the Eagles and released in 1972, rose to No. 12 on the pop charts and introduced the world to the Detroit-born singer with the bloodshot eyes and outlaw moustache. The song also marked the beginning of the sometimes glorious, sometimes dysfunctional reign for the Eagles, a band that would go on to sell more than 150 million records. <a href="www.washingtonpost.com/lifestyle/style/glenn-frey-the-one-who-started-it-all-with-the-eagles/2016/01/18/f1f72f3a-be43-11e5-bcda-62a36b394160_story.html?utm_term=.cade7c7e73a1/">Read complete story</a></p>
+<div id="maurice-white" style="width: 2610px" class="wp-caption alignleft"><img class="wp-image-12351 size-full" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2015/12/whiteforweb.jpg" alt="Maurice White, center, and Earth, Wind &amp; Fire in the 1970s. From left: Al McKay, Philip Bailey, White, Verdine White and Larry Dunn. Back row, from left: Ralph Johnson, Andrew Woolfolk and Johnny Graham. " width="2600" height="2005"/><p class="wp-caption-text">(AP)</p></div>
+<h3>Maurice White: Shaping the essential playlist of black lives</h3>
+<h4>By Lonnae O&#8217;Neal | Feb. 4</h4>
+<p>My kids can always tell when I’m listening to a song by the “Elements of the Universe, ladies and gentlemen,�? as the jocks on old black radio would sometimes introduce Earth, Wind and Fire. I’d close my eyes and twist up my face. I’d tighten my fists as the horns would rise. By the time the lyrics settled about my head, I was already gone. Singing along. Feeling a sacred pull in all my secular places.</p>
+<p>It was: You need devotion. Bless the children.</p>
+<p>It was: If you look way down in your heart and soul, don’t hesitate ’cause the world seems cold . . .</p>
+<p>It was: Now, I’m craving your body, is this real? Temperatures rising, I don’t want to feel. I’m in the wrong place to be real.</p>
+<p>When my husband called to say that Maurice White, 74, who founded Earth, Wind and Fire in the late 1960s had died of Parkinson’s disease Feb. 4, I was already grieving. White wrote many of the hits for the group, which won six Grammy Awards, sold 90 million records worldwide and was inducted into the Rock and Roll Hall of Fame. But they meant so much more than that. It’s impossible to pick your favorite Earth, Wind and Fire song, because it’s always the one that’s playing right now. We grew up listening, putting our needles on their records with our brothers and sisters. “They took it to the cosmic,�? my husband, Tom, said, and he’s right about that. <a href="www.washingtonpost.com/lifestyle/maurice-white-founder-of-earth-wind-and-fire-shaped-the-essential-playlist-of-black-lives/2016/02/05/e7275e48-cb9c-11e5-a7b2-5a2f824b02c9_story.html?utm_term=.722b18471c64/">Read complete story</a></p>
+<div id="harper-lee" style="width: 2610px" class="wp-caption alignleft"><img class="wp-image-12346 size-full" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2015/12/harperleeforweb-e1482946004413.jpg" alt="" width="2600" height="3270"/><p class="wp-caption-text">(AP)</p></div>
+<h3>How Harper Lee lost control of her legacy</h3>
+<h4>By Ron Charles | Feb. 19</h4>
+<p>The sadness of Harper Lee’s death Feb. 19 in Monroeville, Ala., is deepened by the painful controversies that attended the last few years of her life. Long adored as the author of “To Kill a Mockingbird,�? Lee found herself caught in a morass of claims and counterclaims about her competency to manage her own literary legacy.</p>
+<p>“To Kill a Mockingbird�? is still devoured by countless new and repeat readers around the world. Teenagers study the Depression-era story of Scout and Jem every year. Lawyers routinely say that Scout’s father, Atticus Finch, inspired them to study law. But ironically, lawyers and legal ambiguities eventually threatened to overshadow Lee’s life and work.</p>
+<p>What a shame.</p>
+<p>There was, for decades, something ineffably pure about Lee’s singular American classic, published in 1960. The author’s reluctance to give interviews, her resistance to all the self-promotional schemes of modern publishing, and especially her refusal to write another novel contributed to the mythos of “To Kill a Mockingbird.�? Unfettered by any distractions except Horton Foote’s glorious movie version, the story of Scout’s moral awakening and her father’s brave fight against bigotry remained preserved in the Mason jar of our collective consciousness, a tribute to the better angels of our nature. <a href="http://web.archive.org/web/20170101050428/https://www.washingtonpost.com/entertainment/books/critics-notebook-the-shame-of-harper-lees-muddled-legacy/2016/02/19/36624b62-d723-11e5-be55-2cc3c1e4b76b_story.html?utm_term=.e1685c9f4290/">Read complete story</a></p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox" data-ad-type="bigbox" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<div id="george-martin" style="width: 2610px" class="wp-caption alignleft"><img class="wp-image-12342 size-full" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2015/12/martinandbeatlesforweb.jpg" alt="Left to right: Paul McCartney, George Harrison, Ringo Starr, George Martin and John Lennon. " width="2600" height="2191"/><p class="wp-caption-text">(Chris Ware/Keystone via Getty Images)</p></div>
+<h3>George Martin: He kept his hands off the Beatles’ worst song. It was one of his best decisions.</h3>
+<h4>By Geoff Edgers | March 8</h4>
+<p>Yes, Sir George Martin accomplished so much as the fifth Beatle, from the crunch of those early records to the experimentation of “Revolver�? and beyond, but there’s one important moment I’d like to remember: The time Martin wasn’t involved in making Beatles music.</p>
+<p>Those are the 1994 sessions during which the remaining three took John Lennon’s late-’70s demos for “Free as a Bird�? and “Real Love�? and tried to produce them up into a so-called reunion.</p>
+<p>“Free as a Bird�? was certainly a hit, cracking the top 10 shortly after its 1995 release. It also served as a key marketing tool for the launch of the Beatles “Anthology�? series.</p>
+<p>It also sounded terrible. <a href="http://web.archive.org/web/20170101050428/https://www.google.com/amp/s/www.washingtonpost.com/amphtml/news/arts-and-entertainment/wp/2016/03/09/george-martin-kept-his-hands-off-the-beatles-worst-song-it-was-one-of-his-best-decisions/">Read complete story</a></p>
+<div id="phife-dawg" style="width: 2610px" class="wp-caption alignleft"><img class="wp-image-12349 size-full" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2015/12/phifeforweb.jpg" alt="Phife Dawg and Q-Tip performing in 2010. " width="2600" height="1752"/><p class="wp-caption-text">(Kyle Gustafson for The Washington Post)</p></div>
+<h3>Phife Dawg: He brought humor and humanity to A Tribe Called Quest</h3>
+<h4>By Chris Richards | March 22</h4>
+<p>Despite all of the chest-puffy braggadocio, the great American rap songbook still contains a surprising amount of bad-luck songs — and none more endearing than “8 Million Stories,�? a 1993 gem from A Tribe Called Quest.</p>
+<p>Across two jouncing verses, Phife Dawg explains why his “blood pressure’s blowin’ up�? in priceless detail. Smash-and-grabbers lift the stereo out of his car. A flakey girl stands him up for a date. His kid brother throws a hissy-fit in the aisles of a KB toy store. And then, adding insult to injury, some referee tosses his favorite shooting guard out of the Knicks game: “To top it off, Starks got ejected.�?</p>
+<p>Amazing that all of this high-spirited self-deprecation could still spark smiles on Tuesday as news spread across the internet that Phife — born Malik Taylor — had died earlier in the morning. He was 45 years old, and while the cause of death wasn’t immediately announced, it’s widely known that Phife underwent a kidney transplant in 2008 after being diagnosed with diabetes in 1990. <a href="http://web.archive.org/web/20170101050428/https://www.google.com/amp/s/www.washingtonpost.com/amphtml/news/arts-and-entertainment/wp/2016/03/23/phife-dawg-of-a-tribe-called-quest-dies-at-45/?utm_term=.0c3629e88e22/">Read complete story</a></p>
+<div id="garry-shandling" style="width: 2610px" class="wp-caption alignleft"><img class="wp-image-12345 size-full" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2015/12/Garry_Shandlingforweb.jpg" alt="" width="2600" height="2007"/><p class="wp-caption-text">Garry Shandling hosts the Emmy Awards in 2010. (Mark J.Terrill/AP)</p></div>
+<h3>Garry Shandling: The father of all that is cringeworthy</h3>
+<h4>By Hank Stuever | March 24</h4>
+<p>The unexpected news March 24 that revered comedian Garry Shandling had died set off a rush among his fans and admirers to state the obvious about the ways Shandling and his peers (Jerry Seinfeld, Larry David — the list is long) made the world safe for the elemental human response known as the cringe.</p>
+<p>Works of comedy are now often judged on their “cringeworthiness,�? which is a shorthand way of describing an exact combination of hubris and humiliation, in situations that are once absurd and yet universal. Its ingredients include neurosis, self-absorption and the certitude that hell really is other people. It involves being a kind of loser, but never a clown. <a href="http://web.archive.org/web/20170101050428/https://www.google.com/amp/s/www.washingtonpost.com/news/arts-and-entertainment/wp/2016/03/25/garry-shandling-father-of-all-that-is-cringeworthy/?utm_term=.7b8964200681/">Read complete story</a></p>
+<div id="zaha-hadid" style="width: 2610px" class="wp-caption alignleft"><img class="wp-image-12347 size-full" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2015/12/ZahaHadidforweb.jpg" alt="Zaha Hadid at the Serpentine Sackler Gallery in London. " width="2600" height="1733"/><p class="wp-caption-text">(Leon Neal/Agence France-Presse via Getty Images)</p></div>
+<h3>Zaha Hadid: The mixed legacy of the unstoppable architect</h3>
+<h4>By Philip Kennicott | March 31</h4>
+<p>Architects are often very long-lived. Frank Lloyd Wright made it to 91 and I.M. Pei is still alive at 98, the same age that Philip Johnson died. So it was a shock to hear that Zaha Hadid, the first woman to win the prestigious Pritzker Prize, died March 31 at age 65, in Miami, where she was under treatment for bronchitis. It was especially shocking because Hadid was one of the most forceful personalities in contemporary architecture, renowned as a trailblazer and an imperious maverick who didn’t suffer fools gladly.</p>
+<p>It will take years, if not decades, to sort through Hadid’s legacy. Among her most high-profile projects were the Aquatics Center for the 2012 Olympic Games in London, the 2010 Guangzhou Opera House in China and the Heydar Aliyev Cultural Center in Baku, Azerbaijan, finished in 2012. But many of Hadid’s most ambitious projects are still underway, including plans for a stadium in Qatar to host the 2022 soccer World Cup. And Hadid embodied what many felt were the worst impulses of the most recent age of architectural exuberance: designs that indulged sculptural excess over logic and efficiency and the cultivation of celebrity status, which often seemed to insulate her from constructive criticism. She spoke the airy language of architectural theory, with all its utopian overtones, but she vigorously branded consumer products from candles to tableware to neckties. She worked regularly, and enthusiastically, in countries with authoritarian governments, designing them spectacular and expensive cultural centers and other vanity projects. <a href="www.washingtonpost.com/lifestyle/style/architect-zaha-hadid-always-seemed-unstoppable-but-she-left-a-mixed-legacy/2016/03/31/06bdd5a2-f762-11e5-a3ce-f06b5ba21f33_story.html?utm_term=.4b18824388e7/">Read complete story</a></p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_2" data-ad-type="bigbox|2" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<div id="merle-haggard" style="width: 2610px" class="wp-caption alignleft"><img class="wp-image-12396 size-full" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/Merle-Haggardcolorforweb.jpg" alt="Merle Haggard performs in Las Vegas in 2007." width="2600" height="2282"/><p class="wp-caption-text">(Laura Rauch/AP)</p></div>
+<h3>Merle Haggard: Carrying life’s burdens to the end of the road</h3>
+<h4>By Chris Richards | April 6</h4>
+<p>There’s something perverse about watching a man in pain sing some of the most beautiful songs ever written, which is how I spent two nights in November of 2010, chasing Merle Haggard’s bus down Interstate 10 out of Louisiana, into Texas, off toward oblivion.</p>
+<p>A few months earlier, Haggard had been named a Kennedy Center honoree, and I had been sent to a casino parking lot in Lake Charles to interview the country legend about his life and times. Stepping aboard his tour bus, I immediately realized I was speaking with a wounded man.</p>
+<p>Haggard was 73. A cancerous chunk of his lung had been removed in 2008 and he was just now recovering from a related infection that burned deep in his chest. When I told him that it seemed insane for a man in his state to be out on the road, he nodded in solemn agreement. He said that touring was a compulsion, an obligation, a trap he didn’t feel that he deserved to get sprung from. <a href="www.washingtonpost.com/entertainment/music/merle-haggard-carried-lifes-burdens-to-the-end-of-the-road/2016/04/06/48a65086-fc2e-11e5-9140-e61d062438bb_story.html?utm_term=.1375a4822b9d/">Read complete story</a></p>
+<div id="prince" style="width: 2610px" class="wp-caption alignleft"><img class="wp-image-12350 size-full" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2015/12/princevertforweb-e1482947984551.jpg" alt="Prince performing at the Grand Palais in Paris in 2009." width="2600" height="3907"/><p class="wp-caption-text">(Bertrand Guay/Agence France-Presse via Getty Images)</p></div>
+<h3>Prince: We’ve lost our single greatest pop star</h3>
+<h4>By Chris Richards | April 21</h4>
+<p>The most significant scene in “Purple Rain�? — the 1984 blockbuster that introduced Prince to the entirety of America — comes deep in the action when the young maestro finally strolls onstage to unleash the film’s transcendent title track.</p>
+<p>As the camera pans across the crowd, we see Jheri-curled funk dudes, Aqua Net glam girls, mulleted wastoids, preps and punks. And that’s exactly who Prince wanted to see when he looked out into this vicious world: a radical congregation of disparate individuals being different, being together, being free.</p>
+<p>Whether we’ve gotten any closer to that purple paradise over the past three decades is up for debate, but here’s what isn’t: Modernity has produced no greater pop star than Prince.</p>
+<p>The unexpected news of his death April 21 at age 57 certainly felt cruel to anyone who has ever believed in music as a force of enlightenment. This man was a superhero who summoned humanity onto a new dance floor with an effortlessly utopian swirl of funk, soul and rock-and-roll. He was a visionary songwriter, a top-shelf guitarist, a master-architect of rhythm, a breath-stealing vocalist and an unparalleled tornado of a live performer. Since his auspicious debut in 1978, he projected a mysterious, enduring invincibility. And now he’s gone. The shock is enough to make your brain go blank. <a href="www.washingtonpost.com/lifestyle/weve-lost-prince-our-single-greatest-pop-star/2016/04/21/cd281e12-07f9-11e6-bdcb-0133da18418d_story.html?utm_term=.102a12e1333a/">Read complete story</a></p>
+<div id="edward-albee" style="width: 2610px" class="wp-caption alignleft"><img class="wp-image-12369 size-full" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/albeeforweb-e1482947740276.jpg" alt="Edward Albee in 1979." width="2600" height="3439"/><p class="wp-caption-text">(S. Karin Epstein for The Washington Post)</p></div>
+<h3>Edward Albee: The last of the giants</h3>
+<h4>By Peter Marks | Sept. 16</h4>
+<p>“I try to, but I can’t control the world,�? Edward Albee once said. He was being modest — and uncharacteristically so. Because in the world of his creation, a world in which the stage churned with resentment and bubbled with anxiety and simmered in ambiguity, Albee was consummately in control.</p>
+<p>A maestro of linguistic control of international caliber, to be sure, on a par with his fellows in the pantheons of modernism and absurdism, Ireland’s Samuel Beckett and Britain’s Harold Pinter. Both of those giants were awarded Nobel Prizes for literature, and how Albee eluded the Nobel Committee’s similar approbation is a puzzlement that leaves, in the wake of his death Sept. 16 at the age of 88, a lamentable missing passage on an extraordinary résumé. <a href="www.washingtonpost.com/lifestyle/style/edward-albee-the-last-of-the-giants/2016/09/17/fd1e7a3c-7ceb-11e6-ac8e-cf8e0dd91dc7_story.html?utm_term=.75a2722f29d3/">Read complete story</a></p>
+<div id="leonard-cohen" style="width: 2610px" class="wp-caption alignleft"><img class="wp-image-12340 size-full" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2015/12/cohenhatforweb.jpg" alt="Leonard Cohen in Paris in 2012." width="2600" height="1733"/><p class="wp-caption-text">(Joel Saget/Agence France-Presse via Getty Images)</p></div>
+<h3>Leonard Cohen: Eavesdropping on conversations with the void</h3>
+<h4>By Chris Richards | Nov. 7</h4>
+<p>Before you can learn a body of music, you need to find a way in. For other listeners my age, the portal into Leonard Cohen’s songbook materialized in 1993 on the lips of Kurt Cobain. “Give me a Leonard Cohen afterworld,�? Cobain groused during “Pennyroyal Tea,�? one of Nirvana’s gnarlier mood swings. “So I can sigh eternally.�?</p>
+</div></div><div class="row">                <div class="span4 col pull-right right-content no-border graphic bg-none graphicPadTB30" id="raw">
+        <!-- Updated 12/7/15 by EY to fix a bug with single quotes --> 
+
+<link rel="stylesheet" href="//web.archive.org/web/20170101050428cs_/http://css.washingtonpost.com/wp-stat/enterprise-raw-code/sharebar/enterprise-sharebar.css?v3"/>
+
+<!-- To switch to grayscale share buttons, remove the 'color-top' class from top-sharebar-wrapper div -->
+
+<div class="top-sharebar-wrapper color-top large-8 large-centered columns cf" id="top-sharebar_123534312321">
+<div class="social-tools-wrapper">
+    <div class="social-tools-primary ">
+        <div class="social-tools ">
+            <!-- FB -->
+            <a id="facebook-raw-share" data-service="facebook" onclick="" tabindex="1">
+                <div class="facebook tool first mobile"><span class="hideText">Share on Facebook</span><span class="fa fa-facebook-square"></span></div>
+            </a>
+            <!-- Twitter -->
+            <a id="twitter-raw-share" data-service="twitter" onclick="" tabindex="2">
+                <div class="twitter tool mobile"><span class="hideText">Share on Twitter</span><span class="fa fa-twitter"></span></div>
+            </a>
+            <!-- Google Plus -->
+            <a id="google-plus-raw-share" data-service="google-plus" onclick="" tabindex="3">
+                <div class="google-plus tool mobile"><span class="hideText">Share on Google Plus</span><span class="fa fa-google-plus"></span></div>
+            </a>
+            <!-- Email -->
+            <a id="email-raw-share" data-service="email" href="" tabindex="4">
+                <div class="email tool mobile"><span class="hideText">Share via Email</span><span class="fa fa-envelope"></span></div>
+            </a>
+            <!-- More -->
+            <a onclick="return false;">
+                <div class="more last tool mobile"><span class="hideText" tabindex="5">More Options</span><span class="fa fa-plus"> </span></div>
+            </a>
+        </div>
+    </div>
+    <div class="social-tools-additional">
+        <div class="social-tools ">
+            <!-- LinkedIn -->
+<!--             <a id="linkedIn-raw-share" data-service="linkedin" onclick="" tabindex="6">
+                <div class="linkedin tool mobile first"><span class="hideText">Share on LinkedIn</span><span class="fa fa-linkedin"></span></div>
+            </a> -->
+            <!-- Pinterest -->
+            <a id="pinterest-raw-share" data-service="pinterest" onclick="" tabindex="7">
+                <div class="pinterest tool mobile first"><span class="hideText">Share on Pinterest</span><span class="fa fa-pinterest"></span></div>
+            </a>
+            <!-- Tumblr  -->
+            <a id="tumblr-raw-share" data-service="tumblr" onclick="" tabindex="8">
+                <div class="tumblr tool mobile last"><span class="hideText">Share on Tumblr</span><span class="fa fa-tumblr"></span></div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+</div>
+
+
+
+        </div>
+                <div class="span8 col">
+<p>Hell of an introduction. To escape Cobain’s world and drift into Cohen’s was to abandon a miasma of teenage despair for the mystical introspection of adulthood — a strange kind of sanctuary where Cohen’s consummate elegance seemed to drain all of the self-pity out of feeling blue. Cobain was howling into the void. Cohen had engaged it in polite conversation. <a href="www.washingtonpost.com/lifestyle/style/eavesdropping-on-leonard-cohens-conversations-with-the-void/2016/11/11/74f94eba-a81b-11e6-8042-f4d111c862d1_story.html?utm_term=.33f90d5476dd/">Read complete story</a></p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_3" data-ad-type="bigbox|3" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<div id="florence-henderson" style="width: 2610px" class="wp-caption alignleft"><img class="wp-image-12381 size-full" style="border: none" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/bradybunchforweb.jpg" alt="The cast of the Brady Bunch TV show." width="2600" height="1730"/><p class="wp-caption-text">(AP)</p></div>
+<h3>Florence Henderson: A reassuring (and vanishing) sense of adulthood</h3>
+<h4>By Hank Stuever | Nov. 24</h4>
+<p>Florence Henderson was 34 when she was cast as Carol Brady, an unmarried (presumably divorced; it’s still up for debate) mother of three little girls who met and married a widowed father of three sons, forming the happily blended brood of the hit TV sitcom “The Brady Bunch.�? It says something about Hollywood and American grown-ups that, in 1969, 34 was thought to be more than mature enough to begin one’s attempt at a reasonable second act.</p>
+<p>Like the character she played, Henderson (who died Nov. 24 at 82 from heart failure) had already achieved much in her career as a stage and screen performer, as well as becoming a real-life spouse and mom. Silly as it seemed, the “Brady Bunch�? pilot was Henderson’s big chance to shift from young Broadway ingenue parts to the more eternal role of nurturer. <a href="www.washingtonpost.com/entertainment/tv/in-florence-hendersons-carol-brady-a-reassuring-and-vanishing-sense-of-adulthood/2016/11/25/352eb316-b323-11e6-840f-e3ebab6bcdd3_story.html">Read complete story</a></p>
+<div id="george-michael" style="width: 2610px" class="wp-caption alignleft"><img class="wp-image-12381 size-full" style="border: none" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/ObitMichael.jpg" alt="George Michael" width="2600" height="1730"/><p class="wp-caption-text">(Rob Verhorst/Redferns)</p></div>
+<h3>George Michael: Absolutely serious about pop</h3>
+<h4>By Chris Richards | Dec. 26</h4>
+<p>George Michael was given only 53 years in this world, but he made them count. He was still a teenager in 1982 when he began triggering worldwide endorphin rushes as a member of Wham! Five years and a few hairstyles later, he went solo, wiggled the backside of his Levi’s on MTV and became a global sex symbol. By the time 2004 rolled around, he was staging a big comeback at age 40, and he divulged the riddle of his craft that year in the pages of British GQ: “People have always thought I wanted to be seen as a serious musician, but I didn’t, I just wanted people to know that I was absolutely serious about pop music.�?</p>
+<p>He had recently issued what would be his fifth and final studio album, “Patience,�? a sensuous, sprawling meditation on sex, war, grief and commitment. Playful one moment and contemplative the next, the album seemed to give Michael an opportunity to sort out some important truths about pop itself: that our pleasure is not frivolous, and that heavy ideas travel further when they’re floating on bright melodies. <a href="http://web.archive.org/web/20170101050428/https://www.washingtonpost.com/lifestyle/style/faith-proved-george-michael-was-a-superstar-patience-proved-he-was-a-great/2016/12/26/c06dc174-cb8d-11e6-a747-d03044780a02_story.html">Read complete story</a></p>
+<div id="carrie-fisher" style="width: 2610px" class="wp-caption alignleft"><img class="wp-image-12381 size-full" style="border: none" src="http://web.archive.org/web/20170101050428im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/ObitFisher.jpg" alt="Carrie Fisher" width="2600" height="1730"/><p class="wp-caption-text">(Bill Snead/The Washington Post)</p></div>
+<h3>The humanity and humor of Carrie Fisher</h3>
+<h4>By Ann Hornaday | Dec. 27</h4>
+<p>Carrie Fisher went into the family business as an actress, vaulting from off-screen Hollywood royalty to the on-screen version as a generation’s most revered space princess, along the way picking up and dropping a drug habit, turning it all into fodder for one of the finest, funniest show-business memoirs ever written, albeit in the form of a semi-autobiographical novel. Movie fans may consider “Postcards From the Edge�? a piquant Meryl Streep comedy, but writers worship the book for the same tough, wry self-awareness Fisher brought to her script-doctoring work (including uncredited improvements to the dialogue in “The Empire Strikes Back�? and other “Star Wars�? sequels), her one-woman show, “Wishful Drinking,�? and her actual memoir, the just-published “The Princess Diarist.�? <a href="http://web.archive.org/web/20170101050428/https://www.washingtonpost.com/lifestyle/style/the-humanity-and-humor-of-carrie-fisher/2016/12/27/0dab307a-cc60-11e6-b8a2-8c2a61b0436f_story.html">Read complete story</a></p>
+<div id="debbie-reynolds" style="width: 2610px" class="wp-caption alignleft"><img class="wp-image-12381 size-full" style="border: none" src="http://web.archive.org/web/20170101050428im_/https://img.washingtonpost.com/rf/image_1024w/2010-2019/WashingtonPost/2016/12/29/Others/Images/2016-12-28/debbiereynolds0331482971287.jpg" alt="Debbie Reynolds" width="2600" height="1730"/><p class="wp-caption-text">(Richard Drew/AP)</p></div>
+<h3>Debbie Reynolds: A trouper all the way to the end</h3>
+<h4>By Ann Hornaday | Dec. 28</h4>
+<p>The instant memorials to Debbie Reynolds came pre-fitted with the words “Hollywood legend�? before her name. And she was a legend, for different reasons to different people. For one generation, she was the fresh-faced teenage ingenue who, after being discovered at a Los Angeles beauty pageant, delivered her first big Hollywood star turn in the 1952 MGM musical “Singin’ in the Rain.�? To those same fans, she was party to one of the most notorious romantic scandals of the 1950s, when her husband, the pop singer Eddie Fisher, left her for their dear friend Elizabeth Taylor after Taylor’s husband, the producer Mike Todd, met an untimely death. (The couples had been such good friends that Reynolds and Fisher named their son Todd.)</p>
+<p>To another generation, Reynolds was known as “Princess Leia’s mom,�? Princess Leia having been played by Carrie Fisher in “Star Wars.�? And to another cohort still, she was assumed to be the inspiration for Fisher’s 1987 novel, “Postcards From the Edge,�? a fictionalized memoir of Fisher&#8217;s recovery from a drug overdose. In the book, Reynolds’s character was mentioned only briefly (and not particularly negatively), but she loomed large in Fisher’s screenplay for the film adaptation, which starred Meryl Streep and Shirley MacLaine. In that version, Fisher’s mother was brash, bossy and sometimes breathtakingly inappropriate in her attempts to steal the spotlight from her far more painfully self-aware daughter.</p>
+<p>Although the story was about a mother and daughter who were both actresses — and embroiled in the kind of pressure, competitiveness and endless psychodrama such a relationship might naturally entail — Fisher insisted that it was far more fiction than fact. Still, “Postcards From the Edge�? captured what might have been the most enduring truth about Reynolds: She was a trouper. A red-light performer. To borrow a phrase about another thinly fictionalized actress — Margo Channing, in “All About Eve�? — if she could walk, crawl or roll, she played. <a href="http://web.archive.org/web/20170101050428/https://www.washingtonpost.com/lifestyle/style/debbie-reynolds-was-a-trouper-all-the-way-to-the-end/2016/12/29/88d2a1b8-cddf-11e6-b8a2-8c2a61b0436f_story.html">Read complete story</a></p>
+<style> 
+.wp-caption {
+   border: none;
+}
+
+.span8.col h3 {
+   font-size: 30px;
+   font-family: 'Postoni'; 
+}
+
+h4 {
+   font-size: 16px; 
+   font-family: 'FranklinITCProLight'; 
+}
+</style>
+
+
+<style type="text/css">
+#et-nav-story-title {
+  display: none;
+}
+.note strong {
+  display: none; 
+}
+span.note--headline {
+   font-family: 'FranklinITCProBold', Helvetica, sans-serif;
+}
+span.caption-desktop--headline, span.caption-phone--headline {
+  font-family: 'FranklinITCProBold', Helvetica, sans-serif;
+  margin-right: 5px;
+}
+span.caption-desktop {
+  display: inline-block;
+}
+span.caption-phone {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  span.caption-desktop { 
+     display: none;
+  }
+  span.caption-phone {
+     display: inline-block; 
+  }
+}
+</style>
+
+<!-- GRAPHICS SCRIPTS -->
+
+<!-- /////////////////////// -->
+<!-- DROP CAP | Added 7/6/15 -->
+
+
+<style type="text/css">
+.firstgraf::first-letter{
+     font-size:600%;
+     float:left;
+     margin-top:.3em;
+     margin-bottom: .1em;
+     font-family: 'PostoniTitling', Times, serif, Georgia;
+     padding-right: 5px;
+     color:#000000; /* CHANGE ME */
+}
+
+.firefox .firstgraf::first-letter{
+     font-size: 600%;
+     float: left;
+     margin-top: 0.1em;
+     margin-bottom: 0.1em;
+     font-family: "PostoniTitling",Times,serif,Georgia;
+     padding-right: 5px;
+}
+</style>
+
+<!-- END DROP CAP -->
+<!-- //////////// -->						<div class="et-pagination ">
+								<div class="clearfix"></div>
+			</div>
+							                            </div><!-- span -->
+						</div> <!-- row -->
+					</div> <!-- container -->
+                    				</div> <!-- home/section -->
+				            <div id="section-comments" class="mobile-inactive bT1S bT0small">
+            <div class="container background">
+            <div class="row last">
+            <div class="span4 col pull-right credits">
+                <h4 class="franklin-bold light-black marT0">Credits</h4>
+                                                <div class="byline padTB10">
+            <span class="byline-title">Design by</span>
+                                                                                                <span class="name">Victoria Fogg</span>                                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <span class="name">Washington Post staff</span>                                                                        </div>
+                    </div>
+            <div id="comments" class="span8 col pretty-comments">
+                          <div class="pretty-comments">
+                  <div id="echo_container" class="echo_container count submitbox stream comment-vars" guid="http://www.washingtonpost.com/sf/style/2016/12/30/curtain-call-for-the-legendary-writers-musicians-actors-and-artists-that-the-world-lost-this-year/" maxitemstop="5" sectionid="/conversations" isallcomments="true" includeshare="false">
+                  </div>
+              </div>
+                        <!-- auto-assigns guid from page url -->
+            <!--script type="text/javascript">document.getElementById('echo_container').setAttribute('guid', document.location.href);</script -->
+            <!-- end comments -->
+            </div>
+            </div>
+            </div>
+            </div>
+        			</div> <!-- sections -->
+		</div> <!-- main container -->
+		<div id="et-nav-series-off-canvas">
+			<div id="et-nav-series-inner-off-canvas">
+	            	            	            
+	            	        </div>
+        </div>
+        <div id="et-sections-dropdown-list">
+            <ul class="et-dropdown sections-dropdown et-off-canvas">
+                <li><a href="http://web.archive.org/web/20170101050428/http://www.posttv.com/">Video</a></li>
+                <li><a href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/politics">Politics</a></li>
+                <li><a href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/opinions">Opinions</a></li>
+                <li><a href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/local">Local</a></li>
+                <li><a href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/sports">Sports</a></li>
+                <li><a href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/national">National</a></li>
+                <li><a href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/world">World</a></li>
+                <li><a href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/business">Business</a></li>
+                <li><a href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/business/technology">Tech</a></li>
+                <li><a href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/lifestyle">Lifestyle</a></li>
+                <li><a href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/entertainment">Entertainment</a></li>
+                <li><a href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/classifieds">Classifieds</a></li>
+                <li><a href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/jobs">Jobs</a></li>
+                <li><a href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/realestate">Real Estate</a></li>
+                <li><a href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/events">Events</a></li>
+			</ul>
+			<div class="copyright-details">
+				<p><a class="franklin-bold" href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/">washingtonpost.com</a></p>
+				<p style="font-size: 12px" class="franklin-thin smaller-size">&copy; 1996-2017 The Washington Post</p>
+				<br/>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/terms-of-service/2011/11/18/gIQAldiYiN_story.html">Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/privacy-policy/2011/11/18/gIQASIiaiN_story.html">Privacy Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/discussion-and-submission-guidelines/2011/11/21/gIQAuvIbiN_story.html">Submission and Discussion Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/rss-terms-of-service/2012/01/16/gIQAadFYAQ_story.html">RSS Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20170101050428/http://www.washingtonpost.com/how-can-i-opt-out-of-online-advertising-cookies/2011/11/18/gIQABECbiN_story.html">Ad Choices</a></p>
+			</div>
+		</div>
+		       <script type="text/javascript">
+        // Omniture variables
+        var wp_page_name = 'lifestyle:article - 20161230 - curtain-call-for-the-legendary-writers-musicians-actors-and-artists-that-the-world-lost-this-year';
+        var wp_track_scrolling = true;
+
+        // etc.
+        // chartbeat variables
+        _sf_async_config={
+          sections: wp_channel,
+          path:document.location.pathname, // defaults to document.location.pathname if you don't pass it.
+          title:document.title,
+          useCanonical:true // defaults to true if you don't pass it.
+        };
+        </script>
+
+        <script type="text/javascript" src="http://web.archive.org/web/20170101050428js_/http://www.washingtonpost.com/wp-srv/analytics/main.js"></script>
+        <script type="text/javascript">
+          //TWP.Analytics.init();
+          // FOR PREPRODUCTION
+          //TWP.Analytics.init( {suite:"preproduction",service:{omniture:true,omnitureTest:false,comscore:false,chartbeat:false}} );
+          TWP.Analytics.init({suite:"production"});
+        </script>
+
+        <!-- COMSCORE NOSCRIPT -->
+        <noscript><img src="http://web.archive.org/web/20170101050428im_/http://b.scorecardresearch.com/p?c1=2&amp;c2=3005617&amp;cv=2.0&amp;cj=1"/></noscript>
+        <!-- COMSCORE NOSCRIPT/Mobile -->
+        <!--<noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=3005617&c4=m.washingtonpost.com/nojs.html" /> </noscript>-->
+        
+        <noscript><img src="//web.archive.org/web/20170101050428im_/http://me.effectivemeasure.net/em_image" alt="" style="position:absolute; left:-5px;"/></noscript>
+        
+      <link rel="stylesheet" id="wapo-footnote-plugin-css" href="http://web.archive.org/web/20170101050428cs_/http://www.washingtonpost.com/sf/style/wp-content/plugins/wapo-footnote/parts/css/plugin.css?ver=1.0.0" type="text/css" media="screen, projection"/>
+<script type="text/javascript" src="http://web.archive.org/web/20170101050428js_/http://js.washingtonpost.com/1d/twp-comments.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101050428js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/lib/html5.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101050428js_/http://www.washingtonpost.com/sf/style/wp-content/plugins/wapo-footnote/parts/js/plugin.js?ver=1.0.0"></script>
+  
+              <script type="text/javascript" src="http://web.archive.org/web/20170101050428js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme.js?1"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20170101050428js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/build/enterprise-theme-nav.js?1"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20170101050428js_/http://js.washingtonpost.com/posttv/resources/js/posttv/vendor/pubsub.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20170101050428js_/https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20170101050428js_/http://js.washingtonpost.com/posttv/resources/js/posttv/posttv-player.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20170101050428js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/build/embedded-content-video.js"></script>
+              <script src="http://web.archive.org/web/20170101050428js_/http://js.washingtonpost.com/wp-srv/ad/loaders/latest/js/min/loader.min.js" data-ad-site="wp" data-ad-page-type="responsive"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20170101050428js_/http://js.washingtonpost.com/wp-stat/enterprise-raw-code/sharebar/enterprise-sharebar.js"></script>              <script type="text/javascript">
+$(document).ready(function() {
+
+    //append social buttons to bylines
+    $('.bylines').parent().append($('.top-sharebar-wrapper').parent());
+
+    //store metadata
+    var ogTitleSelector = document.querySelector('meta[property="og:title"]');
+    var ogTitleContent = (encodeURIComponent(ogTitleSelector && ogTitleSelector.getAttribute("content"))).replace(/'/g, "%27");
+
+    var ogImageSelector = document.querySelector('meta[property="og:image"]');
+    var ogImageContent = ogImageSelector && ogImageSelector.getAttribute("content");
+
+    var ogURLSelector = document.querySelector('meta[property="og:url"]');
+    var ogURLContent = encodeURI(ogURLSelector && ogURLSelector.getAttribute("content"));
+
+    var ogDescriptionSelector = document.querySelector('meta[property="og:description"]');
+    var ogDescriptionContent = (encodeURIComponent(ogDescriptionSelector && ogDescriptionSelector.getAttribute("content"))).replace(/'/g, "%27");
+
+    //populate share button click events with metadata
+    var facebookString = "window.open('http://web.archive.org/web/20170101050428/https://www.facebook.com/sharer/sharer.php?u="+ogURLContent+"','share_facebook','width=658,height=354,scrollbars=no');return false;";
+    $('#facebook-raw-share')[0].setAttribute("onclick", facebookString);
+
+    var twitterString = "window.open('http://web.archive.org/web/20170101050428/https://twitter.com/share?url="+ogURLContent+"&amp;text="+ogTitleContent+"','share_twitter','width=550, height=350, scrollbars=no');return false;";
+    $('#twitter-raw-share')[0].setAttribute("onclick", twitterString);
+
+    var googlePlusString = "window.open('http://web.archive.org/web/20170101050428/https://plus.google.com/share?url="+ogURLContent+"','share_google-plus','width=832,height=472,scrollbars=no');return false;"; 
+    $('#google-plus-raw-share')[0].setAttribute("onclick", googlePlusString);
+
+    var emailString = "mailto:?subject="+ogTitleContent+" from the Washington Post&body="+ogURLContent+""; 
+    $('#email-raw-share')[0].setAttribute("href", emailString);
+
+    // var linkedInString = "window.open('http://web.archive.org/web/20170101050428/http://www.linkedin.com/shareArticle?mini=true&amp;url="+ogURLContent+"&amp;title=','share_linkedin','width=830,height=460,scrollbars=no');return false;"; 
+    // $('#linkedIn-raw-share')[0].setAttribute("onclick", linkedInString);
+
+    var pinterestString = "window.open('//web.archive.org/web/20170101050428/http://pinterest.com/pin/create/bookmarklet/?url="+ogURLContent+"&amp;media="+ogImageContent+"&amp;description=','share_pinterest','width=550,height=450,scrollbars=no');return false;"; 
+    $('#pinterest-raw-share')[0].setAttribute("onclick", pinterestString);
+
+    var tumblrString = "window.open('http://web.archive.org/web/20170101050428/http://www.tumblr.com/share/link?url="+ogURLContent+"&amp;name="+ogTitleContent+"&amp;description="+ogDescriptionContent+"','share_tumblr','width=550,height=450,scrollbars=no');return false;"; 
+    $('#tumblr-raw-share')[0].setAttribute("onclick", tumblrString);
+}); 
+</script>              <script>
+if ($.browser.mozilla) { $('body').addClass('firefox'); }
+</script>    
+<!-- This website is powered by Piklist. Learn more at http://piklist.com/ -->
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"707aabbc5c","applicationID":"4157428","transactionName":"MlABYUsACEJXARVaXgsaIlZNCAlfGQsPV1Qd","queueTime":0,"applicationTime":580,"ttGuid":"","agentToken":"","atts":"HhcCFwMaG0w=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

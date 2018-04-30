@@ -1,0 +1,2472 @@
+<!doctype html><html class="no-js" lang="en"><head><script type="text/javascript" src="/static/js/analytics.js?v=1517862578.0" charset="utf-8"></script>
+
+<script type="text/javascript">archive_analytics.values.service='wb';archive_analytics.values.server_name='wwwb-app40.us.archive.org';archive_analytics.values.server_ms=6558;</script><script type="text/javascript" src="/static/js/wbhack.js?v=1517862578.0" charset="utf-8"></script>
+
+<script type="text/javascript">
+__wbhack.init('http://web.archive.org/web');
+</script>
+<link rel="stylesheet" type="text/css" href="/static/css/banner-styles.css?v=1517862578.0" />
+<link rel="stylesheet" type="text/css" href="/static/css/iconochive.css?v=1517862578.0" />
+
+<!-- End Wayback Rewrite JS Include --><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><script>
+   try {var _sf_startpt=(new Date()).getTime();} catch(e){}
+</script>
+<title>NPR : National Public Radio : News &amp; Analysis, World, US, Music &amp; Arts : NPR</title><meta charset="utf-8"/><meta name="robots" content="noarchive,index,follow"/><meta name="Rating" content="General"/><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"/><meta name="npr-pjax"/><meta name="date" content="2016-09-03"/><link rel="canonical" href="http://web.archive.org/web/20160904005354/http://www.npr.org/"/><meta name="description" content="NPR delivers breaking national and world news. Also top stories from business, politics, health, science, technology, music, arts and culture. Subscribe to podcasts and RSS feeds."/><link rel="alternate" type="application/rss+xml" title="Home Page Top Stories" href="/web/20160904005354/http://www.npr.org/rss/rss.php?id=1002"/><link rel="alternate" type="application/rss+xml" title="NPR News" href="/web/20160904005354/http://www.npr.org/rss/rss.php?id=1001"/><link rel="alternate" type="application/rss+xml" title="NPR Music" href="/web/20160904005354/http://www.npr.org/rss/rss.php?id=1039"/><link rel="alternate" type="application/rss+xml" title="NPR Books" href="/web/20160904005354/http://www.npr.org/rss/rss.php?id=1032"/><link rel="alternate" type="application/rss+xml" title="Morning Edition" href="/web/20160904005354/http://www.npr.org/rss/rss.php?id=3"/><link rel="alternate" type="application/rss+xml" title="All Things Considered" href="/web/20160904005354/http://www.npr.org/rss/rss.php?id=2"/><link rel="alternate" type="application/rss+xml" title="Wait Wait... Don't Tell Me!" href="/web/20160904005354/http://www.npr.org/rss/rss.php?id=35"/><meta property="og:title" content="Home Page Top Stories"/><meta property="og:url" content="http://web.archive.org/web/20160904005354/http://www.npr.org/"/><meta property="og:type" content="article"/><meta property="og:description" content="NPR delivers breaking national and world news. Also top stories from business, politics, health, science, technology, music, arts and culture. Subscribe to podcasts and RSS feeds."/><meta property="og:image" content="http://web.archive.org/web/20160904005354im_/https://media.npr.org/include/images/facebook-default.jpg?s=1400"/><meta property="og:site_name" content="NPR.org"/><meta property="fb:app_id" content="138837436154588"/><meta property="fb:pages" content="10643211755"/><meta name="twitter:card" content="summary"/><meta name="twitter:site" content="@NPR"/><meta name="twitter:domain" content="npr.org"/><script id="npr-vars">
+   window.NPR = window.NPR || {};
+NPR.ServerConstants = {"cbHost":"npr.org","webHost":"http:\/\/web.archive.org\/web\/20160904005354\/http:\/\/www.npr.org\/","embedHost":"http:\/\/web.archive.org\/web\/20160904005354\/https:\/\/www.npr.org\/","webHostSecure":"http:\/\/web.archive.org\/web\/20160904005354\/https:\/\/secure.npr.org\/","apiHost":"api.npr.org","apiHostSecure":"http:\/\/web.archive.org\/web\/20160904005354\/https:\/\/api.npr.org\/","staticAssetHost":"http:\/\/web.archive.org\/web\/20160904005354\/https:\/\/s.npr.org\/","googleAnalyticsAccount":"UA-5828686-4","StationsKey":"MDExODkwMDg3MDEzNzU0NTY2ODlmYWY0Yw001","gtmKey":"GTM-K9RKM5","nielsenSFCode":"dcr","nielsenAPN":"NPR-dcr"};
+NPR.serverVars = {"storyId":"1002","refresh":1800,"facebookAppId":"138837436154588","webpackPublicPath":"http:\/\/web.archive.org\/web\/20160904005354\/https:\/\/s.npr.org\/templates\/javascript\/dist\/bundles\/","persistenceVersion":"d5f6c05839d692fec618a0295b019aa6","rocketfuelCode":20501671,"isBuildOut":true,"pubDate":"2016071413","pageTypeId":"2","title":"Home Page Top Stories"};
+</script>
+<script type="text/javascript" src="http://web.archive.org/web/20160904005354js_/https://s.npr.org/templates/javascript/lib/modernizr/modernizr.custom.js">
+   </script>
+<script>
+   !function(e){function a(c){if(f[c])return f[c].exports;var b=f[c]={exports:{},id:c,loaded:!1};return e[c].call(b.exports,b,b.exports,a),b.loaded=!0,b.exports}var c=window.webpackJsonp;window.webpackJsonp=function(d,t){for(var n,r,o=0,i=[];o<d.length;o++)r=d[o],b[r]&&i.push.apply(i,b[r]),b[r]=0;for(n in t){var s=t[n];switch(typeof s){case"object":e[n]=function(a){var c=a.slice(1),f=a[0];return function(a,b,d){e[f].apply(this,[a,b,d].concat(c))}}(s);break;case"function":e[n]=s;break;default:e[n]=e[s]}}for(c&&c(d,t);i.length;)i.shift().call(null,a);if(t[0])return f[0]=0,a(0)};var f={},b={20:0};a.e=function(e,c){if(0===b[e])return c.call(null,a);if(void 0!==b[e])b[e].push(c);else{b[e]=[c];var f=document.getElementsByTagName("head")[0],d=document.createElement("script");d.type="text/javascript",d.charset="utf-8",d.async=!0,d.src=a.p+""+e+"."+{0:"ff630d773b0288ef1d0a",1:"998425f59810ae38b68f",2:"430ebafc18ec6ae7fa60",3:"611d5293e2a20c58b19c",4:"306b602b46b9bb2098d7",5:"74c26517a1e409247085",6:"fc53ab408fddacbd2454",7:"93ff5b6121b855cf372a",8:"9908d2868700d7ac7858",9:"c15f0e2209825ca439e4",10:"e72890188e170c1d2630",11:"920c8a94ad1e5793a2e2",12:"76891154cda320c0b5c8",13:"13e633b9eb2ece67e983",14:"ac90230ecc763f644842",15:"aa56946494fd2393de1b",16:"1875941f2dbe39fc8ed6",17:"511ff2185bea3dff8d79",18:"d21f5f9d2c4d25bfe978",19:"0f8135bfe580bf843c04",21:"e5c48bc5218b9681582d",22:"a128bef3b444507c0779",23:"939de6b7e8be2725b169",24:"5e84b9cd02f34d76e0b2",25:"c6a0927ce4735485a51c",26:"4b7a7542330101c2e9b3",27:"7ebebe1378335818dae1",28:"e8be86610da00f1c8db9",29:"91233cd94c0aed5f5f75",30:"dde3098010fda325c91d",31:"d42edac90cab4c3b4f86",32:"9b5c59e3c70398e0ba1b",33:"59cf7d07684abbb78e77",34:"2b267ee17dc508ef42c4",35:"a281e02fabc6ec13f4da",36:"c873b727d9f025593b84",37:"3b9c8268fe5f2da82d7d",38:"0444e6b309e032d3f298",39:"70c404839ade47f7752b",40:"355fc0dee940d20d3abc",41:"fa62a790699bc567b991",42:"218d1c9c943e8705e551",43:"df6f36bf041f4e0e685d",44:"05ce4c5dbb401866f1a1",45:"c4063466f2c40db5dff9",46:"6d15bcac0e3fa1748c29",47:"17a3de455fb803bd11fb",48:"a2a6ffbf2dd7ee7519d0",49:"f9bb3c72a7c047c0833b",50:"afe56ef1bd1c752a805a",51:"48d71016f915221b5122",52:"fe87ace7e6a50fca53f4",53:"6a1872264389a80a3dca",54:"492e69d65397dd6e239b",55:"ae9703e7a0910505e205",56:"070874a579289c4edb62",57:"cf63dbf434a20d44f947",58:"be236409d62b32ffccdb",59:"b9cd87e4937d41ec067a",60:"38b6145aa134fa7b6971",61:"ff458ba4e6aa3da79fa2",62:"57026fdbba1063009eab",63:"8f960feb1818458b8279",64:"1d30fb276bb011be0e02",65:"6dd1e7ada752bca6b936",66:"3f59a65fe5bd2794f9c7",67:"fd1282c9da94f9a684ff",68:"e4214aadc37509e778e6",69:"c576aa800db770429095",70:"57f9f5b2b63a0cd4923e"}[e]+".chunk.js",f.appendChild(d)}},a.m=e,a.c=f,a.p="/templates/javascript/dist/bundles/"}(function(e){for(var a in e)if(Object.prototype.hasOwnProperty.call(e,a))switch(typeof e[a]){case"function":break;case"object":e[a]=function(a){var c=a.slice(1),f=e[a[0]];return function(e,a,b){f.apply(this,[e,a,b].concat(c))}}(e[a]);break;default:e[a]=e[e[a]]}return e}([]));
+</script>
+<link rel="stylesheet" data-persist="true" media="screen, print" href="http://web.archive.org/web/20160904005354cs_/https://s.npr.org/templates/javascript/dist/bundles/persistent-css-2e64b3738a5e685da35c.css"/><link rel="stylesheet" media="screen, print" href="http://web.archive.org/web/20160904005354cs_/https://s.npr.org/templates/javascript/dist/bundles/newsHp2-css-2e64b3738a5e685da35c.css"/><script type="text/javascript">
+   document.domain="npr.org";
+</script>
+</head><body id="news" class="news tmplHomePage agg id1002 " data-pjax-modules="util/env images/lazy-load chartbeat comscore metrics nielsen nielsenDCR rocketfuel copyright auto-refresh navigation/globalnav fitvids googletag dfp globalfooter persistent-audio player/more-options player/keyboard-navigation home/base jw home/header slideshow images/enlargement images/captions"><a href="#mainContent" class="skiplink">Skip to main content</a><!--googleoff: index--><header id="globalheader" class="globalheader" role="banner" aria-label="NPR header"><div class="globalheader-inner" data-metrics-all data-metrics-category="global navigation">
+    <div class="lead" data-metrics-action="click npr logo">
+        <button class="sidebar-button" data-metrics-action="toggle offcanvas">View Navigation</button>
+
+        <!-- General color logo -->
+        <a href="/web/20160904005354/http://www.npr.org/" class="nprhome nprhome-news" data-metrics-action="click npr logo">
+            <img src="http://web.archive.org/web/20160904005354im_/http://media.npr.org/chrome/news/npr-home.png" alt="NPR logo"/>
+            <h2 class="ecosystem-name">NPR</h2>
+        </a>
+
+        <!-- General b&w line logo -->
+        <a href="/web/20160904005354/http://www.npr.org/" class="nprhome nprhome-news-alt" data-metrics-action="click npr logo">
+            <img src="http://web.archive.org/web/20160904005354im_/http://media.npr.org/chrome/npr_logo.svg" alt="NPR logo"/>
+            <h2 class="ecosystem-name">NPR</h2>
+        </a>
+
+        <!-- Music color logo -->
+        <a href="/web/20160904005354/http://www.npr.org/music/" class="nprhome nprhome-music" data-metrics-action="click npr logo">
+            <img src="http://web.archive.org/web/20160904005354im_/http://media.npr.org/chrome/music/music-logo.svg" alt="NPR Music logo"/>
+            <h2 class="ecosystem-name">NPR Music</h2>
+        </a>
+
+        <!-- Books color logo -->
+        <a href="/web/20160904005354/http://www.npr.org/books/" class="nprhome nprhome-books" data-metrics-action="click npr logo">
+            <img src="http://web.archive.org/web/20160904005354im_/http://media.npr.org/chrome/news/npr-home.png" alt="NPR logo"/>
+            <h2 class="ecosystem-name"><b>NPR</b> Books</h2>
+        </a>
+
+        <!-- About color logo -->
+        <a href="/web/20160904005354/http://www.npr.org/sections/750000/about-npr/" class="nprhome nprhome-about" data-metrics-action="click npr logo">
+            <img src="http://web.archive.org/web/20160904005354im_/http://media.npr.org/chrome/news/npr-home.png" alt="NPR logo"/>
+            <h2 class="ecosystem-name"><b>NPR</b> About</h2>
+        </a>
+
+        <!-- Podcasts -->
+        <a href="/web/20160904005354/http://www.npr.org/podcasts/" class="nprhome nprhome-podcast" data-metrics-action="click npr logo">
+            <img src="http://web.archive.org/web/20160904005354im_/http://media.npr.org/chrome_svg/podcasts/headphones-ee3d23.svg" alt="NPR Podcast Directory logo" class="img-headphones"/>
+            <img src="http://web.archive.org/web/20160904005354im_/http://media.npr.org/chrome/news/npr-home.png" alt="NPR logo" class="img-npr-logo"/>
+            <h2 class="ecosystem-name"><b>NPR</b>Podcast Directory</h2>
+        </a>
+
+        <div class="search-wrapper" role="search" aria-label="Search NPR">
+            <form action="/web/20160904005354/http://www.npr.org/search/index.php" method="get" name="searchForm" id="searchForm" class="search pjaxForm">
+                <label for="searchinput">Search</label>
+                <input type="search" name="searchinput" id="searchinput" class="textbox searchbox" autocorrect="off"/>
+                <a href="#" class="search-toggle" data-metrics-action="expand search">Toggle search</a>
+            </form>
+        </div>
+    </div>
+    <!-- /.lead -->
+
+    <div class="global-navigation-wrap">
+        <nav class="global-navigation" role="navigation" aria-label="main navigation">
+            <!-- see globalnav.js for documentation on how topbar subnav dropdown system works -->
+
+            <div class="top-level">
+                <ul class="top-level-list ecosystem-all primary">
+                    <li class="nprhome"><a href="/web/20160904005354/http://www.npr.org/" data-metrics-action="click npr logo">NPR Home</a></li>
+                    <!--<li class="stations has-subnav"><a href="/stations" data-metrics-action="click find stations">Find Stations</a></li>-->
+                    <li id="station-navigation-mount"></li>
+                </ul>
+
+                <ul class="top-level-list ecosystem-news primary" data-metrics-category="global navigation">
+                    <li class="news"><a href="/web/20160904005354/http://www.npr.org/sections/news/" data-metrics-action="click news">News</a></li>
+                    <li class="arts-life"><a href="/web/20160904005354/http://www.npr.org/sections/arts/" data-metrics-action="click arts &amp; life">Arts &amp; Life</a></li>
+                    <li class="music"><a href="/web/20160904005354/http://www.npr.org/music/" data-metrics-action="click music">Music</a></li>
+                    <li class="topics has-subnav"><a href="/web/20160904005354/http://www.npr.org/programs" data-metrics-action="toggle topics" data-metrics-label="#">Topics</a></li>
+                    <li class="programs-podcasts has-subnav">
+                        <a href="/web/20160904005354/http://www.npr.org/programs" data-metrics-action="toggle programs &amp; podcasts drawer">
+                        Programs <b>&amp; Podcasts</b>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.ecosystem-news.primary -->
+
+                <ul class="top-level-list ecosystem-music primary" data-metrics-category="music ecosystem navigation">
+                    <li class="music-home">
+                        <a href="/web/20160904005354/http://www.npr.org/music/" data-metrics-action="click npr music">NPR Music</a>
+                    </li>
+                    <li class="genres has-subnav"><a href="#" data-metrics-action="toggle genres drawer">Genres</a></li>
+                    <li class="new-music has-subnav">
+                        <a href="#" data-metrics-action="toggle new music drawer">New Music</a>
+                    </li>
+                    <li class="concerts-videos has-subnav">
+                        <a href="#" data-metrics-action="toggle concerts drawer">Concerts <b>&amp; Videos</b></a>
+                    </li>
+                    <li class="articles-lists has-subnav">
+                        <a href="#" data-metrics-action="toggle articles drawer">Articles <b>&amp; Lists</b></a>
+                    </li>
+                    <li class="tiny-desk alternate">
+                        <a href="/web/20160904005354/http://www.npr.org/series/tiny-desk-concerts/" data-metrics-action="click tiny desk">Tiny Desk</a>
+                    </li>
+                </ul>
+                <!-- /.ecosystem-music.primary -->
+
+                <ul class="top-level-list ecosystem-books primary" data-metrics-category="books ecosystem navigation">
+                    <li class="books-home">
+                        <a href="/web/20160904005354/http://www.npr.org/books/" data-metrics-action="click npr books">NPR Books</a>
+                    </li>
+                    <li class="author-interviews">
+                        <a href="/web/20160904005354/http://www.npr.org/sections/author-interviews/" data-metrics-action="click author interviews"><b>Author </b>Interviews</a>
+                    </li>
+                    <li class="find-books has-subnav">
+                        <a href="#" data-metrics-action="toggle find books drawer">Find Books</a>
+                    </li>
+                    <li class="reviews has-subnav">
+                        <a href="#" data-metrics-action="toggle reviews drawer">Reviews</a>
+                    </li>
+                </ul>
+                <!-- /.ecosystem-books.primary -->
+
+                <ul class="top-level-list ecosystem-about primary" data-metrics-category="about ecosystem navigation">
+                    <li class="about-home">
+                        <a href="/web/20160904005354/http://www.npr.org/about/" data-metrics-action="click about npr">About NPR</a>
+                    </li>
+                    <li class="overview has-subnav">
+                        <a href="/web/20160904005354/http://www.npr.org/about/aboutnpr/" data-metrics-action="toggle overview drawer">Overview</a>
+                    </li>
+                    <li class="connect has-subnav">
+                        <a href="#" data-metrics-action="toggle connect drawer">Connect</a>
+                    </li>
+                    <li class="support has-subnav">
+                        <a href="/web/20160904005354/http://www.npr.org/about/support/" data-metrics-action="toggle support drawer">Support</a>
+                    </li>
+                    <li class="press has-subnav">
+                        <a href="/web/20160904005354/http://www.npr.org/series/750003/press-room/" data-metrics-action="toggle press drawer">Press</a>
+                    </li>
+                    <li class="careers has-subnav">
+                        <a href="/web/20160904005354/http://www.npr.org/series/750004/careers" data-metrics-action="toggle careers drawer">Careers</a>
+                    </li>
+                </ul>
+                <!-- /.ecosystem-about.primary -->
+
+                <ul class="top-level-list ecosystem-podcast primary" data-metrics-category="podcast ecosystem navigation">
+                    <li class="podcasts-home">
+                        <a href="/web/20160904005354/http://www.npr.org/podcasts/" data-metrics-action="click podcast directory">Podcast Directory</a>
+                    </li>
+
+                    <li class="podcast-categories has-subnav">
+                        <a href="#" data-metrics-action="toggle categories">Categories</a>
+                    </li>
+                    <li class="podcast-local">
+                        <div id="local-podcasts-nav-mount" class="podcast-local"></div>
+                        <!-- data comes via JavaScript -->
+                    </li>
+                </ul>
+                <!-- /.ecosystem-podcast.primary -->
+
+                <ul class="top-level-list ecosystem-all secondary" data-metrics-category="global navigation">
+                    <li class="nprshop">
+                        <a href="http://web.archive.org/web/20160904005354/http://shop.npr.org/" data-metrics-action="click npr shop">Shop</a>
+                    </li>
+                    <li id="user-account-access-dropdown-mount"></li>
+                </ul>
+                <!-- /.ecosystem-all.secondary -->
+            </div>
+            <!-- /.top-level -->
+
+            <!-- News ecosystem -->
+            <div class="subnav subnav-topics ecosystem-news" data-metrics-category="global navigation">
+                <a class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+                <div class="group">
+                    <h3 class="group-hdr"><a href="/web/20160904005354/http://www.npr.org/sections/news/" data-metrics-action="click news">News</a></h3>
+                    <ul>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/us/" data-metrics-action="click u.s.">U.S.</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/world/" data-metrics-action="click world">World</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/politics/" data-metrics-action="click politics">Politics</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/business/" data-metrics-action="click business">Business</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/technology/" data-metrics-action="click technology">Technology</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/science/" data-metrics-action="click science">Science</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/health/" data-metrics-action="click health">Health</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/codeswitch/" data-metrics-action="click race &amp; culture">Race &amp; Culture</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/ed/" data-metrics-action="click education">Education</a></li>
+                    </ul>
+                </div>
+                <div class="group">
+                    <h3 class="group-hdr"><a href="/web/20160904005354/http://www.npr.org/sections/arts/" data-metrics-action="click arts &amp; life">Arts &amp; Life</a></h3>
+                    <ul>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/" data-metrics-action="click books">Books</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/movies/" data-metrics-action="click movies">Movies</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/pop-culture/" data-metrics-action="click pop culture">Pop Culture</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/food/" data-metrics-action="click food">Food</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/art-design/" data-metrics-action="click art &amp; design">Art &amp; Design</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/performing-arts/" data-metrics-action="click performing arts">Performing Arts</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/photography/" data-metrics-action="click photography">Photography</a></li>
+                    </ul>
+                </div>
+                <div class="group">
+                    <h3 class="group-hdr"><a href="/web/20160904005354/http://www.npr.org/music/" data-metrics-action="click music">Music</a></h3>
+                    <ul>
+
+                        <li><a href="/web/20160904005354/http://www.npr.org/series/98679384/first-listen" data-metrics-action="click first listen">First Listen</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/series/122356178/songs-we-love" data-metrics-action="click songs we love">Songs We Love</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/series/100920965/music-articles/" data-metrics-action="click music articles">Music Articles</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/series/tiny-desk-concerts/" data-metrics-action="click tiny desk">Tiny Desk</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/music-videos/" data-metrics-action="click videos">Videos</a></li>
+                    </ul>
+                </div>
+
+                <div class="group">
+                    <h3 class="group-hdr">More</h3>
+                    <ul>
+                        <li><a href="/web/20160904005354/http://www.npr.org/about-npr/198341814/npr-blog-directory" data-metrics-action="click our blogs">Our Blogs</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/templates/corrections/corrections.php" data-metrics-action="click corrections">Corrections</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/about/aboutnpr/" data-metrics-action="click all about npr">All About NPR</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="subnav subnav-programs-podcasts ecosystem-news" data-metrics-category="global navigation">
+                <a class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+
+                <div class="group">
+                    <h3 class="group-hdr">News &amp; Conversations</h3>
+                    <ul>
+                        <li><a href="/web/20160904005354/http://www.npr.org/programs/morning-edition/" data-metrics-action="click morning edition">Morning Edition</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/programs/all-things-considered/" data-metrics-action="click all things considered">All Things Considered</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/programs/fresh-air/" data-metrics-action="click fresh air">Fresh Air</a></li>
+                        <li><a href="http://web.archive.org/web/20160904005354/http://www.wbur.org/hereandnow" target="_blank" data-metrics-action="click here &amp; now">Here &amp; Now</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/510312/codeswitch" data-metrics-action="click code switch">Code Switch</a></li>
+                        <li><a href="http://web.archive.org/web/20160904005354/http://thedianerehmshow.org/" target="_blank" data-metrics-action="click the diane rehm show">The Diane Rehm Show</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/510311/embedded" data-metrics-action="click embedded">Embedded</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/programs/latino-usa/" data-metrics-action="click latino usa">Latino USA</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/510310/npr-politics-podcast">NPR Politics Podcast</a></li>
+                        <li><a href="http://web.archive.org/web/20160904005354/http://onpoint.wbur.org/" target="_blank" data-metrics-action="click on point">On Point</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/programs/weekend-edition-saturday/" data-metrics-action="click weekend edition saturday">Weekend Edition Saturday</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/programs/weekend-edition-sunday/" data-metrics-action="click weekend edition sunday">Weekend Edition Sunday</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/series/4692815/youth-radio" data-metrics-action="click youth radio">Youth Radio</a></li>
+                    </ul>
+                </div>
+
+                <div class="group">
+                    <h3 class="group-hdr">Storytelling &amp; Humor</h3>
+                    <ul>
+                        <li><a href="/web/20160904005354/http://www.npr.org/programs/ask-me-another/" data-metrics-action="click ask me another">Ask Me Another</a></li>
+                        <li><a href="http://web.archive.org/web/20160904005354/http://www.cartalk.com/" target="_blank" data-metrics-action="click the best of car talk">The Best Of Car Talk</a></li>
+                        <li><a href="http://web.archive.org/web/20160904005354/http://www.maximumfun.org/shows/bullseye" target="_blank" data-metrics-action="click bullseye">Bullseye</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/series/423302056/hidden-brain" data-metrics-action="click hidden brain">Hidden Brain</a></li>
+                        <li><a href="http://web.archive.org/web/20160904005354/http://howtodoeverything.org/" data-metrics-action="click how to do everything">How To Do Everything</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/programs/invisibilia/" data-metrics-action="click invisibilia">Invisibilia</a></li>
+                        <li><a href="http://web.archive.org/web/20160904005354/http://onlyagame.wbur.org/" data-metrics-action="click only a game">Only A Game</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/money/" data-metrics-action="click planet money">Planet Money</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/510282/pop-culture-happy-hour" data-metrics-action="click pop culture happy hour">Pop Culture Happy Hour</a></li>
+                        <li><a href="http://web.archive.org/web/20160904005354/http://storycorps.org/" class="storycorps" target="_blank" data-metrics-action="click storycorps">StoryCorps</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/programs/ted-radio-hour/" data-metrics-action="click ted radio hour">TED Radio Hour</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/programs/wait-wait-dont-tell-me/" data-metrics-action="click wait wait don't tell me">Wait Wait...Don't Tell Me!</a></li>
+                    </ul>
+                </div>
+
+                <div class="group">
+                    <h3 class="group-hdr">Music</h3>
+                    <ul>
+                        <li><a href="/web/20160904005354/http://www.npr.org/series/98679384/first-listen/" data-metrics-action="click first listen">First Listen</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/allsongs/" data-metrics-action="click all songs considered">All Songs Considered</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/series/122356178/songs-we-love/" data-metrics-action="click songs we love">Songs We Love</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/series/tiny-desk-concerts/" data-metrics-action="click tiny desk">Tiny Desk</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/series/alt-latino/" data-metrics-action="click alt.latino">Alt.Latino</a></li>
+                        <li><a href="http://web.archive.org/web/20160904005354/http://www.fromthetop.org/" target="_blank" data-metrics-action="click from the top">From The Top</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/series/347139849/jazz-night-in-america" data-metrics-action="click jazz night in america">Jazz Night In America</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/metropolis/" data-metrics-action="click metropolis">Metropolis</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/sections/microphonecheck/" data-metrics-action="click microphone check">Microphone Check</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/series/mountain-stage/" data-metrics-action="click mountain stage">Mountain Stage</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/programs/piano-jazz/" data-metrics-action="click piano jazz">Piano Jazz</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/series/103063413/the-thistle-and-shamrock/" data-metrics-action="click the thistle &amp; shamrock">The Thistle &amp; Shamrock</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/programs/world-cafe/" data-metrics-action="click world cafe">World Cafe</a></li>
+                    </ul>
+                </div>
+
+                <div class="group">
+                    <h3 class="group-hdr">More</h3>
+                    <ul>
+                        <li><a href="/web/20160904005354/http://www.npr.org/programs/" data-metrics-action="click all programs">All Programs</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/" data-metrics-action="click podcast directory">Podcast Directory</a></li>
+                        <!-- local organization podcast inserted here via JavaScript -->
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/organizations/1" data-metrics-action="click npr podcasts">NPR Podcasts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.subnav-programs-podcasts -->
+            <!-- /News ecosystem -->
+
+            <!-- Music ecosystem -->
+            <div class="subnav subnav-genres ecosystem-music" data-metrics-category="music ecosystem navigation">
+                <a class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+
+                <ul>
+                    <li><a href="/web/20160904005354/http://www.npr.org/music/genres/rock/" data-metrics-action="click rock">Rock</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/music/genres/pop/" data-metrics-action="click pop">Pop</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/music/genres/jazz/" data-metrics-action="click jazz">Jazz</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/music/genres/classical/" data-metrics-action="click classical">Classical</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/music/genres/hip-hop/" data-metrics-action="click hip-hop">Hip-Hop</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/music/genres/r-b-soul/" data-metrics-action="click r&amp;b/soul">R&amp;B/Soul</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/music/genres/folk/" data-metrics-action="click folk">Folk</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/music/genres/latin/" data-metrics-action="click latin">Latin</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/music/genres/world/" data-metrics-action="click world">World</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/music/genres/electronic-dance/" data-metrics-action="click electronic/dance">Electronic/Dance</a></li>
+                </ul>
+            </div>
+
+            <div class="subnav subnav-new-music ecosystem-music" data-metrics-category="music ecosystem navigation">
+                <a class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+
+                <ul>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/98679384/first-listen" data-metrics-action="click first listen">First Listen</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/122356178/songs-we-love/" data-metrics-action="click songs we love">Songs We Love</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/sections/allsongs/" data-metrics-action="click all songs considered">All Songs Considered</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/sections/music-reviews/" data-metrics-action="click reviews">Reviews</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/146587997/all-songs-tv/" data-metrics-action="click music videos">Music Videos</a></li>
+                </ul>
+            </div>
+
+            <div class="subnav subnav-concerts-videos ecosystem-music" data-metrics-category="music ecosystem navigation">
+                <a class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+
+                <ul>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/tiny-desk-concerts/" data-metrics-action="click tiny desk">Tiny Desk</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/live-in-concert/" data-metrics-action="click live concerts">Live Concerts</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/144918893/field-recordings/" data-metrics-action="click field recordings">Field Recordings</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/15667984/favorite-sessions/" data-metrics-action="click studio sessions">Studio Sessions</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/149937282/music-documentaries/" data-metrics-action="click music documentaries">Music Documentaries</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/sections/music-videos/" data-metrics-action="click music videos">Music Videos</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/356126782/festival-recordings/" data-metrics-action="click festival recordings">Festival Recordings</a></li>
+                </ul>
+            </div>
+
+            <div class="subnav subnav-articles-lists ecosystem-music" data-metrics-category="music ecosystem navigation">
+                <a class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+
+                <ul>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/100920965/music-articles/" data-metrics-action="click articles">Articles</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/sections/music-interviews/" data-metrics-action="click interviews">Interviews</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/sections/music-quizzes/" data-metrics-action="click quizzes">Quizzes</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/sections/music-lists/" data-metrics-action="click mnusic lists">Music Lists</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/458039342/best-music-of-2015" data-metrics-action="click best music of the year">Best Music of the Year</a></li>
+                </ul>
+            </div>
+            <!-- /Music ecosystem -->
+
+            <!-- Books ecosystem -->
+            <div class="subnav subnav-find-books ecosystem-books" data-metrics-category="books ecosystem navigation">
+                <a class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+
+                <div class="group">
+                    <ul>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10110/art-design/" data-metrics-action="click art &amp; design">Art &amp; Design</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10126/arts-entertainment/" data-metrics-action="click arts &amp; entertainment">Arts &amp; Entertainment</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10101/biography-memoir/" data-metrics-action="click biography &amp; memoir">Biography &amp; Memoir</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10102/business-economy/" data-metrics-action="click business &amp; economy">Business &amp; Economy</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10122/children/" data-metrics-action="click children's books">Children's Books</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10123/comedy/" data-metrics-action="click comedy">Comedy</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10104/comics-graphic-novels/" data-metrics-action="click comics &amp; graphic novels">Comics &amp; Graphic Novels</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10127/digital-culture/" data-metrics-action="click digital culture">Digital Culture</a></li>
+                    </ul>
+                </div>
+
+                <div class="group">
+                    <ul>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10103/faith-spirituality/" data-metrics-action="click faith &amp; spirituality">Faith &amp; Spirituality</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10106/food-wine/" data-metrics-action="click food &amp; wine">Food &amp; Wine</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10109/history-society/" data-metrics-action="click history &amp; society">History &amp; Society</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10113/historical-fiction/" data-metrics-action="click historical fiction">Historical Fiction</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/191663270/horror-supernatural/" data-metrics-action="click horror &amp; supernatural">Horror &amp; Supernatural</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10112/literary-fiction/" data-metrics-action="click literary fiction">Literary Fiction</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10114/mystery-thrillers/" data-metrics-action="click mystery &amp; thrillers">Mystery &amp; Thrillers</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10116/parenting-families/" data-metrics-action="click parenting &amp; families">Parenting &amp; Families</a></li>
+                    </ul>
+                </div>
+
+                <div class="group">
+                    <ul>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10125/poetry/" data-metrics-action="click poetry">Poetry</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10117/politics-public-affairs/" data-metrics-action="click politics &amp; public affairs">Politics &amp; Public Affairs</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10118/romance/" data-metrics-action="click romance">Romance</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10119/science-fiction-fantasy/" data-metrics-action="click science fiction &amp; fantasy">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10108/science-health/" data-metrics-action="click science &amp; health">Science &amp; Health</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10120/sports/" data-metrics-action="click sports">Sports</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10124/travel/" data-metrics-action="click travel">Travel</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/books/genres/10121/young-adults/" data-metrics-action="click young adult">Young Adult</a></li>
+                    </ul>
+                </div>
+
+                <div class="group">
+                    <ul>
+                        <li class="genre"><a href="/web/20160904005354/http://www.npr.org/books/genres/10115/nonfiction/" data-metrics-action="click nonfiction">Nonfiction</a></li>
+                        <li class="genre"><a href="/web/20160904005354/http://www.npr.org/books/genres/10111/fiction/" data-metrics-action="click fiction">Fiction</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subnav subnav-reviews ecosystem-books" data-metrics-category="books ecosystem navigation">
+                <a class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+
+                <ul>
+                    <li><a href="/web/20160904005354/http://www.npr.org/sections/book-reviews" data-metrics-action="click book reviews">Book Reviews</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/257657827/this-weeks-must-read" data-metrics-action="click this week's must read">This Week's Must Read</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/104566969/my-guilty-pleasure" data-metrics-action="click my guilty pleasure">My Guilty Pleasure</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/three-books/" data-metrics-action="click three books...">Three Books...</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/153588024/pg-13-go-to-teen-reads" data-metrics-action="click pg-13: risky reads">PG-13: Risky Reads</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/you-must-read-this/" data-metrics-action="click you must read this">You Must Read This</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/summerbooks/" data-metrics-action="click summer books">Summer Books</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/bestbooks/" data-metrics-action="click best books of the year">Best Books of the Year</a></li>
+                </ul>
+            </div>
+            <!-- /Books ecosystem -->
+
+            <!-- About ecosystem -->
+            <div class="subnav subnav-overview ecosystem-about" data-metrics-category="about ecosystem navigation">
+                <a class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+
+                <ul>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about/aboutnpr/" data-metrics-action="click overview">Overview</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/192827079/overview-and-history" data-metrics-action="click overview and history">Overview and History</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/178659563/our-mission-and-vision" data-metrics-action="click mission and vision">Mission and Vision</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/178640915/npr-stations-and-public-media" data-metrics-action="click stations and public media">Stations and Public Media</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/178660742/public-radio-finances" data-metrics-action="click npr finances">NPR Finances</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/179803822/people-at-npr" data-metrics-action="click people">People</a></li>
+                    <li><a href="http://web.archive.org/web/20160904005354/http://ethics.npr.org/" data-metrics-action="click ethics">Ethics</a></li>
+                    <li><a href="about-npr/183726490/awards" data-metrics-action="click awards">Awards</a></li>
+                </ul>
+            </div>
+
+            <div class="subnav subnav-connect ecosystem-about" data-metrics-category="about ecosystem navigation">
+                <a class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+
+                <ul>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/177066727/visit-npr" data-metrics-action="click visit npr">Visit NPR</a></li>
+                    <li><a href="http://web.archive.org/web/20160904005354/http://www.nprpresents.org/" data-metrics-action="click npr presents">NPR Presents</a></li>
+                    <li><a href="http://web.archive.org/web/20160904005354/http://studio1.npr.org/" data-metrics-action="click studio 1 events">Studio 1 Events</a></li>
+                    <li><a href="http://web.archive.org/web/20160904005354/http://generationlisten.npr.org/" data-metrics-action="click generation listen">Generation Listen</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/182673872/book-an-npr-speaker" data-metrics-action="click book a speaker">Book a Speaker</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/179881519/rights-and-permissions-information" data-metrics-action="click request permissions">Request Permissions</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/187046089/ways-to-listen-to-npr" data-metrics-action="click ways to listen">Ways to Listen</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/sections/npr-extra/" data-metrics-action="click npr extra blog">NPR Extra Blog</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/newsletters/" data-metrics-action="click sign up: newsletters">Email Newsletters</a></li>
+                    <li><a href="http://web.archive.org/web/20160904005354/http://shop.npr.org/" data-metrics-action="click shop npr">Shop NPR</a></li>
+                    <li><a href="http://web.archive.org/web/20160904005354/http://help.npr.org/" data-metrics-action="click get help">Get Help</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/contact/" data-metrics-action="click contact us">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="subnav subnav-support ecosystem-about" data-metrics-category="about ecosystem navigation">
+                <a class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+
+                <ul>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/750002/support-public-radio" data-metrics-action="click support public radio">Support Public Radio</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/186948703/corporate-sponsorship" data-metrics-action="click corporate sponsorship">Corporate Sponsorship</a>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/181961258/volunteer-at-npr" data-metrics-action="click volunteer">Volunteer</a></li>
+                </ul>
+            </div>
+
+            <div class="subnav subnav-press ecosystem-about" data-metrics-category="about ecosystem navigation">
+                <a class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+
+                <ul>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/750003/press-room/" data-metrics-action="click releases and statements">Releases and Statements</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/182675632/photos-and-logos" data-metrics-action="click photos and logos">Photos and Logos</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about/press/NPR_Fact_Sheet.pdf" data-metrics-action="click fact sheet pdf">Fact Sheet (PDF)</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/185546105/media-relations-contacts" data-metrics-action="click media relations contacts">Media Relations Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="subnav subnav-careers ecosystem-about" data-metrics-category="about ecosystem navigation">
+                <a class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+
+                <ul>
+                    <li><a href="/web/20160904005354/http://www.npr.org/series/750004/careers">Careers at NPR</a></li>
+                    <li><a href="http://web.archive.org/web/20160904005354/https://careers-npr.icims.com/jobs/intro?hashed=0" data-metrics-action="click search jobs">Search Jobs</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/179008081/tapping-into-the-npr-culture/" data-metrics-action="click culture">Culture</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/181909622/applying-at-npr/" data-metrics-action="click applying">Applying</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/181881227/internships-at-npr/" data-metrics-action="click interns">Interns</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/181880514/fellowships-at-npr/" data-metrics-action="click fellows">Fellows</a></li>
+                    <li><a href="/web/20160904005354/http://www.npr.org/about-npr/185550054/digital-careers-at-npr/" data-metrics-action="click digital">Digital</a></li>
+                </ul>
+            </div>
+            <!-- /About ecosystem -->
+
+            <!-- Podcast ecosystem -->
+            <div class="subnav subnav-podcast-categories ecosystem-podcast" data-metrics-category="podcast ecosystem navigation">
+                <a class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+
+                <div class="group">
+                    <ul>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/2000/arts" data-metrics-action="click arts">Arts</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/2007/business" data-metrics-action="click business">Business</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/2013/comedy" data-metrics-action="click comedy">Comedy</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/2014/education" data-metrics-action="click education">Education</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/2020/games-hobbies" data-metrics-action="click games &amp; hobbies">Games &amp; Hobbies</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/2026/government-organizations" data-metrics-action="click government &amp; organizations">Government &amp; Organizations</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/2031/health" data-metrics-action="click health">Health</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/2036/kids-family" data-metrics-action="click kids &amp; family">Kids &amp; Family</a></li>
+                    </ul>
+                </div>
+
+                <div class="group">
+                    <ul>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/2037/music" data-metrics-action="click music">Music</a>
+                        </li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/2038/news-politics" data-metrics-action="click news &amp; politics">News &amp; Politics</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/2039/religion-spirituality" data-metrics-action="click religion &amp; spirituality">Religion &amp; Spirituality</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/2047/science-medicine" data-metrics-action="click science &amp; medicine">Science &amp; Medicine</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/2051/society-culture" data-metrics-action="click society &amp; culture">Society &amp; Culture</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/2056/sports-recreation" data-metrics-action="click sports &amp; recreation">Sports &amp; Recreation</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/2061/technology" data-metrics-action="click technology">Technology</a></li>
+                        <li><a href="/web/20160904005354/http://www.npr.org/podcasts/2066/tv-film" data-metrics-action="click tv &amp; film">TV &amp; Film</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.subnav-podcast-categories -->
+            <!-- /Podcast ecosystem -->
+
+            <!-- Common ecosystem -->
+
+            <!-- /.subnav-user-account -->
+            <!-- /Common ecosystem -->
+
+        </nav>
+        <!-- ./global-navigation -->
+    </div>
+    <!-- ./global-navigation-wrap -->
+
+    <!--
+        .global-navigation-two
+    -->
+    <nav class="global-navigation-two" role="navigation" aria-label="station navigation" data-metrics-category="global navigation">
+        <ul class="top-level">
+            <div id="station-navigation-med-mount"></div>
+        </ul>
+    </nav>
+
+    <!--
+        .global-navigation-three
+        Gets created here via JavaScript on certain landing page layouts
+    -->
+</div>
+<!-- .globalheader-inner -->
+</header><main role="main" aria-label="main content"><noscript><iframe src="//web.archive.org/web/20160904005354if_/http://www.googletagmanager.com/ns.html?id=GTM-K9RKM5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><noscript><iframe style="display:none;padding:0;margin:0;" width="0" height="0" src="//web.archive.org/web/20160904005354if_/http://20655831p.rfihub.com/ca.html?rb=3035&amp;ca=20501671&amp;ra=gtmcb"></iframe></noscript>        <script type="text/javascript">NPR.socialMedia={twitterSource:"@NPR"};</script><div id="wrapper">
+      <section id="main-section"><a id="mainContent"></a><div id="contentWrap">
+      <div class="stories-wrap stories-wrap-featured" data-metrics-category="Curated List">
+            <article class="hp-item volume-low post-type-standard has-image" id="story491204888">
+
+
+
+    <div class="story-wrap">
+        
+        <figure class="thumb-image">
+            <div class="bucketwrap homeThumb">
+                <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/ed/2016/09/03/491204888/how-domestic-violence-in-one-home-affects-every-child-in-a-class" data-metrics="{&quot;action&quot;:&quot;Click Story 1&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/03/bear-vs-girl1_wide-364133de3bc1580810c32da2cedf3974dc3e6f83-s400-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/03/bear-vs-girl1_wide-364133de3bc1580810c32da2cedf3974dc3e6f83-s400.jpg" class="img lazyOnLoad" alt="How Domestic Violence In One Home Affects Every Child In A Class"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+    </div>
+    <span class="credit">
+        
+        LA Johnson/NPR
+        
+    </span>
+</div>
+
+            </div>
+        </figure>
+        
+
+        <div class="story-text">
+            <h2 class="slug ne">
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/ed/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                    NPR Ed
+                </a>
+            </h2>
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/ed/2016/09/03/491204888/how-domestic-violence-in-one-home-affects-every-child-in-a-class" data-metrics="{&quot;action&quot; : &quot;Click Story 1&quot;}">
+                <h1 class="title">How Domestic Violence In One Home Affects Every Child In A Class</h1>
+            </a> 
+
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/ed/2016/09/03/491204888/how-domestic-violence-in-one-home-affects-every-child-in-a-class" data-metrics="{&quot;action&quot; : &quot;Click Story 1&quot;}">
+                <p class="teaser">New data shows violence in the home hinders the academic performance of their classmates, too. Reporting domestic violence makes a big difference.<em></em></p>
+            </a> 
+        </div> <!-- /.story-text -->
+    </div> <!-- /.story-wrap -->
+</article>
+      <article class="hp-item volume-low post-type-standard has-image" id="story492241250">
+
+
+
+    <div class="story-wrap">
+        
+        <figure class="thumb-image">
+            <div class="bucketwrap homeThumb">
+                <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492241250/the-clinton-health-rumors-arent-going-away-anytime-soon-heres-why" data-metrics="{&quot;action&quot;:&quot;Click Story 2&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/03/gettyimages-539271500_wide-3d8186b0caee903efb1e7197c809882bfbcde397-s400-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/03/gettyimages-539271500_wide-3d8186b0caee903efb1e7197c809882bfbcde397-s400.jpg" class="img lazyOnLoad" alt="The Clinton Health Rumors Aren't Going Away Anytime Soon. Here's Why"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+        <p>
+            Even trying to discredit the idea that Hillary Clinton is in poor health may make the problem worse.
+            
+            <b class="credit">
+                
+                Alex Wong/Getty Images
+                
+            </b>
+            <b class="hide-caption"><b>hide caption</b></b>
+        </p>
+    </div>
+    <b class="toggle-caption"><b>toggle caption</b></b>
+    <span class="credit">
+        
+        Alex Wong/Getty Images
+        
+    </span>
+</div>
+
+            </div>
+        </figure>
+        
+
+        <div class="story-text">
+            <h2 class="slug p">
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/politics/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                    Politics
+                </a>
+            </h2>
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492241250/the-clinton-health-rumors-arent-going-away-anytime-soon-heres-why" data-metrics="{&quot;action&quot; : &quot;Click Story 2&quot;}">
+                <h1 class="title">The Clinton Health Rumors Aren't Going Away Anytime Soon. Here's Why</h1>
+            </a> 
+
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492241250/the-clinton-health-rumors-arent-going-away-anytime-soon-heres-why" data-metrics="{&quot;action&quot; : &quot;Click Story 2&quot;}">
+                <p class="teaser">How do you undo rumors and conspiracy theories? Research suggests that it's really, really hard — it may be that letting go of a conspiracy theory means letting go of who you think you are.</p>
+            </a> 
+        </div> <!-- /.story-text -->
+    </div> <!-- /.story-wrap -->
+</article>
+   </div>
+   
+<!-- END CLASS="STORIES-WRAP STORIES-WRAP-FEATURED" DATA-METRICS-CATEGORY="CURATED LIST" -->
+   <section class="nib-container" role="complementary" aria-label="News Updates"><div class="from-npr-news">
+      <h2>Latest From NPR News</h2>
+   <ul id="nib-list">
+            <li><article class="item item-nib"><a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/thetwo-way/2016/09/03/492545389/jerry-heller-music-mogul-who-worked-with-n-w-a-dies-at-75" data-metrics="{&quot;category&quot;:&quot;From NPR News&quot;,&quot;action&quot;:&quot;Click story&quot;}"><h2 class="title">Jerry Heller, Music Mogul Who Worked With N.W.A, Dies At 75</h2>
+</a></article></li>
+      <li><article class="item item-nib"><a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/thetwo-way/2016/09/03/492546646/no-criminal-charges-for-white-s-c-deputy-who-flipped-desk-tossed-black-student" data-metrics="{&quot;category&quot;:&quot;From NPR News&quot;,&quot;action&quot;:&quot;Click story&quot;}"><h2 class="title">No Criminal Charges For White S.C Deputy Who Flipped Desk, Tossed Black Student</h2>
+</a></article></li>
+      <li><article class="item item-nib"><a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/thetwo-way/2016/09/03/492534979/taco-truck-owner-racks-up-sales-at-trump-event-in-detroit" data-metrics="{&quot;category&quot;:&quot;From NPR News&quot;,&quot;action&quot;:&quot;Click story&quot;}"><h2 class="title">Taco Truck Owner Racks Up Sales At Trump Event In Detroit</h2>
+</a></article></li>
+      <li><article class="item item-nib"><a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/thetwo-way/2016/09/03/492446260/-nprreads-a-distraction-for-labor-day-weekend-and-thoughts-about-work" data-metrics="{&quot;category&quot;:&quot;From NPR News&quot;,&quot;action&quot;:&quot;Click story&quot;}"><h2 class="title">#NPRreads: A Distraction For Labor Day Weekend, And Thoughts About Work </h2>
+</a></article></li>
+      <li><article class="item item-nib"><a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/thetwo-way/2016/09/03/492517062/earthquake-rattles-oklahoma-one-of-strongest-recorded-in-state" data-metrics="{&quot;category&quot;:&quot;From NPR News&quot;,&quot;action&quot;:&quot;Click story&quot;}"><h2 class="title">Earthquake Rattles Oklahoma; One Of Strongest Recorded In State</h2>
+</a></article></li>
+   </ul>
+   <a href="/web/20160904005354/http://www.npr.org/sections/news/" class="more-news"><b>More News</b></a>
+</div>
+
+<!-- END CLASS="FROM-NPR-NEWS" -->
+<div class="newscast">
+      <h2>Latest Newscast</h2>
+   <div class="bucketwrap resaudio">
+            <div class="audio-module">
+                  <div class="audio-module-controls-wrap" data-newscast-audio="{&quot;orgId&quot;:&quot;1&quot;}">
+                     </div>
+      </div>
+   </div>
+   
+<!-- END CLASS="BUCKETWRAP RESAUDIO" -->
+</div>
+
+<!-- END CLASS="NEWSCAST" -->
+<div class="connect-with-npr">
+      <h2>Connect With NPR</h2>
+   <ul>
+            <li><a href="/web/20160904005354/http://www.npr.org/podcasts">Podcast Directory</a></li>
+      <li><a href="/web/20160904005354/http://www.npr.org/newsletters/">Email Newsletters</a></li>
+      <li><a href="http://web.archive.org/web/20160904005354/https://www.facebook.com/NPR">NPR on Facebook</a></li>
+      <li><a href="http://web.archive.org/web/20160904005354/https://www.twitter.com/NPR">@npr on Twitter</a></li>
+   </ul>
+</div>
+
+<!-- END CLASS="CONNECT-WITH-NPR" -->
+</section>   
+<!-- END CLASS="NIB-CONTAINER" ROLE="COMPLEMENTARY" ARIA-LABEL="NEWS UPDATES" -->
+   <aside id="ad-centerstage-wrap">
+    
+
+    <div id="ad-centerstage-homepage" class="ad-centerstage" data-ad-config="{&quot;network&quot;:&quot;\/6735\/n6735&quot;,&quot;site&quot;:&quot;NPR&quot;,&quot;zone&quot;:&quot;homepage&quot;,&quot;targets&quot;:{&quot;storyId&quot;:&quot;1002&quot;,&quot;testserver&quot;:&quot;false&quot;},&quot;location&quot;:&quot;centerstage&quot;,&quot;deferred&quot;:false}"></div>
+
+</aside>   <div class="stories-wrap stories-wrap-two" data-metrics-category="Curated List">
+            <section class="attachment-group">
+  <article class="hp-item volume-high post-type-audio has-attachment has-image" id="story492446419">
+
+    <div class="story-wrap-outer">
+
+        <div class="story-wrap">
+
+            
+            <figure class="head-image">
+                <div class="bucketwrap homeLarge">
+                    <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/codeswitch/2016/09/02/492446419/picture-an-america-with-tacotrucksoneverycorner" data-metrics="{&quot;action&quot;:&quot;Click Story 3&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/02/21587670129_ed9d8ff66c_o_wide-6ec02ec95dd1b16e884ce6dca58da96801534a86-s900-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/02/21587670129_ed9d8ff66c_o_wide-6ec02ec95dd1b16e884ce6dca58da96801534a86-s900.jpg" class="img lazyOnLoad" alt="Picture An America With #TacoTrucksOnEveryCorner"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+        <p>
+            Imagine a world where you can buy fresh, delicious tacos on every street corner.
+            
+            <b class="credit">
+                
+                T. Tseng/Flickr Creative Commons
+                
+            </b>
+            <b class="hide-caption"><b>hide caption</b></b>
+        </p>
+    </div>
+    <b class="toggle-caption"><b>toggle caption</b></b>
+    <span class="credit">
+        
+        T. Tseng/Flickr Creative Commons
+        
+    </span>
+</div>
+
+                </div>
+            </figure>
+            
+
+            <div class="story-text">
+                <h2 class="slug cs">
+                    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/codeswitch/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                        Code Switch
+                    </a>
+                </h2>
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/codeswitch/2016/09/02/492446419/picture-an-america-with-tacotrucksoneverycorner" data-metrics="{&quot;action&quot; : &quot;Click Story 3&quot;}">
+                    <h1 class="title">Picture An America With #TacoTrucksOnEveryCorner</h1>
+                </a>
+
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/codeswitch/2016/09/02/492446419/picture-an-america-with-tacotrucksoneverycorner" data-metrics="{&quot;action&quot; : &quot;Click Story 3&quot;}">
+                    <p class="teaser">In an election cycle filled with sharp disagreement, one man has landed on a platform everyone can seem to get behind: taco trucks on every corner.</p>
+                </a>
+            </div> <!-- /.story-text -->
+        </div> <!-- /.story-wrap -->
+
+        <article id="res492451132" class="bucketwrap resaudio"><div class="audio-module">
+      <h2 class="audio-module-title">Picture An America With #TacoTrucksOnEveryCorner</h2>
+   <div class="audio-module-controls-wrap" data-audio="{&quot;uid&quot;:&quot;492446419:492451132&quot;,&quot;available&quot;:true,&quot;duration&quot;:201,&quot;title&quot;:&quot;Picture An America With #TacoTrucksOnEveryCorner&quot;,&quot;audioUrl&quot;:&quot;https:\/\/ondemand.npr.org\/anon.npr-mp3\/npr\/atc\/2016\/09\/20160902_atc_latinos_for_trump_founder_warns_of_taco_trucks_on_every_corner.mp3?orgId=1&amp;topicId=1015&amp;d=201&amp;story=492446419&amp;siteplayer=true&quot;,&quot;storyUrl&quot;:&quot;http:\/\/www.npr.org\/sections\/codeswitch\/2016\/09\/02\/492446419\/picture-an-america-with-tacotrucksoneverycorner&quot;,&quot;slug&quot;:&quot;code switch&quot;,&quot;program&quot;:&quot;&quot;,&quot;affiliation&quot;:&quot;&quot;,&quot;song&quot;:&quot;&quot;,&quot;artist&quot;:&quot;&quot;,&quot;album&quot;:&quot;&quot;,&quot;track&quot;:0,&quot;type&quot;:&quot;segment&quot;,&quot;subtype&quot;:&quot;other&quot;}" data-audio-metrics="[]">
+        <div class="audio-module-controls">
+            <a class="audio-module-listen" href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/09/20160902_atc_latinos_for_trump_founder_warns_of_taco_trucks_on_every_corner.mp3?orgId=1&amp;topicId=1015&amp;d=201&amp;story=492446419&amp;siteplayer=true&amp;dl=1">
+                <b class="audio-module-listen-inner">
+                    <b class="audio-module-listen-icon icn-play"></b>
+                    <b class="audio-module-listen-text">
+                        <b class="audio-module-cta">Listen</b>
+                        <b class="audio-module-listen-duration">
+                            <span>&middot; </span>
+                            <span>3:21</span>
+                        </b>
+                    </b>
+                </b>
+            </a>
+
+            <time class="audio-module-duration" datetime="P3M,21S">3:21</time>
+        </div>
+
+
+</div>
+
+   
+    <div class="audio-module-tools">
+        <button class="audio-module-tools-toggle" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;open more options&quot;,&quot;label&quot;:null,&quot;noninteraction&quot;:true}">
+            <b class="icn-toggle"></b>
+            <b class="label">Toggle more options</b>
+        </button>
+        <ul class="audio-module-more-tools">
+                <li class="audio-tool audio-tool-download"><a href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/09/20160902_atc_latinos_for_trump_founder_warns_of_taco_trucks_on_every_corner.mp3?orgId=1&amp;topicId=1015&amp;d=201&amp;story=492446419&amp;siteplayer=true&amp;dl=1" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;download audio&quot;,&quot;label&quot;:&quot;492446419&quot;,&quot;noninteraction&quot;:true}"><b class="icn-download"></b><b class="audio-tool-label">Download</b></a>
+                </li>
+
+                <li class="audio-tool audio-tool-embed">
+                    <button data-embed-url="www.npr.org/player/embed/492446419/492451132" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;embed audio&quot;,&quot;label&quot;:&quot;492446419&quot;,&quot;noninteraction&quot;:true}"><b class="button-inner"><b class="icn-embed"></b><b class="audio-tool-label">Embed</b></b></button>
+
+                    <div class="audio-embed-overlay">
+                        <button class="btn-close"></button>
+                        <label class="embed-label">
+                            <b class="icn-embed"></b>
+                            <b class="label">Embed</b>
+                            <input class="embed-url embed-url-no-touch" readonly value="<iframe src=&quot;https://www.npr.org/player/embed/492446419/492451132&quot; width=&quot;100%&quot; height=&quot;290&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; title=&quot;NPR embedded audio player&quot;></iframe>">
+                        </label>
+
+                        <b class="embed-url embed-url-touch">
+                            <code><b class="punctuation">&lt;</b>iframe src="https://www.npr.org/player/embed/492446419/492451132" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"&gt;</code>
+                        </b>
+
+                    </div>
+                </li>
+
+        </ul>
+    </div>
+</div>
+</article>
+    </div> <!-- /.story-wrap-outer --> 
+</article>
+<article class="hp-item attachment volume-low">
+    <a class="story-wrap" href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/02/492390405/-memeoftheweek-taco-trucks-on-every-corner" data-metrics="{&quot;action&quot; : &quot;Click Attached Story 3&quot;}">
+        <div class="story-text">
+            <h1 class="title"> #MemeOfTheWeek: Taco Trucks On Every Corner </h1>
+        </div>
+    </a>
+</article>
+<article class="hp-item attachment volume-low">
+    <a class="story-wrap" href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/thetwo-way/2016/09/03/492534979/taco-truck-owner-racks-up-sales-at-trump-event-in-detroit" data-metrics="{&quot;action&quot; : &quot;Click Attached Story 3&quot;}">
+        <div class="story-text">
+            <h1 class="title"> Taco Truck Owner Racks Up Sales At Trump Event In Detroit</h1>
+        </div>
+    </a>
+</article>
+
+</section>
+      <article class="hp-item volume-low post-type-audio has-image" id="story492516930">
+
+
+    <div class="story-wrap-outer">
+        
+        <figure class="thumb-image">
+            <div class="bucketwrap homeThumb">
+                <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492516930/decades-after-an-iconic-protest-tommie-smith-has-something-else-on-his-mind" data-metrics="{&quot;action&quot;:&quot;Click Story 4&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/03/gettyimages-113491379_wide-d827001d2088eb636c5d35f6fe699e0fe9b1e2dd-s400-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/03/gettyimages-113491379_wide-d827001d2088eb636c5d35f6fe699e0fe9b1e2dd-s400.jpg" class="img lazyOnLoad" alt="Decades After An Iconic Protest, Tommie Smith Has Something Else On His Mind"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+        <p>
+            Tommie Smith (center) and John Carlos performed a Black Power salute at the 1968 Summer Olympics in Mexico City.
+            
+            <b class="credit">
+                
+                Universal Images Group/Getty Images
+                
+            </b>
+            <b class="hide-caption"><b>hide caption</b></b>
+        </p>
+    </div>
+    <b class="toggle-caption"><b>toggle caption</b></b>
+    <span class="credit">
+        
+        Universal Images Group/Getty Images
+        
+    </span>
+</div>
+
+            </div>
+        </figure>
+        
+
+
+        <div class="story-wrap">
+
+            <div class="story-text">
+                <h2 class="slug s">
+                    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/sports/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                        Sports
+                    </a>
+                </h2>
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492516930/decades-after-an-iconic-protest-tommie-smith-has-something-else-on-his-mind" data-metrics="{&quot;action&quot; : &quot;Click Story 4&quot;}">
+                    <h1 class="title">Decades After An Iconic Protest, Tommie Smith Has Something Else On His Mind</h1>
+                </a>
+
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492516930/decades-after-an-iconic-protest-tommie-smith-has-something-else-on-his-mind" data-metrics="{&quot;action&quot; : &quot;Click Story 4&quot;}">                    
+                    <p class="teaser">After winning gold at the 1968 Olympics, Smith raised his fist in protest and made history. But ask him about the race, and he'll ask you a question in turn: Why did his winning time seem to change?</p>
+                </a>
+            </div> <!-- /.story-text -->
+
+            <article id="res492516931" class="bucketwrap resaudio"><div class="audio-module">
+      <h2 class="audio-module-title">Decades After An Iconic Protest, Tommie Smith Has Something Else On His Mind</h2>
+   <div class="audio-module-controls-wrap" data-audio="{&quot;uid&quot;:&quot;492516930:492516931&quot;,&quot;available&quot;:true,&quot;duration&quot;:288,&quot;title&quot;:&quot;Decades After An Iconic Protest, Tommie Smith Has Something Else On His Mind&quot;,&quot;audioUrl&quot;:&quot;https:\/\/ondemand.npr.org\/anon.npr-mp3\/npr\/wesat\/2016\/09\/20160903_wesat_before_there_was_colin_kaepernick_there_was_tommie_smith.mp3?orgId=1&amp;topicId=1055&amp;d=288&amp;p=7&amp;story=492516930&amp;t=progseg&amp;e=492516484&amp;seg=16&amp;siteplayer=true&quot;,&quot;storyUrl&quot;:&quot;http:\/\/www.npr.org\/2016\/09\/03\/492516930\/decades-after-an-iconic-protest-tommie-smith-has-something-else-on-his-mind&quot;,&quot;slug&quot;:&quot;Sports&quot;,&quot;program&quot;:&quot;weekend edition saturday&quot;,&quot;affiliation&quot;:&quot;&quot;,&quot;song&quot;:&quot;&quot;,&quot;artist&quot;:&quot;&quot;,&quot;album&quot;:&quot;&quot;,&quot;track&quot;:0,&quot;type&quot;:&quot;segment&quot;,&quot;subtype&quot;:&quot;other&quot;}" data-audio-metrics="[]">
+        <div class="audio-module-controls">
+            <a class="audio-module-listen" href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/09/20160903_wesat_before_there_was_colin_kaepernick_there_was_tommie_smith.mp3?orgId=1&amp;topicId=1055&amp;d=288&amp;p=7&amp;story=492516930&amp;t=progseg&amp;e=492516484&amp;seg=16&amp;siteplayer=true&amp;dl=1">
+                <b class="audio-module-listen-inner">
+                    <b class="audio-module-listen-icon icn-play"></b>
+                    <b class="audio-module-listen-text">
+                        <b class="audio-module-cta">Listen</b>
+                        <b class="audio-module-listen-duration">
+                            <span>&middot; </span>
+                            <span>4:48</span>
+                        </b>
+                    </b>
+                </b>
+            </a>
+
+            <time class="audio-module-duration" datetime="P4M,48S">4:48</time>
+        </div>
+
+
+</div>
+
+   
+    <div class="audio-module-tools">
+        <button class="audio-module-tools-toggle" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;open more options&quot;,&quot;label&quot;:null,&quot;noninteraction&quot;:true}">
+            <b class="icn-toggle"></b>
+            <b class="label">Toggle more options</b>
+        </button>
+        <ul class="audio-module-more-tools">
+                <li class="audio-tool audio-tool-download"><a href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/09/20160903_wesat_before_there_was_colin_kaepernick_there_was_tommie_smith.mp3?orgId=1&amp;topicId=1055&amp;d=288&amp;p=7&amp;story=492516930&amp;t=progseg&amp;e=492516484&amp;seg=16&amp;siteplayer=true&amp;dl=1" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;download audio&quot;,&quot;label&quot;:&quot;492516930&quot;,&quot;noninteraction&quot;:true}"><b class="icn-download"></b><b class="audio-tool-label">Download</b></a>
+                </li>
+
+                <li class="audio-tool audio-tool-embed">
+                    <button data-embed-url="www.npr.org/player/embed/492516930/492516931" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;embed audio&quot;,&quot;label&quot;:&quot;492516930&quot;,&quot;noninteraction&quot;:true}"><b class="button-inner"><b class="icn-embed"></b><b class="audio-tool-label">Embed</b></b></button>
+
+                    <div class="audio-embed-overlay">
+                        <button class="btn-close"></button>
+                        <label class="embed-label">
+                            <b class="icn-embed"></b>
+                            <b class="label">Embed</b>
+                            <input class="embed-url embed-url-no-touch" readonly value="<iframe src=&quot;https://www.npr.org/player/embed/492516930/492516931&quot; width=&quot;100%&quot; height=&quot;290&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; title=&quot;NPR embedded audio player&quot;></iframe>">
+                        </label>
+
+                        <b class="embed-url embed-url-touch">
+                            <code><b class="punctuation">&lt;</b>iframe src="https://www.npr.org/player/embed/492516930/492516931" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"&gt;</code>
+                        </b>
+
+                    </div>
+                </li>
+
+                <li class="audio-tool audio-tool-transcript">
+                  <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/templates/transcript/transcript.php?storyId=492516930" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;click transcript&quot;,&quot;label&quot;:&quot;492516930&quot;,&quot;noninteraction&quot;:true}">
+                    <b class="icn-transcript"></b>
+                    <b class="audio-tool-label">Transcript</b>
+                  </a>
+                </li>
+        </ul>
+    </div>
+</div>
+</article>
+        </div> <!-- /.story-wrap -->
+    </div> <!-- /.story-wrap-outer -->
+
+</article>
+      <article class="hp-item volume-low post-type-standard has-image has-affiliation" id="story478835539">
+
+
+
+    <div class="story-wrap">
+        
+        <figure class="thumb-image">
+            <div class="bucketwrap homeThumb">
+                <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/ed/2016/09/02/478835539/6-myths-about-suicide-that-every-educator-and-parent-should-know" data-metrics="{&quot;action&quot;:&quot;Click Story 5&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/02/lossatthedinnertable_wide-6cefffeb812dba2d701a3db14176a28785e061f6-s400-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/02/lossatthedinnertable_wide-6cefffeb812dba2d701a3db14176a28785e061f6-s400.jpg" class="img lazyOnLoad" alt="6 Myths About Suicide That Every Educator And Parent Should Know "/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+    </div>
+    <span class="credit">
+        
+        LA Johnson/NPR
+        
+    </span>
+</div>
+
+            </div>
+        </figure>
+        
+
+        <div class="story-text">
+            <h2 class="slug ne">
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/ed/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                    NPR Ed
+                </a>
+            </h2>
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/ed/2016/09/02/478835539/6-myths-about-suicide-that-every-educator-and-parent-should-know" data-metrics="{&quot;action&quot; : &quot;Click Story 5&quot;}">
+                <h1 class="title">6 Myths About Suicide That Every Educator And Parent Should Know</h1>
+            </a> 
+
+                    <a href="http://web.archive.org/web/20160904005354/http://wamu.org/" class="affiliation " data-metrics="{&quot;action&quot;:&quot;Click Station&quot;, &quot;label&quot;:&quot;WAMU&quot;}">
+                        WAMU 88.5
+                    </a>
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/ed/2016/09/02/478835539/6-myths-about-suicide-that-every-educator-and-parent-should-know" data-metrics="{&quot;action&quot; : &quot;Click Story 5&quot;}">
+                <p class="teaser">One of the biggest myths? That children don't kill themselves. It's just not true. Children as young as 5 take their own lives every year.</p>
+            </a> 
+        </div> <!-- /.story-text -->
+    </div> <!-- /.story-wrap -->
+</article>
+      <article class="hp-item volume-low post-type-standard has-image" id="story492245224">
+
+
+
+    <div class="story-wrap">
+        
+        <figure class="thumb-image">
+            <div class="bucketwrap homeThumb">
+                <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492245224/eastern-kentucky-tries-to-keep-former-coal-miners-from-leaving" data-metrics="{&quot;action&quot;:&quot;Click Story 6&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/03/29304834321_07c4416374_k_wide-e0e061b3a33b5d3d81ab94362eac0ef70d692135-s400-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/03/29304834321_07c4416374_k_wide-e0e061b3a33b5d3d81ab94362eac0ef70d692135-s400.jpg" class="img lazyOnLoad" alt="Eastern Kentucky Tries To Keep Former Coal Miners From Leaving"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+        <p>
+            Former coal miners are trained as linesmen in a program co-sponsored by the Hazard Community and Technical College and the Eastern Kentucky Concentrated Employment Program in Hazard, Ky.
+            
+            <b class="credit">
+                
+                EKCEP Inc.
+                
+            </b>
+            <b class="hide-caption"><b>hide caption</b></b>
+        </p>
+    </div>
+    <b class="toggle-caption"><b>toggle caption</b></b>
+    <span class="credit">
+        
+        EKCEP Inc.
+        
+    </span>
+</div>
+
+            </div>
+        </figure>
+        
+
+        <div class="story-text">
+            <h2 class="slug e">
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/economy/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                    Economy
+                </a>
+            </h2>
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492245224/eastern-kentucky-tries-to-keep-former-coal-miners-from-leaving" data-metrics="{&quot;action&quot; : &quot;Click Story 6&quot;}">
+                <h1 class="title">Eastern Kentucky Tries To Keep Former Coal Miners From Leaving</h1>
+            </a> 
+
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492245224/eastern-kentucky-tries-to-keep-former-coal-miners-from-leaving" data-metrics="{&quot;action&quot; : &quot;Click Story 6&quot;}">
+                <p class="teaser">For a long time, coal was king in eastern Kentucky. But the industry today is hemorrhaging jobs. The region is now struggling to rebuild its economy and find new jobs for unemployed miners.</p>
+            </a> 
+        </div> <!-- /.story-text -->
+    </div> <!-- /.story-wrap -->
+</article>
+      <article class="hp-item volume-high post-type-audio has-image has-affiliation" id="story478835294">
+
+    <div class="story-wrap-outer">
+
+        <div class="story-wrap">
+
+            
+            <figure class="head-image">
+                <div class="bucketwrap homeLarge">
+                    <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/ed/2016/09/03/478835294/school-nurses-can-be-mental-health-detectives-but-they-need-help" data-metrics="{&quot;action&quot;:&quot;Click Story 7&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/03/wolf-vs-nurse_wide-f97b729494103a5b7c7b061a2b6891704a56732b-s900-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/03/wolf-vs-nurse_wide-f97b729494103a5b7c7b061a2b6891704a56732b-s900.jpg" class="img lazyOnLoad" alt="School Nurses Can Be Mental Health 'Detectives' But They Need Help"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+    </div>
+    <span class="credit">
+        
+        LA Johnson/NPR
+        
+    </span>
+</div>
+
+                </div>
+            </figure>
+            
+
+            <div class="story-text">
+                <h2 class="slug ne">
+                    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/ed/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                        NPR Ed
+                    </a>
+                </h2>
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/ed/2016/09/03/478835294/school-nurses-can-be-mental-health-detectives-but-they-need-help" data-metrics="{&quot;action&quot; : &quot;Click Story 7&quot;}">
+                    <h1 class="title">School Nurses Can Be Mental Health 'Detectives' But They Need Help</h1>
+                </a>
+
+                        <a href="http://web.archive.org/web/20160904005354/http://wamu.org/" class="affiliation " data-metrics="{&quot;action&quot;:&quot;Click Station&quot;, &quot;label&quot;:&quot;WAMU&quot;}">
+                           WAMU 88.5
+                        </a>
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/ed/2016/09/03/478835294/school-nurses-can-be-mental-health-detectives-but-they-need-help" data-metrics="{&quot;action&quot; : &quot;Click Story 7&quot;}">
+                    <p class="teaser">School nurses play a critical role in identifying students with mental health disorders, but there aren't enough of them and they often don't have enough training.</p>
+                </a>
+            </div> <!-- /.story-text -->
+        </div> <!-- /.story-wrap -->
+
+        <article id="res492516962" class="bucketwrap resaudio"><div class="audio-module">
+      <h2 class="audio-module-title">School Nurses Can Be Mental Health 'Detectives' But They Need Help</h2>
+   <div class="audio-module-controls-wrap" data-audio="{&quot;uid&quot;:&quot;478835294:492516962&quot;,&quot;available&quot;:true,&quot;duration&quot;:259,&quot;title&quot;:&quot;School Nurses Can Be Mental Health \u0027Detectives\u0027 But They Need Help&quot;,&quot;audioUrl&quot;:&quot;https:\/\/ondemand.npr.org\/anon.npr-mp3\/npr\/wesat\/2016\/09\/20160903_wesat_school_nurses_can_be_mental_health_detectives_but_they_need_help.mp3?orgId=305&amp;topicId=1013&amp;d=259&amp;p=7&amp;story=478835294&amp;t=progseg&amp;e=492516484&amp;seg=10&amp;siteplayer=true&quot;,&quot;storyUrl&quot;:&quot;http:\/\/www.npr.org\/sections\/ed\/2016\/09\/03\/478835294\/school-nurses-can-be-mental-health-detectives-but-they-need-help&quot;,&quot;slug&quot;:&quot;Education&quot;,&quot;program&quot;:&quot;weekend edition saturday&quot;,&quot;affiliation&quot;:&quot;WAMU&quot;,&quot;song&quot;:&quot;&quot;,&quot;artist&quot;:&quot;&quot;,&quot;album&quot;:&quot;&quot;,&quot;track&quot;:0,&quot;type&quot;:&quot;segment&quot;,&quot;subtype&quot;:&quot;other&quot;}" data-audio-metrics="[]">
+        <div class="audio-module-controls">
+            <a class="audio-module-listen" href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/09/20160903_wesat_school_nurses_can_be_mental_health_detectives_but_they_need_help.mp3?orgId=305&amp;topicId=1013&amp;d=259&amp;p=7&amp;story=478835294&amp;t=progseg&amp;e=492516484&amp;seg=10&amp;siteplayer=true&amp;dl=1">
+                <b class="audio-module-listen-inner">
+                    <b class="audio-module-listen-icon icn-play"></b>
+                    <b class="audio-module-listen-text">
+                        <b class="audio-module-cta">Listen</b>
+                        <b class="audio-module-listen-duration">
+                            <span>&middot; </span>
+                            <span>4:19</span>
+                        </b>
+                    </b>
+                </b>
+            </a>
+
+            <time class="audio-module-duration" datetime="P4M,19S">4:19</time>
+        </div>
+
+
+</div>
+
+   
+    <div class="audio-module-tools">
+        <button class="audio-module-tools-toggle" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;open more options&quot;,&quot;label&quot;:null,&quot;noninteraction&quot;:true}">
+            <b class="icn-toggle"></b>
+            <b class="label">Toggle more options</b>
+        </button>
+        <ul class="audio-module-more-tools">
+                <li class="audio-tool audio-tool-download"><a href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/09/20160903_wesat_school_nurses_can_be_mental_health_detectives_but_they_need_help.mp3?orgId=305&amp;topicId=1013&amp;d=259&amp;p=7&amp;story=478835294&amp;t=progseg&amp;e=492516484&amp;seg=10&amp;siteplayer=true&amp;dl=1" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;download audio&quot;,&quot;label&quot;:&quot;478835294&quot;,&quot;noninteraction&quot;:true}"><b class="icn-download"></b><b class="audio-tool-label">Download</b></a>
+                </li>
+
+                <li class="audio-tool audio-tool-embed">
+                    <button data-embed-url="www.npr.org/player/embed/478835294/492516962" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;embed audio&quot;,&quot;label&quot;:&quot;478835294&quot;,&quot;noninteraction&quot;:true}"><b class="button-inner"><b class="icn-embed"></b><b class="audio-tool-label">Embed</b></b></button>
+
+                    <div class="audio-embed-overlay">
+                        <button class="btn-close"></button>
+                        <label class="embed-label">
+                            <b class="icn-embed"></b>
+                            <b class="label">Embed</b>
+                            <input class="embed-url embed-url-no-touch" readonly value="<iframe src=&quot;https://www.npr.org/player/embed/478835294/492516962&quot; width=&quot;100%&quot; height=&quot;290&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; title=&quot;NPR embedded audio player&quot;></iframe>">
+                        </label>
+
+                        <b class="embed-url embed-url-touch">
+                            <code><b class="punctuation">&lt;</b>iframe src="https://www.npr.org/player/embed/478835294/492516962" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"&gt;</code>
+                        </b>
+
+                    </div>
+                </li>
+
+                <li class="audio-tool audio-tool-transcript">
+                  <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/templates/transcript/transcript.php?storyId=478835294" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;click transcript&quot;,&quot;label&quot;:&quot;478835294&quot;,&quot;noninteraction&quot;:true}">
+                    <b class="icn-transcript"></b>
+                    <b class="audio-tool-label">Transcript</b>
+                  </a>
+                </li>
+        </ul>
+    </div>
+</div>
+</article>
+    </div> <!-- /.story-wrap-outer --> 
+</article>
+      <article class="hp-item volume-low post-type-standard has-image" id="story492394801">
+
+
+
+    <div class="story-wrap">
+        
+        <figure class="thumb-image">
+            <div class="bucketwrap homeThumb">
+                <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492394801/congress-returns-much-ado-about-little-to-do" data-metrics="{&quot;action&quot;:&quot;Click Story 8&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/03/ap_16194576223466_wide-d6a11aee5e0b27b988236eb121dfd0d831628a9c-s400-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/03/ap_16194576223466_wide-d6a11aee5e0b27b988236eb121dfd0d831628a9c-s400.jpg" class="img lazyOnLoad" alt="Congress Returns: Much Ado About Little To Do"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+        <p>
+            House Speaker Paul Ryan, left, and House Majority Leader Kevin McCarthy at a July news conference on Capitol Hill.
+            
+            <b class="credit">
+                
+                J. Scott Applewhite/AP
+                
+            </b>
+            <b class="hide-caption"><b>hide caption</b></b>
+        </p>
+    </div>
+    <b class="toggle-caption"><b>toggle caption</b></b>
+    <span class="credit">
+        
+        J. Scott Applewhite/AP
+        
+    </span>
+</div>
+
+            </div>
+        </figure>
+        
+
+        <div class="story-text">
+            <h2 class="slug p">
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/politics/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                    Politics
+                </a>
+            </h2>
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492394801/congress-returns-much-ado-about-little-to-do" data-metrics="{&quot;action&quot; : &quot;Click Story 8&quot;}">
+                <h1 class="title">Congress Returns: Much Ado About Little To Do</h1>
+            </a> 
+
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492394801/congress-returns-much-ado-about-little-to-do" data-metrics="{&quot;action&quot; : &quot;Click Story 8&quot;}">
+                <p class="teaser">There are only two must-pass items on the agenda: a short-term funding bill to keep the government running past Sept. 30, and a separate funding bill to combat the spread of the Zika virus.</p>
+            </a> 
+        </div> <!-- /.story-text -->
+    </div> <!-- /.story-wrap -->
+</article>
+      <section class="attachment-group">
+  <article class="hp-item volume-low post-type-standard has-attachment has-image" id="story490101866">
+
+
+
+    <div class="story-wrap">
+        
+        <figure class="thumb-image">
+            <div class="bucketwrap homeThumb">
+                <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/490101866/a-gentleman-in-moscow-is-a-grand-hotel-adventure" data-metrics="{&quot;action&quot;:&quot;Click Story 9&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/03/2016-08-17-gentlmaninmoscow-towles-charbage_wide-a113c1ba3fbe360739ca2bc06d3f788ad4739e61-s400-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/03/2016-08-17-gentlmaninmoscow-towles-charbage_wide-a113c1ba3fbe360739ca2bc06d3f788ad4739e61-s400.jpg" class="img lazyOnLoad" alt="'A Gentleman In Moscow' Is A Grand Hotel Adventure"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+    </div>
+    <span class="credit">
+        
+        Claire Harbage/NPR
+        
+    </span>
+</div>
+
+            </div>
+        </figure>
+        
+
+        <div class="story-text">
+            <h2 class="slug br">
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/book-reviews/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                    Book Reviews
+                </a>
+            </h2>
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/490101866/a-gentleman-in-moscow-is-a-grand-hotel-adventure" data-metrics="{&quot;action&quot; : &quot;Click Story 9&quot;}">
+                <h1 class="title">'A Gentleman In Moscow' Is A Grand Hotel Adventure</h1>
+            </a> 
+
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/490101866/a-gentleman-in-moscow-is-a-grand-hotel-adventure" data-metrics="{&quot;action&quot; : &quot;Click Story 9&quot;}">
+                <p class="teaser">Amor Towles' new novel stars a Russian aristocrat, sentenced by the Soviets to permanent house arrest in a luxury hotel. It's a frothy romp that tends to overlook the reality of life under Stalin.</p>
+            </a> 
+        </div> <!-- /.story-text -->
+    </div> <!-- /.story-wrap -->
+</article>
+<article class="hp-item attachment volume-low">
+    <a class="story-wrap" href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/book-reviews">
+        <div class="story-text">
+            <h1 class="title">More Book Reviews From NPR</h1>
+        </div>
+    </a>
+</article>
+
+</section>
+      <article class="hp-item volume-low post-type-standard has-image" id="story492381399">
+
+
+
+    <div class="story-wrap">
+        
+        <figure class="thumb-image">
+            <div class="bucketwrap homeThumb">
+                <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/parallels/2016/09/03/492381399/gaza-needs-aid-but-israel-says-some-has-reached-hamas-militants" data-metrics="{&quot;action&quot;:&quot;Click Story 10&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/03/1_wide-8d6726fede75833c400c9852c218a1555a40be52-s400-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/03/1_wide-8d6726fede75833c400c9852c218a1555a40be52-s400.jpg" class="img lazyOnLoad" alt="Gaza Needs Aid, But Israel Says Some Has Reached Hamas Militants"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+        <p>
+            Mohammad Sultan stands outside the locked door of a children's clinic in Gaza City. Sultan ran the clinic for World Vision, which temporarily closed the center after its Gaza director was accused of diverting humanitarian assistance to Hamas.
+            
+            <b class="credit">
+                
+                Nicholas Schifrin/NPR
+                
+            </b>
+            <b class="hide-caption"><b>hide caption</b></b>
+        </p>
+    </div>
+    <b class="toggle-caption"><b>toggle caption</b></b>
+    <span class="credit">
+        
+        Nicholas Schifrin/NPR
+        
+    </span>
+</div>
+
+            </div>
+        </figure>
+        
+
+        <div class="story-text">
+            <h2 class="slug pwn">
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/parallels/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                    Parallels - World News
+                </a>
+            </h2>
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/parallels/2016/09/03/492381399/gaza-needs-aid-but-israel-says-some-has-reached-hamas-militants" data-metrics="{&quot;action&quot; : &quot;Click Story 10&quot;}">
+                <h1 class="title">Gaza Needs Aid, But Israel Says Some Has Reached Hamas Militants</h1>
+            </a> 
+
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/parallels/2016/09/03/492381399/gaza-needs-aid-but-israel-says-some-has-reached-hamas-militants" data-metrics="{&quot;action&quot; : &quot;Click Story 10&quot;}">
+                <p class="teaser">An aid official in Gaza is accused of illegally diverting funds to the Islamic militant group, which runs the Gaza Strip. Aid groups fear new restrictions but Israel insists it wants aid to continue.</p>
+            </a> 
+        </div> <!-- /.story-text -->
+    </div> <!-- /.story-wrap -->
+</article>
+      <section class="attachment-group">
+  <article class="hp-item volume-low post-type-standard has-attachment has-image" id="story492457729">
+
+
+
+    <div class="story-wrap">
+        
+        <figure class="thumb-image">
+            <div class="bucketwrap homeThumb">
+                <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492457729/whos-a-good-girl-your-dog-who-understands-more-than-you-might-think" data-metrics="{&quot;action&quot;:&quot;Click Story 11&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/03/5689487127_3cc16dde41_o_wide-7912dbd33a7d32723b400ce3b84e8d4e4a608726-s400-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/03/5689487127_3cc16dde41_o_wide-7912dbd33a7d32723b400ce3b84e8d4e4a608726-s400.jpg" class="img lazyOnLoad" alt="Who's A Good Girl? Your Dog, Who Understands More Than You Might Think"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+        <p>
+            When your dog looks like she's listening to you, she really is.
+            
+            <b class="credit">
+                <a href="http://web.archive.org/web/20160904005354/https://www.flickr.com/photos/roymontgomery/5689487127/in/photolist-9EL7iD-7PWMUV-67nNta" target="_blank">
+                Ray Montgomery/Flickr
+                </a>
+            </b>
+            <b class="hide-caption"><b>hide caption</b></b>
+        </p>
+    </div>
+    <b class="toggle-caption"><b>toggle caption</b></b>
+    <span class="credit">
+        <a href="http://web.archive.org/web/20160904005354/https://www.flickr.com/photos/roymontgomery/5689487127/in/photolist-9EL7iD-7PWMUV-67nNta" target="_blank">
+        Ray Montgomery/Flickr
+        </a>
+    </span>
+</div>
+
+            </div>
+        </figure>
+        
+
+        <div class="story-text">
+            <h2 class="slug ss">
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/series/4495795/simon-says" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                    Simon Says
+                </a>
+            </h2>
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492457729/whos-a-good-girl-your-dog-who-understands-more-than-you-might-think" data-metrics="{&quot;action&quot; : &quot;Click Story 11&quot;}">
+                <h1 class="title">Who's A Good Girl? Your Dog, Who Understands More Than You Might Think</h1>
+            </a> 
+
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492457729/whos-a-good-girl-your-dog-who-understands-more-than-you-might-think" data-metrics="{&quot;action&quot; : &quot;Click Story 11&quot;}">
+                <p class="teaser">A team of Hungarian scientists has determined dogs can understand words, not just tone. NPR's Scott Simon says it may mean we should rethink our entire relationship with our furry friends.</p>
+            </a> 
+        </div> <!-- /.story-text -->
+    </div> <!-- /.story-wrap -->
+</article>
+<article class="hp-item attachment volume-low">
+    <a class="story-wrap" href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/health-shots/2016/08/30/491935800/their-masters-voices-dogs-understand-tone-and-meaning-of-words" data-metrics="{&quot;action&quot; : &quot;Click Attached Story 11&quot;}">
+        <div class="story-text">
+            <h1 class="title"> Their Masters' Voices: Dogs Understand Tone And Meaning Of Words</h1>
+        </div>
+    </a>
+</article>
+
+</section>
+      <article class="hp-item volume-high post-type-audio has-image" id="story492090626">
+
+    <div class="story-wrap-outer">
+
+        <div class="story-wrap">
+
+            
+            <figure class="head-image">
+                <div class="bucketwrap homeLarge">
+                    <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492090626/better-sit-down-for-this-one-an-exciting-book-about-the-history-of-chairs" data-metrics="{&quot;action&quot;:&quot;Click Story 12&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/03/folding_chairs_wide-a14e0819cfa2326f8b091f26e5f97480242aeb0d-s900-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/03/folding_chairs_wide-a14e0819cfa2326f8b091f26e5f97480242aeb0d-s900.jpg" class="img lazyOnLoad" alt="Better Sit Down For This One: An Exciting Book About The History Of Chairs"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+        <p>
+            Rybczynski believes the oldest kind of chair was not a throne, but a folding chair.
+            
+            <b class="credit">
+                
+                Witold Rybczynski
+                
+            </b>
+            <b class="hide-caption"><b>hide caption</b></b>
+        </p>
+    </div>
+    <b class="toggle-caption"><b>toggle caption</b></b>
+    <span class="credit">
+        
+        Witold Rybczynski
+        
+    </span>
+</div>
+
+                </div>
+            </figure>
+            
+
+            <div class="story-text">
+                <h2 class="slug a&amp;d">
+                    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/art-design/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                        Art &amp; Design
+                    </a>
+                </h2>
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492090626/better-sit-down-for-this-one-an-exciting-book-about-the-history-of-chairs" data-metrics="{&quot;action&quot; : &quot;Click Story 12&quot;}">
+                    <h1 class="title">Better Sit Down For This One: An Exciting Book About The History Of Chairs</h1>
+                </a>
+
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492090626/better-sit-down-for-this-one-an-exciting-book-about-the-history-of-chairs" data-metrics="{&quot;action&quot; : &quot;Click Story 12&quot;}">
+                    <p class="teaser">OK, fine ... this new chair anthology might not keep you on the edge of your seat, but it does reveal some very interesting ideas about trends in design, culture and social values.</p>
+                </a>
+            </div> <!-- /.story-text -->
+        </div> <!-- /.story-wrap -->
+
+        <article id="res492516980" class="bucketwrap resaudio"><div class="audio-module">
+      <h2 class="audio-module-title">Better Sit Down For This One: An Exciting Book About The History Of Chairs</h2>
+   <div class="audio-module-controls-wrap" data-audio="{&quot;uid&quot;:&quot;492090626:492516980&quot;,&quot;available&quot;:true,&quot;duration&quot;:330,&quot;title&quot;:&quot;Better Sit Down For This One: An Exciting Book About The History Of Chairs&quot;,&quot;audioUrl&quot;:&quot;https:\/\/ondemand.npr.org\/anon.npr-mp3\/npr\/wesat\/2016\/09\/20160903_wesat_better_sit_down_for_this_one_an_exciting_book_about_the_history_of_chairs.mp3?orgId=1&amp;topicId=1047&amp;d=330&amp;p=7&amp;story=492090626&amp;t=progseg&amp;e=492516484&amp;seg=19&amp;siteplayer=true&quot;,&quot;storyUrl&quot;:&quot;http:\/\/www.npr.org\/2016\/09\/03\/492090626\/better-sit-down-for-this-one-an-exciting-book-about-the-history-of-chairs&quot;,&quot;slug&quot;:&quot;Art &amp; Design&quot;,&quot;program&quot;:&quot;weekend edition saturday&quot;,&quot;affiliation&quot;:&quot;&quot;,&quot;song&quot;:&quot;&quot;,&quot;artist&quot;:&quot;&quot;,&quot;album&quot;:&quot;&quot;,&quot;track&quot;:0,&quot;type&quot;:&quot;segment&quot;,&quot;subtype&quot;:&quot;other&quot;}" data-audio-metrics="[]">
+        <div class="audio-module-controls">
+            <a class="audio-module-listen" href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/09/20160903_wesat_better_sit_down_for_this_one_an_exciting_book_about_the_history_of_chairs.mp3?orgId=1&amp;topicId=1047&amp;d=330&amp;p=7&amp;story=492090626&amp;t=progseg&amp;e=492516484&amp;seg=19&amp;siteplayer=true&amp;dl=1">
+                <b class="audio-module-listen-inner">
+                    <b class="audio-module-listen-icon icn-play"></b>
+                    <b class="audio-module-listen-text">
+                        <b class="audio-module-cta">Listen</b>
+                        <b class="audio-module-listen-duration">
+                            <span>&middot; </span>
+                            <span>5:30</span>
+                        </b>
+                    </b>
+                </b>
+            </a>
+
+            <time class="audio-module-duration" datetime="P5M,30S">5:30</time>
+        </div>
+
+
+</div>
+
+   
+    <div class="audio-module-tools">
+        <button class="audio-module-tools-toggle" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;open more options&quot;,&quot;label&quot;:null,&quot;noninteraction&quot;:true}">
+            <b class="icn-toggle"></b>
+            <b class="label">Toggle more options</b>
+        </button>
+        <ul class="audio-module-more-tools">
+                <li class="audio-tool audio-tool-download"><a href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/09/20160903_wesat_better_sit_down_for_this_one_an_exciting_book_about_the_history_of_chairs.mp3?orgId=1&amp;topicId=1047&amp;d=330&amp;p=7&amp;story=492090626&amp;t=progseg&amp;e=492516484&amp;seg=19&amp;siteplayer=true&amp;dl=1" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;download audio&quot;,&quot;label&quot;:&quot;492090626&quot;,&quot;noninteraction&quot;:true}"><b class="icn-download"></b><b class="audio-tool-label">Download</b></a>
+                </li>
+
+                <li class="audio-tool audio-tool-embed">
+                    <button data-embed-url="www.npr.org/player/embed/492090626/492516980" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;embed audio&quot;,&quot;label&quot;:&quot;492090626&quot;,&quot;noninteraction&quot;:true}"><b class="button-inner"><b class="icn-embed"></b><b class="audio-tool-label">Embed</b></b></button>
+
+                    <div class="audio-embed-overlay">
+                        <button class="btn-close"></button>
+                        <label class="embed-label">
+                            <b class="icn-embed"></b>
+                            <b class="label">Embed</b>
+                            <input class="embed-url embed-url-no-touch" readonly value="<iframe src=&quot;https://www.npr.org/player/embed/492090626/492516980&quot; width=&quot;100%&quot; height=&quot;290&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; title=&quot;NPR embedded audio player&quot;></iframe>">
+                        </label>
+
+                        <b class="embed-url embed-url-touch">
+                            <code><b class="punctuation">&lt;</b>iframe src="https://www.npr.org/player/embed/492090626/492516980" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"&gt;</code>
+                        </b>
+
+                    </div>
+                </li>
+
+                <li class="audio-tool audio-tool-transcript">
+                  <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/templates/transcript/transcript.php?storyId=492090626" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;click transcript&quot;,&quot;label&quot;:&quot;492090626&quot;,&quot;noninteraction&quot;:true}">
+                    <b class="icn-transcript"></b>
+                    <b class="audio-tool-label">Transcript</b>
+                  </a>
+                </li>
+        </ul>
+    </div>
+</div>
+</article>
+    </div> <!-- /.story-wrap-outer --> 
+</article>
+      <article class="hp-item volume-low post-type-audio has-image" id="story492250363">
+
+
+    <div class="story-wrap-outer">
+        
+        <figure class="thumb-image">
+            <div class="bucketwrap homeThumb">
+                <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492250363/lolo-songs-from-a-life-reinvented" data-metrics="{&quot;action&quot;:&quot;Click Story 13&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/03/-images-uploads-gallery-lolo_digi_x_asher_moss-36_wide-26b0f05fde8f1e4b785b6acbc8f0cf228d35d38e-s400-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/03/-images-uploads-gallery-lolo_digi_x_asher_moss-36_wide-26b0f05fde8f1e4b785b6acbc8f0cf228d35d38e-s400.jpg" class="img lazyOnLoad" alt="LOLO: Songs From A Life Reinvented"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+        <p>
+            LOLO is the American singer, songwriter and actress Lauren Pritchard.
+            
+            <b class="credit">
+                
+                Asher Moss/Courtesy of the artist
+                
+            </b>
+            <b class="hide-caption"><b>hide caption</b></b>
+        </p>
+    </div>
+    <b class="toggle-caption"><b>toggle caption</b></b>
+    <span class="credit">
+        
+        Asher Moss/Courtesy of the artist
+        
+    </span>
+</div>
+
+            </div>
+        </figure>
+        
+
+
+        <div class="story-wrap">
+
+            <div class="story-text">
+                <h2 class="slug mi">
+                    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/music-interviews/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                        Music Interviews
+                    </a>
+                </h2>
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492250363/lolo-songs-from-a-life-reinvented" data-metrics="{&quot;action&quot; : &quot;Click Story 13&quot;}">
+                    <h1 class="title">LOLO: Songs From A Life Reinvented</h1>
+                </a>
+
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/492250363/lolo-songs-from-a-life-reinvented" data-metrics="{&quot;action&quot; : &quot;Click Story 13&quot;}">                    
+                    <p class="teaser">Lauren Pritchard left her tiny Tennessee town for show business before she was old enough to drive. She speaks with Scott Simon about her latest release as LOLO.</p>
+                </a>
+            </div> <!-- /.story-text -->
+
+            <article id="res492516986" class="bucketwrap resaudio"><div class="audio-module">
+      <h2 class="audio-module-title">LOLO: Songs From A Life Reinvented</h2>
+   <div class="audio-module-controls-wrap" data-audio="{&quot;uid&quot;:&quot;492250363:492516986&quot;,&quot;available&quot;:true,&quot;duration&quot;:401,&quot;title&quot;:&quot;LOLO: Songs From A Life Reinvented&quot;,&quot;audioUrl&quot;:&quot;https:\/\/ondemand.npr.org\/anon.npr-mp3\/npr\/wesat\/2016\/09\/20160903_wesat_lolo_songs_from_a_life_reinvented.mp3?orgId=1&amp;topicId=1105&amp;d=401&amp;p=7&amp;story=492250363&amp;t=progseg&amp;e=492516484&amp;seg=20&amp;siteplayer=true&quot;,&quot;storyUrl&quot;:&quot;http:\/\/www.npr.org\/2016\/09\/03\/492250363\/lolo-songs-from-a-life-reinvented&quot;,&quot;slug&quot;:&quot;Music Interviews&quot;,&quot;program&quot;:&quot;weekend edition saturday&quot;,&quot;affiliation&quot;:&quot;&quot;,&quot;song&quot;:&quot;&quot;,&quot;artist&quot;:&quot;&quot;,&quot;album&quot;:&quot;&quot;,&quot;track&quot;:0,&quot;type&quot;:&quot;segment&quot;,&quot;subtype&quot;:&quot;other&quot;}" data-audio-metrics="[]">
+        <div class="audio-module-controls">
+            <a class="audio-module-listen" href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/09/20160903_wesat_lolo_songs_from_a_life_reinvented.mp3?orgId=1&amp;topicId=1105&amp;d=401&amp;p=7&amp;story=492250363&amp;t=progseg&amp;e=492516484&amp;seg=20&amp;siteplayer=true&amp;dl=1">
+                <b class="audio-module-listen-inner">
+                    <b class="audio-module-listen-icon icn-play"></b>
+                    <b class="audio-module-listen-text">
+                        <b class="audio-module-cta">Listen</b>
+                        <b class="audio-module-listen-duration">
+                            <span>&middot; </span>
+                            <span>6:41</span>
+                        </b>
+                    </b>
+                </b>
+            </a>
+
+            <time class="audio-module-duration" datetime="P6M,41S">6:41</time>
+        </div>
+
+
+</div>
+
+   
+    <div class="audio-module-tools">
+        <button class="audio-module-tools-toggle" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;open more options&quot;,&quot;label&quot;:null,&quot;noninteraction&quot;:true}">
+            <b class="icn-toggle"></b>
+            <b class="label">Toggle more options</b>
+        </button>
+        <ul class="audio-module-more-tools">
+                <li class="audio-tool audio-tool-download"><a href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/09/20160903_wesat_lolo_songs_from_a_life_reinvented.mp3?orgId=1&amp;topicId=1105&amp;d=401&amp;p=7&amp;story=492250363&amp;t=progseg&amp;e=492516484&amp;seg=20&amp;siteplayer=true&amp;dl=1" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;download audio&quot;,&quot;label&quot;:&quot;492250363&quot;,&quot;noninteraction&quot;:true}"><b class="icn-download"></b><b class="audio-tool-label">Download</b></a>
+                </li>
+
+                <li class="audio-tool audio-tool-embed">
+                    <button data-embed-url="www.npr.org/player/embed/492250363/492516986" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;embed audio&quot;,&quot;label&quot;:&quot;492250363&quot;,&quot;noninteraction&quot;:true}"><b class="button-inner"><b class="icn-embed"></b><b class="audio-tool-label">Embed</b></b></button>
+
+                    <div class="audio-embed-overlay">
+                        <button class="btn-close"></button>
+                        <label class="embed-label">
+                            <b class="icn-embed"></b>
+                            <b class="label">Embed</b>
+                            <input class="embed-url embed-url-no-touch" readonly value="<iframe src=&quot;https://www.npr.org/player/embed/492250363/492516986&quot; width=&quot;100%&quot; height=&quot;290&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; title=&quot;NPR embedded audio player&quot;></iframe>">
+                        </label>
+
+                        <b class="embed-url embed-url-touch">
+                            <code><b class="punctuation">&lt;</b>iframe src="https://www.npr.org/player/embed/492250363/492516986" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"&gt;</code>
+                        </b>
+
+                    </div>
+                </li>
+
+                <li class="audio-tool audio-tool-transcript">
+                  <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/templates/transcript/transcript.php?storyId=492250363" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;click transcript&quot;,&quot;label&quot;:&quot;492250363&quot;,&quot;noninteraction&quot;:true}">
+                    <b class="icn-transcript"></b>
+                    <b class="audio-tool-label">Transcript</b>
+                  </a>
+                </li>
+        </ul>
+    </div>
+</div>
+</article>
+        </div> <!-- /.story-wrap -->
+    </div> <!-- /.story-wrap-outer -->
+
+</article>
+      <article class="hp-item volume-low post-type-audio has-image" id="story492234846">
+
+
+    <div class="story-wrap-outer">
+        
+        <figure class="thumb-image">
+            <div class="bucketwrap homeThumb">
+                <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/02/492234846/narcos-actor-wagner-moura-on-shedding-the-weight-of-pablo-escobar" data-metrics="{&quot;action&quot;:&quot;Click Story 14&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/02/narcos_203_00873r1_wide-775f1c1b8a3fe57cb17da8361e5e1c165e90d12f-s400-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/02/narcos_203_00873r1_wide-775f1c1b8a3fe57cb17da8361e5e1c165e90d12f-s400.jpg" class="img lazyOnLoad" alt="'Narcos' Actor Wagner Moura On Shedding The Weight Of Pablo Escobar "/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+        <p>
+            "I think I've read everything that was written about [Escobar]," Moura says, "but I did that in order to forget all that and then to create my own version of him."
+            
+            <b class="credit">
+                
+                Juan Pablo Gutierrez/Netflix
+                
+            </b>
+            <b class="hide-caption"><b>hide caption</b></b>
+        </p>
+    </div>
+    <b class="toggle-caption"><b>toggle caption</b></b>
+    <span class="credit">
+        
+        Juan Pablo Gutierrez/Netflix
+        
+    </span>
+</div>
+
+            </div>
+        </figure>
+        
+
+
+        <div class="story-wrap">
+
+            <div class="story-text">
+                <h2 class="slug t">
+                    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/television/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                        Television
+                    </a>
+                </h2>
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/02/492234846/narcos-actor-wagner-moura-on-shedding-the-weight-of-pablo-escobar" data-metrics="{&quot;action&quot; : &quot;Click Story 14&quot;}">
+                    <h1 class="title">'Narcos' Actor Wagner Moura On Shedding The Weight Of Pablo Escobar</h1>
+                </a>
+
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/02/492234846/narcos-actor-wagner-moura-on-shedding-the-weight-of-pablo-escobar" data-metrics="{&quot;action&quot; : &quot;Click Story 14&quot;}">                    
+                    <p class="teaser">The Brazilian actor gained 40 pounds for his role as the notorious drug kingpin. He says getting back in shape "wasn't only about losing weight, but getting rid of that character."</p>
+                </a>
+            </div> <!-- /.story-text -->
+
+            <article id="res492357859" class="bucketwrap resaudio"><div class="audio-module">
+      <h2 class="audio-module-title">'Narcos' Actor Wagner Moura On Shedding The Weight Of Pablo Escobar </h2>
+   <div class="audio-module-controls-wrap" data-audio="{&quot;uid&quot;:&quot;492234846:492357859&quot;,&quot;available&quot;:true,&quot;duration&quot;:419,&quot;title&quot;:&quot;\u0027Narcos\u0027 Actor Wagner Moura On Shedding The Weight Of Pablo Escobar &quot;,&quot;audioUrl&quot;:&quot;https:\/\/ondemand.npr.org\/anon.npr-mp3\/npr\/me\/2016\/09\/20160902_me_narcos_actor_wagner_moura_on_shedding_the_weight_of_pablo_escobar_.mp3?orgId=1&amp;topicId=1138&amp;d=419&amp;p=3&amp;story=492234846&amp;t=progseg&amp;e=492355209&amp;seg=10&amp;siteplayer=true&quot;,&quot;storyUrl&quot;:&quot;http:\/\/www.npr.org\/2016\/09\/02\/492234846\/narcos-actor-wagner-moura-on-shedding-the-weight-of-pablo-escobar&quot;,&quot;slug&quot;:&quot;Television&quot;,&quot;program&quot;:&quot;morning edition&quot;,&quot;affiliation&quot;:&quot;&quot;,&quot;song&quot;:&quot;&quot;,&quot;artist&quot;:&quot;&quot;,&quot;album&quot;:&quot;&quot;,&quot;track&quot;:0,&quot;type&quot;:&quot;segment&quot;,&quot;subtype&quot;:&quot;other&quot;}" data-audio-metrics="[]">
+        <div class="audio-module-controls">
+            <a class="audio-module-listen" href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/me/2016/09/20160902_me_narcos_actor_wagner_moura_on_shedding_the_weight_of_pablo_escobar_.mp3?orgId=1&amp;topicId=1138&amp;d=419&amp;p=3&amp;story=492234846&amp;t=progseg&amp;e=492355209&amp;seg=10&amp;siteplayer=true&amp;dl=1">
+                <b class="audio-module-listen-inner">
+                    <b class="audio-module-listen-icon icn-play"></b>
+                    <b class="audio-module-listen-text">
+                        <b class="audio-module-cta">Listen</b>
+                        <b class="audio-module-listen-duration">
+                            <span>&middot; </span>
+                            <span>6:59</span>
+                        </b>
+                    </b>
+                </b>
+            </a>
+
+            <time class="audio-module-duration" datetime="P6M,59S">6:59</time>
+        </div>
+
+
+</div>
+
+   
+    <div class="audio-module-tools">
+        <button class="audio-module-tools-toggle" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;open more options&quot;,&quot;label&quot;:null,&quot;noninteraction&quot;:true}">
+            <b class="icn-toggle"></b>
+            <b class="label">Toggle more options</b>
+        </button>
+        <ul class="audio-module-more-tools">
+                <li class="audio-tool audio-tool-download"><a href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/me/2016/09/20160902_me_narcos_actor_wagner_moura_on_shedding_the_weight_of_pablo_escobar_.mp3?orgId=1&amp;topicId=1138&amp;d=419&amp;p=3&amp;story=492234846&amp;t=progseg&amp;e=492355209&amp;seg=10&amp;siteplayer=true&amp;dl=1" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;download audio&quot;,&quot;label&quot;:&quot;492234846&quot;,&quot;noninteraction&quot;:true}"><b class="icn-download"></b><b class="audio-tool-label">Download</b></a>
+                </li>
+
+                <li class="audio-tool audio-tool-embed">
+                    <button data-embed-url="www.npr.org/player/embed/492234846/492357859" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;embed audio&quot;,&quot;label&quot;:&quot;492234846&quot;,&quot;noninteraction&quot;:true}"><b class="button-inner"><b class="icn-embed"></b><b class="audio-tool-label">Embed</b></b></button>
+
+                    <div class="audio-embed-overlay">
+                        <button class="btn-close"></button>
+                        <label class="embed-label">
+                            <b class="icn-embed"></b>
+                            <b class="label">Embed</b>
+                            <input class="embed-url embed-url-no-touch" readonly value="<iframe src=&quot;https://www.npr.org/player/embed/492234846/492357859&quot; width=&quot;100%&quot; height=&quot;290&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; title=&quot;NPR embedded audio player&quot;></iframe>">
+                        </label>
+
+                        <b class="embed-url embed-url-touch">
+                            <code><b class="punctuation">&lt;</b>iframe src="https://www.npr.org/player/embed/492234846/492357859" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"&gt;</code>
+                        </b>
+
+                    </div>
+                </li>
+
+                <li class="audio-tool audio-tool-transcript">
+                  <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/templates/transcript/transcript.php?storyId=492234846" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;click transcript&quot;,&quot;label&quot;:&quot;492234846&quot;,&quot;noninteraction&quot;:true}">
+                    <b class="icn-transcript"></b>
+                    <b class="audio-tool-label">Transcript</b>
+                  </a>
+                </li>
+        </ul>
+    </div>
+</div>
+</article>
+        </div> <!-- /.story-wrap -->
+    </div> <!-- /.story-wrap-outer -->
+
+</article>
+      <article class="hp-item volume-low post-type-audio has-image has-affiliation" id="story492144056">
+
+
+    <div class="story-wrap-outer">
+        
+        <figure class="thumb-image">
+            <div class="bucketwrap homeThumb">
+                <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/health-shots/2016/09/02/492144056/colorado-gun-shops-work-together-to-prevent-suicides" data-metrics="{&quot;action&quot;:&quot;Click Story 15&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/02/daley-pic-1-jacquelyn_clark-pic_edited_wide-15dcdba652218c060cd4e1d6192ff06ba340f3bf-s400-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/02/daley-pic-1-jacquelyn_clark-pic_edited_wide-15dcdba652218c060cd4e1d6192ff06ba340f3bf-s400.jpg" class="img lazyOnLoad" alt="Colorado Gun Shops Work Together To Prevent Suicides"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+        <p>
+            Jacquelyn Clark, co-owner of Bristlecone Shooting, Training and Retail Center in Lakewood, Colo., holds a list of gun safety rules. One recommendation: Consider "off-site storage if a family member may be suicidal."
+            
+            <b class="credit">
+                
+                John Daley/Colorado Public Radio
+                
+            </b>
+            <b class="hide-caption"><b>hide caption</b></b>
+        </p>
+    </div>
+    <b class="toggle-caption"><b>toggle caption</b></b>
+    <span class="credit">
+        
+        John Daley/Colorado Public Radio
+        
+    </span>
+</div>
+
+            </div>
+        </figure>
+        
+
+
+        <div class="story-wrap">
+
+            <div class="story-text">
+                <h2 class="slug shn">
+                    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/health-shots/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                        Shots - Health News
+                    </a>
+                </h2>
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/health-shots/2016/09/02/492144056/colorado-gun-shops-work-together-to-prevent-suicides" data-metrics="{&quot;action&quot; : &quot;Click Story 15&quot;}">
+                    <h1 class="title">Colorado Gun Shops Work Together To Prevent Suicides</h1>
+                </a>
+
+                    <a href="http://web.archive.org/web/20160904005354/http://www.cpr.org/" class="affiliation " data-metrics="{&quot;action&quot;:&quot;Click Station&quot;, &quot;label&quot;:&quot;CPR&quot;}">
+                        Colorado Public Radio
+                    </a>
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/health-shots/2016/09/02/492144056/colorado-gun-shops-work-together-to-prevent-suicides" data-metrics="{&quot;action&quot; : &quot;Click Story 15&quot;}">                    
+                    <p class="teaser">Gun shop owners and public health workers in Colorado are finding common ground amid rancor over guns and politics. They are collaborating to reduce suicides involving firearms.</p>
+                </a>
+            </div> <!-- /.story-text -->
+
+            <article id="res492443287" class="bucketwrap resaudio"><div class="audio-module">
+      <h2 class="audio-module-title">Colorado Gun Shops Work Together To Prevent Suicides</h2>
+   <div class="audio-module-controls-wrap" data-audio="{&quot;uid&quot;:&quot;492144056:492443287&quot;,&quot;available&quot;:true,&quot;duration&quot;:221,&quot;title&quot;:&quot;Colorado Gun Shops Work Together To Prevent Suicides&quot;,&quot;audioUrl&quot;:&quot;https:\/\/ondemand.npr.org\/anon.npr-mp3\/npr\/atc\/2016\/09\/20160902_atc_colorado_gun_shops_work_together_to_prevent_suicides.mp3?orgId=32&amp;topicId=1128&amp;d=221&amp;p=2&amp;story=492144056&amp;t=progseg&amp;e=492376518&amp;seg=16&amp;siteplayer=true&quot;,&quot;storyUrl&quot;:&quot;http:\/\/www.npr.org\/sections\/health-shots\/2016\/09\/02\/492144056\/colorado-gun-shops-work-together-to-prevent-suicides&quot;,&quot;slug&quot;:&quot;Health&quot;,&quot;program&quot;:&quot;all things considered&quot;,&quot;affiliation&quot;:&quot;CPR&quot;,&quot;song&quot;:&quot;&quot;,&quot;artist&quot;:&quot;&quot;,&quot;album&quot;:&quot;&quot;,&quot;track&quot;:0,&quot;type&quot;:&quot;segment&quot;,&quot;subtype&quot;:&quot;other&quot;}" data-audio-metrics="[]">
+        <div class="audio-module-controls">
+            <a class="audio-module-listen" href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/09/20160902_atc_colorado_gun_shops_work_together_to_prevent_suicides.mp3?orgId=32&amp;topicId=1128&amp;d=221&amp;p=2&amp;story=492144056&amp;t=progseg&amp;e=492376518&amp;seg=16&amp;siteplayer=true&amp;dl=1">
+                <b class="audio-module-listen-inner">
+                    <b class="audio-module-listen-icon icn-play"></b>
+                    <b class="audio-module-listen-text">
+                        <b class="audio-module-cta">Listen</b>
+                        <b class="audio-module-listen-duration">
+                            <span>&middot; </span>
+                            <span>3:41</span>
+                        </b>
+                    </b>
+                </b>
+            </a>
+
+            <time class="audio-module-duration" datetime="P3M,41S">3:41</time>
+        </div>
+
+
+</div>
+
+   
+    <div class="audio-module-tools">
+        <button class="audio-module-tools-toggle" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;open more options&quot;,&quot;label&quot;:null,&quot;noninteraction&quot;:true}">
+            <b class="icn-toggle"></b>
+            <b class="label">Toggle more options</b>
+        </button>
+        <ul class="audio-module-more-tools">
+                <li class="audio-tool audio-tool-download"><a href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/09/20160902_atc_colorado_gun_shops_work_together_to_prevent_suicides.mp3?orgId=32&amp;topicId=1128&amp;d=221&amp;p=2&amp;story=492144056&amp;t=progseg&amp;e=492376518&amp;seg=16&amp;siteplayer=true&amp;dl=1" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;download audio&quot;,&quot;label&quot;:&quot;492144056&quot;,&quot;noninteraction&quot;:true}"><b class="icn-download"></b><b class="audio-tool-label">Download</b></a>
+                </li>
+
+                <li class="audio-tool audio-tool-embed">
+                    <button data-embed-url="www.npr.org/player/embed/492144056/492443287" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;embed audio&quot;,&quot;label&quot;:&quot;492144056&quot;,&quot;noninteraction&quot;:true}"><b class="button-inner"><b class="icn-embed"></b><b class="audio-tool-label">Embed</b></b></button>
+
+                    <div class="audio-embed-overlay">
+                        <button class="btn-close"></button>
+                        <label class="embed-label">
+                            <b class="icn-embed"></b>
+                            <b class="label">Embed</b>
+                            <input class="embed-url embed-url-no-touch" readonly value="<iframe src=&quot;https://www.npr.org/player/embed/492144056/492443287&quot; width=&quot;100%&quot; height=&quot;290&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; title=&quot;NPR embedded audio player&quot;></iframe>">
+                        </label>
+
+                        <b class="embed-url embed-url-touch">
+                            <code><b class="punctuation">&lt;</b>iframe src="https://www.npr.org/player/embed/492144056/492443287" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"&gt;</code>
+                        </b>
+
+                    </div>
+                </li>
+
+                <li class="audio-tool audio-tool-transcript">
+                  <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/templates/transcript/transcript.php?storyId=492144056" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;click transcript&quot;,&quot;label&quot;:&quot;492144056&quot;,&quot;noninteraction&quot;:true}">
+                    <b class="icn-transcript"></b>
+                    <b class="audio-tool-label">Transcript</b>
+                  </a>
+                </li>
+        </ul>
+    </div>
+</div>
+</article>
+        </div> <!-- /.story-wrap -->
+    </div> <!-- /.story-wrap-outer -->
+
+</article>
+      <article class="hp-item volume-high post-type-standard has-image" id="story492406705">
+
+    
+        
+
+        <div class="story-wrap">
+
+            
+            <figure class="head-image">
+                <div class="bucketwrap homeLarge">
+                    <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/thetwo-way/2016/09/02/492406705/nasa-probe-takes-first-ever-images-of-jupiters-north-pole" data-metrics="{&quot;action&quot;:&quot;Click Story 16&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/02/pia21030_main_2_north_polar_full-disk_a_wide-45f08ea40394f5ca15790e1b9e400b2d6cb5474c-s900-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/02/pia21030_main_2_north_polar_full-disk_a_wide-45f08ea40394f5ca15790e1b9e400b2d6cb5474c-s900.jpg" class="img lazyOnLoad" alt="NASA Probe Takes First-Ever Close-Up Images Of Jupiter's North Pole"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+        <p>
+            NASA's Juno spacecraft captured this view on Aug. 27 as it closed in on Jupiter's north pole, about two hours before the probe's nearest approach.
+            
+            <b class="credit">
+                
+                 NASA/JPL-Caltech/SwRI/MSSS
+                
+            </b>
+            <b class="hide-caption"><b>hide caption</b></b>
+        </p>
+    </div>
+    <b class="toggle-caption"><b>toggle caption</b></b>
+    <span class="credit">
+        
+         NASA/JPL-Caltech/SwRI/MSSS
+        
+    </span>
+</div>
+
+                </div>
+            </figure>
+            
+
+            <div class="story-text">
+                <h2 class="slug ttwnb">
+                    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/thetwo-way/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                        The Two-Way - News Blog
+                    </a>
+                </h2>
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/thetwo-way/2016/09/02/492406705/nasa-probe-takes-first-ever-images-of-jupiters-north-pole" data-metrics="{&quot;action&quot; : &quot;Click Story 16&quot;}">
+                    <h1 class="title">NASA Probe Takes First-Ever Close-Up Images Of Jupiter's North Pole</h1>
+                </a>
+
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/thetwo-way/2016/09/02/492406705/nasa-probe-takes-first-ever-images-of-jupiters-north-pole" data-metrics="{&quot;action&quot; : &quot;Click Story 16&quot;}">
+                    <p class="teaser">"It's bluer in color up there than other parts of the planet, and there are a lot of storms," a Juno mission leader says of the gas giant's northern reaches.</p>
+                </a>
+            </div> <!-- /.story-text -->
+        </div> <!-- /.story-wrap -->
+
+    
+</article>
+      <article class="hp-item volume-low post-type-audio has-image" id="story488150508">
+
+
+    <div class="story-wrap-outer">
+        
+        <figure class="thumb-image">
+            <div class="bucketwrap homeThumb">
+                <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/488150508/titans-linebacker-derrick-morgan-to-nfl-consider-the-benefits-of-marijuana" data-metrics="{&quot;action&quot;:&quot;Click Story 17&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/03/derrick-morgan-1_wide-c1a4b9f95249a6ac07f5ad271bf9e1dfd3de52ba-s400-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/03/derrick-morgan-1_wide-c1a4b9f95249a6ac07f5ad271bf9e1dfd3de52ba-s400.jpg" class="img lazyOnLoad" alt="Titans Linebacker Derrick Morgan To NFL: Consider The Benefits Of Marijuana"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+        <p>
+            Tennessee Titans outside linebacker Derrick Morgan warms up before the first half of an NFL preseason football game between the Tennessee Titans and the San Diego Chargers, Saturday, Aug. 13, 2016.
+            
+            <b class="credit">
+                
+                Mark Zaleski/AP
+                
+            </b>
+            <b class="hide-caption"><b>hide caption</b></b>
+        </p>
+    </div>
+    <b class="toggle-caption"><b>toggle caption</b></b>
+    <span class="credit">
+        
+        Mark Zaleski/AP
+        
+    </span>
+</div>
+
+            </div>
+        </figure>
+        
+
+
+        <div class="story-wrap">
+
+            <div class="story-text">
+                <h2 class="slug s">
+                    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/sports/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                        Sports
+                    </a>
+                </h2>
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/488150508/titans-linebacker-derrick-morgan-to-nfl-consider-the-benefits-of-marijuana" data-metrics="{&quot;action&quot; : &quot;Click Story 17&quot;}">
+                    <h1 class="title">Titans Linebacker Derrick Morgan To NFL: Consider The Benefits Of Marijuana</h1>
+                </a>
+
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/03/488150508/titans-linebacker-derrick-morgan-to-nfl-consider-the-benefits-of-marijuana" data-metrics="{&quot;action&quot; : &quot;Click Story 17&quot;}">                    
+                    <p class="teaser">The NFL is physically brutal. Some say marijuana can alleviate pain, but it's still illegal in most places. Some players want their league to take a closer look at the benefits of the drug.</p>
+                </a>
+            </div> <!-- /.story-text -->
+
+            <article id="res492549591" class="bucketwrap resaudio"><div class="audio-module">
+      <h2 class="audio-module-title">Titans Linebacker Derrick Morgan To NFL: Consider The Benefits Of Marijuana</h2>
+   <div class="audio-module-controls-wrap" data-audio="{&quot;uid&quot;:&quot;488150508:492549591&quot;,&quot;available&quot;:true,&quot;duration&quot;:218,&quot;title&quot;:&quot;Titans Linebacker Derrick Morgan To NFL: Consider The Benefits Of Marijuana&quot;,&quot;audioUrl&quot;:&quot;https:\/\/ondemand.npr.org\/anon.npr-mp3\/npr\/atc\/2016\/09\/20160903_atc_titans_linebacker_derrick_morgan_to_nfl_consider_the_benefits_of_marijuana.mp3?orgId=1&amp;topicId=1055&amp;d=218&amp;p=2&amp;story=488150508&amp;t=progseg&amp;e=492549545&amp;seg=3&amp;siteplayer=true&quot;,&quot;storyUrl&quot;:&quot;http:\/\/www.npr.org\/2016\/09\/03\/488150508\/titans-linebacker-derrick-morgan-to-nfl-consider-the-benefits-of-marijuana&quot;,&quot;slug&quot;:&quot;Sports&quot;,&quot;program&quot;:&quot;all things considered&quot;,&quot;affiliation&quot;:&quot;&quot;,&quot;song&quot;:&quot;&quot;,&quot;artist&quot;:&quot;&quot;,&quot;album&quot;:&quot;&quot;,&quot;track&quot;:0,&quot;type&quot;:&quot;segment&quot;,&quot;subtype&quot;:&quot;other&quot;}" data-audio-metrics="[]">
+        <div class="audio-module-controls">
+            <a class="audio-module-listen" href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/09/20160903_atc_titans_linebacker_derrick_morgan_to_nfl_consider_the_benefits_of_marijuana.mp3?orgId=1&amp;topicId=1055&amp;d=218&amp;p=2&amp;story=488150508&amp;t=progseg&amp;e=492549545&amp;seg=3&amp;siteplayer=true&amp;dl=1">
+                <b class="audio-module-listen-inner">
+                    <b class="audio-module-listen-icon icn-play"></b>
+                    <b class="audio-module-listen-text">
+                        <b class="audio-module-cta">Listen</b>
+                        <b class="audio-module-listen-duration">
+                            <span>&middot; </span>
+                            <span>3:38</span>
+                        </b>
+                    </b>
+                </b>
+            </a>
+
+            <time class="audio-module-duration" datetime="P3M,38S">3:38</time>
+        </div>
+
+
+</div>
+
+   
+    <div class="audio-module-tools">
+        <button class="audio-module-tools-toggle" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;open more options&quot;,&quot;label&quot;:null,&quot;noninteraction&quot;:true}">
+            <b class="icn-toggle"></b>
+            <b class="label">Toggle more options</b>
+        </button>
+        <ul class="audio-module-more-tools">
+                <li class="audio-tool audio-tool-download"><a href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/09/20160903_atc_titans_linebacker_derrick_morgan_to_nfl_consider_the_benefits_of_marijuana.mp3?orgId=1&amp;topicId=1055&amp;d=218&amp;p=2&amp;story=488150508&amp;t=progseg&amp;e=492549545&amp;seg=3&amp;siteplayer=true&amp;dl=1" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;download audio&quot;,&quot;label&quot;:&quot;488150508&quot;,&quot;noninteraction&quot;:true}"><b class="icn-download"></b><b class="audio-tool-label">Download</b></a>
+                </li>
+
+                <li class="audio-tool audio-tool-embed">
+                    <button data-embed-url="www.npr.org/player/embed/488150508/492549591" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;embed audio&quot;,&quot;label&quot;:&quot;488150508&quot;,&quot;noninteraction&quot;:true}"><b class="button-inner"><b class="icn-embed"></b><b class="audio-tool-label">Embed</b></b></button>
+
+                    <div class="audio-embed-overlay">
+                        <button class="btn-close"></button>
+                        <label class="embed-label">
+                            <b class="icn-embed"></b>
+                            <b class="label">Embed</b>
+                            <input class="embed-url embed-url-no-touch" readonly value="<iframe src=&quot;https://www.npr.org/player/embed/488150508/492549591&quot; width=&quot;100%&quot; height=&quot;290&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; title=&quot;NPR embedded audio player&quot;></iframe>">
+                        </label>
+
+                        <b class="embed-url embed-url-touch">
+                            <code><b class="punctuation">&lt;</b>iframe src="https://www.npr.org/player/embed/488150508/492549591" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"&gt;</code>
+                        </b>
+
+                    </div>
+                </li>
+
+        </ul>
+    </div>
+</div>
+</article>
+        </div> <!-- /.story-wrap -->
+    </div> <!-- /.story-wrap-outer -->
+
+</article>
+      <article class="hp-item volume-low post-type-standard has-image" id="story492431561">
+
+
+
+    <div class="story-wrap">
+        
+        <figure class="thumb-image">
+            <div class="bucketwrap homeThumb">
+                <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/02/492431561/fbi-docs-clinton-says-concerns-about-her-email-set-up-never-reached-her" data-metrics="{&quot;action&quot;:&quot;Click Story 18&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/02/ap_16246650841091_wide-aec17c6e1c90995b314435b2a1d1df0c74853509-s400-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/02/ap_16246650841091_wide-aec17c6e1c90995b314435b2a1d1df0c74853509-s400.jpg" class="img lazyOnLoad" alt="FBI Docs: Clinton Says Concerns About Email Setup Never Reached Her"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+        <p>
+            Hillary Clinton checking her phone after addressing the Security Council at the United Nations as secretary of state in 2012.
+            
+            <b class="credit">
+                
+                Richard Drew/AP
+                
+            </b>
+            <b class="hide-caption"><b>hide caption</b></b>
+        </p>
+    </div>
+    <b class="toggle-caption"><b>toggle caption</b></b>
+    <span class="credit">
+        
+        Richard Drew/AP
+        
+    </span>
+</div>
+
+            </div>
+        </figure>
+        
+
+        <div class="story-text">
+            <h2 class="slug p">
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/politics/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                    Politics
+                </a>
+            </h2>
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/02/492431561/fbi-docs-clinton-says-concerns-about-her-email-set-up-never-reached-her" data-metrics="{&quot;action&quot; : &quot;Click Story 18&quot;}">
+                <h1 class="title">FBI: Clinton Says Concerns About Email Setup Never Reached Her</h1>
+            </a> 
+
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/02/492431561/fbi-docs-clinton-says-concerns-about-her-email-set-up-never-reached-her" data-metrics="{&quot;action&quot; : &quot;Click Story 18&quot;}">
+                <p class="teaser">An FBI report and notes of the bureau's interview with Hillary Clinton show she relied on State Department officials to properly handle classified information.</p>
+            </a> 
+        </div> <!-- /.story-text -->
+    </div> <!-- /.story-wrap -->
+</article>
+      <article class="hp-item volume-low post-type-standard has-image" id="story492404411">
+
+
+
+    <div class="story-wrap">
+        
+        <figure class="thumb-image">
+            <div class="bucketwrap homeThumb">
+                <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/thetwo-way/2016/09/02/492404411/s-c-county-sprays-for-mosquitos-but-accidentally-takes-out-millions-of-bees" data-metrics="{&quot;action&quot;:&quot;Click Story 19&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/02/14790189202_d074171913_o_wide-9e63627dddedb2b9f5f2cb1c4cd9747dcc4ce564-s400-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/02/14790189202_d074171913_o_wide-9e63627dddedb2b9f5f2cb1c4cd9747dcc4ce564-s400.jpg" class="img lazyOnLoad" alt="S.C. County Sprays For Mosquitoes But Accidentally Takes Out Millions Of Bees"/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+        <p>
+            Honeybees are vulnerable to the kind of pesticide sprayed in Dorchester County, but hives — at least those maintained by beekeepers — could have been protected, by the timing of the spraying or by physical barriers. They weren't, and millions of bees died.
+            
+            <b class="credit">
+                <a href="http://web.archive.org/web/20160904005354/https://www.flickr.com/photos/gudlyf/14790189202/" target="_blank">
+                Keith McDuffee/Flickr
+                </a>
+            </b>
+            <b class="hide-caption"><b>hide caption</b></b>
+        </p>
+    </div>
+    <b class="toggle-caption"><b>toggle caption</b></b>
+    <span class="credit">
+        <a href="http://web.archive.org/web/20160904005354/https://www.flickr.com/photos/gudlyf/14790189202/" target="_blank">
+        Keith McDuffee/Flickr
+        </a>
+    </span>
+</div>
+
+            </div>
+        </figure>
+        
+
+        <div class="story-text">
+            <h2 class="slug ttwnb">
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/thetwo-way/" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                    The Two-Way - News Blog
+                </a>
+            </h2>
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/thetwo-way/2016/09/02/492404411/s-c-county-sprays-for-mosquitos-but-accidentally-takes-out-millions-of-bees" data-metrics="{&quot;action&quot; : &quot;Click Story 19&quot;}">
+                <h1 class="title">S.C. County Sprays For Mosquitoes, Accidentally Takes Out Millions Of Bees</h1>
+            </a> 
+
+
+            <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/sections/thetwo-way/2016/09/02/492404411/s-c-county-sprays-for-mosquitos-but-accidentally-takes-out-millions-of-bees" data-metrics="{&quot;action&quot; : &quot;Click Story 19&quot;}">
+                <p class="teaser">Dorchester County was worried about the risk posed by Zika. So officials recently ordered that a pesticide be sprayed from planes — and local beehives have been devastated.</p>
+            </a> 
+        </div> <!-- /.story-text -->
+    </div> <!-- /.story-wrap -->
+</article>
+      <article class="hp-item volume-high post-type-audio has-image" id="story492251653">
+
+    <div class="story-wrap-outer">
+
+        <div class="story-wrap">
+
+            
+            <figure class="head-image">
+                <div class="bucketwrap homeLarge">
+                    <div class="imagewrap" data-crop-type="wide">
+    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/02/492251653/for-the-black-middle-class-housing-crisis-and-history-collude-to-dash-dreams" data-metrics="{&quot;action&quot;:&quot;Click Story 20&quot;}">
+        <img src="http://web.archive.org/web/20160904005354im_/https://media.npr.org/assets/img/2016/09/02/betancourt-01_wide-e08526ad79c09afe2568e7ffee44a719b7efc424-s900-c15.jpg" data-original="https://media.npr.org/assets/img/2016/09/02/betancourt-01_wide-e08526ad79c09afe2568e7ffee44a719b7efc424-s900.jpg" class="img lazyOnLoad" alt="For The Black Middle Class, Housing Crisis And History Collude To Dash Dreams "/>
+    </a>
+</div>
+<div class="credit-caption">
+    <div class="caption">
+        <p>
+            Grattan (left) and Evelyn Betancourt stand in front of their home in Fort Washington, Md., in one of the wealthiest majority-black counties in the United States: Prince George's, just east of Washington, D.C. But the reality, Grattan says, is "that many people here, even though they've lived here for many years, are fighting to save their homes" — the Betancourts among them.
+            
+            <b class="credit">
+                
+                Mallory Yu/NPR
+                
+            </b>
+            <b class="hide-caption"><b>hide caption</b></b>
+        </p>
+    </div>
+    <b class="toggle-caption"><b>toggle caption</b></b>
+    <span class="credit">
+        
+        Mallory Yu/NPR
+        
+    </span>
+</div>
+
+                </div>
+            </figure>
+            
+
+            <div class="story-text">
+                <h2 class="slug tnm">
+                    <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/series/485129365/the-new-middle" data-metrics="{&quot;action&quot;:&quot;Click Slug&quot;}">
+                        The New Middle
+                    </a>
+                </h2>
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/02/492251653/for-the-black-middle-class-housing-crisis-and-history-collude-to-dash-dreams" data-metrics="{&quot;action&quot; : &quot;Click Story 20&quot;}">
+                    <h1 class="title">For The Black Middle Class, Housing Crisis And History Collude To Dash Dreams</h1>
+                </a>
+
+
+                <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/2016/09/02/492251653/for-the-black-middle-class-housing-crisis-and-history-collude-to-dash-dreams" data-metrics="{&quot;action&quot; : &quot;Click Story 20&quot;}">
+                    <p class="teaser">Evelyn and Grattan Betancourt live in a wealthy, majority-black county in Maryland. They did everything they were supposed to: held steady jobs, bought a house within their means. Things still went wrong — and many of their neighbors are in the same boat.</p>
+                </a>
+            </div> <!-- /.story-text -->
+        </div> <!-- /.story-wrap -->
+
+        <article id="res492443281" class="bucketwrap resaudio"><div class="audio-module">
+      <h2 class="audio-module-title">For The Black Middle Class, Housing Crisis And History Collude To Dash Dreams </h2>
+   <div class="audio-module-controls-wrap" data-audio="{&quot;uid&quot;:&quot;492251653:492443281&quot;,&quot;available&quot;:true,&quot;duration&quot;:492,&quot;title&quot;:&quot;For The Black Middle Class, Housing Crisis And History Collude To Dash Dreams &quot;,&quot;audioUrl&quot;:&quot;https:\/\/ondemand.npr.org\/anon.npr-mp3\/npr\/atc\/2016\/09\/20160902_atc_for_the_black_middle_class_housing_crisis_and_history_collude_to_dash_dreams_.mp3?orgId=1&amp;topicId=1091&amp;aggIds=485129365&amp;d=492&amp;p=2&amp;story=492251653&amp;t=progseg&amp;e=492376518&amp;seg=12&amp;siteplayer=true&quot;,&quot;storyUrl&quot;:&quot;http:\/\/www.npr.org\/2016\/09\/02\/492251653\/for-the-black-middle-class-housing-crisis-and-history-collude-to-dash-dreams&quot;,&quot;slug&quot;:&quot;Around the Nation&quot;,&quot;program&quot;:&quot;all things considered&quot;,&quot;affiliation&quot;:&quot;&quot;,&quot;song&quot;:&quot;&quot;,&quot;artist&quot;:&quot;&quot;,&quot;album&quot;:&quot;&quot;,&quot;track&quot;:0,&quot;type&quot;:&quot;segment&quot;,&quot;subtype&quot;:&quot;other&quot;}" data-audio-metrics="[]">
+        <div class="audio-module-controls">
+            <a class="audio-module-listen" href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/09/20160902_atc_for_the_black_middle_class_housing_crisis_and_history_collude_to_dash_dreams_.mp3?orgId=1&amp;topicId=1091&amp;aggIds=485129365&amp;d=492&amp;p=2&amp;story=492251653&amp;t=progseg&amp;e=492376518&amp;seg=12&amp;siteplayer=true&amp;dl=1">
+                <b class="audio-module-listen-inner">
+                    <b class="audio-module-listen-icon icn-play"></b>
+                    <b class="audio-module-listen-text">
+                        <b class="audio-module-cta">Listen</b>
+                        <b class="audio-module-listen-duration">
+                            <span>&middot; </span>
+                            <span>8:12</span>
+                        </b>
+                    </b>
+                </b>
+            </a>
+
+            <time class="audio-module-duration" datetime="P8M,12S">8:12</time>
+        </div>
+
+
+</div>
+
+   
+    <div class="audio-module-tools">
+        <button class="audio-module-tools-toggle" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;open more options&quot;,&quot;label&quot;:null,&quot;noninteraction&quot;:true}">
+            <b class="icn-toggle"></b>
+            <b class="label">Toggle more options</b>
+        </button>
+        <ul class="audio-module-more-tools">
+                <li class="audio-tool audio-tool-download"><a href="http://web.archive.org/web/20160904005354/https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/09/20160902_atc_for_the_black_middle_class_housing_crisis_and_history_collude_to_dash_dreams_.mp3?orgId=1&amp;topicId=1091&amp;aggIds=485129365&amp;d=492&amp;p=2&amp;story=492251653&amp;t=progseg&amp;e=492376518&amp;seg=12&amp;siteplayer=true&amp;dl=1" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;download audio&quot;,&quot;label&quot;:&quot;492251653&quot;,&quot;noninteraction&quot;:true}"><b class="icn-download"></b><b class="audio-tool-label">Download</b></a>
+                </li>
+
+                <li class="audio-tool audio-tool-embed">
+                    <button data-embed-url="www.npr.org/player/embed/492251653/492443281" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;embed audio&quot;,&quot;label&quot;:&quot;492251653&quot;,&quot;noninteraction&quot;:true}"><b class="button-inner"><b class="icn-embed"></b><b class="audio-tool-label">Embed</b></b></button>
+
+                    <div class="audio-embed-overlay">
+                        <button class="btn-close"></button>
+                        <label class="embed-label">
+                            <b class="icn-embed"></b>
+                            <b class="label">Embed</b>
+                            <input class="embed-url embed-url-no-touch" readonly value="<iframe src=&quot;https://www.npr.org/player/embed/492251653/492443281&quot; width=&quot;100%&quot; height=&quot;290&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; title=&quot;NPR embedded audio player&quot;></iframe>">
+                        </label>
+
+                        <b class="embed-url embed-url-touch">
+                            <code><b class="punctuation">&lt;</b>iframe src="https://www.npr.org/player/embed/492251653/492443281" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"&gt;</code>
+                        </b>
+
+                    </div>
+                </li>
+
+                <li class="audio-tool audio-tool-transcript">
+                  <a href="http://web.archive.org/web/20160904005354/http://www.npr.org/templates/transcript/transcript.php?storyId=492251653" data-metrics="{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;click transcript&quot;,&quot;label&quot;:&quot;492251653&quot;,&quot;noninteraction&quot;:true}">
+                    <b class="icn-transcript"></b>
+                    <b class="audio-tool-label">Transcript</b>
+                  </a>
+                </li>
+        </ul>
+    </div>
+</div>
+</article>
+    </div> <!-- /.story-wrap-outer --> 
+</article>
+      <div id="hp-more-list">
+               </div>
+      
+<!-- END ID="HP-MORE-LIST" -->
+   </div>
+   
+<!-- END CLASS="STORIES-WRAP STORIES-WRAP-TWO" DATA-METRICS-CATEGORY="CURATED LIST" -->
+   <div id="hp-more" data-metrics-all>
+            <div class="hp-label">
+         more stories
+      </div>
+      <ul>
+                  <li><a href="/web/20160904005354/http://www.npr.org/sections/news/" class="more-button option" data-metrics-category="Curated List" data-metrics-action="More Stories" data-metrics-label="news"><b>news</b></a></li>
+         <li><a href="/web/20160904005354/http://www.npr.org/sections/arts/" class="more-button option" data-metrics-category="Curated List" data-metrics-action="More Stories" data-metrics-label="arts &amp; life"><b>arts &amp; life</b></a></li>
+         <li><a href="/web/20160904005354/http://www.npr.org/music/" class="more-button option" data-metrics-category="Curated List" data-metrics-action="More Stories" data-metrics-label="music"><b>music</b></a></li>
+      </ul>
+      <a href="#wrapper" class="back-to-top" data-metrics="{&quot;category&quot;:&quot;scrolling&quot;,&quot;action&quot;:&quot;click back to top&quot;}">Back to top <span class="arrow">&uarr;</span></a>      <div class="hp-item more-card">
+               </div>
+   </div>
+   
+<!-- END ID="HP-MORE" DATA-METRICS-ALL -->
+</div>
+
+<!-- END ID="CONTENTWRAP" -->
+</section>   <div id="main-sidebar">
+            <aside id="ad-standard-wrap">
+    
+
+    <div id="ad-standard-homepage" class="ad-standard" data-ad-config="{&quot;network&quot;:&quot;\/6735\/n6735&quot;,&quot;site&quot;:&quot;NPR&quot;,&quot;zone&quot;:&quot;homepage&quot;,&quot;targets&quot;:{&quot;storyId&quot;:&quot;1002&quot;,&quot;testserver&quot;:&quot;false&quot;},&quot;location&quot;:&quot;standard&quot;,&quot;deferred&quot;:false}"></div>
+    <p class="left">NPR thanks our sponsors</p><p class="right"><a href="/web/20160904005354/http://www.npr.org/about-npr/186948703/corporate-sponsorship">Become an NPR sponsor</a></p>
+
+</aside>
+   </div>
+   
+<!-- END ID="MAIN-SIDEBAR" -->
+</div>
+
+<!-- END ID="WRAPPER" -->
+<aside id="ad-adhesion-wrap">
+    
+
+    <div id="ad-adhesion-homepage" class="ad-adhesion" data-ad-config="{&quot;network&quot;:&quot;\/6735\/n6735&quot;,&quot;site&quot;:&quot;NPRMOBILE&quot;,&quot;zone&quot;:&quot;homepage&quot;,&quot;targets&quot;:{&quot;storyId&quot;:&quot;1002&quot;,&quot;testserver&quot;:&quot;false&quot;},&quot;location&quot;:&quot;adhesion&quot;,&quot;deferred&quot;:false}"></div>
+
+</aside><footer id="nprfooter" class="nprfooter" role="contentinfo" aria-label="NPR footer"><div class="footer-wrapper">
+      <div class="primary" data-metrics-category="Global Footer" data-metrics-label="Footer">
+    <ul>
+        <li class="news has-subnav" data-metrics-action="Click News" data-metrics-all>
+            <a href="/web/20160904005354/http://www.npr.org/sections/news/">News</a>
+            <ul>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/us/">U.S.</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/world/">World</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/politics/">Politics</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/business/">Business</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/technology/">Technology</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/science/">Science</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/health/">Health</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/codeswitch/">Race &amp; Culture</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/ed/">Education</a></li>
+            </ul>
+        </li>
+        <li class="artslife has-subnav" data-metrics-action="Click Arts &amp; Life" data-metrics-all>
+            <a href="/web/20160904005354/http://www.npr.org/sections/arts/">Arts &amp; Life</a>
+            <ul>
+                <li><a href="/web/20160904005354/http://www.npr.org/books/">Books</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/movies/">Movies</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/pop-culture/">Pop Culture</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/food/">Food</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/art-design/">Art &amp; Design</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/performing-arts/">Performing Arts</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/pictureshow">Photography</a></li>
+            </ul>
+        </li>
+        <li class="music has-subnav" data-metrics-action="Click Music" data-metrics-all>
+            <a href="/web/20160904005354/http://www.npr.org/music/">Music</a>
+            <ul>
+                <li><a href="/web/20160904005354/http://www.npr.org/series/98679384/first-listen">First Listen</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/series/122356178/songs-we-love">Songs We Love</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/series/100920965/music-articles/">Music Articles</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/series/tiny-desk-concerts/">Tiny Desk</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/music-videos/">Videos</a></li>
+            </ul>
+        </li>
+        <li class="programs" data-metrics-action="Click Programs" data-metrics-all>
+            <a href="/web/20160904005354/http://www.npr.org/programs/">Programs</a>
+        </li>
+        <li class="about has-subnav" data-metrics-action="Click About" data-metrics-all>
+            <a href="/web/20160904005354/http://www.npr.org/about/">About</a>
+            <ul>
+                <li><a href="/web/20160904005354/http://www.npr.org/about-npr/192827079/overview-and-history">NPR Overview</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/about-npr/178660742/public-radio-finances">NPR Finances</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/about-npr/179803822/people-at-npr">People at NPR</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/series/750002/support-public-radio">Support NPR</a></li>
+                <li><a href="http://web.archive.org/web/20160904005354/http://tours.npr.org/npr/Home/">Visit NPR</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/series/750003/press-room/">Press Room</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/npr-extra/">NPR Extra Blog</a></li>
+                <li><a href="http://web.archive.org/web/20160904005354/http://www.npr.org/about-npr/181953728/work-at-npr">Careers at NPR</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/templates/corrections/corrections.php">Corrections</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/sections/ombudsman/">NPR Ombudsman</a></li>
+                <li><a href="/web/20160904005354/http://www.npr.org/about-npr/179881519/rights-and-permissions-information">Permissions</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="secondary">
+    <p class="copyright"><span class="copy-year"></span></p>
+    <ul>
+        <li><a href="http://web.archive.org/web/20160904005354/http://help.npr.org/">Help</a></li>
+        <li id="footerContact"><a href="http://web.archive.org/web/20160904005354/http://www.npr.org/contact">Contact</a></li>
+        <li><a href="/web/20160904005354/http://www.npr.org/about-npr/179876898/terms-of-use">Terms of Use</a></li>
+        <li><a href="/web/20160904005354/http://www.npr.org/about-npr/179878450/privacy-policy">Privacy</a></li>
+        <li class="sponsorship-choices"><a href="/web/20160904005354/http://www.npr.org/about-npr/179878450/privacy-policy#opting-out-of-cookies-and-web-beacons">Sponsorship Choices</a></li>
+        <li><a href="http://web.archive.org/web/20160904005354/http://thin.npr.org/">Text-Only</a></li>
+    </ul>
+</div>
+</div>
+</footer><script type="text/javascript">
+   (function () {
+    var loadPageJs = function () { webpackJsonp([63,20],{0:function(n,c,t){n.exports=t(329)},329:function(n,c,t){"use strict";t.p=NPR.serverVars.webpackPublicPath,function(){var n=2,c=function(){--n<1&&function(n){t(2),t(1111),t(39),t(67),t(66),t(134)}(t)};t.e(0,c),t.e(11,c)}()}}); };
+    if (document.readyState === 'complete') {
+        loadPageJs();
+    } else {
+        window.addEventListener('load', function load() {
+            window.removeEventListener('load', load, false);
+            loadPageJs();
+        });
+    }
+})();
+</script>
+</main><noscript><iframe style="display:none;padding:0;margin:0;" width="0" height="0" src="//web.archive.org/web/20160904005354if_/http://20655831p.rfihub.com/ca.html?rb=3035&amp;ca=20501671&amp;ra=gtmcb"></iframe></noscript><script type="text/javascript">
+    var _sf_async_config = _sf_async_config || {};
+    /** CONFIGURATION START **/
+    _sf_async_config.uid = '18888';
+    _sf_async_config.domain = NPR.ServerConstants.cbHost;
+    _sf_async_config.useCanonical = true;
+
+    /** CONFIGURATION END **/
+    (function() {
+        function loadChartbeat() {
+            window._sf_endpt = (new Date()).getTime();
+            var e = document.createElement('script');
+            e.setAttribute('language', 'javascript');
+            e.setAttribute('type', 'text/javascript');
+            e.setAttribute('src', '//web.archive.org/web/20160904005354/http://static.chartbeat.com/js/chartbeat.js');
+            document.body.appendChild(e);
+        }
+        var oldonload = window.onload;
+        window.onload = (typeof window.onload != 'function') ?
+                loadChartbeat : function() {
+            oldonload();
+            loadChartbeat();
+        };
+    })();
+</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ece810d90e","applicationID":"3552300","transactionName":"Y1NRZkQDV0JRAkAPWloZcEdFFlZcHw1dFUFRWFpcUU1xXl0EZAdSUXpSS1kXTQtxEV01QVtESgh3DF0=","queueTime":0,"applicationTime":1985,"atts":"TxRGEAwZRB0SABZcTklL","errorBeacon":"bam.nr-data.net","agent":""}</script></body></html>

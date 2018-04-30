@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+    <!--[if IE 7]><html class="ie ie7" lang="en-US"><![endif]-->
+    <!--[if IE 8]><html class="ie ie8" lang="en-US"><![endif]-->
+    <!--[if !(IE 7) | !(IE 8)  ]><!--><html lang="en-US"><!--<![endif]-->
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app12.us.archive.org';v.server_ms=367;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/static/js/wbhack.js?v=1521067262.0" charset="utf-8"></script>
+
+<script type="text/javascript">
+__wbhack.init('http://web.archive.org/web');
+</script>
+<link rel="stylesheet" type="text/css" href="/static/css/banner-styles.css?v=1521067262.0" />
+<link rel="stylesheet" type="text/css" href="/static/css/iconochive.css?v=1521067262.0" />
+
+<!-- End Wayback Rewrite JS Include -->
+        <meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+        <title>When every moment of childhood can be recorded and shared, what happens to childhood? | The Washington Post</title>                
+                
+        <meta property="fb:app_id" content="41245586762"/>
+        <meta property="article:publisher" content="https://www.facebook.com/washingtonpost"/>
+        <meta name="twitter:site" value="@WashingtonPost"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="og:title" content="When every moment of childhood can be recorded and shared, what happens to childhood?">
+        <meta property="og:image" content="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/Gen6c.jpg">
+        <meta property="og:url" content="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/12/07/when-every-moment-of-childhood-can-be-recorded-and-shared-what-happens-to-childhood/">
+        <meta property="og:site_name" content="Washington Post">
+        <meta property="og:type" content="article">
+        <meta property="og:description" content="YouTube has become the largest platform for children’s entertainment on Earth.">
+
+        <meta name="description" content="When every moment of childhood can be recorded and shared, what happens to childhood?">
+        <meta name="keywords" content="YouTube;Kids;Children;Parenting;Screen time;Internet;Social Media;Children;Elementary;Vlog;Guidelines;Annie Cole;Hope Nixon;Annie's Vlogs;SuperHeroKids;Jessica Contrera">
+        <meta name="news_keywords" content="YouTube;Kids;Children;Parenting;Screen time;Internet;Social Media;Children;Elementary;Vlog;Guidelines;Annie Cole;Hope Nixon;Annie's Vlogs;SuperHeroKids;Jessica Contrera">
+
+        
+         <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-57-precomposed.png">
+
+                
+        		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/web.archive.org\/web\/20161207214336\/http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/web.archive.org\/web\/20161207214336\/http:\/\/www.washingtonpost.com\/sf\/style\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.7"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="rs-plugin-settings-css" href="http://web.archive.org/web/20161207214336cs_/http://www.washingtonpost.com/sf/style/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.1" type="text/css" media="all"/>
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<link rel="stylesheet" id="wp-bootstrap-min-css" href="http://web.archive.org/web/20161207214336cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-responsive-css" href="http://web.archive.org/web/20161207214336cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap-responsive.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-fonts-css" href="http://web.archive.org/web/20161207214336cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/fonts.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-inline-css" href="http://web.archive.org/web/20161207214336cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/inline.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-font-awesome-min-css" href="http://web.archive.org/web/20161207214336cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-v4.2-min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-enterprise-theme-style-css" href="http://web.archive.org/web/20161207214336cs_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/style.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-pretty-comments-css" href="http://web.archive.org/web/20161207214336cs_/http://css.wpdigital.net/wp-srv/graphics/css/pretty-comments.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="print-css" href="http://web.archive.org/web/20161207214336cs_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/css/print.css?ver=0.3.1.5" type="text/css" media="print"/>
+<!--[if IE]>
+<link rel='stylesheet' id='wp-general-ie-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/iefonts.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='wp-font-awesome-ie-min-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-ie7.min.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript" src="http://web.archive.org/web/20161207214336js_/http://www.washingtonpost.com/sf/style/wp-includes/js/jquery/jquery.js?ver=1.11.2"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161207214336js_/http://www.washingtonpost.com/sf/style/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161207214336js_/http://www.washingtonpost.com/sf/style/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161207214336js_/http://www.washingtonpost.com/sf/style/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161207214336js_/http://js.washingtonpost.com/1h/twp-scripts.js?ver=4.2.7"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161207214336js_/http://js.washingtonpost.com/1h/twp-internal.js?ver=4.2.7"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ET_OM = {"omniture":"lifestyle\/style","wp_page_num":"1 of 1","wp_blogname":"","wp_author":"Jessica Contrera,Erin Hull,Kate Miller,Jake Crump","commercialNode":"lifestyle\/style"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://web.archive.org/web/20161207214336js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme-ad-scripts.js?ver=1418247459"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161207214336js_/http://js.washingtonpost.com/pb/resources/js/utils/control-mod.js?ver=4.2.7"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.washingtonpost.com/sf/style/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.washingtonpost.com/sf/style/wp-includes/wlwmanifest.xml"/> 
+<link rel="prev" title="Video games are more addictive than ever. This is what happens when kids can’t turn them off." href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/12/07/video-games-are-more-addictive-than-ever-this-is-what-happens-when-kids-cant-turn-them-off/"/>
+<link rel="next" title="Instagram, Wattpad and YouNow aren’t just apps — for many teens, they’re more than that" href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/12/07/instagram-wattpad-and-younow-arent-just-apps-for-many-teens-theyre-more-than-that/"/>
+<meta name="generator" content="WordPress 4.2.7"/>
+<link rel="canonical" href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/12/07/when-every-moment-of-childhood-can-be-recorded-and-shared-what-happens-to-childhood/"/>
+<link rel="shortlink" href="http://www.washingtonpost.com/sf/style/?p=12036"/>
+<meta name="generator" content="Piklist 0.9.9.7c"/>
+<link rel="https://github.com/WP-API/WP-API" href="http://www.washingtonpost.com/sf/style/wp-json/"/>
+        <script type="text/javascript">
+          var ET_ASSETS = {
+            'post_title': 'When every moment of childhood can be recorded and shared, what happens to childhood?',
+            'post_url': 'http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/12/07/when-every-moment-of-childhood-can-be-recorded-and-shared-what-happens-to-childhood/',
+          };
+        </script>
+      <meta name="generator" content="Powered by Slider Revolution 5.2.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."/>
+        
+        <script>
+          var $ = jQuery.noConflict();
+        </script>
+
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/css/ie-fix.css" />
+        <![endif]-->
+    </head>
+    <body class="single single-post postid-12036 single-format-standard"> 
+        <div id="et-nav" style="top:0px">
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-sections-dropdown">
+                    <div id="et-nav-sections-regular-dropdown-wrapper" class="hidden-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-full-click"> 
+                            <div class="pull-left">Sections</div>
+                            <div class="share-icon pull-left"><i class="fa fa-reorder"></i></div>
+                        </a>
+                    </div>
+                    <div id="et-nav-sections-reduced-dropdown-wrapper" class="visible-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-reduced-click">
+                            <span class="share-icon pull-left"><i class="fa fa-reorder"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-company-icon">
+                    <a class="branding" href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/">
+                        <img id="branding-at-top" src="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/wp_full_white.png"/>
+                        <img id="branding-during-scroll" src="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/wp_logo_white.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="pull-left border-left hidden-phone no-left-margin-padding" id="et-title-wrap">
+                <div id="et-nav-story-title" class="hide-title-indent">
+                    <a href="#"><p>When every moment of childhood can be recorded and shared, what happens to childhood?</p></a>
+                </div>
+            </div>
+
+
+                        
+            <div class="pull-right hidden-phone" id="share-series">
+                
+                <div class="pull-left border-right border-left relative">
+                    <div id="et-nav-share-dropdown">
+                        <a href="#" class="clearfix pull-right">
+                            <div class="pull-left">
+                                <p class="pull-left">Share</p>
+                                <p class="share-icon pull-left"><i class="fa fa-share"></i></p>
+                            </div>
+                        </a>
+                        <ul class="et-dropdown hidden">
+                          <li><a target="_blank" href="http://web.archive.org/web/20161207214336/https://facebook.com/dialog/feed?app_id=41245586762&amp;link=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Fstyle%2F2016%2F12%2F07%2Fwhen-every-moment-of-childhood-can-be-recorded-and-shared-what-happens-to-childhood%2F&amp;name=When+every+moment+of+childhood+can+be+recorded+and+shared%2C+what+happens+to+childhood%3F&amp;redirect_uri=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Fstyle%2F2016%2F12%2F07%2Fwhen-every-moment-of-childhood-can-be-recorded-and-shared-what-happens-to-childhood%2F"><i class="fa fa-facebook"></i><span class="social-name">Facebook</span></a></li>
+                          <li><a target="_blank" href="http://web.archive.org/web/20161207214336/https://twitter.com/intent/tweet?text=When+every+moment+of+childhood+can+be+recorded+and+shared%2C+what+happens+to+childhood%3F http%3A%2F%2Fwapo.st%2Ftheirtube"><i class="fa fa-twitter"></i><span class="social-name">Twitter</span></a></li>
+                          <li><a href="http://web.archive.org/web/20161207214336/mailto:/?subject=When every moment of childhood can be recorded and shared, what happens to childhood? from the Washington Post&amp;body=http%3A%2F%2Fwapo.st%2Ftheirtube"><i class="fa fa-envelope"></i><span class="social-name">Email</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                                    <div class="pull-right hidden-phone">
+                        <div id="et-nav-series-dropdown" class="pull-right">
+                            <a href="#" class="clearfix">
+                                <p class="pull-left">The Screen Age</p>
+                                <p class="pull-left"><i class="fa fa-list-ul"></i></p> 
+                            </a>
+                        </div>
+                    </div>
+                            </div> 
+
+                            <div class="pull-right visible-phone border-left">
+                    <div id="mobile-menu-icon">
+                        <a href="#"><i class="fa fa-list-ul"></i></a>
+                    </div>
+                </div>
+                    </div>
+
+    	<div id="main-container" style="padding-top: 50px">
+	<div class="sections">
+					<div class="home section" id="section-home">                <div class=" no-border graphic bg-none graphicPadTB30" id="raw">
+        <style>
+.overlay-title {
+    font-family: 'PostoniDisplay', Georgia; 
+}
+.overlay-blurb {
+    font-family: 'FranklinITCProThin', Helvetica, Arial;
+    font-weight:100
+}
+
+.sf-horizontal-center{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.sf-top{
+    top: 5vh;
+}
+
+.gen-z-illo{
+    width: 90%;
+    margin-top: 35px;
+}
+
+.gen-z-series{
+
+    border-bottom-style:solid;
+    border-bottom-width:4px;
+    border-radius:3px;
+    border-color:#000;
+    display: table;
+    margin: 0 auto;
+    margin-top:20px;
+    line-height:2.2em;
+    color:#000;
+    font-weight:900;
+    text-transform: uppercase;
+    font-size:14px;
+
+}
+
+
+.overlay {
+    width: 90%;
+    margin-top:60px;
+    z-index: 3;
+    color: #000;
+}
+.overlay-title {
+    margin-top:45px;
+    font-size: 8.5vw;
+    line-height: 5.5vw;
+    margin-bottom:45px;
+}
+.overlay-blurb {  
+font-size: 30px;
+line-height: 1.4em;
+max-width: 800px;
+margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+.overlay-title {
+    font-size: 16vw;
+    line-height:0.8em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.overlay-blurb {
+    font-size: 1.7em;
+    line-height:1.4em;
+    margin-top: 5px;
+}
+.gen-z-illo{
+    width:100%;
+}
+
+
+}
+
+
+</style>
+
+<div class="posrel">
+    <div class="overlay sf-top sf-horizontal-center">
+        <h3 class="gen-z-series">The Screen Age</h3>
+        <img class="gen-z-illo" src="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/Gen6c.jpg">
+        <h2 class="overlay-title">Their Tube</h2>
+        <h1 class="overlay-blurb">When every moment of childhood can be recorded and shared, what happens to childhood?</h1>
+
+    </div>
+    <div class="clear"></div>
+</div>        </div>
+                <div class="container background"><div class="row first">
+            <div class="span4 pull-right padB10 marB10">
+              <div class="bylines bTB1S padTB10 marB10">
+                                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/people/jessica-contrera"><span class="name">Jessica Contrera</span></a>                                                    <a href="http://web.archive.org/web/20161207214336/mailto:jessica.contrera@washpost.com"><i class="fa fa-envelope"></i></a>                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Photos by</span>
+                                                                                                <span class="name">Erin Hull</span>                                                                        </div>
+                      </div>
+              <div class="publish-date">Published on December 7, 2016</div>
+              
+              <!-- <div class=" utility-tools-wrapper">
+                <div class="utility-tools-primary margin-top">
+                  <div class="social-tools ">
+                    <div class="textresizer tool first mobile">
+                      <span class="hideText" tabindex="_tbidx_">Resize Text</span>
+                      <span class="fa fa-font"></span>
+                    </div>
+                    <a onclick="window.print();" tabindex="_tbidx_">
+                      <div class="print tool mobile">
+                        <span class="hideText">Print Article</span>
+                        <span class="fa fa-print"></span>
+                      </div>
+                    </a>
+                    <a href="#comments" tabindex="_tbidx_">
+                      <div class="comments tool last mobile">
+                        <span class="hideText">Comments</span>
+                        <span class="fa fa-comments"></span>
+                        <span id="echo_container" class="echo_container comment-vars echo-counter text" guid="http://www.washingtonpost.com/sf/style/2016/12/07/when-every-moment-of-childhood-can-be-recorded-and-shared-what-happens-to-childhood/">0</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div> -->
+              
+            </div>
+            
+        <div class="span8 col">
+<p class="article-body-p"><strong>The boys in the YouTube videos</strong> always land their bottles perfectly upright. Max Cole has spent hours studying their routine, and now, his own viewers are waiting: Empty half the blue juice. Hold the Powerade bottle by its cap. Flip it into the air and&#8211;</p>
+<p class="article-body-p">“Dude!” Max shouts. “It landed!”</p>
+<p class="article-body-p">Max, who is 6, waves his arms. He knows just how to overreact to get his audience excited, what makes them click “thumbs up” and comment and subscribe. He jumps. He wiggles his hips. He does the dab, a dance move that looks like he’s sneezing into his elbow.</p>
+<p class="article-body-p">“Oh, my gosh!” he yells. “That is insane!”</p>
+<p class="article-body-p">But no one is watching.</p>
+</div></div><div class="row">            <div class="bg-none  text-center padTB10  bTB1S">
+                <!--SPECIAL AD 0 BEGIN-->
+                <div id="slug_enterprise" data-ad-type="enterprise" style="display:none;" class="advertisement"></div>
+
+                <div id="slug_mob_enterprise" data-ad-type="mob_enterprise" style="display:none;" class="advertisement"></div>
+                <!--SPECIAL AD 0 END-->
+            </div>
+                <div class="span8 marT30 col">
+<p class="article-body-p">Max’s family is used to hearing him pretend that strangers on the Internet can see him. In the six years he’s been growing up, YouTube has become the largest platform for children’s entertainment on Earth. Today’s kids have little interest in the well-groomed child actors that past generations saw on TV. They want to watch each other.</p>
+<p class="article-body-p">Videos of kids simply acting like kids attract millions of viewers, sometimes billions. Every moment of childhood — getting new toys, tagging along to the grocery store, making up games in their back yards — is material that can be recorded and uploaded.</p>
+<p class="article-body-p">So is it any wonder that the children who watch these videos begin to act as if <i>their </i>entire lives are being recorded, too?</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/Generation0261479340745.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Max Cole, 6, flips bottles in the backyard of his Texas home. On YouTube, trends like bottle-flipping spread quickly among kids of all ages and locations and attract millions of views.                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<p class="article-body-p">For the youngest members of the next generation, <a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/05/25/inside-the-race-to-decipher-todays-teens-who-will-transform-society-as-we-know-it/">sometimes called Generation Z</a>, the distinction between the online world and real life is fading. Parents are having to explain to their toddlers that the children whose whole lives they see on the screen aren’t actually their friends. They’re finding their kids methodically “unboxing” their toys, as if they’ve been paid to review them for an audience.</p>
+<p class="article-body-p">“Who are you talking to?” a parent will ask. “The viewers,” their children reply.</p>
+<p class="article-body-p">“For them it’s just normal,” Max’s mom, Shona Cole, says. “It wouldn’t even make sense to him not to film.”</p>
+<p class="article-body-p">Because cameras are all around Max and children of his age. The Coles have six kids, two dogs, three cats and 18 screens, nearly all with “record” buttons. Max’s little brother Mark Adam, who is 3, knows how to start recording on an iPad. Their 10-year-old sister Annie films herself having sleepovers, shopping at Target and going to Chick-fil-A.</p>
+<p class="article-body-p">“Hey guys!” Annie says, holding out the lens to face herself. “It’s 5 o’clock, it’s dinner time so, yeah, I’m so excited, I love Chick-fil-A.”</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox" data-ad-type="bigbox" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p class="article-body-p">She posts the videos, with her mother’s supervision, to her YouTube channel, “Annie’s Vlogs.” They appear alongside videos from hundreds of other girls who vlog their lives, too.</p>
+<p class="article-body-p">More than 36,000 people will watch Annie in the back seat of her mother’s SUV, going through the Chick-fil-A drive-through near her house north of Houston. In the world of YouTube, that’s not very many.</p>
+<p class="article-body-p">Annie and her younger brothers never knew the time before the Internet, when kids were taught not to talk to strangers. Now, they want to share their lives with as many strangers as they can.</p>
+<p class="article-body-p">Annie turns the camera toward Max and Mark Adam.</p>
+<p class="article-body-p">“Say hi,” she instructs.</p>
+<p class="article-body-p">“Hiiiii,” they say, waving their little hands at people they’ll never meet.</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/Generation0111478313426.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Annie Cole (left) shows her family a YouTube video. The Coles don’t have cable; all of their children prefer to watch YouTube, which has become the world’s largest platform for children’s entertainment.                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<p class="article-body-p"><strong>The first video on YouTube was uploaded in 2005,</strong> four years before Max Cole was born. The site’s co-founder stands in front of two elephants at the zoo, telling the camera how they have “really, really, really long trunks, and that’s cool.”</p>
+<p class="article-body-p">It was a completely unremarkable 18 seconds &#8211; and a foreshadowing of the cultural force to come.</p>
+<p class="article-body-p">Mark Adam adores watching other little boys who do nothing but open eggs with plastic toys inside. Max would rather watch another kid play Minecraft than play it himself. Annie doesn’t aspire to meet celebrities but the girls who get millions of views for braiding hair.</p>
+<p class="article-body-p">Kids have always learned by mimicking their peers. Now, the children watching YouTube are seeing role models who don’t just play &#8212; they perform. They’re not just experiencing childhood, but constantly considering how their experiences will be perceived by an audience.</p>
+<p class="interstitial-link" channel="wp.com">
+  <i>
+    [<a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/12/07/instagram-wattpad-and-younow-arent-just-apps-for-many-teens-theyre-more-than-that/">Instagram, Wattpad and YouNow aren’t just apps — for many teens, they’re more than that.</a>]
+  </i>
+</p>
+<p class="article-body-p">Which is why, on Halloween, Annie is skipping down the sidewalk of a suburban neighborhood, being filmed by her mother, aware that thousands of children will soon be watching her trick-or-treat. Her pink fairy wings bob as she looks back at the camera with a candy-filled pillowcase swinging at her side.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_2" data-ad-type="bigbox|2" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p class="article-body-p">“Get us walking toward you,” she tells her mom, pausing near a streetlight so she can be captured next to her best friend, Hope Nixon, as they stride toward the camera.</p>
+<p class="article-body-p">“I got it,” Shona assures the girls as she tries to balance a Sony A5000 camera on a broken tripod and keep track of 3-year-old Mark Adam, who keeps running to follow the older kids. He’s wearing a padded Wolverine costume that makes his skinny arms look like ripped biceps. Max is Captain America and his best friend, Noah Nixon, is a zombie. The Coles and the Nixons, who have seven kids, have been inseparable since they met 12 years ago at a small Baptist church.</p>
+</div></div><div class="row">                <div class="span12 bTB1S marT10 no-border graphic bg-none graphicPadTB30" id="raw">
+        <div class="posttv-video-embed wpv-player" data-uuid="082b7b3a-bbe1-11e6-ae79-bec72d34f8c9" data-object-id="58470206e4b0d21f32196afe" data-youtube-id="4mnr33738JI" data-is-truth-teller="0" data-max-width="0" data-max-height="0" data-show-endscreen="1" data-show-promo="http://s3.amazonaws.com/posttv-thumbnails-prod/12-06-2016/t_1481048546181_name_1.jpg" data-headline="Annie's Vlog" data-duration="23125" data-category-id="videoelements" data-aspect-ratio="0.5625" data-video-360="0" data-variants="0" data-emoji="0" data-show-posttv-overlay="1" data-show-caption="1"></div>        </div>
+                <div class="span8 marT30 col">
+<p class="article-body-p">“I’m already almost to the top with candy!” Hope says to her own camera, which has a flip screen so she can see herself while she films. She and Annie have spent the evening trying to angle their lenses just right, so their costumes can still be seen in the darkness.</p>
+<p class="article-body-p">Annie presses record and sets the camera at the bottom of her pillowcase. She closes it, opens it, and drops a piece of candy in.</p>
+<p class="article-body-p">“Hey, guys!” she says to the audience inside the bag.</p>
+<p class="article-body-p">A moment later, she squeals and points to a front door in the distance.</p>
+<p class="article-body-p">“Ooh, Mom, there!” she says.</p>
+<p class="article-body-p">Her excitement isn’t for the prospect of more sour Warhead candies. The house has a porch lamp that floods the driveway with light. This time, it won’t be too dark for her entire walk to the door to be captured on film.</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/Generation0201478313785.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Hope Nixon and Annie Cole take an online personality quiz. The 10-year-old best friends are the stars of 'JazzyGirlStuff,' a YouTube channel they started last year.                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<p class="article-body-p"><strong>It was Hope who first showed Annie</strong> the videos of “challenges” and DIY activities girls their age were doing on YouTube. Could they put five Warheads in their mouths? Could they make their own green slime? Annie and Hope couldn’t just try the activities, they explained to their moms, they needed to film them.</p>
+<p class="article-body-p">Shona and Nikki Nixon, Hope’s mother, were wary. Both had home-schooled their children in an effort to have more control over how they were brought up. Putting their daughters on the Internet would expose them to commenters, and could provoke anxieties about how many page views they were getting and how they looked on camera.</p>
+<p class="interstitial-link" channel="wp.com">
+  <i>
+    [<a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/05/25/13-right-now-this-is-what-its-like-to-grow-up-in-the-age-of-likes-lols-and-longing/">13 right now: This is what it&#8217;s like to grow up in the age of likes, lols and longing</a>]
+  </i>
+</p>
+<p class="article-body-p">But they were “say yes” parents, who filled their houses with books and art supplies and opportunities to try new things. They always encouraged their kids to follow their whims, especially the creative ones.</p>
+<p class="article-body-p">“When Matthew wanted to do competitive juggling, we took him to juggling,” Shona explains. “The girls want to do dance, I drive them to dance. What Annie wants is to do YouTube, and we had to support that.”</p>
+<p class="article-body-p">They could use YouTube as a chance for their kids to learn how to stick to a schedule. Their childhood memories would be captured forever. And if Shona and Nikki followed the plans they found in online courses about “the business of YouTube,” their daughters could even make money from the advertisements that played before the videos.</p>
+</div></div><div class="row">        <div class=" marT10">
+          <div class="span12    bTB1S padTB30">
+              <div class="row">
+                  </div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/Generation0221478313667.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                
+                    </div>
+                    <div class="span8 marT30 col">            <div class="span6 package-photo  marT0 marT0small">
+                <div class="spinner">
+                    <img class="lazy-image image" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/Generation0181478313665.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </div>
+                    <div class="span6 package-photo package-photo-small marT0 marT0small marT12small">
+                <div class="spinner">
+                    <img class="lazy-image image" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/GenerationZ_683.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </div>
+                      </div>
+          </div>
+                        <div class="span4 col pull-right">
+              <div class="marT30 marT10small light-grey size-fourteen franklin-light">
+                  Top: Shona Cole, left, films Annie and Hope doing a 'challenge' video for their shared YouTube channel. The plan, shoot and edit a video each week, on top of creating videos for their individual vlogs. Bottom left: Annie films for her YouTube channels, where she is watched by tens of thousands of girls. Bottom right: Mark Adam does 'the dab' while his brother dances behind him. YouTube has accelerated the pace at which trends like the dab spread from hip-hop culture to something even toddlers know.        
+              </div>
+              </div>
+                  </div>
+        <div class="span8 marT30 col">
+<p class="article-body-p">The positives seemed to outweigh the negatives, though they couldn’t be sure exactly what the negatives might be. The phenomenon hadn’t been around for long enough to know how it affects children long term.</p>
+<p class="article-body-p">So Shona and her husband Mark taped a sign on the family fridge that read,</p>
+<p class="article-body-p"><i>Before Screens:</i></p>
+<p class="article-body-p"><i>Chores</i></p>
+<p class="article-body-p"><i>School</i></p>
+<p class="article-body-p"><i>Food</i></p>
+<p class="article-body-p"><i>Exercise</i></p>
+<p class="article-body-p">And before long, Annie and Hope were the stars of “JazzyGirlStuff” “Annie’s Vlogs” and “Hope’s Vlogs.” A few months later, Hope’s whole family started a channel together called “SuperheroKids.”</p>
+<p class="interstitial-link" channel="wp.com">
+  <i>
+    [<a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/lifestyle/style/how-to-protect-kids-online-apps-and-tactics-used-by-experts--and-real-parents/2016/12/07/42ef7f14-ad13-11e6-a31b-4b6397e625d0_story.html">How to protect kids online: Apps and tactics used by experts – and real parents</a>]
+  </i>
+</p>
+<p class="article-body-p">The children dress up in costumes and put on imaginative performances, just as generations before them have always done. But now, their play time is actually work.</p>
+<p class="article-body-p">“SuperheroKids” has more than 300,000 subscribers and a six-figure ad-revenue stream. Every week, there’s a show to put on — a new video to compete with innumberable others on YouTube.</p>
+</div></div><div class="row">                <div class="span12 bTB1S marT10 no-border graphic bg-none graphicPadTB30" id="raw">
+        <div class="posttv-video-embed wpv-player" data-uuid="942b84e0-bbe1-11e6-ae79-bec72d34f8c9" data-object-id="584702f0e4b0d21f32196c66" data-youtube-id="zzeWmwbHtnU" data-is-truth-teller="0" data-max-width="0" data-max-height="0" data-show-endscreen="1" data-show-promo="http://s3.amazonaws.com/posttv-thumbnails-prod/12-06-2016/t_1481048794098_name_3.jpg" data-headline="SuperHeroKids" data-duration="37674" data-category-id="videoelements" data-aspect-ratio="0.5625" data-video-360="0" data-variants="0" data-emoji="0" data-show-posttv-overlay="1" data-show-caption="1"></div>        </div>
+                <div class="span8 marT30 col">
+<p class="article-body-p">Their oldest son, 19-year-old Zane, writes scripts, sets up professional camera equipment, shops for props, and tediously edits each scene. Hope and her 13-, 7- and 4-year-old siblings study their lines and spend hours shooting scenes over and over.</p>
+<p class="article-body-p">Then, their days of labor are transformed into a five-minute video. To the boys and girls watching and commenting, being on YouTube looks like nothing but fun.</p>
+<p class="article-body-p"><i>You’re lucky get to make videos I’ve always wanted to be on your Channel</i></p>
+<p class="article-body-p"><i>I wish I was there to help you guys in your house can I please</i></p>
+<p class="article-body-p"><i>Super hero kids you are the best!</i></p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/112116_VideoKids_187-2.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Zane Nixon, 19, films Hope as Noah Nixon, 7, waits for his turn on camera. The Nixons created “SuperHeroKids” as a family business.                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<p class="article-body-p"><strong>Mark Adam is transfixed.</strong> On the TV screen in front of him is a 4-year-old YouTube sensation named Ryan. Mark Adam stares intently as Ryan squishes Play-Doh into fruit shapes and feeds a plastic Cookie Monster toy.</p>
+<p class="article-body-p">“Let’s make some carrots,” Ryan says.</p>
+<p class="article-body-p">Cookie Monster chomps the Play-Doh carrot. Mark Adam has Play-Doh of his own. But this November morning, while his mom is teaching his older siblings in the kitchen, he’d rather watch Ryan.</p>
+<p class="article-body-p">Cookie Monster chomps a french fry. The video goes on like this for 12 minutes.</p>
+<p class="article-body-p">It has more than 6 million views.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_3" data-ad-type="bigbox|3" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p class="article-body-p">Since August, “Ryan ToysReview” has been the most-watched American channel on all of YouTube, <a href="http://web.archive.org/web/20161207214336/http://www.tubefilter.com/2016/12/04/top-50-most-viewed-us-youtube-channels-12-02-2016/">according to TubeFilter</a>. Ryan’s videos were watched more than 600 million times in October alone, enough for every minor in the country to have watched him eight times. Toy companies pay kids like Ryan to feature their toys because they understand that he has more influence over a young audience than any TV commercial. And every time someone clicks on one of Ryan’s daily videos, his family makes money. One YouTube revenue-tracking site estimates Ryan’s Toy Review brings in more than $1 million per month.</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/Generation0061478313307.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Mark Adam, 3, watches “Ryan ToysReview,” which is currently the most popular American channel on all of YouTube.                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<p class="article-body-p">It’s this financial incentive that has, in part, made YouTube a potentially dangerous place for kids like Mark Adam. There’s a whole industry of YouTube creators who attract clicks by dressing as popular characters kids like, then acting out scenes most parents would never want their children to see.</p>
+<p class="article-body-p">Usually they involve sex or feces. You can find videos of Spider-Man ripping off the dress of Elsa from “Frozen.” Or tying her up in ropes or suggestively laying on top of her. The beloved characters regularly get pooped on, poked with syringes, impregnated and beheaded.</p>
+<p class="article-body-p">Google, which owns YouTube, has tried to combat this by stating that its main platform is meant only for users 13 and older. They created a YouTube Kids app, which filters out any non-kid-friendly videos and allows parents to turn off the “search” function, so kids can only watch channels they have pre-approved.</p>
+<p class="interstitial-link" channel="wp.com">
+  <i>
+    [<a href="http://web.archive.org/web/20161207214336/https://www.washingtonpost.com/news/parenting/wp/2016/05/30/is-our-screen-time-anxiety-more-detrimental-than-screen-time/?utm_term=.35e62491f93e">Is our screen-time anxiety more detrimental than screen time?</a>]
+  </i>
+</p>
+<p class="article-body-p">The Coles keep a close eye on what Mark Adam views, because they are aware of how difficult it can be for a 3-year-old to distinguish between real life and what he sees on screen. But they wonder what he understands about the videos he sees, and what it means to him to be in a video himself, like on Annie’s channel and on “Little Boys Channel,” the place Shona will occasionally post videos of him and his brother Max.</p>
+<p class="article-body-p">She hasn’t posted any new videos in months, but just like Max, it sometimes seems like her 3-year-old is still talking to his audience.</p>
+<p class="article-body-p">“Hey, guys!” he says out the window of her SUV later that day. They just dropped off his older sisters at dance class, and Mark Adam spent the ride telling knock-knock jokes that didn’t make much sense.</p>
+<p class="article-body-p">“Hey, guys!” he says again, looking at no one in particular.</p>
+<p class="article-body-p">Who is he saying “hey, guys” to?</p>
+<p class="article-body-p">“Just me,” he answers. “I’m saying ‘hey, guys’ to myself.”</p>
+<p class="article-body-p">“At some point, we were going to see if he wants to do vlogging,” his mother explains. “Because he likes to talk.”</p>
+<p class="article-body-p">“Hey, guys,” Mark Adam says, talking over her. “Have you seen the poop emojis?”</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/Generation0251478313786.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Mark Adam and Haven Nixon, 4, watch “SuperHeroKids” at the Coles’ house.                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<p class="article-body-p"><strong>Every week, the viewers are waiting.</strong></p>
+<p class="article-body-p">Max begs his mom to film him flipping bottles. But Annie has a real audience to please; and so, on a Thursday afternoon, the Coles are bouncing around a trampoline park with their friends Grace, Joel and Faith Benodin. The Benodin kids have grown accustomed to the Coles wanting to go on spontaneous outings in the middle of the week. When thousands of people are watching your life, interesting things have to happen in it.</p>
+<p class="article-body-p">Beneath the camera-ready backdrop of bold colors and bright lighting, Annie bounces and flips and struts. She takes the camera from her mother to check that each shot looks the ways he wants it to.</p>
+<p class="article-body-p">Max, enthralled with a basketball hoop suspended on a trampoline, is too distracted to care about the camera. Mark Adam cowers behind his mom, afraid to go near the kids twice his size bouncing into the air. But their young friends follow Annie, watching her closely.</p>
+<p class="article-body-p">Seven-year-old Joel and 5-year-old Faith aren’t allowed to watch YouTube at home, unless their parents have seen the video first, and even then, they try to keep their kids from screens.</p>
+<p class="article-body-p">But now the siblings are mesmerized as Annie jumps onto a trampoline, flips, and in midair tosses up two peace signs for the audience. They see her land in a pit of foam blocks. She throws a few blocks in the air and laughs.</p>
+</div></div><div class="row">                <div class="span12 bTB1S marT10 no-border graphic bg-none graphicPadTB30" id="raw">
+        <div class="posttv-video-embed wpv-player" data-uuid="bb8a0336-bbe1-11e6-ae79-bec72d34f8c9" data-object-id="58470333e4b0d21f32196d30" data-youtube-id="8pH07zZPfWw" data-is-truth-teller="0" data-max-width="0" data-max-height="0" data-show-endscreen="1" data-show-promo="http://s3.amazonaws.com/posttv-thumbnails-prod/12-06-2016/t_1481048855814_name_4.jpg" data-headline="Annie's Vlogs_trampoline" data-duration="27200" data-category-id="videoelements" data-aspect-ratio="0.5621" data-video-360="0" data-variants="0" data-emoji="0" data-show-posttv-overlay="1" data-show-caption="1"></div>        </div>
+                <div class="span8 marT30 col">
+<p class="article-body-p">“Can you do a video of me doing it?” Joel asks Shona.</p>
+<p class="article-body-p">“Let’s let Annie film you,” Shona says, passing the camera.</p>
+<p class="article-body-p">Annie clicks record. Joel runs, bounces and flips.</p>
+<p class="article-body-p">“Can you do a video of me, Annie?” Faith asks.</p>
+<p class="article-body-p">Annie turns the camera toward her. The 5-year-old isn’t growing up in the online world, and yet, she already knows how to be a part of it. She looks into the lens, smiles and gives everyone two thumbs up.</p>
+<link href="//web.archive.org/web/20161207214336cs_/http://css.washingtonpost.com/wp-stat/sub/css/wp-story-style.css" rel="stylesheet" type="text/css">
+<div class="sub">
+<form id="form_57c85f90273c5a9c0523aa99" role="form" action="" novalidate="novalidate">
+</form>
+</div>
+
+
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_4" data-ad-type="bigbox|4" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+</div></div><div class="row">                <div class="span4 col pull-right right-content no-border graphic bg-none graphicPadTB30" id="raw">
+        <!-- Updated 12/7/15 by EY to fix a bug with single quotes --> 
+
+<link rel="stylesheet" href="//web.archive.org/web/20161207214336cs_/http://css.washingtonpost.com/wp-stat/enterprise-raw-code/sharebar/enterprise-sharebar.css?v3"/>
+
+<!-- To switch to grayscale share buttons, remove the 'color-top' class from top-sharebar-wrapper div -->
+
+<div class="top-sharebar-wrapper color-top large-8 large-centered columns cf" id="top-sharebar_123534312321">
+<div class="social-tools-wrapper">
+    <div class="social-tools-primary ">
+        <div class="social-tools ">
+            <!-- FB -->
+            <a id="facebook-raw-share" data-service="facebook" onclick="" tabindex="1">
+                <div class="facebook tool first mobile"><span class="hideText">Share on Facebook</span><span class="fa fa-facebook-square"></span></div>
+            </a>
+            <!-- Twitter -->
+            <a id="twitter-raw-share" data-service="twitter" onclick="" tabindex="2">
+                <div class="twitter tool mobile"><span class="hideText">Share on Twitter</span><span class="fa fa-twitter"></span></div>
+            </a>
+            <!-- Google Plus -->
+            <a id="google-plus-raw-share" data-service="google-plus" onclick="" tabindex="3">
+                <div class="google-plus tool mobile"><span class="hideText">Share on Google Plus</span><span class="fa fa-google-plus"></span></div>
+            </a>
+            <!-- Email -->
+            <a id="email-raw-share" data-service="email" href="" tabindex="4">
+                <div class="email tool mobile"><span class="hideText">Share via Email</span><span class="fa fa-envelope"></span></div>
+            </a>
+            <!-- More -->
+            <a onclick="return false;">
+                <div class="more last tool mobile"><span class="hideText" tabindex="5">More Options</span><span class="fa fa-plus"> </span></div>
+            </a>
+        </div>
+    </div>
+    <div class="social-tools-additional">
+        <div class="social-tools ">
+            <!-- LinkedIn -->
+<!--             <a id="linkedIn-raw-share" data-service="linkedin" onclick="" tabindex="6">
+                <div class="linkedin tool mobile first"><span class="hideText">Share on LinkedIn</span><span class="fa fa-linkedin"></span></div>
+            </a> -->
+            <!-- Pinterest -->
+            <a id="pinterest-raw-share" data-service="pinterest" onclick="" tabindex="7">
+                <div class="pinterest tool mobile first"><span class="hideText">Share on Pinterest</span><span class="fa fa-pinterest"></span></div>
+            </a>
+            <!-- Tumblr  -->
+            <a id="tumblr-raw-share" data-service="tumblr" onclick="" tabindex="8">
+                <div class="tumblr tool mobile last"><span class="hideText">Share on Tumblr</span><span class="fa fa-tumblr"></span></div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+</div>
+
+
+
+        </div>
+                <div class="span8 col">
+                <div class="et-pagination">
+                        <div class="clearfix"></div>
+        </div>
+        </div> <!-- Close off span 8 -->
+        </div> <!-- Close off row -->
+        </div>
+        <div class="bT1S padT30 padB10small padB30">
+        <div class="container">
+            <h4 class="light-black marB20 franklin-bold marT0">The Screen Age</h4>
+        <div class="row">
+                <div class="span6">
+        <div class="row-fluid">
+        <div class="span6">
+            <a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/12/07/instagram-wattpad-and-younow-arent-just-apps-for-many-teens-theyre-more-than-that/">
+                <div class="spinner">
+                    <img class="lazy-image image pick" data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/genzcomposite.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </a>
+        </div>
+        <div class="span6">
+            <h4 class="franklin-bold marT0 marT10small"><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/12/07/instagram-wattpad-and-younow-arent-just-apps-for-many-teens-theyre-more-than-that/" class="light-black">This is the place</a></h4>
+            <p class="franklin-light size-fourteen lh18em light-grey">Instagram, Wattpad and YouNow aren’t just apps — for many teens, they’re more than that.            <a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/12/07/instagram-wattpad-and-younow-arent-just-apps-for-many-teens-theyre-more-than-that/" class="light-black">
+                <span class="fa fa-circle-arrow-right"></span>
+            </a>
+            </p>
+        </div>
+        </div>
+        </div>
+                <div class="span6">
+        <div class="row-fluid">
+        <div class="span6">
+            <a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/lifestyle/style/how-to-protect-kids-online-apps-and-tactics-used-by-experts--and-real-parents/2016/12/07/42ef7f14-ad13-11e6-a31b-4b6397e625d0_story.html">
+                <div class="spinner">
+                    <img class="lazy-image image pick" data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/iStock_000053321194_Full1425662281-0323_image_982w.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </a>
+        </div>
+        <div class="span6">
+            <h4 class="franklin-bold marT0 marT10small"><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/lifestyle/style/how-to-protect-kids-online-apps-and-tactics-used-by-experts--and-real-parents/2016/12/07/42ef7f14-ad13-11e6-a31b-4b6397e625d0_story.html" class="light-black">How to protect kids online</a></h4>
+            <p class="franklin-light size-fourteen lh18em light-grey">Face it: As the elder, you’re navigating foreign lands. But here’s a map to put you back in control.            <a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/lifestyle/style/how-to-protect-kids-online-apps-and-tactics-used-by-experts--and-real-parents/2016/12/07/42ef7f14-ad13-11e6-a31b-4b6397e625d0_story.html" class="light-black">
+                <span class="fa fa-circle-arrow-right"></span>
+            </a>
+            </p>
+        </div>
+        </div>
+        </div>
+                </div>
+        </div>
+        </div>
+        
+
+
+
+
+
+
+<style>
+
+@media (max-width: 1200px) and (min-width: 768px){
+.package-photo {
+    width: 47.6% !important;
+}
+}
+
+.sub{
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-top: 1px solid #ccc;
+}
+.sub h1{
+	font-size:28px;
+}
+.sub h2{ 
+	font-size: 22px;
+}
+.byline:first-child{
+    float:left;
+    margin-right:30px;
+}
+.hide-title-indent {
+    overflow: hidden;
+    text-indent: -900px;
+}
+.bigwords{
+     font-size: 35px;
+     font-family: PostoniDisplay,Georgia;
+     text-align: center;
+     border-top: solid 1px #ccc;
+     border-bottom: solid 1px #ccc;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     margin:0 auto;
+     max-width:950px;
+     line-height: 1.5em;
+     margin-bottom:10px;
+}  
+.bigwords span{
+     color: #e1312f;
+}
+.bigwords-attr{
+    font-family:FranklinITCProBold;
+    display:block;
+    text-transform:uppercase;
+    font-size:16px;
+    color: #000 !important;
+    text-align:center;
+    line-height: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Overriding styles */
+
+
+div.row:nth-child(9) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2){
+    width:auto;
+}
+
+.span12.graphicPadTB30.bTB1S {
+    max-width: 750px;
+    margin: 0 auto;
+    margin-bottom:20px;
+    float: none;
+}
+
+strong{
+    font-family:PostoniDisplay, Georgia;
+    font-size:28px;
+    color: #e1312f;
+    font-weight:100 !important;
+}
+.bTB1S {
+    margin-bottom: 10px;
+}
+.container.background {
+    background-image: none !important;
+}
+.container{
+    padding-left:45px;
+}
+.bg-none{
+	background: none;
+}
+.span12.bTB1S.padTB30{ 
+	border-top: 0; 
+	border-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 10px;
+}
+.span8.marT30.col{ 
+	margin-top: 0; 
+}
+[class*="span"].pull-right{
+	float:none;
+}
+.span4.pull-right{
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 660px;
+}
+.span12.graphicPadTB30.bTB1S {
+	border-top:0;
+	border-bottom:0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.pull-right.credits{
+	float:right;
+	padding-top:20px;
+	width:430px !important;
+}
+.span8.col{
+	margin-left: auto;
+	margin-right: auto;
+	float:none;
+	width: 620px;
+	max-width: 100%;
+        margin-top:0px !important;
+}
+.span8.col.pretty-comments{
+	margin-left: 30px;
+	float: left;
+}
+
+@media (min-width: 1200px){
+    .span8.col{
+    	margin-left: auto;
+    	margin-right: auto;
+    	width: 620px;
+    }
+    .container.background{
+        background-image: none;
+    }
+    .span4.pull-right{
+    	width: 620px;
+    }   
+    .span8.col.pretty-comments{
+		margin-left: 30px;
+    }
+}
+
+@media (max-width: 979px) and (min-width: 768px){
+	.span8.col {
+		margin-left: auto;
+		margin-right: auto;
+		width: 620px;
+
+    }
+	.span8.col.pretty-comments{
+		margin-left: inherit;
+    }
+}
+@media (max-width: 767px){
+
+	.byline:first-child{
+		float:none;
+		margin-right:0px;
+	}
+	.span8.col{
+		margin-left: auto;
+		margin-right: auto;
+    }
+	.container{
+		padding-left:0px;
+    }
+        
+	.span8.col.pretty-comments{
+		margin-left: 0px;
+    }
+	.span4.pull-right{
+		width: 100%;
+    }
+	.pull-right.credits {
+		float: none;
+		padding-top: 0px;
+		width: 430px !important;
+    }
+ }
+.light-grey.size-fourteen.franklin-light {
+	margin-bottom: 30px;
+}
+.span4.col.right-content.bTB1S.padTB30 { 
+	text-align: center; 
+}
+</style>												</div> <!-- home/section -->
+				            <div id="section-comments" class="mobile-inactive bT1S bT0small">
+            <div class="container background">
+            <div class="row last">
+            <div class="span4 col pull-right credits">
+                <h4 class="franklin-bold light-black marT0">Credits</h4>
+                                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/people/jessica-contrera"><span class="name">Jessica Contrera</span></a>                                                    <a href="http://web.archive.org/web/20161207214336/mailto:jessica.contrera@washpost.com"><i class="fa fa-envelope"></i></a>                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Photos by</span>
+                                                                                                <span class="name">Erin Hull</span>                                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Illustration by</span>
+                                                                                                <span class="name">Kate Miller</span>                                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Design by</span>
+                                                                                                <span class="name">Jake Crump</span>                                                                        </div>
+                    </div>
+            <div id="comments" class="span8 col pretty-comments">
+                        <!-- auto-assigns guid from page url -->
+            <!--script type="text/javascript">document.getElementById('echo_container').setAttribute('guid', document.location.href);</script -->
+            <!-- end comments -->
+            </div>
+            </div>
+            </div>
+            </div>
+        			</div> <!-- sections -->
+		</div> <!-- main container -->
+		<div id="et-nav-series-off-canvas">
+			<div id="et-nav-series-inner-off-canvas">
+	            	            	            
+	            	            			            <img src="http://web.archive.org/web/20161207214336im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/05/genz-seriestopper.jpg"/>
+		            <div id="series-info">
+		                <ul class="grey-list et-off-canvas">
+		                			                    	<li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/05/25/13-right-now-this-is-what-its-like-to-grow-up-in-the-age-of-likes-lols-and-longing/"><span class="part">Part 1</span> 13, right now</a></li>
+		                   			                    	<li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/05/25/inside-the-race-to-decipher-todays-teens-who-will-transform-society-as-we-know-it/"><span class="part">Part 2</span> Who are these kids?</a></li>
+		                   			                    	<li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/09/06/the-sext-was-meant-to-impress-him-instead-it-nearly-destroyed-her/"><span class="part">Part 3</span> And everyone saw it</a></li>
+		                   			                    	<li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/09/06/teen-lives-depend-on-the-internet-what-happens-when-they-cant-afford-it/"><span class="part">Part 4</span> The disconnected</a></li>
+		                   			                    	<li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/12/07/video-games-are-more-addictive-than-ever-this-is-what-happens-when-kids-cant-turn-them-off/"><span class="part">Part 5</span> The next level</a></li>
+		                   			                    	<li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/12/07/when-every-moment-of-childhood-can-be-recorded-and-shared-what-happens-to-childhood/"><span class="part">Part 6</span> Their Tube</a></li>
+		                   			                </ul>
+
+		                <div id="about-series">
+		                    <p class="about-text">About the series</p>
+		                    <p class="about-description">The kids of Generation Z have never known a world without smartphones and social media. The Washington Post examines what it means to grow up in an era where learning, flirting and hanging out all happens on screens.</p>
+		                </div>
+		            </div>
+		        	        </div>
+        </div>
+        <div id="et-sections-dropdown-list">
+            <ul class="et-dropdown sections-dropdown et-off-canvas">
+                <li><a href="http://web.archive.org/web/20161207214336/http://www.posttv.com/">Video</a></li>
+                <li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/politics">Politics</a></li>
+                <li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/opinions">Opinions</a></li>
+                <li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/local">Local</a></li>
+                <li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sports">Sports</a></li>
+                <li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/national">National</a></li>
+                <li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/world">World</a></li>
+                <li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/business">Business</a></li>
+                <li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/business/technology">Tech</a></li>
+                <li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/lifestyle">Lifestyle</a></li>
+                <li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/entertainment">Entertainment</a></li>
+                <li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/classifieds">Classifieds</a></li>
+                <li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/jobs">Jobs</a></li>
+                <li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/realestate">Real Estate</a></li>
+                <li><a href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/events">Events</a></li>
+			</ul>
+			<div class="copyright-details">
+				<p><a class="franklin-bold" href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/">washingtonpost.com</a></p>
+				<p style="font-size: 12px" class="franklin-thin smaller-size">&copy; 1996-2016 The Washington Post</p>
+				<br/>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/terms-of-service/2011/11/18/gIQAldiYiN_story.html">Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/privacy-policy/2011/11/18/gIQASIiaiN_story.html">Privacy Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/discussion-and-submission-guidelines/2011/11/21/gIQAuvIbiN_story.html">Submission and Discussion Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/rss-terms-of-service/2012/01/16/gIQAadFYAQ_story.html">RSS Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/how-can-i-opt-out-of-online-advertising-cookies/2011/11/18/gIQABECbiN_story.html">Ad Choices</a></p>
+			</div>
+		</div>
+		       <script type="text/javascript">
+        // Omniture variables
+        var wp_page_name = 'lifestyle:article - 20161207 - when-every-moment-of-childhood-can-be-recorded-and-shared-what-happens-to-childhood';
+        var wp_track_scrolling = true;
+
+        // etc.
+        // chartbeat variables
+        _sf_async_config={
+          sections: wp_channel,
+          path:document.location.pathname, // defaults to document.location.pathname if you don't pass it.
+          title:document.title,
+          useCanonical:true // defaults to true if you don't pass it.
+        };
+        </script>
+
+        <script type="text/javascript" src="http://web.archive.org/web/20161207214336js_/http://www.washingtonpost.com/wp-srv/analytics/main.js"></script>
+        <script type="text/javascript">
+          //TWP.Analytics.init();
+          // FOR PREPRODUCTION
+          //TWP.Analytics.init( {suite:"preproduction",service:{omniture:true,omnitureTest:false,comscore:false,chartbeat:false}} );
+          TWP.Analytics.init({suite:"production"});
+        </script>
+
+        <!-- COMSCORE NOSCRIPT -->
+        <noscript><img src="http://web.archive.org/web/20161207214336im_/http://b.scorecardresearch.com/p?c1=2&amp;c2=3005617&amp;cv=2.0&amp;cj=1"/></noscript>
+        <!-- COMSCORE NOSCRIPT/Mobile -->
+        <!--<noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=3005617&c4=m.washingtonpost.com/nojs.html" /> </noscript>-->
+        
+        <noscript><img src="//web.archive.org/web/20161207214336im_/http://me.effectivemeasure.net/em_image" alt="" style="position:absolute; left:-5px;"/></noscript>
+        
+      <link rel="stylesheet" id="wapo-footnote-plugin-css" href="http://web.archive.org/web/20161207214336cs_/http://www.washingtonpost.com/sf/style/wp-content/plugins/wapo-footnote/parts/css/plugin.css?ver=1.0.0" type="text/css" media="screen, projection"/>
+<script type="text/javascript" src="http://web.archive.org/web/20161207214336js_/http://js.washingtonpost.com/1d/twp-comments.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161207214336js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/lib/html5.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161207214336js_/http://www.washingtonpost.com/sf/style/wp-content/plugins/wapo-footnote/parts/js/plugin.js?ver=1.0.0"></script>
+  
+              <script type="text/javascript" src="http://web.archive.org/web/20161207214336js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme.js?1"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161207214336js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/build/enterprise-theme-nav.js?1"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20161207214336js_/http://js.washingtonpost.com/posttv/resources/js/posttv/vendor/pubsub.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161207214336js_/https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20161207214336js_/http://js.washingtonpost.com/posttv/resources/js/posttv/posttv-player.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161207214336js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/build/embedded-content-video.js"></script>
+              <script src="http://web.archive.org/web/20161207214336js_/http://js.washingtonpost.com/wp-srv/ad/loaders/latest/js/min/loader.min.js" data-ad-site="wp" data-ad-page-type="responsive"></script>
+              <script>$(function() {SubmissionPlatform.services.displayForm("57c85f90273c5a9c0523aa99", "prod");});</script>              <script src="//web.archive.org/web/20161207214336js_/http://sub.washingtonpost.com/javascripts/embed/0.0.5/embed.min.js"></script>              <script type="text/javascript" src="//web.archive.org/web/20161207214336js_/http://js.washingtonpost.com/wp-stat/enterprise-raw-code/sharebar/enterprise-sharebar.js"></script>              <script type="text/javascript">
+$(document).ready(function() {
+
+    //append social buttons to bylines
+    $('.bylines').parent().append($('.top-sharebar-wrapper').parent());
+
+    //store metadata
+    var ogTitleSelector = document.querySelector('meta[property="og:title"]');
+    var ogTitleContent = (encodeURIComponent(ogTitleSelector && ogTitleSelector.getAttribute("content"))).replace(/'/g, "%27");
+
+    var ogImageSelector = document.querySelector('meta[property="og:image"]');
+    var ogImageContent = ogImageSelector && ogImageSelector.getAttribute("content");
+
+    var ogURLSelector = document.querySelector('meta[property="og:url"]');
+    var ogURLContent = encodeURI(ogURLSelector && ogURLSelector.getAttribute("content"));
+
+    var ogDescriptionSelector = document.querySelector('meta[property="og:description"]');
+    var ogDescriptionContent = (encodeURIComponent(ogDescriptionSelector && ogDescriptionSelector.getAttribute("content"))).replace(/'/g, "%27");
+
+    //populate share button click events with metadata
+    var facebookString = "window.open('http://web.archive.org/web/20161207214336/https://www.facebook.com/sharer/sharer.php?u="+ogURLContent+"','share_facebook','width=658,height=354,scrollbars=no');return false;";
+    $('#facebook-raw-share')[0].setAttribute("onclick", facebookString);
+
+    var twitterString = "window.open('http://web.archive.org/web/20161207214336/https://twitter.com/share?url="+ogURLContent+"&amp;text="+ogTitleContent+"','share_twitter','width=550, height=350, scrollbars=no');return false;";
+    $('#twitter-raw-share')[0].setAttribute("onclick", twitterString);
+
+    var googlePlusString = "window.open('http://web.archive.org/web/20161207214336/https://plus.google.com/share?url="+ogURLContent+"','share_google-plus','width=832,height=472,scrollbars=no');return false;"; 
+    $('#google-plus-raw-share')[0].setAttribute("onclick", googlePlusString);
+
+    var emailString = "mailto:?subject="+ogTitleContent+" from the Washington Post&body="+ogURLContent+""; 
+    $('#email-raw-share')[0].setAttribute("href", emailString);
+
+    // var linkedInString = "window.open('http://web.archive.org/web/20161207214336/http://www.linkedin.com/shareArticle?mini=true&amp;url="+ogURLContent+"&amp;title=','share_linkedin','width=830,height=460,scrollbars=no');return false;"; 
+    // $('#linkedIn-raw-share')[0].setAttribute("onclick", linkedInString);
+
+    var pinterestString = "window.open('//web.archive.org/web/20161207214336/http://pinterest.com/pin/create/bookmarklet/?url="+ogURLContent+"&amp;media="+ogImageContent+"&amp;description=','share_pinterest','width=550,height=450,scrollbars=no');return false;"; 
+    $('#pinterest-raw-share')[0].setAttribute("onclick", pinterestString);
+
+    var tumblrString = "window.open('http://web.archive.org/web/20161207214336/http://www.tumblr.com/share/link?url="+ogURLContent+"&amp;name="+ogTitleContent+"&amp;description="+ogDescriptionContent+"','share_tumblr','width=550,height=450,scrollbars=no');return false;"; 
+    $('#tumblr-raw-share')[0].setAttribute("onclick", tumblrString);
+}); 
+</script>              <script type="text/javascript" src="//web.archive.org/web/20161207214336js_/http://js.washingtonpost.com/video/resources/env/WapoVideo/dist/WapoVideoEmbed.min.js"></script>              <script>
+
+$(window).on('load', function(){
+
+$('#about-series').append("<div class='glossary-wrap'><p class='about-text'>What's a 'tbh?'<p class='about-description'><a href='http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/05/25/whats-a-tbh-terms-we-had-to-explain-to-our-editors-when-reporting-on-generation-z/'>Terms we had to explain to our editors while reporting these stories.</a></div>");
+
+$('#about-series').append("<div class='glossary-wrap'><p class='about-text'>This is the place<p class='about-description'><a href='http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/sf/style/2016/12/07/instagram-wattpad-and-younow-arent-just-apps-for-many-teens-theyre-more-than-that/'>Instagram, Wattpad and YouNow aren’t just apps — for many teens, they’re more than that.</a></div>");
+
+$('#about-series').append("<div class='glossary-wrap'><p class='about-text'>'They call it bunny hunting'<p class='about-description'><a href='http://web.archive.org/web/20161207214336/https://www.washingtonpost.com/lifestyle/style/they-call-it-bunny-hunting-how-authorities-warn-kids-about-online-predators/2016/09/06/2044ee40-5980-11e6-9767-f6c947fd0cb8_story.html'>As online threats intensify, authorities are warning kids as early as sixth grade.</a></div>");
+
+$('#about-series').append("<div class='glossary-wrap'><p class='about-text'>How to protect kids online<p class='about-description'><a href='http://web.archive.org/web/20161207214336/http://www.washingtonpost.com/lifestyle/style/how-to-protect-kids-online-apps-and-tactics-used-by-experts--and-real-parents/2016/12/07/42ef7f14-ad13-11e6-a31b-4b6397e625d0_story.html'>Face it: As the elder, you’re navigating foreign lands. But here’s a map to put you back in control.</a></div>");
+
+});
+</script>    
+<!-- This website is powered by Piklist. Learn more at http://piklist.com/ -->
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"707aabbc5c","applicationID":"4157428","transactionName":"MlABYUsACEJXARVaXgsaIlZNCAlfGQsPV1Qd","queueTime":0,"applicationTime":940,"ttGuid":"","agentToken":"","atts":"HhcCFwMaG0w=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

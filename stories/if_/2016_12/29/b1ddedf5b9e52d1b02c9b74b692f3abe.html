@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+    <!--[if IE 7]><html class="ie ie7" lang="en-US"><![endif]-->
+    <!--[if IE 8]><html class="ie ie8" lang="en-US"><![endif]-->
+    <!--[if !(IE 7) | !(IE 8)  ]><!--><html lang="en-US"><!--<![endif]-->
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app39.us.archive.org';v.server_ms=1067;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/static/js/wbhack.js?v=1521067262.0" charset="utf-8"></script>
+
+<script type="text/javascript">
+__wbhack.init('http://web.archive.org/web');
+</script>
+<link rel="stylesheet" type="text/css" href="/static/css/banner-styles.css?v=1521067262.0" />
+<link rel="stylesheet" type="text/css" href="/static/css/iconochive.css?v=1521067262.0" />
+
+<!-- End Wayback Rewrite JS Include -->
+        <meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+        <title>On the front lines of the fight for the Islamic State’s capital of Raqqa, Syria | The Washington Post</title>                
+                
+        <meta property="fb:app_id" content="41245586762"/>
+        <meta property="article:publisher" content="https://www.facebook.com/washingtonpost"/>
+        <meta name="twitter:site" value="@WashingtonPost"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="og:title" content="On the front lines of the fight for the Islamic State’s capital of Raqqa">
+        <meta property="og:image" content="http://web.archive.org/web/20161229031732im_/http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/12/raqqa-09962_web.jpg">
+        <meta property="og:url" content="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/sf/world/2016/12/28/on-the-front-lines-of-the-fight-for-the-islamic-states-capital-of-raqqa/">
+        <meta property="og:site_name" content="Washington Post">
+        <meta property="og:type" content="article">
+        <meta property="og:description" content="A Kurdish Arab force is closing in on the Islamic State’s capital in Syria, but there is still no plan to seize it.">
+
+        <meta name="description" content="On the front lines of the fight for the Islamic State’s capital of Raqqa, Syria">
+        <meta name="keywords" content="Islamic State, ISIS, Syria, Raqqa, Mosul, battle for Raqqa, ISIS militants in Syria, Islamic State capital, Islamic caliphate ">
+        <meta name="news_keywords" content="Islamic State, ISIS, Syria, Raqqa, Mosul, battle for Raqqa, ISIS militants in Syria, Islamic State capital, Islamic caliphate ">
+
+        
+         <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="http://web.archive.org/web/20161229031732im_/http://www.washingtonpost.com/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://web.archive.org/web/20161229031732im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://web.archive.org/web/20161229031732im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://web.archive.org/web/20161229031732im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="http://web.archive.org/web/20161229031732im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-57-precomposed.png">
+
+                
+        		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/web.archive.org\/web\/20161229031732\/http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/web.archive.org\/web\/20161229031732\/http:\/\/www.washingtonpost.com\/sf\/world\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.7"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="rs-plugin-settings-css" href="http://web.archive.org/web/20161229031732cs_/http://www.washingtonpost.com/sf/world/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.1" type="text/css" media="all"/>
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<link rel="stylesheet" id="wp-bootstrap-min-css" href="http://web.archive.org/web/20161229031732cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-responsive-css" href="http://web.archive.org/web/20161229031732cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap-responsive.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-fonts-css" href="http://web.archive.org/web/20161229031732cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/fonts.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-inline-css" href="http://web.archive.org/web/20161229031732cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/inline.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-font-awesome-min-css" href="http://web.archive.org/web/20161229031732cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-v4.2-min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-enterprise-theme-style-css" href="http://web.archive.org/web/20161229031732cs_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/style.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-pretty-comments-css" href="http://web.archive.org/web/20161229031732cs_/http://css.wpdigital.net/wp-srv/graphics/css/pretty-comments.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="print-css" href="http://web.archive.org/web/20161229031732cs_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/css/print.css?ver=0.3.1.5" type="text/css" media="print"/>
+<!--[if IE]>
+<link rel='stylesheet' id='wp-general-ie-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/iefonts.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='wp-font-awesome-ie-min-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-ie7.min.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript" src="http://web.archive.org/web/20161229031732js_/http://www.washingtonpost.com/sf/world/wp-includes/js/jquery/jquery.js?ver=1.11.2"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161229031732js_/http://www.washingtonpost.com/sf/world/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161229031732js_/http://www.washingtonpost.com/sf/world/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161229031732js_/http://www.washingtonpost.com/sf/world/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161229031732js_/http://js.washingtonpost.com/1h/twp-scripts.js?ver=4.2.7"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161229031732js_/http://js.washingtonpost.com/1h/twp-internal.js?ver=4.2.7"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ET_OM = {"omniture":"world","wp_page_num":"1 of 1","wp_blogname":"","wp_author":"Liz Sly,Alice Martins,Eddie Alvarez","commercialNode":"world"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://web.archive.org/web/20161229031732js_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme-ad-scripts.js?ver=1418247459"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161229031732js_/http://js.washingtonpost.com/pb/resources/js/utils/control-mod.js?ver=4.2.7"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.washingtonpost.com/sf/world/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.washingtonpost.com/sf/world/wp-includes/wlwmanifest.xml"/> 
+<link rel="prev" title="Men’s attitudes about women were changing in this Indian village. Then a dowry dispute turned deadly." href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/sf/world/2016/12/09/mens-attitudes-about-women-were-changing-in-this-indian-village-then-a-dowry-dispute-turned-deadly/"/>
+<meta name="generator" content="WordPress 4.2.7"/>
+<link rel="canonical" href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/sf/world/2016/12/28/on-the-front-lines-of-the-fight-for-the-islamic-states-capital-of-raqqa/"/>
+<link rel="shortlink" href="http://www.washingtonpost.com/sf/world/?p=3149"/>
+<meta name="generator" content="Piklist 0.9.9.7c"/>
+<link rel="https://api.w.org/" href="http://www.washingtonpost.com/sf/world/wp-json/"/>
+        <script type="text/javascript">
+          var ET_ASSETS = {
+            'post_title': 'On the front lines of the fight for the Islamic State’s capital of Raqqa',
+            'post_url': 'http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/sf/world/2016/12/28/on-the-front-lines-of-the-fight-for-the-islamic-states-capital-of-raqqa/',
+          };
+        </script>
+      <meta name="generator" content="Powered by Slider Revolution 5.2.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."/>
+        
+        <script>
+          var $ = jQuery.noConflict();
+        </script>
+
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/css/ie-fix.css" />
+        <![endif]-->
+    </head>
+    <body class="single single-post postid-3149 single-format-standard"> 
+        <div id="et-nav" style="top:0px">
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-sections-dropdown">
+                    <div id="et-nav-sections-regular-dropdown-wrapper" class="hidden-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-full-click"> 
+                            <div class="pull-left">Sections</div>
+                            <div class="share-icon pull-left"><i class="fa fa-reorder"></i></div>
+                        </a>
+                    </div>
+                    <div id="et-nav-sections-reduced-dropdown-wrapper" class="visible-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-reduced-click">
+                            <span class="share-icon pull-left"><i class="fa fa-reorder"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-company-icon">
+                    <a class="branding" href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/">
+                        <img id="branding-at-top" src="http://web.archive.org/web/20161229031732im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/wp_full_white.png"/>
+                        <img id="branding-during-scroll" src="http://web.archive.org/web/20161229031732im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/wp_logo_white.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="pull-left border-left hidden-phone no-left-margin-padding" id="et-title-wrap">
+                <div id="et-nav-story-title" class="hide-title-indent">
+                    <a href="#"><p>On the front lines of the fight for the Islamic State’s capital of Raqqa</p></a>
+                </div>
+            </div>
+
+
+                        
+            <div class="pull-right hidden-phone" id="share-series">
+                
+                <div class="pull-left border-left relative">
+                    <div id="et-nav-share-dropdown">
+                        <a href="#" class="clearfix pull-right">
+                            <div class="pull-left">
+                                <p class="pull-left">Share</p>
+                                <p class="share-icon pull-left"><i class="fa fa-share"></i></p>
+                            </div>
+                        </a>
+                        <ul class="et-dropdown hidden no-series-nav">
+                          <li><a target="_blank" href="http://web.archive.org/web/20161229031732/https://facebook.com/dialog/feed?app_id=41245586762&amp;link=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Fworld%2F2016%2F12%2F28%2Fon-the-front-lines-of-the-fight-for-the-islamic-states-capital-of-raqqa%2F&amp;name=On+the+front+lines+of+the+fight+for+the+Islamic+State%E2%80%99s+capital+of+Raqqa&amp;redirect_uri=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Fworld%2F2016%2F12%2F28%2Fon-the-front-lines-of-the-fight-for-the-islamic-states-capital-of-raqqa%2F"><i class="fa fa-facebook"></i><span class="social-name">Facebook</span></a></li>
+                          <li><a target="_blank" href="http://web.archive.org/web/20161229031732/https://twitter.com/intent/tweet?text=On+the+front+lines+of+the+fight+for+the+Islamic+State%E2%80%99s+capital+of+Raqqa http%3A%2F%2Fwapo.st%2Fraqqa"><i class="fa fa-twitter"></i><span class="social-name">Twitter</span></a></li>
+                          <li><a href="http://web.archive.org/web/20161229031732/mailto:/?subject=On the front lines of the fight for the Islamic State’s capital of Raqqa from the Washington Post&amp;body=http%3A%2F%2Fwapo.st%2Fraqqa"><i class="fa fa-envelope"></i><span class="social-name">Email</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                            </div> 
+
+                    </div>
+
+    	<div id="main-container" style="padding-top: 50px">
+	<div class="sections">
+					<div class="home section" id="section-home">                <div class=" no-border graphic bg-none graphicPadTB30" id="raw">
+        <style>
+/* /////////// styles for all browser sizes unless overwritten in media queries //////////*/
+.img--lead {
+    background-image: url('http://web.archive.org/web/20161229031732im_/http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/12/raqqa-09962_top.jpg'); /* image URL */
+    background-size: 100%;
+    background-attachment: scroll;
+    padding: 25%;
+    padding-top: 29%;
+    background-repeat: no-repeat;
+}
+.overlay {
+    z-index: 3;
+    position: absolute;
+    left: 8%;
+    color: #fff;
+    bottom: 7%; /* change me to move text up or down */
+    width: 45%; /* change me to increase/decrease the width of the text */
+}
+
+.overlay-title, .overlay-blurb {
+/* put styles here that you want to apply to the title and blurb on all screens */
+}
+.overlay-title {
+    font-size: 3em;
+    font-family: 'PostoniTitling', Georgia;
+    line-height: 1em;
+}
+.overlay-blurb {
+    font-size: 1.5em;
+    font-family: 'FranklinITCProLight', Helvetica, Arial;
+    line-height: 1em;
+}
+
+/* /// styles for browsers wider than 1200px // */
+@media (min-width: 1200px) {
+    .overlay {
+        width: 48%;
+        bottom: 7%;
+    }
+    .overlay-title {
+        font-size: 4em;
+        line-height: .9em;
+    }
+    .overlay-blurb {
+        font-size: 1.8em;
+    }
+}
+
+/* ///// styles for browsers 767px - 979px wide ///// */
+@media (max-width: 979px) {
+    .overlay {
+        position: relative; /* positions title and blurb below the photo instead of on top */
+        display: block; 
+        width: 724px; /* sets the width of the title and blurb equal to the current width of the body copy as defined by the enterprise template */
+        margin: 15px auto;
+        left: 0; /* negates the left position you originally declared */
+    }
+    .overlay-title {
+        font-family: 'PostoniDisplay', Georgia, Times, serif;
+        color: #2a2a2a;
+        letter-spacing: -0.025em;
+        font-size: 5em;
+        line-height: 1.2em;
+    }
+    .overlay-blurb {
+        font-size: 1.5em;
+        margin-top: 10px;
+        color: #000;
+        margin-bottom: 30px;
+    }
+}
+
+/* ///// styles for browsers smaller than 767px wide /////////// */
+@media (max-width: 767px) {
+    .img--lead {
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+    .overlay {
+        width: 100%; /* match width of body copy */
+    }
+    .overlay-title {
+        font-size: 3em;
+    }
+    .overlay-blurb {
+        font-size: 1.3em;
+        margin-top: 5px;
+    }
+}
+</style>
+<!-- !!!!!!!! END OF WHAT YOU NEED TO COPY TO WP !!!!!!!!! -->
+
+<body class="single single-post postid-10 single-format-standard logged-in">
+
+    <div id="main-container">
+        <div class="sections">
+            <div class="home section" id="section-home">
+
+<!-- Lead image + text overlay --> 
+<!-- !!!!!!!! COPY ME INTO WORDPRESS RAW FIELD !!!!!!!!! -->
+<div class="posrel">
+    <div class="img--lead"></div>
+    <div class="overlay">
+        <h2 class="overlay-title">On the road to Raqqa</h2>
+        <h1 class="overlay-blurb">A Kurdish-Arab force is closing in on the Islamic State’s capital in Syria, but there is still no plan to seize it.</h1>
+    </div>
+    <div class="clear"></div>
+</div>        </div>
+                <div class="container background"><div class="row first">
+            <div class="span4 pull-right padB10 marB10">
+              <div class="bylines bTB1S padTB10 marB10">
+                                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/people/liz-sly"><span class="name">Liz Sly</span></a>                                                    <a href="http://web.archive.org/web/20161229031732/mailto:liz.sly@washpost.com"><i class="fa fa-envelope"></i></a>                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Photos by</span>
+                                                                                                <span class="name">Alice Martins</span>                                                                        </div>
+                      </div>
+              <div class="publish-date">Published on December 28, 2016</div>
+              
+              <!-- <div class=" utility-tools-wrapper">
+                <div class="utility-tools-primary margin-top">
+                  <div class="social-tools ">
+                    <div class="textresizer tool first mobile">
+                      <span class="hideText" tabindex="_tbidx_">Resize Text</span>
+                      <span class="fa fa-font"></span>
+                    </div>
+                    <a onclick="window.print();" tabindex="_tbidx_">
+                      <div class="print tool mobile">
+                        <span class="hideText">Print Article</span>
+                        <span class="fa fa-print"></span>
+                      </div>
+                    </a>
+                    <a href="#comments" tabindex="_tbidx_">
+                      <div class="comments tool last mobile">
+                        <span class="hideText">Comments</span>
+                        <span class="fa fa-comments"></span>
+                        <span id="echo_container" class="echo_container comment-vars echo-counter text" guid="http://www.washingtonpost.com/sf/world/2016/12/28/on-the-front-lines-of-the-fight-for-the-islamic-states-capital-of-raqqa/">0</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div> -->
+              
+            </div>
+            
+        <div class="span8 col">
+<p>TAL SAMAN, Syria — “Raqqa we are coming” say the words spray-painted in Kurdish at the entrance to this empty little town, which lies on the front line of a U.S.-backed advance toward the Islamic State’s capital.</p>
+<p>The city of Raqqa is 17 miles away, a tantalizingly short hop to the place showcased in the militants’ propaganda videos as an Islamist utopia, where the terrorist attacks in Paris and Brussels were planned and where, U.S. officials warn, new plots against the West are being forged.</p>
+</div></div><div class="row">        <div class="note pull-right col span4">
+            <p> <strong>Above:</strong> Civilians fleeing fighting between the Syrian Democratic Forces and Islamic State militants in the countryside of Syria&#8217;s Raqqa province wait at a screening center in Ain Issa.</p>
+        </div>
+        <div class="span8 col">
+<p>But a full offensive to retake the city could still be months or more away, despite hopes in Washington that an operation to take the Islamic State’s most symbolically significant stronghold would be well underway before President Obama left office.</p>
+<p>A rare visit to the Raqqa front line illustrated how near and yet far off the defeat of the Islamic State may be. The battle for Mosul in neighboring Iraq has stalled, the attack in Berlin has brought home the continued threat of terrorism, and there is still no plan for an offensive on Raqqa, making the war one of the most immediate, and complicated, challenges the Trump administration will have to confront.</p>
+<p>Meanwhile, a preliminary operation to isolate and besiege Raqqa is going well. Over the past month, a Kurdish-Arab alliance called the Syrian Democratic Forces (SDF) has been slicing briskly through Islamic State lines in the northern and western countryside of Raqqa province. The fighters have captured some 140 villages and nearly 800 square miles of mostly empty rural land on two fronts in a just over a month, encountering little resistance along the way.</p>
+</div></div></div></div>                <div class="section" id="section-1">
+                    <div class="container background">
+                                <div class="row">
+                                    <div class="span12 bTB1S marT10 padTB30 marT10 marB0 padB10small">
+                    
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/12/raqqa-00433_web.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161229031732im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+                                    <div class="text-container container ">
+        <div class="text-overlay">
+        <div class="text">
+                        </div>
+        </div>
+        </div>
+                    
+        </div>
+
+        
+                            </div>
+                                <div class="span4 col pull-right">
+                                                <div class="marT30 marT10small">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Graffiti in Tal Saman, Syria, reads ‘‘YPG’’ and ‘‘Raqqa we are coming.’’                                                                        </p>
+                                    </div>
+                                    </div>
+        <div class="span8 marT30 col">
+<p>This is not the battle for Mosul, where large armored formations are converging from different directions. There are more sheep than soldiers scattered across the empty fields. Flocks trot through the landscape herded by boys on donkeys as the lightly armored pickup trucks and SUVs used by the Kurdish and Arab militias weave among them.</p>
+<p>Every now and then, American soldiers hurtle past, a reminder that the U.S. military is very much invested in the Raqqa front, however remote it may be. There are around 600 Special Operations troops embedded with the SDF in northeastern Syria, a number that could rise before the battle fully takes shape, U.S. officials say. One of those troops was killed on Nov. 24, the first U.S. casualty of the war in Syria.</p>
+<p>He died in Tal Saman, a victim of one of the mines and booby traps that have become the Islamic State’s hallmark defense against advancing foes in Iraq and Syria.</p>
+<p>Otherwise, the militants have put up little resistance, firing mortars as the soldiers advance but retreating well before their enemies arrive.</p>
+<p>Bigger obstacles loom, however, in the form of a geopolitical tangle that could prove more daunting than any defenses mounted by the Islamic State.</p>
+<p>At the heart of the issue is the U.S. military’s policy of sending arms to the area controlled by the main Syrian Kurdish militia, the People’s Protection Units, widely known as the YPG.</p>
+</div></div></div></div>                <div class="section" id="section-2">
+                    <div class="container background">
+                                <div class="row">
+                                    <div class="span12 bTB1S marT10 padTB30 marT10 marB0 padB10small">
+                    
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/12/diary-00861_web.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161229031732im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+                                    <div class="text-container container ">
+        <div class="text-overlay">
+        <div class="text">
+                        </div>
+        </div>
+        </div>
+                    
+        </div>
+
+        
+                            </div>
+                                <div class="span4 col pull-right">
+                                                <div class="marT30 marT10small">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    A building in Hisha, recently recaptured from Islamic State control, serves as a military base for fighters with the Syrian Democratic Forces.                                                                        </p>
+                                    </div>
+                                    </div>
+        <div class="span8 marT30 col">
+<p>The decision has paid off so far. The YPG — which constitutes the Kurdish component of the SDF — has proved to be the United States’ most effective military ally in Syria, and it has retaken vast swaths of territory. It is also expanding deep into Arab areas as it presses forward against the militants, raising questions among observers about the long-term sustainability of the gains.</p>
+<p>The cooperation has, moreover, provoked the ire of Turkey, because of the YPG’s long-standing ties to the Kurdistan Workers’ Party, or PKK, which is designated a terrorist organization by Ankara and Washington. Turkey is waging its own offensive against the Islamic State in nearby Aleppo province but has hinted it may soon turn on the SDF alliance and perhaps then make its own push for the Islamic State capital.</p>
+</div></div><div class="row">        <div class="span4 col pull-right right-content bTB1S-phone no-border no-padding  ">
+            <p class="pull-quote">“We have proved that we are the most effective<br/>
+fighters.”</p>
+                            <p class="pq-credit">&mdash;Rojda Felat, YPG commander</p>
+                    </div>
+        <div class="span8 col">
+<p>The Syrian government also opposes the Kurdish expansion and has repeatedly said it plans to retake Raqqa, which it lost control of in 2013. Syria is backed by Russia, which is forging a new alliance with Turkey over Syria, potentially setting the stage for a global clash over who wins the prize goal.</p>
+<p>To ameliorate the concerns of NATO ally Turkey, the U.S. military says it is giving arms only to Arab fighters within the umbrella SDF, formed last year to serve as a vehicle for the delivery of military aid. There are 13,000 Arabs now serving with the SDF, alongside 45,000 Kurds with the YPG, according to a U.S. military spokesman, Col. John Dorrian.</p>
+</div></div><div class="row">        <div class="photo-right span4 col pull-right ">
+                                                    <div class="spinner">
+            <img class=" image " data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/12/raqqa-00399_web.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161229031732im_/http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/12/raqqa-00399_web.jpg&amp;w=1040&amp;authapi-mob-redir=0"/>
+                    </div>
+                                                            <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Rojda Felat, a YPG commander, speaks on the radio at the entrance of Tal Saman shortly after the village was captured.                                                                         </p>
+                                    </div>
+                            </div>
+        <div class="span8 col">
+<p>But there seems to be little doubt that the YPG is leading the fight. Its flags flutter over the checkpoints along the newly liberated rural roads and at the military bases closest to the front lines. Its graffiti is scrawled over the walls of the captured towns and villages, as in Tal Saman, where the initials “YPG” were spray-painted alongside the pledge to take Raqqa.</p>
+<p>The Kurdish-Arab alliance, with U.S. assistance, plans to recruit and train an additional 10,000 Arab fighters for an offensive on Raqqa, said Rojda Felat, one of the commanders of the offensive to encircle the city. But YPG participation will be essential “because we have proved that we are the most effective fighters,” she said.</p>
+<p>“We will even go past Raqqa,” she added, to other areas farther south controlled by the Islamic State, which is also known as ISIS, ISIL or Daesh.</p>
+<p>Whether it is wise to send an overwhelmingly Kurdish force to capture the overwhelmingly Arab city of Raqqa is in question, however. A Kurdish push on Raqqa risks alienating the local population, perhaps encouraging residents who otherwise would not support the Islamic State to fight on its behalf, according to Abu Issa, a commander with the rebel Free Syrian Army’s Liwa Thuwar al-Raqqa, or Raqqa Revolutionaries Brigade.</p>
+<p>“We saw in Iraq and other places that if the local people are not involved in the liberation, there won’t be any stability,” he said in an interview at his headquarters, in a remote farmhouse in the countryside of Raqqa province. He and his group are from Raqqa, and though they are loosely allied with the SDF, they fly the flag of the Free Syrian Army.</p>
+<p>“All the Arabs know that the SDF are YPG, and if things continue as they are, there will be big problems in the future, sectarian clashes and conflict,” Abu Issa said. “People don’t understand why the YPG are going to Raqqa. It’s an entirely Arab area, and the Arabs feel marginalized.”</p>
+</div></div><div class="row">                <div class="span4 col pull-right right-content no-border graphic bg-none graphicPadTB30" id="raw">
+        <div id="g-RaqqaLOC-box" class="ai2html">
+	<!-- Generated by ai2html v0.55 - 2016-12-28 - 09:44 -->
+	<!-- ai file: RaqqaLOC -->
+
+	<style type="text/css" media="screen,print">
+		.g-artboard {
+			margin:0 auto;
+		}
+	</style>
+
+
+	<!-- Artboard: 280 -->
+	<div id="g-RaqqaLOC-280" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-RaqqaLOC-280{
+				position:relative;
+				overflow:hidden;
+				width:278px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-RaqqaLOC-280 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-RaqqaLOC-280 .g-aiPstyle0 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:14px;
+				padding-bottom:10px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-RaqqaLOC-280 .g-aiPstyle1 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:13px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-RaqqaLOC-280 .g-aiPstyle2 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:13px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-RaqqaLOC-280 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:6px;
+				line-height:13px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-RaqqaLOC-280 .g-aiPstyle4 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:13px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-RaqqaLOC-280 .g-aiPstyle5 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:13px;
+				text-align:center;
+				letter-spacing:0.07916666666667em;
+				color:#000000;
+			}
+			#g-RaqqaLOC-280 .g-aiPstyle6 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:12px;
+				line-height:13px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+		</style>
+		<div id="g-RaqqaLOC-280-graphic">
+			<img id="g-ai0-0" class="g-aiImg" src="http://web.archive.org/web/20161229031732im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/RaqqaLOC/RaqqaLOC-280.jpg?c=6"/>
+			<div id="g-ai0-1" class="g-Graphic_type g-aiAbs" style="top:4.3344%;left:10.9617%;">
+				<p class="g-aiPstyle0">Assad regime</p>
+			</div>
+			<div id="g-ai0-2" class="g-Graphic_type g-aiAbs" style="top:4.3344%;left:56.8117%;">
+				<p class="g-aiPstyle0">Kurdish groups</p>
+			</div>
+			<div id="g-ai0-3" class="g-Graphic_type g-aiAbs" style="top:12.0743%;left:10.7397%;">
+				<p class="g-aiPstyle0">Sunni insurgents</p>
+			</div>
+			<div id="g-ai0-4" class="g-Graphic_type g-aiAbs" style="top:12.0743%;left:56.7441%;">
+				<p class="g-aiPstyle0">Islamic State</p>
+			</div>
+			<div id="g-ai0-5" class="g-Map_type g-aiAbs" style="top:21.3622%;left:45.3276%;width:35.6270%;margin-left:-17.8135%;">
+				<p class="g-aiPstyle1">TURKEY</p>
+			</div>
+			<div id="g-ai0-6" class="g-Map_type g-aiAbs" style="top:33.7461%;left:28.4698%;">
+				<p class="g-aiPstyle2">Aleppo</p>
+			</div>
+			<div id="g-ai0-7" class="g-Map_type g-aiAbs" style="top:32.8173%;left:99.0770%;">
+				<p class="g-aiPstyle3">Mosul</p>
+			</div>
+			<div id="g-ai0-8" class="g-Map_type g-aiAbs" style="top:38.0805%;left:51.5571%;">
+				<p class="g-aiPstyle4">Raqqa</p>
+			</div>
+			<div id="g-ai0-9" class="g-Map_type g-aiAbs" style="top:48.2972%;left:41.9356%;width:35.3642%;margin-left:-17.6821%;">
+				<p class="g-aiPstyle5">SYRIA</p>
+			</div>
+			<div id="g-ai0-10" class="g-Map_type g-aiAbs" style="top:48.6068%;left:87.5725%;width:21.1977%;margin-left:-10.5989%;">
+				<p class="g-aiPstyle1">IRAQ</p>
+			</div>
+			<div id="g-ai0-11" class="g-Map_type g-aiAbs" style="top:56.0372%;left:21.8074%;">
+				<p class="g-aiPstyle2">Homs</p>
+			</div>
+			<div id="g-ai0-12" class="g-Map_type g-aiAbs" style="top:59.1331%;left:42.2019%;">
+				<p class="g-aiPstyle2">Palmyra</p>
+			</div>
+			<div id="g-ai0-13" class="g-Map_type g-aiAbs" style="top:61.6099%;left:8.2650%;width:19.6711%;margin-left:-9.8355%;">
+				<p class="g-aiPstyle1">LEB.</p>
+			</div>
+			<div id="g-ai0-14" class="g-Map_type g-aiAbs" style="top:73.3746%;left:15.8152%;">
+				<p class="g-aiPstyle2">Damascus</p>
+			</div>
+			<div id="g-ai0-15" class="g-Graphic_type g-aiAbs" style="top:78.9474%;left:63.6208%;">
+				<p class="g-aiPstyle6">100 MILES</p>
+			</div>
+			<div id="g-ai0-16" class="g-Map_type g-aiAbs" style="top:87.9257%;left:35.4437%;width:36.0271%;margin-left:-18.0135%;">
+				<p class="g-aiPstyle1">JORDAN</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- End ai2html - 2016-12-28 - 09:44 -->
+</div>
+        </div>
+                <div class="span8 col">
+<p>Arab residents of the areas recently freed from Islamic State control seem mostly just relieved to be rid of the extremists — and to have survived yet another battle, one that has so far proved mercifully brief. The fight has been so easy that there have been few casualties and relatively little damage to the isolated villages dotting the desert landscape.</p>
+<p>The YPG fighters conduct what appear to be well-organized evacuations of the villages that lie in the path of the offensive. As people from areas close to the front lines leave, those from villages that have been cleared are allowed to return.</p>
+<p>On one recent day, hundreds of people streamed into the destroyed Arab town of Ain Issa from villages well behind Islamic State lines, in trucks piled high with children, mattresses and sheep. They had responded, they said, to messages sent by the Kurds to vacate their homes before the battles arrived. They said they were glad to seize the chance to escape the seemingly collapsing rule of the Islamic State fighters fleeing in the other direction.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S-phone padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox" data-ad-type="bigbox" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p>“They used to take people with them to use as human shields, but now they are not even doing this,” said Saleh Hassan, one of the men who said he had escaped his home through minefields to reach the Kurdish lines. “People were with them before, but now even their fighters are trying to defect.”</p>
+<p>Ahmed Naim, 23, said he had covertly sold cigarettes and had many run-ins with the militants, who banned smoking. “Their days are numbered,” he said. “Daesh is finished, and the majority of the people are happy.”</p>
+<p>It is hard to tell how happy people really are when armed guards are standing nearby. As the villagers who escaped areas behind the Islamic State lines arrived in Ain Issa, others were returning to their homes in the village of Hisha, which was freed last month after a brief battle.</p>
+</div></div></div></div>                <div class="section" id="section-3">
+                    <div class="container background">
+                                <div class="row">
+                                    <div class="span12 bTB1S marT10 padTB30 marT10 marB0 padB10small">
+                    
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/12/raqqa-00092_web.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161229031732im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+                                    <div class="text-container container ">
+        <div class="text-overlay">
+        <div class="text">
+                        </div>
+        </div>
+        </div>
+                    
+        </div>
+
+        
+                            </div>
+                                <div class="span4 col pull-right">
+                                                <div class="marT30 marT10small">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Families who have fled the fighting wait at the screening center in Ain Issa.                                                                        </p>
+                                    </div>
+                                    </div>
+        <div class="span8 marT30 col">
+<p>At the local barbershop, a line of long-haired customers waited on wobbly plastic chairs for haircuts that were forbidden under Islamic State rule. “Nobody wants ISIS,” Mouay ad Khalaf said as he snipped the curly locks of a teenage boy.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S-phone padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_2" data-ad-type="bigbox|2" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p>But some men, when stopped in the street and asked what they thought of the change of authority, seemed less thrilled.</p>
+<p>“They haven’t caused us any problems,” one man said vaguely. He didn’t want to be named.</p>
+<p>“It’s okay,” said another who didn’t seem sure. “We’re cooperating with them.”</p>
+<p>U.S. officials acknowledge the concerns about sending Kurds into battle in Raqqa but say that at the moment there is no alternative. “The only force that is capable on any near-term timeline is the Syrian Democratic Forces, of which the YPG are a significant portion,” Lt. Gen. Stephen Townsend told reporters last month.</p>
+<p>Turkey has, meanwhile, been waging a rival offensive against the Islamic State farther west, in the province of Aleppo, where Turkish troops are backing Syrian Arab rebels with the Free Syrian Army, with the support of the United States. Though the focus of the fighting is on the Islamic State, Turkey has threatened to attack the SDF, potentially drawing troops and resources away from the Raqqa battle.</p>
+<p>So complicated are the politics that there is still no plan for a Raqqa offensive, said Nasir Haj Mansour, a veteran Kurdish fighter who is now an adviser to the SDF. “Unfortunately, yes,” he said when asked whether he thought the Islamic State would still be in control of Raqqa in six months’ time.</p>
+<p>And in a year?</p>
+<p>“Probably, yes.”</p>
+</div></div></div></div>                <div class="section last-section" id="section-4">
+                    <div class="container background">
+                                <div class="row">
+                                    <div class="span12 bTB1S marT10 padTB30 marT10 marB0 padB10small">
+                    
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/12/raqqa-09893_web.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161229031732im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+                                    <div class="text-container container ">
+        <div class="text-overlay">
+        <div class="text">
+                        </div>
+        </div>
+        </div>
+                    
+        </div>
+
+        
+                            </div>
+                                <div class="span4 col pull-right">
+                                                <div class="marT30 marT10small">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    A shepherd passes by a roadside sign pointing to Raqqa, the Islamic State's capital in Syria.                                                                        </p>
+                                    </div>
+                                    </div>
+        <div class="span8 marT30 col">
+</div></div></div>                <div class=" no-border graphic bg-none graphicPadTB30" id="raw">
+        <!-- Updated 12/7/15 by EY to fix a bug with single quotes --> 
+
+<link rel="stylesheet" href="//web.archive.org/web/20161229031732cs_/http://css.washingtonpost.com/wp-stat/enterprise-raw-code/sharebar/enterprise-sharebar.css?v3"/>
+
+<!-- To switch to grayscale share buttons, remove the 'color-top' class from top-sharebar-wrapper div -->
+
+<div class="top-sharebar-wrapper color-top large-8 large-centered columns cf" id="top-sharebar_123534312321">
+<div class="social-tools-wrapper">
+    <div class="social-tools-primary ">
+        <div class="social-tools ">
+            <!-- FB -->
+            <a id="facebook-raw-share" data-service="facebook" onclick="" tabindex="1">
+                <div class="facebook tool first mobile"><span class="hideText">Share on Facebook</span><span class="fa fa-facebook-square"></span></div>
+            </a>
+            <!-- Twitter -->
+            <a id="twitter-raw-share" data-service="twitter" onclick="" tabindex="2">
+                <div class="twitter tool mobile"><span class="hideText">Share on Twitter</span><span class="fa fa-twitter"></span></div>
+            </a>
+            <!-- Google Plus -->
+            <a id="google-plus-raw-share" data-service="google-plus" onclick="" tabindex="3">
+                <div class="google-plus tool mobile"><span class="hideText">Share on Google Plus</span><span class="fa fa-google-plus"></span></div>
+            </a>
+            <!-- Email -->
+            <a id="email-raw-share" data-service="email" href="" tabindex="4">
+                <div class="email tool mobile"><span class="hideText">Share via Email</span><span class="fa fa-envelope"></span></div>
+            </a>
+            <!-- More -->
+            <a onclick="return false;">
+                <div class="more last tool mobile"><span class="hideText" tabindex="5">More Options</span><span class="fa fa-plus"> </span></div>
+            </a>
+        </div>
+    </div>
+    <div class="social-tools-additional">
+        <div class="social-tools ">
+            <!-- LinkedIn -->
+<!--             <a id="linkedIn-raw-share" data-service="linkedin" onclick="" tabindex="6">
+                <div class="linkedin tool mobile first"><span class="hideText">Share on LinkedIn</span><span class="fa fa-linkedin"></span></div>
+            </a> -->
+            <!-- Pinterest -->
+            <a id="pinterest-raw-share" data-service="pinterest" onclick="" tabindex="7">
+                <div class="pinterest tool mobile first"><span class="hideText">Share on Pinterest</span><span class="fa fa-pinterest"></span></div>
+            </a>
+            <!-- Tumblr  -->
+            <a id="tumblr-raw-share" data-service="tumblr" onclick="" tabindex="8">
+                <div class="tumblr tool mobile last"><span class="hideText">Share on Tumblr</span><span class="fa fa-tumblr"></span></div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+</div>
+
+
+
+        </div>
+                <div class="container background"><div class="row"><div class="span8 marT30 col">
+                <div class="et-pagination">
+                        <div class="clearfix"></div>
+        </div>
+        </div> <!-- Close off span 8 -->
+        </div> <!-- Close off row -->
+        </div>
+        <div class="bT1S padT30 padB10small padB30">
+        <div class="container">
+            <h4 class="light-black marB20 franklin-bold marT0"></h4>
+        <div class="row">
+                <div class="span6">
+        <div class="row-fluid">
+        <div class="span6">
+            <a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/sf/world/2016/11/23/isis-a-catastrophe-for-sunnis/">
+                <div class="spinner">
+                    <img class="lazy-image image pick" data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/sunnislede_stretch.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161229031732im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </a>
+        </div>
+        <div class="span6">
+            <h4 class="franklin-bold marT0 marT10small"><a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/sf/world/2016/11/23/isis-a-catastrophe-for-sunnis/" class="light-black">ISIS: A catastrophe for Sunnis</a></h4>
+            <p class="franklin-light size-fourteen lh18em light-grey">Many have suffered under the Islamic State, but the misery inflicted on Sunnis will resonate for generations.            <a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/sf/world/2016/11/23/isis-a-catastrophe-for-sunnis/" class="light-black">
+                <span class="fa fa-circle-arrow-right"></span>
+            </a>
+            </p>
+        </div>
+        </div>
+        </div>
+                <div class="span6">
+        <div class="row-fluid">
+        <div class="span6">
+            <a href="http://web.archive.org/web/20161229031732/https://www.washingtonpost.com/world/endgame-in-aleppo-the-most-decisive-battle-yet-in-syrias-war/2016/12/13/eff36c3a-c16c-11e6-92e8-c07f4f671da4_story.html?utm_term=.66d08b3c2246">
+                <div class="spinner">
+                    <img class="lazy-image image pick" data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/12/Aleppo_pickPhoto.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161229031732im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </a>
+        </div>
+        <div class="span6">
+            <h4 class="franklin-bold marT0 marT10small"><a href="http://web.archive.org/web/20161229031732/https://www.washingtonpost.com/world/endgame-in-aleppo-the-most-decisive-battle-yet-in-syrias-war/2016/12/13/eff36c3a-c16c-11e6-92e8-c07f4f671da4_story.html?utm_term=.66d08b3c2246" class="light-black">Endgame in Aleppo</a></h4>
+            <p class="franklin-light size-fourteen lh18em light-grey">The fight for Aleppo came to symbolize the hopes, the fears and the failures of the Syrian war.            <a href="http://web.archive.org/web/20161229031732/https://www.washingtonpost.com/world/endgame-in-aleppo-the-most-decisive-battle-yet-in-syrias-war/2016/12/13/eff36c3a-c16c-11e6-92e8-c07f4f671da4_story.html?utm_term=.66d08b3c2246" class="light-black">
+                <span class="fa fa-circle-arrow-right"></span>
+            </a>
+            </p>
+        </div>
+        </div>
+        </div>
+                </div>
+        </div>
+        </div>
+        
+												</div> <!-- home/section -->
+				            <div id="section-comments" class="mobile-inactive bT1S bT0small">
+            <div class="container background">
+            <div class="row last">
+            <div class="span4 col pull-right credits">
+                <h4 class="franklin-bold light-black marT0">Credits</h4>
+                                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/people/liz-sly"><span class="name">Liz Sly</span></a>                                                    <a href="http://web.archive.org/web/20161229031732/mailto:liz.sly@washpost.com"><i class="fa fa-envelope"></i></a>                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Photos by</span>
+                                                                                                <span class="name">Alice Martins</span>                                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Design by</span>
+                                                                                                <span class="name">Eddie Alvarez</span>                                                                        </div>
+                    </div>
+            <div id="comments" class="span8 col pretty-comments">
+                          <div class="pretty-comments">
+                  <div id="echo_container" class="echo_container count submitbox stream comment-vars" guid="http://www.washingtonpost.com/sf/world/2016/12/28/on-the-front-lines-of-the-fight-for-the-islamic-states-capital-of-raqqa/" maxitemstop="5" sectionid="/conversations" isallcomments="true" includeshare="false">
+                  </div>
+              </div>
+                        <!-- auto-assigns guid from page url -->
+            <!--script type="text/javascript">document.getElementById('echo_container').setAttribute('guid', document.location.href);</script -->
+            <!-- end comments -->
+            </div>
+            </div>
+            </div>
+            </div>
+        			</div> <!-- sections -->
+		</div> <!-- main container -->
+		<div id="et-nav-series-off-canvas">
+			<div id="et-nav-series-inner-off-canvas">
+	            	            	            
+	            	        </div>
+        </div>
+        <div id="et-sections-dropdown-list">
+            <ul class="et-dropdown sections-dropdown et-off-canvas">
+                <li><a href="http://web.archive.org/web/20161229031732/http://www.posttv.com/">Video</a></li>
+                <li><a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/politics">Politics</a></li>
+                <li><a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/opinions">Opinions</a></li>
+                <li><a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/local">Local</a></li>
+                <li><a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/sports">Sports</a></li>
+                <li><a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/national">National</a></li>
+                <li><a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/world">World</a></li>
+                <li><a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/business">Business</a></li>
+                <li><a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/business/technology">Tech</a></li>
+                <li><a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/lifestyle">Lifestyle</a></li>
+                <li><a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/entertainment">Entertainment</a></li>
+                <li><a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/classifieds">Classifieds</a></li>
+                <li><a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/jobs">Jobs</a></li>
+                <li><a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/realestate">Real Estate</a></li>
+                <li><a href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/events">Events</a></li>
+			</ul>
+			<div class="copyright-details">
+				<p><a class="franklin-bold" href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/">washingtonpost.com</a></p>
+				<p style="font-size: 12px" class="franklin-thin smaller-size">&copy; 1996-2016 The Washington Post</p>
+				<br/>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/terms-of-service/2011/11/18/gIQAldiYiN_story.html">Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/privacy-policy/2011/11/18/gIQASIiaiN_story.html">Privacy Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/discussion-and-submission-guidelines/2011/11/21/gIQAuvIbiN_story.html">Submission and Discussion Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/rss-terms-of-service/2012/01/16/gIQAadFYAQ_story.html">RSS Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161229031732/http://www.washingtonpost.com/how-can-i-opt-out-of-online-advertising-cookies/2011/11/18/gIQABECbiN_story.html">Ad Choices</a></p>
+			</div>
+		</div>
+		       <script type="text/javascript">
+        // Omniture variables
+        var wp_page_name = 'world:article - 20161228 - on-the-front-lines-of-the-fight-for-the-islamic-states-capital-of-raqqa';
+        var wp_track_scrolling = true;
+
+        // etc.
+        // chartbeat variables
+        _sf_async_config={
+          sections: wp_channel,
+          path:document.location.pathname, // defaults to document.location.pathname if you don't pass it.
+          title:document.title,
+          useCanonical:true // defaults to true if you don't pass it.
+        };
+        </script>
+
+        <script type="text/javascript" src="http://web.archive.org/web/20161229031732js_/http://www.washingtonpost.com/wp-srv/analytics/main.js"></script>
+        <script type="text/javascript">
+          //TWP.Analytics.init();
+          // FOR PREPRODUCTION
+          //TWP.Analytics.init( {suite:"preproduction",service:{omniture:true,omnitureTest:false,comscore:false,chartbeat:false}} );
+          TWP.Analytics.init({suite:"production"});
+        </script>
+
+        <!-- COMSCORE NOSCRIPT -->
+        <noscript><img src="http://web.archive.org/web/20161229031732im_/http://b.scorecardresearch.com/p?c1=2&amp;c2=3005617&amp;cv=2.0&amp;cj=1"/></noscript>
+        <!-- COMSCORE NOSCRIPT/Mobile -->
+        <!--<noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=3005617&c4=m.washingtonpost.com/nojs.html" /> </noscript>-->
+        
+        <noscript><img src="//web.archive.org/web/20161229031732im_/http://me.effectivemeasure.net/em_image" alt="" style="position:absolute; left:-5px;"/></noscript>
+        
+      <link rel="stylesheet" id="wapo-footnote-plugin-css" href="http://web.archive.org/web/20161229031732cs_/http://www.washingtonpost.com/sf/world/wp-content/plugins/wapo-footnote/parts/css/plugin.css?ver=1.0.0" type="text/css" media="screen, projection"/>
+<script type="text/javascript" src="http://web.archive.org/web/20161229031732js_/http://js.washingtonpost.com/1d/twp-comments.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161229031732js_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/js/lib/html5.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161229031732js_/http://www.washingtonpost.com/sf/world/wp-content/plugins/wapo-footnote/parts/js/plugin.js?ver=1.0.0"></script>
+  
+              <script type="text/javascript" src="http://web.archive.org/web/20161229031732js_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme.js?1"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161229031732js_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/js/build/enterprise-theme-nav.js?1"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20161229031732js_/http://js.washingtonpost.com/posttv/resources/js/posttv/vendor/pubsub.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161229031732js_/https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20161229031732js_/http://js.washingtonpost.com/posttv/resources/js/posttv/posttv-player.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161229031732js_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/js/build/embedded-content-video.js"></script>
+              <script src="http://web.archive.org/web/20161229031732js_/http://js.washingtonpost.com/wp-srv/ad/loaders/latest/js/min/loader.min.js" data-ad-site="wp" data-ad-page-type="responsive"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20161229031732js_/http://js.washingtonpost.com/wp-stat/enterprise-raw-code/sharebar/enterprise-sharebar.js"></script>              <script type="text/javascript">
+$(document).ready(function() {
+
+    //append social buttons to bylines
+    $('.bylines').parent().append($('.top-sharebar-wrapper').parent());
+
+    //store metadata
+    var ogTitleSelector = document.querySelector('meta[property="og:title"]');
+    var ogTitleContent = (encodeURIComponent(ogTitleSelector && ogTitleSelector.getAttribute("content"))).replace(/'/g, "%27");
+
+    var ogImageSelector = document.querySelector('meta[property="og:image"]');
+    var ogImageContent = ogImageSelector && ogImageSelector.getAttribute("content");
+
+    var ogURLSelector = document.querySelector('meta[property="og:url"]');
+    var ogURLContent = encodeURI(ogURLSelector && ogURLSelector.getAttribute("content"));
+
+    var ogDescriptionSelector = document.querySelector('meta[property="og:description"]');
+    var ogDescriptionContent = (encodeURIComponent(ogDescriptionSelector && ogDescriptionSelector.getAttribute("content"))).replace(/'/g, "%27");
+
+    //populate share button click events with metadata
+    var facebookString = "window.open('http://web.archive.org/web/20161229031732/https://www.facebook.com/sharer/sharer.php?u="+ogURLContent+"','share_facebook','width=658,height=354,scrollbars=no');return false;";
+    $('#facebook-raw-share')[0].setAttribute("onclick", facebookString);
+
+    var twitterString = "window.open('http://web.archive.org/web/20161229031732/https://twitter.com/share?url="+ogURLContent+"&amp;text="+ogTitleContent+"','share_twitter','width=550, height=350, scrollbars=no');return false;";
+    $('#twitter-raw-share')[0].setAttribute("onclick", twitterString);
+
+    var googlePlusString = "window.open('http://web.archive.org/web/20161229031732/https://plus.google.com/share?url="+ogURLContent+"','share_google-plus','width=832,height=472,scrollbars=no');return false;"; 
+    $('#google-plus-raw-share')[0].setAttribute("onclick", googlePlusString);
+
+    var emailString = "mailto:?subject="+ogTitleContent+" from the Washington Post&body="+ogURLContent+""; 
+    $('#email-raw-share')[0].setAttribute("href", emailString);
+
+    // var linkedInString = "window.open('http://web.archive.org/web/20161229031732/http://www.linkedin.com/shareArticle?mini=true&amp;url="+ogURLContent+"&amp;title=','share_linkedin','width=830,height=460,scrollbars=no');return false;"; 
+    // $('#linkedIn-raw-share')[0].setAttribute("onclick", linkedInString);
+
+    var pinterestString = "window.open('//web.archive.org/web/20161229031732/http://pinterest.com/pin/create/bookmarklet/?url="+ogURLContent+"&amp;media="+ogImageContent+"&amp;description=','share_pinterest','width=550,height=450,scrollbars=no');return false;"; 
+    $('#pinterest-raw-share')[0].setAttribute("onclick", pinterestString);
+
+    var tumblrString = "window.open('http://web.archive.org/web/20161229031732/http://www.tumblr.com/share/link?url="+ogURLContent+"&amp;name="+ogTitleContent+"&amp;description="+ogDescriptionContent+"','share_tumblr','width=550,height=450,scrollbars=no');return false;"; 
+    $('#tumblr-raw-share')[0].setAttribute("onclick", tumblrString);
+}); 
+</script>    
+<!-- This website is powered by Piklist. Learn more at http://piklist.com/ -->
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"707aabbc5c","applicationID":"4157428","transactionName":"MlABYUsACEJXARVaXgsaIlZNCAlfGQsPV1Qd","queueTime":0,"applicationTime":569,"ttGuid":"","agentToken":"","atts":"HhcCFwMaG0w=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

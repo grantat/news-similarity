@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+    <!--[if IE 7]><html class="ie ie7" lang="en-US"><![endif]-->
+    <!--[if IE 8]><html class="ie ie8" lang="en-US"><![endif]-->
+    <!--[if !(IE 7) | !(IE 8)  ]><!--><html lang="en-US"><!--<![endif]-->
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app22.us.archive.org';v.server_ms=361;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/static/js/wbhack.js?v=1521067262.0" charset="utf-8"></script>
+
+<script type="text/javascript">
+__wbhack.init('http://web.archive.org/web');
+</script>
+<link rel="stylesheet" type="text/css" href="/static/css/banner-styles.css?v=1521067262.0" />
+<link rel="stylesheet" type="text/css" href="/static/css/iconochive.css?v=1521067262.0" />
+
+<!-- End Wayback Rewrite JS Include -->
+        <meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+        <title>Men’s attitudes about women were changing in one Indian village. Then a dowry dispute turned deadly. | The Washington Post</title>                
+                
+        <meta property="fb:app_id" content="41245586762"/>
+        <meta property="article:publisher" content="https://www.facebook.com/washingtonpost"/>
+        <meta name="twitter:site" value="@WashingtonPost"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="og:title" content="Men’s attitudes about women were changing in one Indian village. Then a dowry dispute turned deadly.">
+        <meta property="og:image" content="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/12/indiaman_socialcard2.jpg">
+        <meta property="og:url" content="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/sf/world/2016/12/09/mens-attitudes-about-women-were-changing-in-this-indian-village-then-a-dowry-dispute-turned-deadly/">
+        <meta property="og:site_name" content="Washington Post">
+        <meta property="og:type" content="article">
+        <meta property="og:description" content="Men were making progress in a gender sensitivity course, until someone died of poison.">
+
+        <meta name="description" content="Men’s attitudes about women were changing in one Indian village. Then a dowry dispute turned deadly.">
+        <meta name="keywords" content="India, women's rights, gender rights, gender equality, women in India, rape in India, women's oppression">
+        <meta name="news_keywords" content="India, women's rights, gender rights, gender equality, women in India, rape in India, women's oppression">
+
+        
+         <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-57-precomposed.png">
+
+                
+        		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/web.archive.org\/web\/20161209233642\/http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/web.archive.org\/web\/20161209233642\/http:\/\/www.washingtonpost.com\/sf\/world\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.7"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="rs-plugin-settings-css" href="http://web.archive.org/web/20161209233642cs_/http://www.washingtonpost.com/sf/world/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.1" type="text/css" media="all"/>
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<link rel="stylesheet" id="wp-bootstrap-min-css" href="http://web.archive.org/web/20161209233642cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-responsive-css" href="http://web.archive.org/web/20161209233642cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap-responsive.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-fonts-css" href="http://web.archive.org/web/20161209233642cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/fonts.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-inline-css" href="http://web.archive.org/web/20161209233642cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/inline.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-font-awesome-min-css" href="http://web.archive.org/web/20161209233642cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-v4.2-min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-enterprise-theme-style-css" href="http://web.archive.org/web/20161209233642cs_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/style.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-pretty-comments-css" href="http://web.archive.org/web/20161209233642cs_/http://css.wpdigital.net/wp-srv/graphics/css/pretty-comments.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="print-css" href="http://web.archive.org/web/20161209233642cs_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/css/print.css?ver=0.3.1.5" type="text/css" media="print"/>
+<!--[if IE]>
+<link rel='stylesheet' id='wp-general-ie-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/iefonts.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='wp-font-awesome-ie-min-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-ie7.min.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript" src="http://web.archive.org/web/20161209233642js_/http://www.washingtonpost.com/sf/world/wp-includes/js/jquery/jquery.js?ver=1.11.2"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161209233642js_/http://www.washingtonpost.com/sf/world/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161209233642js_/http://www.washingtonpost.com/sf/world/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161209233642js_/http://www.washingtonpost.com/sf/world/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161209233642js_/http://js.washingtonpost.com/1h/twp-scripts.js?ver=4.2.7"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161209233642js_/http://js.washingtonpost.com/1h/twp-internal.js?ver=4.2.7"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ET_OM = {"omniture":"world","wp_page_num":"1 of 1","wp_blogname":"","wp_author":"Annie Gowen,Poulomi Basu,Joanne Lee","commercialNode":"world"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://web.archive.org/web/20161209233642js_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme-ad-scripts.js?ver=1418247459"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161209233642js_/http://js.washingtonpost.com/pb/resources/js/utils/control-mod.js?ver=4.2.7"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.washingtonpost.com/sf/world/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.washingtonpost.com/sf/world/wp-includes/wlwmanifest.xml"/> 
+<link rel="prev" title="The Islamic State has been a catastrophe for Sunnis" href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/sf/world/2016/11/23/isis-a-catastrophe-for-sunnis/"/>
+<meta name="generator" content="WordPress 4.2.7"/>
+<link rel="canonical" href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/sf/world/2016/12/09/mens-attitudes-about-women-were-changing-in-this-indian-village-then-a-dowry-dispute-turned-deadly/"/>
+<link rel="shortlink" href="http://www.washingtonpost.com/sf/world/?p=3004"/>
+<meta name="generator" content="Piklist 0.9.9.7c"/>
+<link rel="https://github.com/WP-API/WP-API" href="http://www.washingtonpost.com/sf/world/wp-json/"/>
+        <script type="text/javascript">
+          var ET_ASSETS = {
+            'post_title': 'Men’s attitudes about women were changing in this Indian village. Then a dowry dispute turned deadly.',
+            'post_url': 'http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/sf/world/2016/12/09/mens-attitudes-about-women-were-changing-in-this-indian-village-then-a-dowry-dispute-turned-deadly/',
+          };
+        </script>
+      <meta name="generator" content="Powered by Slider Revolution 5.2.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."/>
+        
+        <script>
+          var $ = jQuery.noConflict();
+        </script>
+
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/css/ie-fix.css" />
+        <![endif]-->
+    </head>
+    <body class="single single-post postid-3004 single-format-standard"> 
+        <div id="et-nav" style="top:0px">
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-sections-dropdown">
+                    <div id="et-nav-sections-regular-dropdown-wrapper" class="hidden-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-full-click"> 
+                            <div class="pull-left">Sections</div>
+                            <div class="share-icon pull-left"><i class="fa fa-reorder"></i></div>
+                        </a>
+                    </div>
+                    <div id="et-nav-sections-reduced-dropdown-wrapper" class="visible-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-reduced-click">
+                            <span class="share-icon pull-left"><i class="fa fa-reorder"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-company-icon">
+                    <a class="branding" href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/">
+                        <img id="branding-at-top" src="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/wp_full_white.png"/>
+                        <img id="branding-during-scroll" src="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/wp_logo_white.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="pull-left border-left hidden-phone no-left-margin-padding" id="et-title-wrap">
+                <div id="et-nav-story-title" class="hide-title-indent">
+                    <a href="#"><p>Men’s attitudes about women were changing in this Indian village. Then a dowry dispute turned deadly.</p></a>
+                </div>
+            </div>
+
+
+                        
+            <div class="pull-right hidden-phone" id="share-series">
+                
+                <div class="pull-left border-left relative">
+                    <div id="et-nav-share-dropdown">
+                        <a href="#" class="clearfix pull-right">
+                            <div class="pull-left">
+                                <p class="pull-left">Share</p>
+                                <p class="share-icon pull-left"><i class="fa fa-share"></i></p>
+                            </div>
+                        </a>
+                        <ul class="et-dropdown hidden no-series-nav">
+                          <li><a target="_blank" href="http://web.archive.org/web/20161209233642/https://facebook.com/dialog/feed?app_id=41245586762&amp;link=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Fworld%2F2016%2F12%2F09%2Fmens-attitudes-about-women-were-changing-in-this-indian-village-then-a-dowry-dispute-turned-deadly%2F&amp;name=Men%E2%80%99s+attitudes+about+women+were+changing+in+one+Indian+village.+Then+a+dowry+dispute+turned+deadly.&amp;redirect_uri=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Fworld%2F2016%2F12%2F09%2Fmens-attitudes-about-women-were-changing-in-this-indian-village-then-a-dowry-dispute-turned-deadly%2F"><i class="fa fa-facebook"></i><span class="social-name">Facebook</span></a></li>
+                          <li><a target="_blank" href="http://web.archive.org/web/20161209233642/https://twitter.com/intent/tweet?text=Men%E2%80%99s+attitudes+about+women+were+changing+in+one+Indian+village.+Then+a+dowry+dispute+turned+deadly. http%3A%2F%2Fwapo.st%2Findia"><i class="fa fa-twitter"></i><span class="social-name">Twitter</span></a></li>
+                          <li><a href="http://web.archive.org/web/20161209233642/mailto:/?subject=Men’s attitudes about women were changing in one Indian village. Then a dowry dispute turned deadly. from the Washington Post&amp;body=http%3A%2F%2Fwapo.st%2Findia"><i class="fa fa-envelope"></i><span class="social-name">Email</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                            </div> 
+
+                    </div>
+
+    	<div id="main-container" style="padding-top: 50px">
+	<div class="sections">
+					<div class="home section" id="section-home">                <div class=" no-border graphic bg-none graphicPadTB30" id="raw">
+        <link href="//web.archive.org/web/20161209233642cs_/http://www.washingtonpost.com/wp-stat/enterprise-raw-code/image-overlay/image-overlay.css" rel="stylesheet" type="text/css">
+
+<style>
+.img--lead {
+    background-image: url('http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/Indiaman-01croppedtop.jpg');
+}
+.overlay-title {
+    font-family: 'PostoniDisplay', Georgia;
+}
+.overlay-blurb {
+    font-family: 'FranklinITCProLight', Helvetica, Arial;
+}
+
+
+/* These styles only apply to bigger screens because we have set style for tablets and smaller */
+/* This is where you set the font size for overlay-title and overlay-blurb as well as the width of your overlay */ 
+@media (min-width: 980px) {
+.overlay {
+    width: 65%;
+}
+.overlay-title {
+    font-size: 5vw;
+    line-height: 5.5vw;
+}
+.overlay-blurb {  
+    font-size: 1.5vw;
+    line-height: 1.8vw;
+}
+}
+</style>
+
+<div class="posrel">
+    <div class="img--lead"></div>
+    <div class="overlay sf-top sf-horizontal-center">
+        <h2 class="overlay-title">&lsquo;Have pity on me&rsquo;</h2>
+        <h1 class="overlay-blurb">Men’s attitudes about women were changing in one Indian village thanks to a gender sensitivity class. But then a dowry dispute turned deadly.</h1>
+    </div>
+    <div class="clear"></div>
+</div>        </div>
+                <div class="container background"><div class="row first">
+            <div class="span4 pull-right padB10 marB10">
+              <div class="bylines bTB1S padTB10 marB10">
+                                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <a href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/people/annie-gowen"><span class="name">Annie Gowen</span></a>                                                    <a href="http://web.archive.org/web/20161209233642/mailto:gowena@washpost.com"><i class="fa fa-envelope"></i></a>                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Photos by</span>
+                                                                                                <span class="name">Poulomi Basu</span>                                                                        </div>
+                      </div>
+              <div class="publish-date">Published on December 9, 2016</div>
+              
+              <!-- <div class=" utility-tools-wrapper">
+                <div class="utility-tools-primary margin-top">
+                  <div class="social-tools ">
+                    <div class="textresizer tool first mobile">
+                      <span class="hideText" tabindex="_tbidx_">Resize Text</span>
+                      <span class="fa fa-font"></span>
+                    </div>
+                    <a onclick="window.print();" tabindex="_tbidx_">
+                      <div class="print tool mobile">
+                        <span class="hideText">Print Article</span>
+                        <span class="fa fa-print"></span>
+                      </div>
+                    </a>
+                    <a href="#comments" tabindex="_tbidx_">
+                      <div class="comments tool last mobile">
+                        <span class="hideText">Comments</span>
+                        <span class="fa fa-comments"></span>
+                        <span id="echo_container" class="echo_container comment-vars echo-counter text" guid="http://www.washingtonpost.com/sf/world/2016/12/09/mens-attitudes-about-women-were-changing-in-this-indian-village-then-a-dowry-dispute-turned-deadly/">0</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div> -->
+              
+            </div>
+            
+        <div class="span8 col">
+<p class="article-body-p" style="text-align: right"><span class="dateline">CHANDAN HULLA, India</span></p>
+<p class="article-body-p">Not long after counselors started a “gender sensitivity” class in this urban village, groups of young men stopped hanging out in front of Mahinder Pal’s corner shop, where they used to ogle and catcall female day laborers who walked by in dusty saris.</p>
+<p class="article-body-p">Enrollment of girls in the local secondary school inched up. One mother asked for and received a small white Chinese-made mobile phone from her husband — and made her first telephone call. Others who had been confined to their homes in the strict Indian custom of purdah were suddenly allowed to venture outside the village boundaries for the first time.</p>
+</div></div><div class="row">        <div class="note pull-right col span4">
+            <p> <strong>Note:</strong> <b>INDIA&#8217;S DIVIDE:</b> This is part of a series about oppression and violence against women in India as a rising generation collides with old social mores.</p>
+<p><b>ABOVE:</b> Rajeena’s sister-in-law Aarifa looks out from Mohammad Sagir’s home. The majority of women from both Hindu and Muslim families observe purdah — wearing a veil with older male relatives and when they step outside.</p>
+        </div>
+        <div class="span8 col">
+<p class="article-body-p">The class was getting tangible results. And it was one of dozens of others that are happening across India in schools, police academies and villages as the government and social service organizations<b> </b>team up to find ways to address the <a href="http://web.archive.org/web/20161209233642/https://www.washingtonpost.com/world/asia_pacific/its-not-easy-for-women-to-own-land-in-india-one-woman-died-fighting-for-hers/2016/09/29/0e5564f6-654e-11e6-b4d8-33e931b5a26d_story.html">centuries-old patriarchal attitudes</a> that still result in widespread oppression and violence against women.</p>
+<p class="article-body-p">In Chandan Hulla, about 30 young men — taxi drivers, shopkeepers and laborers — began gathering in July 2015 in the front hall of one of the village elders to snack on crispy samosas and ponder questions such as: What is masculinity? How would they feel if their daughters were abused or harassed? Are they threatened by the changing roles of women?</p>
+<p class="article-body-p">For a time, it seemed change was possible.</p>
+<p class="article-body-p">“I was an animal before, now I’m on my way to becoming a human being,” said Yunus Khan, 30, one of the class participants.</p>
+</div></div><div class="row">                <div class="span4 col pull-right right-content no-border graphic bg-none graphicPadTB30" id="raw">
+        <!-- Updated 12/7/15 by EY to fix a bug with single quotes --> 
+
+<link rel="stylesheet" href="//web.archive.org/web/20161209233642cs_/http://css.washingtonpost.com/wp-stat/enterprise-raw-code/sharebar/enterprise-sharebar.css?v3"/>
+
+<!-- To switch to grayscale share buttons, remove the 'color-top' class from top-sharebar-wrapper div -->
+
+<div class="top-sharebar-wrapper color-top large-8 large-centered columns cf" id="top-sharebar_123534312321">
+<div class="social-tools-wrapper">
+    <div class="social-tools-primary ">
+        <div class="social-tools ">
+            <!-- FB -->
+            <a id="facebook-raw-share" data-service="facebook" onclick="" tabindex="1">
+                <div class="facebook tool first mobile"><span class="hideText">Share on Facebook</span><span class="fa fa-facebook-square"></span></div>
+            </a>
+            <!-- Twitter -->
+            <a id="twitter-raw-share" data-service="twitter" onclick="" tabindex="2">
+                <div class="twitter tool mobile"><span class="hideText">Share on Twitter</span><span class="fa fa-twitter"></span></div>
+            </a>
+            <!-- Google Plus -->
+            <a id="google-plus-raw-share" data-service="google-plus" onclick="" tabindex="3">
+                <div class="google-plus tool mobile"><span class="hideText">Share on Google Plus</span><span class="fa fa-google-plus"></span></div>
+            </a>
+            <!-- Email -->
+            <a id="email-raw-share" data-service="email" href="" tabindex="4">
+                <div class="email tool mobile"><span class="hideText">Share via Email</span><span class="fa fa-envelope"></span></div>
+            </a>
+            <!-- More -->
+            <a onclick="return false;">
+                <div class="more last tool mobile"><span class="hideText" tabindex="5">More Options</span><span class="fa fa-plus"> </span></div>
+            </a>
+        </div>
+    </div>
+    <div class="social-tools-additional">
+        <div class="social-tools ">
+            <!-- LinkedIn -->
+<!--             <a id="linkedIn-raw-share" data-service="linkedin" onclick="" tabindex="6">
+                <div class="linkedin tool mobile first"><span class="hideText">Share on LinkedIn</span><span class="fa fa-linkedin"></span></div>
+            </a> -->
+            <!-- Pinterest -->
+            <a id="pinterest-raw-share" data-service="pinterest" onclick="" tabindex="7">
+                <div class="pinterest tool mobile first"><span class="hideText">Share on Pinterest</span><span class="fa fa-pinterest"></span></div>
+            </a>
+            <!-- Tumblr  -->
+            <a id="tumblr-raw-share" data-service="tumblr" onclick="" tabindex="8">
+                <div class="tumblr tool mobile last"><span class="hideText">Share on Tumblr</span><span class="fa fa-tumblr"></span></div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+</div>
+
+
+
+        </div>
+                <div class="span8 col">
+<p class="article-body-p">But on Aug. 25, the village would be shaken by an unexpected death that would pit family member against family member and threaten to reverse the hard-won gains of the last year. A young woman was poisoned, and one of the very counselors who tried to teach the men to change their ways was accused with her husband in the case, according to a police affidavit.</p>
+<p class="article-body-p">Police say the young woman died in a dispute over dowry, the coercive practice of gift-giving that some say subjugates brides. The couple has not yet been formally charged, although warrants have been issued for their arrest.</p>
+<p class="article-body-p">In some respects, this is not such an unusual case: In 2015, police records show, dowry disputes in India led to the murders of more than 7,000 women.</p>
+</div></div></div></div>                <div class="section" id="section-1">
+                    <div class="container background">
+                                <div class="row">
+                                    <div class="span12 bTB1S marT10 padTB30 marT10 marB0 padB10small">
+                    
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/Indiaman-02cropped.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+                                    <div class="text-container container ">
+        <div class="text-overlay">
+        <div class="text">
+                        </div>
+        </div>
+        </div>
+                    
+        </div>
+
+        
+                            </div>
+                                <div class="span4 col pull-right">
+                                                <div class="marT30 marT10small">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    The Center for Social Research's gender sensitivity classes in Chandan Hulla target men ages 16 to 35.                                                                        </p>
+                                    </div>
+                                    </div>
+        <div class="span8 marT30 col">
+<h3 class="subhed">Catalyst</h3>
+<p class="article-body-p">Ten years ago, there was no main road in and out of Chandan Hulla, no electricity and only two televisions. A decade later, even children have cellphones, and villagers who sold farmland to developers are tearing down their mud-brick dwellings in favor of multistory homes with balconies and deluxe kitchens.</p>
+<p class="article-body-p">Still, the village of about 5,000, nestled in between the gated farmhouses of Delhi’s elite and event palaces of the city’s booming wedding industry, still occupies a tenuous space between old and new. A young girl wanders its narrow lanes swinging silver pails for buffalo milk as a shiny black Mercedes jolts by, its trunk stuffed with fodder for cattle. It’s not far from the bustling shopping mall where a young student watched “Life of Pi” the night she was gang-raped and murdered four years ago — sparking a national movement for women’s safety and fueling the demand for gender sensitivity training.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S-phone padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox" data-ad-type="bigbox" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p class="article-body-p">Villagers may have embraced consumer advances, but tradition retains its grip: The majority of women from both Hindu and Muslim families observe purdah — wearing a veil with older male relatives and when they step outside — and young women and girls are expected to act modestly and eschew jeans, residents said. “If my sister had a boyfriend, I would cut her,” one of the men outside Pal’s store said recently.</p>
+<p class="article-body-p">The village had a high rate of domestic violence, one reason counselors from the Center for Social Research were drawn to it.</p>
+<p class="article-body-p">The Delhi-based nonprofit group dedicated to a “violence-free gender-just society” was one of the earliest to embrace sensitivity courses as a way to engage men and boys in societal change, founding its Gender Training Institute in 1997.</p>
+<p class="article-body-p">The group now runs programs for young men ages 16 to 35 in corporations, police academies and organizations such as UNICEF.</p>
+<p class="article-body-p">Such work is needed because the attitudes of men have not kept the pace as Indian society has changed and women take a more prominent role in work and society, which creates tension, said Ranjana Kumari, the director.</p>
+<p class="article-body-p">“A lot of people carry the baggage of tradition and archaic, feudal thinking because that’s the way they were socialized,” Kumari said. “We have to change that mind-set.”</p>
+<p class="article-body-p">The other reason Chandan Hulla appealed was it was home turf for one of the counselors, Zahida Khan, a sociable woman with a gaptoothed smile who went door to door to persuade residents to attend the class. Many were neighbors, and some were members of the sprawling Khan clan who knew the counselor had her own problems at home, arguing frequently with her daughter-in-law.</p>
+</div></div><div class="row">        <div class="photo-right span4 col pull-right ">
+                                                    <div class="spinner">
+            <img class=" image " data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/Indiaman-04cropped.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/Indiaman-04cropped.jpg&amp;w=1040&amp;authapi-mob-redir=0"/>
+                    </div>
+                                                            <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    The building where the gender sensitivity classes take place.                                                                        </p>
+                                    </div>
+                            </div>
+        <div class="span8 col">
+<p class="article-body-p">The first session last July got off to a roiling start when the counselors suggested that the wives be present, too. The men — a mix of Muslims and Hindus — protested vigorously and said they feared the women would be “led down the wrong path,” as one of them described it, or would spill too much of their personal information in discussion sessions, particularly in regard to domestic violence.</p>
+<p class="article-body-p">“The law has changed so much now that if you slap your wife the moment you step out of the house there’ll be a bunch of cops standing outside your door,” said Yunus Khan. “This is women’s empowerment.”</p>
+<p class="article-body-p">Khan was full of bravado as he sat recently with other class members at the house where they had spent so much time together in the past year. He made his buddies hoot with laughter.</p>
+<p class="article-body-p">“Such change has come,” he said. “Earlier, a man would gesture to raise his hand against a woman and the woman would cower. Now a man raises his hand and the woman just stares him in the face. This is not a bad thing. I feel good about it. Women are not going to get beaten now without reason.”</p>
+<p class="article-body-p">Khan had more to say. “Earlier I used to beat my wife a lot. If she was late in getting my medicines or something, I would beat her. Now I don’t beat her to the point where she has to go to the doctor.”</p>
+<p class="article-body-p">Khan was far more mild-mannered in a later interview with his family at his home, a one-room dwelling at the edge of a wide field, with a tin roof and two buffalo tied out front. He spoke of his frustrations as an out-of-work tailor who shelved his dreams of becoming a fashion designer after an eye injury.</p>
+<p class="article-body-p">Now, he devotes his attention to educating his three young children.<b id="U1140273160013XDI"> </b>“We will make our dreams come true through them,” he said.</p>
+<p class="article-body-p">His wife, Shalima, 25, quietly defended her husband, saying he was not abusive.</p>
+</div></div></div></div>                <div class="section" id="section-2">
+                    <div class="container background">
+                                <div class="row">
+                                    <div class="span12 bTB1S marT10 padTB30 marT10 marB0 padB10small">
+                    
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/Indiaman-03cropped.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+                                    <div class="text-container container ">
+        <div class="text-overlay">
+        <div class="text">
+                        </div>
+        </div>
+        </div>
+                    
+        </div>
+
+        
+                            </div>
+                                <div class="span4 col pull-right">
+                                                <div class="marT30 marT10small">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    According to Yunus Khan, left, since he started the gender sensitivity classes, he has not hit his wife as hard as before.                                                                        </p>
+                                    </div>
+                                    </div>
+        <div class="span8 marT30 col">
+<h3 class="subhed">Journey</h3>
+<p class="article-body-p">After the uproar, a compromise was reached: the women could come to class, too, but they had to sit separately from men. Zahida Khan and the other counselor used a variety of discussion topics, parables and games to draw in the participants.</p>
+<p class="article-body-p">After a few months, a young electrician in the class named Mohammed Sagir, 25, got to thinking it was high time his wife began leaving the village on her own. She observed purdah, and he had earlier nixed her plan of tutoring a group of Nepali migrant children at a nearby farm on the theory it would expose her to too much “free air.” But something inside him began to soften.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S-phone padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_2" data-ad-type="bigbox|2" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p class="article-body-p">His wife, Rajeena, 21, resisted the idea at first. She had lived a sheltered life growing up in a village in a neighboring state before she moved to Delhi — no school trips, no girlfriends, an education that ended at ninth grade. And she had visions of venturing out past the village boundaries and being kidnapped by human traffickers who would knock her out by covering her mouth with some kind of ether-laced cloth, something she had seen on television.</p>
+<p class="article-body-p">But nevertheless, about two months ago, she found herself walking to the busy main road and climbing aboard the No. 334 bus for her first-ever ride to a nearby commercial center, where she went to a government office to order a copy of her youngest daughter’s birth certificate. The other commuters on the bus helped her figure out how to buy her 10 rupee bus ticket, she said.</p>
+<p class="article-body-p">“My heart was pounding the whole time,” she recalled, laughing at the memory. Scarier still was the walk to a market where she had to sort the family’s paperwork for a ration card, through a wooded area populated by nilgai deer, monkeys and python. Others on the path threw bananas for the monkeys and the animals tore into the fruit with such ferocity that she said, “I was afraid they would eat me, too.”</p>
+<p class="article-body-p">Home safely, Rajeena, who uses only one name, glowed as she recounted her trip.</p>
+<p class="article-body-p">“Now when there is any work to be done I can do it,” she said. “My husband doesn’t tell me not to step out, and my mother-in-law doesn’t tell me not to step out. Earlier, I used to be scared. Now I feel a sort of freedom.”</p>
+</div></div></div></div>                <div class="section" id="section-3">
+                    <div class="container background">
+                                <div class="row">
+                                    <div class="span12 bTB1S marT10 padTB30 marT10 marB0 padB10small">
+                    
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/Indiaman-05cropped.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+                                    <div class="text-container container ">
+        <div class="text-overlay">
+        <div class="text">
+                        </div>
+        </div>
+        </div>
+                    
+        </div>
+
+        
+                            </div>
+                                <div class="span4 col pull-right">
+                                                <div class="marT30 marT10small">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Rajeena, 21, sits with her baby in her home. She had lived a sheltered life before she moved to Delhi, and about two months ago she was on her first-ever ride to a nearby commercial center.                                                                        </p>
+                                    </div>
+                                    </div>
+        <div class="span8 marT30 col">
+<h3 class="subhed">Death</h3>
+<p class="article-body-p">Despite her prominence, many in the village knew that Zahida and her husband had a complicated relationship with their daughter-in law, Arisha, a 19-year-old with hauntingly large brown eyes and dreams of becoming a model. She had eloped with Zahida’s son Saif in 2012, when she was only 15. Her parents opposed the union in part because of the income disparity between the two families — Arisha’s father owned a copper smelting business, and Saif’s father was a taxi driver.</p>
+<p class="article-body-p">The union was troubled from the start. Independent-minded Arisha argued with her husband and scandalized some of the more conservative young men in the village when she was spotted strolling in a nearby mall with friends. She ultimately filed two separate police complaints in 2014 alleging that her in-laws had been physically abusive toward her and were harassing her family for dowry.</p>
+<p class="article-body-p">The centuries-old practice of the families of Indian brides giving dowry to the groom is illegal, but it has become more prevalent across caste and religions in recent years as incomes have risen and Indian families become more status-conscious, said Kumari, the author of a book called “Brides Are Not for Burning.”</p>
+<p class="article-body-p">Dowry is also used as a method by families to extort money and other goods. Often, when there is no more money to be had, the women are burned in kitchen accidents. The country has a special classification for brides killed by their in-laws over dowry, and 7,634 women died this way last year, a growing number, according to crime records.</p>
+</div></div><div class="row">        <div class="photo-right span4 col pull-right ">
+                                                    <div class="spinner">
+            <img class=" image " data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/Cropped-Collage-Indiaman-06-07.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/Cropped-Collage-Indiaman-06-07.jpg&amp;w=1040&amp;authapi-mob-redir=0"/>
+                    </div>
+                                                            <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    <b>LEFT:</b> Arisha Khan, 19, died in an alleged dowry dispute in August. <b>RIGHT:</b> After she died, police found notes on the walls of her room. “I am suffocating in this house,” one read. “Have pity on me.” Another said, “Why me?”                                                                        </p>
+                                    </div>
+                            </div>
+        <div class="span8 col">
+<p class="article-body-p">“So many girls have been killed and we now have a very strong law preventing it, so we should have done away with it as a society by now,” Kumari said. “But people’s desires, aspirations and incomes have grown, and the cost is being paid by the new bride.”</p>
+<p class="article-body-p">According to court documents, Arisha’s family has claimed that Zahida and her husband repeatedly pressed them for dowry, and over time her family gave them a used car and a new motorbike.</p>
+<p class="article-body-p">Police say strife between the young girl and her in-laws boiled over the night of Aug. 24, when Zahida and her husband arrived at the home where she lived and allegedly force-fed her.</p>
+<p class="article-body-p">A cousin who lives next door told police that Arisha Khan said, “They fed me something,” according to court documents. Arisha fell ill and the cousin took the woman to the hospital. She later died there, from ingesting a pesticide, the medical examiner ruled.</p>
+<p class="article-body-p">In the weeks since the incident, Zahida, her husband and son have disappeared, police say, and their cellphones are switched off. But their attorney says that they are not involved in the death, that the troubled young woman committed suicide. After she died, police found she had scrawled notes on the walls of her room. “<i>I am suffocating in this house</i>,” one read. “<i>Have pity on me</i>.” Another said, “<i>Why me</i>?”</p>
+<p class="article-body-p">“This was a love marriage — there was no demand for dowry,” the lawyer, Ajay Raj Singh, said. “They are absolutely innocent. They were not even there””</p>
+<p class="article-body-p">Kumari said it is disturbing that one of her longtime employees would be implicated in such a scandal.</p>
+<p class="article-body-p">“If you have been training people to be sensitive and they get into this kind of situation, then the challenge is much bigger. At what level do we need to start?” she said. “How much Zahida was involved in the whole thing is an issue. She may have wronged someone. We don’t know. But Zahida was not like that.”</p>
+</div></div></div></div>                <div class="section" id="section-4">
+                    <div class="container background">
+                                <div class="row">
+                                    <div class="span12 bTB1S marT10 padTB30 marT10 marB0 padB10small">
+                    
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/Indiaman-08cropped.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+                                    <div class="text-container container ">
+        <div class="text-overlay">
+        <div class="text">
+                        </div>
+        </div>
+        </div>
+                    
+        </div>
+
+        
+                            </div>
+                                <div class="span4 col pull-right">
+                                                <div class="marT30 marT10small">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Mehjabeen Khan, Arisha's mother, and her family have claimed that Arisha's in-laws killed her and repeatedly pressed them for dowry.                                                                         </p>
+                                    </div>
+                                    </div>
+        <div class="span8 marT30 col">
+<h3 class="subhed">Hope</h3>
+<p>No more gender sensitivity classes have been held in Chandan Hulla since Arisha Khan’s death. The case has divided families and cast a pall over the usually friendly lanes, which, in the evening, continue to ring with the sound of buzz saws and hammering as the villagers build new homes, new lives in the wreckage of the old. Yunus Khan and his extended family are building a three-story house, he says, bringing a part of the city to the village he will never get to leave.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S-phone padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_3" data-ad-type="bigbox|3" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p class="article-body-p">“You can try to improve India as much as you can, but India won’t improve when it comes to women’s issues,” Arisha’s aunt, Zaara<b> </b>Khan, said darkly. “How is it improving if in the capital of the country they are poisoning a 19-year-old? People can see it happening in the roads and in the streets, but nobody sees what’s happening inside the house.”</p>
+<p class="article-body-p">But others think differently.</p>
+<p class="article-body-p">Rajeena, the young woman who traveled outside the village for the first time, looks forward to expanding her horizons further — as her family expands. The couple’s fourth child is due early next year.</p>
+<p class="article-body-p">“If not today, change will come eventually,” her husband said. “The children will grow and the parents will age and eventually the children will bring change for themselves.”</p>
+</div></div></div></div>                <div class="section last-section" id="section-5">
+                    <div class="container background">
+                                <div class="row">
+                                    <div class="span12 bTB1S marT10 padTB30 marT10 marB0 padB10small">
+                    
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/world/wp-content/uploads/sites/15/2016/11/Indiaman-09cropped.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+                                    <div class="text-container container ">
+        <div class="text-overlay">
+        <div class="text">
+                        </div>
+        </div>
+        </div>
+                    
+        </div>
+
+        
+                            </div>
+                                <div class="span4 col pull-right">
+                                                <div class="marT30 marT10small">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Rajeena sits with her children and her husband, Mohammad Sagir, 25, an electrician who attends a gender sensitivity class and recently permitted her to leave the village by herself for the first time.                                                                        </p>
+                                    </div>
+                                    </div>
+        <div class="span8 marT30 col">
+<p><strong>INDIA’S DIVIDE:</strong> <em>This is part of a series about oppression and violence against women in India as a rising generation collides with old social mores.</em></p>
+<p><em>Swati Gupta contributed to this report.</em></p>
+</div></div><div class="row">                <div class="span12 bTB1S marT10 no-border graphic bg-none graphicPadTB30" id="raw">
+        <link href="//web.archive.org/web/20161209233642cs_/http://css.washingtonpost.com/wp-stat/sub/css/wp-story-style.css" rel="stylesheet" type="text/css"><div class="sub"><form id="form_5849b965a21b17b905254ea5" role="form" action="" novalidate></form></div>        </div>
+                <div class="span8 marT30 col">
+                <div class="et-pagination">
+                        <div class="clearfix"></div>
+        </div>
+        </div> <!-- Close off span 8 -->
+        </div> <!-- Close off row -->
+        </div>
+        <div class="bT1S padT30 padB10small padB30">
+        <div class="container">
+            <h4 class="light-black marB20 franklin-bold marT0">Editor's Picks</h4>
+        <div class="row">
+                <div class="span6">
+        <div class="row-fluid">
+        <div class="span6">
+            <a href="http://web.archive.org/web/20161209233642/https://www.washingtonpost.com/world/asia_pacific/its-not-easy-for-women-to-own-land-in-india-one-woman-died-fighting-for-hers/2016/09/29/0e5564f6-654e-11e6-b4d8-33e931b5a26d_story.html?utm_term=.8df3d20bcbee">
+                <div class="spinner">
+                    <img class="lazy-image image pick" data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=https://img.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2016/09/29/Interactivity/Images/Compos1475176621.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </a>
+        </div>
+        <div class="span6">
+            <h4 class="franklin-bold marT0 marT10small"><a href="http://web.archive.org/web/20161209233642/https://www.washingtonpost.com/world/asia_pacific/its-not-easy-for-women-to-own-land-in-india-one-woman-died-fighting-for-hers/2016/09/29/0e5564f6-654e-11e6-b4d8-33e931b5a26d_story.html?utm_term=.8df3d20bcbee" class="light-black">It's not easy for women to own land in India. One woman died fighting for hers.</a></h4>
+            <p class="franklin-light size-fourteen lh18em light-grey">Leena Sharma had a vibrant, cosmopolitan life in India’s capital city. Then one day she went missing.            <a href="http://web.archive.org/web/20161209233642/https://www.washingtonpost.com/world/asia_pacific/its-not-easy-for-women-to-own-land-in-india-one-woman-died-fighting-for-hers/2016/09/29/0e5564f6-654e-11e6-b4d8-33e931b5a26d_story.html?utm_term=.8df3d20bcbee" class="light-black">
+                <span class="fa fa-circle-arrow-right"></span>
+            </a>
+            </p>
+        </div>
+        </div>
+        </div>
+                <div class="span6">
+        <div class="row-fluid">
+        <div class="span6">
+            <a href="http://web.archive.org/web/20161209233642/https://www.washingtonpost.com/world/asia_pacific/an-indian-gang-rape-victim-went-to-court-for-11-years-but-her-ordeal-continues/2016/08/15/c92075ce-5757-4073-b8c2-b0dc42f54ed0_story.html?utm_term=.764d5d0e2ba4">
+                <div class="spinner">
+                    <img class="lazy-image image pick" data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=https://img.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2016/07/20/Foreign/Images/2016-05-27_13.10.071465908611-21469031792.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161209233642im_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </a>
+        </div>
+        <div class="span6">
+            <h4 class="franklin-bold marT0 marT10small"><a href="http://web.archive.org/web/20161209233642/https://www.washingtonpost.com/world/asia_pacific/an-indian-gang-rape-victim-went-to-court-for-11-years-but-her-ordeal-continues/2016/08/15/c92075ce-5757-4073-b8c2-b0dc42f54ed0_story.html?utm_term=.764d5d0e2ba4" class="light-black">She was raped at 13. Her case has been in India’s courts for 11 years — and counting.</a></h4>
+            <p class="franklin-light size-fourteen lh18em light-grey">Despite reforms and a new attention to sexual violence, justice is still delayed.            <a href="http://web.archive.org/web/20161209233642/https://www.washingtonpost.com/world/asia_pacific/an-indian-gang-rape-victim-went-to-court-for-11-years-but-her-ordeal-continues/2016/08/15/c92075ce-5757-4073-b8c2-b0dc42f54ed0_story.html?utm_term=.764d5d0e2ba4" class="light-black">
+                <span class="fa fa-circle-arrow-right"></span>
+            </a>
+            </p>
+        </div>
+        </div>
+        </div>
+                </div>
+        </div>
+        </div>
+        
+<style type="text/css">
+#et-title-wrap {
+     display: none;
+}
+.subhed{
+     font-size: 2em;
+     font-family: "PostoniDisplay",Times,serif,Georgia;
+     font-weight: bold;
+}
+
+.note strong {
+     display:none;
+}
+
+.note p b{
+     font-family: "FranklinITCProBold","Franklin Gothic","ITC Franklin Gothic","Arial",sans-serif;
+     font-weight: normal;
+}
+
+@media (max-width: 768px) {
+.photo-right.span4.col.pull-right .image {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 30px 0;
+}
+.row .note.pull-right.col.span4 {
+    display: none;
+}
+
+</style>
+
+<!-- /////////////////////// -->
+<!-- DROP CAP | Added 7/6/15 -->
+
+
+<style type="text/css">
+.firstgraf::first-letter{
+     font-size:600%;
+     float:left;
+     margin-top:.3em;
+     margin-bottom: .1em;
+     font-family: 'PostoniTitling', Times, serif, Georgia;
+     padding-right: 5px;
+     color:#8c8c8c; /* CHANGE ME */
+}
+
+.firefox .firstgraf::first-letter{
+     font-size: 600%;
+     float: left;
+     margin-top: 0.1em;
+     margin-bottom: 0.1em;
+     font-family: "PostoniTitling",Times,serif,Georgia;
+     padding-right: 5px;
+     color: #8c8c8c;
+}
+</style>
+
+<!-- END DROP CAP -->
+<!-- //////////// -->												</div> <!-- home/section -->
+				            <div id="section-comments" class="mobile-inactive bT1S bT0small">
+            <div class="container background">
+            <div class="row last">
+            <div class="span4 col pull-right credits">
+                <h4 class="franklin-bold light-black marT0">Credits</h4>
+                                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <a href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/people/annie-gowen"><span class="name">Annie Gowen</span></a>                                                    <a href="http://web.archive.org/web/20161209233642/mailto:gowena@washpost.com"><i class="fa fa-envelope"></i></a>                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Photos by</span>
+                                                                                                <span class="name">Poulomi Basu</span>                                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Design by</span>
+                                                                                                <span class="name">Joanne Lee</span>                                                                        </div>
+                    </div>
+            <div id="comments" class="span8 col pretty-comments">
+                          <div class="pretty-comments">
+                  <div id="echo_container" class="echo_container count submitbox stream comment-vars" guid="http://www.washingtonpost.com/sf/world/2016/12/09/mens-attitudes-about-women-were-changing-in-this-indian-village-then-a-dowry-dispute-turned-deadly/" maxitemstop="5" sectionid="/conversations" isallcomments="true" includeshare="false">
+                  </div>
+              </div>
+                        <!-- auto-assigns guid from page url -->
+            <!--script type="text/javascript">document.getElementById('echo_container').setAttribute('guid', document.location.href);</script -->
+            <!-- end comments -->
+            </div>
+            </div>
+            </div>
+            </div>
+        			</div> <!-- sections -->
+		</div> <!-- main container -->
+		<div id="et-nav-series-off-canvas">
+			<div id="et-nav-series-inner-off-canvas">
+	            	            	            
+	            	        </div>
+        </div>
+        <div id="et-sections-dropdown-list">
+            <ul class="et-dropdown sections-dropdown et-off-canvas">
+                <li><a href="http://web.archive.org/web/20161209233642/http://www.posttv.com/">Video</a></li>
+                <li><a href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/politics">Politics</a></li>
+                <li><a href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/opinions">Opinions</a></li>
+                <li><a href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/local">Local</a></li>
+                <li><a href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/sports">Sports</a></li>
+                <li><a href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/national">National</a></li>
+                <li><a href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/world">World</a></li>
+                <li><a href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/business">Business</a></li>
+                <li><a href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/business/technology">Tech</a></li>
+                <li><a href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/lifestyle">Lifestyle</a></li>
+                <li><a href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/entertainment">Entertainment</a></li>
+                <li><a href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/classifieds">Classifieds</a></li>
+                <li><a href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/jobs">Jobs</a></li>
+                <li><a href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/realestate">Real Estate</a></li>
+                <li><a href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/events">Events</a></li>
+			</ul>
+			<div class="copyright-details">
+				<p><a class="franklin-bold" href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/">washingtonpost.com</a></p>
+				<p style="font-size: 12px" class="franklin-thin smaller-size">&copy; 1996-2016 The Washington Post</p>
+				<br/>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/terms-of-service/2011/11/18/gIQAldiYiN_story.html">Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/privacy-policy/2011/11/18/gIQASIiaiN_story.html">Privacy Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/discussion-and-submission-guidelines/2011/11/21/gIQAuvIbiN_story.html">Submission and Discussion Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/rss-terms-of-service/2012/01/16/gIQAadFYAQ_story.html">RSS Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161209233642/http://www.washingtonpost.com/how-can-i-opt-out-of-online-advertising-cookies/2011/11/18/gIQABECbiN_story.html">Ad Choices</a></p>
+			</div>
+		</div>
+		       <script type="text/javascript">
+        // Omniture variables
+        var wp_page_name = 'world:article - 20161209 - mens-attitudes-about-women-were-changing-in-this-indian-village-then-a-dowry-dispute-turned-deadly';
+        var wp_track_scrolling = true;
+
+        // etc.
+        // chartbeat variables
+        _sf_async_config={
+          sections: wp_channel,
+          path:document.location.pathname, // defaults to document.location.pathname if you don't pass it.
+          title:document.title,
+          useCanonical:true // defaults to true if you don't pass it.
+        };
+        </script>
+
+        <script type="text/javascript" src="http://web.archive.org/web/20161209233642js_/http://www.washingtonpost.com/wp-srv/analytics/main.js"></script>
+        <script type="text/javascript">
+          //TWP.Analytics.init();
+          // FOR PREPRODUCTION
+          //TWP.Analytics.init( {suite:"preproduction",service:{omniture:true,omnitureTest:false,comscore:false,chartbeat:false}} );
+          TWP.Analytics.init({suite:"production"});
+        </script>
+
+        <!-- COMSCORE NOSCRIPT -->
+        <noscript><img src="http://web.archive.org/web/20161209233642im_/http://b.scorecardresearch.com/p?c1=2&amp;c2=3005617&amp;cv=2.0&amp;cj=1"/></noscript>
+        <!-- COMSCORE NOSCRIPT/Mobile -->
+        <!--<noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=3005617&c4=m.washingtonpost.com/nojs.html" /> </noscript>-->
+        
+        <noscript><img src="//web.archive.org/web/20161209233642im_/http://me.effectivemeasure.net/em_image" alt="" style="position:absolute; left:-5px;"/></noscript>
+        
+      <link rel="stylesheet" id="wapo-footnote-plugin-css" href="http://web.archive.org/web/20161209233642cs_/http://www.washingtonpost.com/sf/world/wp-content/plugins/wapo-footnote/parts/css/plugin.css?ver=1.0.0" type="text/css" media="screen, projection"/>
+<script type="text/javascript" src="http://web.archive.org/web/20161209233642js_/http://js.washingtonpost.com/1d/twp-comments.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161209233642js_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/js/lib/html5.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161209233642js_/http://www.washingtonpost.com/sf/world/wp-content/plugins/wapo-footnote/parts/js/plugin.js?ver=1.0.0"></script>
+  
+              <script type="text/javascript" src="http://web.archive.org/web/20161209233642js_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme.js?1"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161209233642js_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/js/build/enterprise-theme-nav.js?1"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20161209233642js_/http://js.washingtonpost.com/posttv/resources/js/posttv/vendor/pubsub.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161209233642js_/https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20161209233642js_/http://js.washingtonpost.com/posttv/resources/js/posttv/posttv-player.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161209233642js_/http://www.washingtonpost.com/sf/world/wp-content/themes/enterprise-theme-nav/js/build/embedded-content-video.js"></script>
+              <script src="http://web.archive.org/web/20161209233642js_/http://js.washingtonpost.com/wp-srv/ad/loaders/latest/js/min/loader.min.js" data-ad-site="wp" data-ad-page-type="responsive"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20161209233642js_/http://js.washingtonpost.com/wp-stat/enterprise-raw-code/sharebar/enterprise-sharebar.js"></script>              <script type="text/javascript">
+$(document).ready(function() {
+
+    //append social buttons to bylines
+    $('.bylines').parent().append($('.top-sharebar-wrapper').parent());
+
+    //store metadata
+    var ogTitleSelector = document.querySelector('meta[property="og:title"]');
+    var ogTitleContent = (encodeURIComponent(ogTitleSelector && ogTitleSelector.getAttribute("content"))).replace(/'/g, "%27");
+
+    var ogImageSelector = document.querySelector('meta[property="og:image"]');
+    var ogImageContent = ogImageSelector && ogImageSelector.getAttribute("content");
+
+    var ogURLSelector = document.querySelector('meta[property="og:url"]');
+    var ogURLContent = encodeURI(ogURLSelector && ogURLSelector.getAttribute("content"));
+
+    var ogDescriptionSelector = document.querySelector('meta[property="og:description"]');
+    var ogDescriptionContent = (encodeURIComponent(ogDescriptionSelector && ogDescriptionSelector.getAttribute("content"))).replace(/'/g, "%27");
+
+    //populate share button click events with metadata
+    var facebookString = "window.open('http://web.archive.org/web/20161209233642/https://www.facebook.com/sharer/sharer.php?u="+ogURLContent+"','share_facebook','width=658,height=354,scrollbars=no');return false;";
+    $('#facebook-raw-share')[0].setAttribute("onclick", facebookString);
+
+    var twitterString = "window.open('http://web.archive.org/web/20161209233642/https://twitter.com/share?url="+ogURLContent+"&amp;text="+ogTitleContent+"','share_twitter','width=550, height=350, scrollbars=no');return false;";
+    $('#twitter-raw-share')[0].setAttribute("onclick", twitterString);
+
+    var googlePlusString = "window.open('http://web.archive.org/web/20161209233642/https://plus.google.com/share?url="+ogURLContent+"','share_google-plus','width=832,height=472,scrollbars=no');return false;"; 
+    $('#google-plus-raw-share')[0].setAttribute("onclick", googlePlusString);
+
+    var emailString = "mailto:?subject="+ogTitleContent+" from the Washington Post&body="+ogURLContent+""; 
+    $('#email-raw-share')[0].setAttribute("href", emailString);
+
+    // var linkedInString = "window.open('http://web.archive.org/web/20161209233642/http://www.linkedin.com/shareArticle?mini=true&amp;url="+ogURLContent+"&amp;title=','share_linkedin','width=830,height=460,scrollbars=no');return false;"; 
+    // $('#linkedIn-raw-share')[0].setAttribute("onclick", linkedInString);
+
+    var pinterestString = "window.open('//web.archive.org/web/20161209233642/http://pinterest.com/pin/create/bookmarklet/?url="+ogURLContent+"&amp;media="+ogImageContent+"&amp;description=','share_pinterest','width=550,height=450,scrollbars=no');return false;"; 
+    $('#pinterest-raw-share')[0].setAttribute("onclick", pinterestString);
+
+    var tumblrString = "window.open('http://web.archive.org/web/20161209233642/http://www.tumblr.com/share/link?url="+ogURLContent+"&amp;name="+ogTitleContent+"&amp;description="+ogDescriptionContent+"','share_tumblr','width=550,height=450,scrollbars=no');return false;"; 
+    $('#tumblr-raw-share')[0].setAttribute("onclick", tumblrString);
+}); 
+</script>              <script src="http://web.archive.org/web/20161209233642js_/https://code.jquery.com/jquery-1.11.3.min.js"></script>              <script>$(function(){SubmissionPlatform.services.displayForm("5849b965a21b17b905254ea5", "prod");});</script>              <script src="//web.archive.org/web/20161209233642js_/http://sub.washingtonpost.com/javascripts/embed/0.0.5/embed.min.js"></script>              <script>
+if ($.browser.mozilla) { $('body').addClass('firefox'); }
+</script>    
+<!-- This website is powered by Piklist. Learn more at http://piklist.com/ -->
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"707aabbc5c","applicationID":"4157428","transactionName":"MlABYUsACEJXARVaXgsaIlZNCAlfGQsPV1Qd","queueTime":0,"applicationTime":716,"ttGuid":"","agentToken":"","atts":"HhcCFwMaG0w=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

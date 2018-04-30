@@ -20,6 +20,7 @@ The directories are described as follows:
 The directories are named according to a website's md5 hash which can be seen in `news-websites-hashes.json`.
 - The `stories/if_/` directory contains the news stories retrieved from the Internet Archive without banner/HTML injections.
 - The `col_sim` directory contains the similarity calculations per day for the links where k = 1, 3, 10.
+- The `error` directory contains files related to failed requests to the Internet Archive.
 
 Aside from those directories there are also some JSON and CSV files that are subsets for other parts of this project, usually summarizing the data.
 For example, `links_per_day.json` describes the links used per day to find the similarity for k = 10 stories from each news site.

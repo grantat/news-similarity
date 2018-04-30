@@ -1,0 +1,2088 @@
+<!DOCTYPE html>
+    <!--[if IE 7]><html class="ie ie7" lang="en-US"><![endif]-->
+    <!--[if IE 8]><html class="ie ie8" lang="en-US"><![endif]-->
+    <!--[if !(IE 7) | !(IE 8)  ]><!--><html lang="en-US"><!--<![endif]-->
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app17.us.archive.org';v.server_ms=354;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/static/js/wbhack.js?v=1521067262.0" charset="utf-8"></script>
+
+<script type="text/javascript">
+__wbhack.init('http://web.archive.org/web');
+</script>
+<link rel="stylesheet" type="text/css" href="/static/css/banner-styles.css?v=1521067262.0" />
+<link rel="stylesheet" type="text/css" href="/static/css/iconochive.css?v=1521067262.0" />
+
+<!-- End Wayback Rewrite JS Include -->
+        <meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+        <title>In Greenland, a once doubtful scientist witnesses climate change's troubling toll | The Washington Post</title>                
+                
+        <meta property="fb:app_id" content="41245586762"/>
+        <meta property="article:publisher" content="https://www.facebook.com/washingtonpost"/>
+        <meta name="twitter:site" value="@WashingtonPost"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="og:title" content="In Greenland, a once doubtful scientist witnesses climate change's troubling toll">
+        <meta property="og:image" content="http://web.archive.org/web/20170101041658im_/http://www.washingtonpost.com/sf/business/wp-content/uploads/sites/20/2016/12/PetermanFeature.jpg">
+        <meta property="og:url" content="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/sf/business/2016/12/30/with-enough-evidence-even-skepticism-will-thaw/">
+        <meta property="og:site_name" content="Washington Post">
+        <meta property="og:type" content="article">
+        <meta property="og:description" content="Petermann glacier has lost huge ice islands since 2010, and Andreas Muenchow thinks another break is coming.">
+
+        <meta name="description" content="In Greenland, a once doubtful scientist witnesses climate change's troubling toll">
+        <meta name="keywords" content="climate change, greenland, climate change effects, melting ice, is climate change real">
+        <meta name="news_keywords" content="climate change, greenland, climate change effects, melting ice, is climate change real">
+
+        
+         <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="http://web.archive.org/web/20170101041658im_/http://www.washingtonpost.com/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://web.archive.org/web/20170101041658im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://web.archive.org/web/20170101041658im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://web.archive.org/web/20170101041658im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="http://web.archive.org/web/20170101041658im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-57-precomposed.png">
+
+                
+        		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/web.archive.org\/web\/20170101041658\/http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/web.archive.org\/web\/20170101041658\/http:\/\/www.washingtonpost.com\/sf\/business\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.7"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="rs-plugin-settings-css" href="http://web.archive.org/web/20170101041658cs_/http://www.washingtonpost.com/sf/business/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.1" type="text/css" media="all"/>
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<link rel="stylesheet" id="wp-bootstrap-min-css" href="http://web.archive.org/web/20170101041658cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-responsive-css" href="http://web.archive.org/web/20170101041658cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap-responsive.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-fonts-css" href="http://web.archive.org/web/20170101041658cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/fonts.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-inline-css" href="http://web.archive.org/web/20170101041658cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/inline.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-font-awesome-min-css" href="http://web.archive.org/web/20170101041658cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-v4.2-min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-enterprise-theme-style-css" href="http://web.archive.org/web/20170101041658cs_/http://www.washingtonpost.com/sf/business/wp-content/themes/enterprise-theme-nav/style.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-pretty-comments-css" href="http://web.archive.org/web/20170101041658cs_/http://css.wpdigital.net/wp-srv/graphics/css/pretty-comments.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="print-css" href="http://web.archive.org/web/20170101041658cs_/http://www.washingtonpost.com/sf/business/wp-content/themes/enterprise-theme-nav/css/print.css?ver=0.3.1.5" type="text/css" media="print"/>
+<!--[if IE]>
+<link rel='stylesheet' id='wp-general-ie-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/iefonts.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='wp-font-awesome-ie-min-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-ie7.min.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/http://www.washingtonpost.com/sf/business/wp-includes/js/jquery/jquery.js?ver=1.11.2"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/http://www.washingtonpost.com/sf/business/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/http://www.washingtonpost.com/sf/business/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/http://www.washingtonpost.com/sf/business/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/http://js.washingtonpost.com/1h/twp-scripts.js?ver=4.2.7"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/http://js.washingtonpost.com/1h/twp-internal.js?ver=4.2.7"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ET_OM = {"omniture":"business","wp_page_num":"1 of 1","wp_blogname":"","wp_author":"Madia Brown,Chris Mooney,Whitney Shefte,Laris Karklis,Dani Johnson","commercialNode":"business"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/http://www.washingtonpost.com/sf/business/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme-ad-scripts.js?ver=1418247459"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/http://js.washingtonpost.com/pb/resources/js/utils/control-mod.js?ver=4.2.7"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.washingtonpost.com/sf/business/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.washingtonpost.com/sf/business/wp-includes/wlwmanifest.xml"/> 
+<link rel="prev" title="7,000 miles to salvation" href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/sf/business/2016/12/14/migrant-workers-barred-from-us-border/"/>
+<meta name="generator" content="WordPress 4.2.7"/>
+<link rel="canonical" href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/sf/business/2016/12/30/with-enough-evidence-even-skepticism-will-thaw/"/>
+<link rel="shortlink" href="http://www.washingtonpost.com/sf/business/?p=2993"/>
+<meta name="generator" content="Piklist 0.9.9.7c"/>
+<link rel="https://api.w.org/" href="http://www.washingtonpost.com/sf/business/wp-json/"/>
+        <script type="text/javascript">
+          var ET_ASSETS = {
+            'post_title': 'With enough evidence, even skepticism will thaw',
+            'post_url': 'http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/sf/business/2016/12/30/with-enough-evidence-even-skepticism-will-thaw/',
+          };
+        </script>
+      <meta name="generator" content="Powered by Slider Revolution 5.2.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."/>
+        
+        <script>
+          var $ = jQuery.noConflict();
+        </script>
+
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="http://www.washingtonpost.com/sf/business/wp-content/themes/enterprise-theme-nav/css/ie-fix.css" />
+        <![endif]-->
+    </head>
+    <body class="single single-post postid-2993 single-format-standard"> 
+        <div id="et-nav" style="top:0px">
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-sections-dropdown">
+                    <div id="et-nav-sections-regular-dropdown-wrapper" class="hidden-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-full-click"> 
+                            <div class="pull-left">Sections</div>
+                            <div class="share-icon pull-left"><i class="fa fa-reorder"></i></div>
+                        </a>
+                    </div>
+                    <div id="et-nav-sections-reduced-dropdown-wrapper" class="visible-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-reduced-click">
+                            <span class="share-icon pull-left"><i class="fa fa-reorder"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-company-icon">
+                    <a class="branding" href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/">
+                        <img id="branding-at-top" src="http://web.archive.org/web/20170101041658im_/http://www.washingtonpost.com/sf/business/wp-content/themes/enterprise-theme-nav/images/wp_full_white.png"/>
+                        <img id="branding-during-scroll" src="http://web.archive.org/web/20170101041658im_/http://www.washingtonpost.com/sf/business/wp-content/themes/enterprise-theme-nav/images/wp_logo_white.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="pull-left border-left hidden-phone no-left-margin-padding" id="et-title-wrap">
+                <div id="et-nav-story-title" class="hide-title-indent">
+                    <a href="#"><p>With enough evidence, even skepticism will thaw</p></a>
+                </div>
+            </div>
+
+
+                        
+            <div class="pull-right hidden-phone" id="share-series">
+                
+                <div class="pull-left border-left relative">
+                    <div id="et-nav-share-dropdown">
+                        <a href="#" class="clearfix pull-right">
+                            <div class="pull-left">
+                                <p class="pull-left">Share</p>
+                                <p class="share-icon pull-left"><i class="fa fa-share"></i></p>
+                            </div>
+                        </a>
+                        <ul class="et-dropdown hidden no-series-nav">
+                          <li><a target="_blank" href="http://web.archive.org/web/20170101041658/https://facebook.com/dialog/feed?app_id=41245586762&amp;link=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Fbusiness%2F2016%2F12%2F30%2Fwith-enough-evidence-even-skepticism-will-thaw%2F&amp;name=In+Greenland%2C+a+once+doubtful+scientist+witnesses+climate+change%27s+troubling+toll&amp;redirect_uri=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Fbusiness%2F2016%2F12%2F30%2Fwith-enough-evidence-even-skepticism-will-thaw%2F"><i class="fa fa-facebook"></i><span class="social-name">Facebook</span></a></li>
+                          <li><a target="_blank" href="http://web.archive.org/web/20170101041658/https://twitter.com/intent/tweet?text=In+Greenland%2C+a+once+doubtful+scientist+witnesses+climate+change%27s+troubling+toll http%3A%2F%2Fwapo.st%2F2ilO2Qc"><i class="fa fa-twitter"></i><span class="social-name">Twitter</span></a></li>
+                          <li><a href="http://web.archive.org/web/20170101041658/mailto:/?subject=In Greenland, a once doubtful scientist witnesses climate change's troubling toll from the Washington Post&amp;body=http%3A%2F%2Fwapo.st%2F2ilO2Qc"><i class="fa fa-envelope"></i><span class="social-name">Email</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                            </div> 
+
+                    </div>
+
+    	<div id="main-container" style="padding-top: 50px">
+	<div class="sections">
+					<div class="home section" id="section-home">                <div class=" no-border graphic bg-none graphicPadTB30" id="raw">
+        <link href="http://web.archive.org/web/20170101041658cs_/https://www.washingtonpost.com/wp-stat/enterprise-raw-code/image-overlay/image-overlay.css" rel="stylesheet" type="text/css">
+
+<link href="http://web.archive.org/web/20170101041658cs_/https://www.washingtonpost.com/wp-stat/enterprise-raw-code/loopingVideo-topper/loopingVideo-topper.css" rel="stylesheet" type="text/css">
+
+
+<style>
+
+.overlay-title {
+    font-family: 'PostoniDisplay', Georgia; 
+}
+.overlay-blurb {
+    font-family: 'FranklinITCProLight', Helvetica, Arial;
+}
+
+/* These styles only apply to bigger screens because we have set style for tablets and smaller */
+/* This is where you set the font size for overlay-title and overlay-blurb as well as the width of your overlay */ 
+@media (min-width: 980px) {
+    .overlay {
+        width: 45%;
+    }
+    .overlay-title {
+        font-size: 4.5vw;
+        line-height: 5vw;
+    }
+    .overlay-blurb {  
+        font-size: 1.5vw;
+        line-height: 2.5vw;
+    }
+}
+
+/* Use this style if you want a different image for smalls screens. Delete if not changing the image URL. */
+@media (max-width: 767px) {
+
+}
+
+</style>
+
+
+
+<div class="posrel">
+
+    <div id="loopingVideo"></div>
+    <div class="overlay sf-top sf-left">
+        <h2 class="overlay-title">With enough evidence, even skepticism will thaw</h2>
+        <h1 class="overlay-blurb"> As one of Greenland’s largest ice shelves shrinks, a once-doubtful scientist has come around to the role of climate change in melting it.</h1>
+        <a class="pg-button" id="overlay-button"><p>Click to hear audio</p></a>
+    </div>
+</div>
+
+
+
+
+
+
+
+        </div>
+                <div class="container background"><div class="row first">
+            <div class="span4 pull-right padB10 marB10">
+              <div class="bylines bTB1S padTB10 marB10">
+                                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/people/chris-mooney"><span class="name">Chris Mooney</span></a>                                                    <a href="http://web.archive.org/web/20170101041658/mailto:christopher.mooney@washpost.com"><i class="fa fa-envelope"></i></a>                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Video by</span>
+                                                                                                <a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/whitney-shefte/2011/05/20/AFmD0z7G_page.html"><span class="name">Whitney Shefte</span></a>                                                                        </div>
+                      </div>
+              <div class="publish-date">Published on December 30, 2016</div>
+              
+              <!-- <div class=" utility-tools-wrapper">
+                <div class="utility-tools-primary margin-top">
+                  <div class="social-tools ">
+                    <div class="textresizer tool first mobile">
+                      <span class="hideText" tabindex="_tbidx_">Resize Text</span>
+                      <span class="fa fa-font"></span>
+                    </div>
+                    <a onclick="window.print();" tabindex="_tbidx_">
+                      <div class="print tool mobile">
+                        <span class="hideText">Print Article</span>
+                        <span class="fa fa-print"></span>
+                      </div>
+                    </a>
+                    <a href="#comments" tabindex="_tbidx_">
+                      <div class="comments tool last mobile">
+                        <span class="hideText">Comments</span>
+                        <span class="fa fa-comments"></span>
+                        <span id="echo_container" class="echo_container comment-vars echo-counter text" guid="http://www.washingtonpost.com/sf/business/2016/12/30/with-enough-evidence-even-skepticism-will-thaw/">0</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div> -->
+              
+            </div>
+            
+        <div class="span8 col">
+<p>Petermann Ice Shelf, GREENLAND</p>
+<p class="firstgraf">Half a decade before he took this trip to the farthest reaches of the north, Andreas Muenchow had his doubts about whether warming temperatures were causing one of the world’s great platforms of ice to melt and fall apart.</p>
+<p>He even stood before Congress in 2010 and balked on whether climate change might have caused a mammoth chunk of ice, four times the size of Manhattan, to break off from this floating, 300-square-mile shelf. The University of Delaware oceanographer said he wasn’t sure. He needed more evidence.</p>
+</div></div><div class="row">                <div class="span4 col pull-right right-content no-border graphic bg-none graphicPadTB30" id="raw">
+        <div id="g-PetermannLOC-box" class="ai2html">
+	<!-- Generated by ai2html v0.55 - 2016-12-29 - 17:00 -->
+	<!-- ai file: PetermannLOC -->
+
+	<style type="text/css" media="screen,print">
+		.g-artboard {
+			margin:0 auto;
+		}
+	</style>
+
+
+	<style type="text/css" media="screen,print">
+		/* Custom CSS block 1 */
+		#g-PetermannLOC-280 .g-aiPstyle0,
+		#g-PetermannLOC-280 .g-aiPstyle9{
+		    text-shadow: 0px 0px 3px #fff;
+		}
+		
+		#g-PetermannLOC-280 {
+			margin-left: 0;
+		}
+		
+		@media (max-width: 767px) {
+			#g-PetermannLOC-280{
+				margin:0 auto;
+			}
+		 }
+	</style>
+
+	<!-- Artboard: 280 -->
+	<div id="g-PetermannLOC-280" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-PetermannLOC-280{
+				position:relative;
+				overflow:hidden;
+				width:278px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-PetermannLOC-280 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-PetermannLOC-280 .g-aiPstyle0 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:17px;
+				text-align:center;
+				color:#000000;
+			}
+			#g-PetermannLOC-280 .g-aiPstyle1 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:13px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#ffffff;
+			}
+			#g-PetermannLOC-280 .g-aiPstyle2 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:15px;
+				letter-spacing:-0.00416666666667em;
+				color:#ffffff;
+			}
+			#g-PetermannLOC-280 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:13px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannLOC-280 .g-aiPstyle4 {
+				font-family:Georgia,serif;
+				font-size:14px;
+				line-height:15px;
+				font-style:italic;
+				letter-spacing:-0.00416666666667em;
+				color:#b0b2b5;
+			}
+			#g-PetermannLOC-280 .g-aiPstyle5 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:11px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannLOC-280 .g-aiPstyle6 {
+				font-family:Georgia,serif;
+				font-size:14px;
+				line-height:15px;
+				font-style:italic;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#b0b2b5;
+			}
+			#g-PetermannLOC-280 .g-aiPstyle7 {
+				font-family:Georgia,serif;
+				font-size:14px;
+				line-height:15px;
+				font-style:italic;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#f0f1f4;
+			}
+			#g-PetermannLOC-280 .g-aiPstyle8 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				font-style:italic;
+				text-align:center;
+				color:#000000;
+			}
+			#g-PetermannLOC-280 .g-aiPstyle9 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:17px;
+				text-align:center;
+				color:#000000;
+			}
+			#g-PetermannLOC-280 .g-aiPstyle10 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:18px;
+				line-height:17px;
+				font-style:italic;
+				text-align:center;
+				color:#000000;
+			}
+			#g-PetermannLOC-280 .g-aiPstyle11 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:17px;
+				text-align:right;
+				color:#000000;
+			}
+			#g-PetermannLOC-280 .g-aiPstyle12 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				text-align:center;
+				color:#000000;
+			}
+			#g-PetermannLOC-280 .g-aiPstyle13 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:16px;
+				text-align:center;
+				color:#000000;
+			}
+			#g-PetermannLOC-280 .g-aiPstyle14 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+		</style>
+		<div id="g-PetermannLOC-280-graphic">
+			<img id="g-ai0-0" class="g-aiImg" src="http://web.archive.org/web/20170101041658im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/PetermannGlacier/PetermannLOC-280.jpg?c=262"/>
+			<div id="g-ai0-1" class="g-settings g-aiAbs" style="top:0.1456%;left:60.6554%;width:104.7374%;margin-left:-52.3687%;">
+				<p class="g-aiPstyle0">Petermann Glacier</p>
+			</div>
+			<div id="g-ai0-2" class="g-settings g-aiAbs" style="top:7.1325%;right:45.6868%;">
+				<p class="g-aiPstyle1">North</p>
+				<p class="g-aiPstyle1">Pole</p>
+			</div>
+			<div id="g-ai0-3" class="g-settings g-aiAbs" style="top:7.4236%;left:83.2567%;">
+				<p class="g-aiPstyle2">Arctic </p>
+				<p class="g-aiPstyle2">Circle</p>
+			</div>
+			<div id="g-ai0-4" class="g-settings g-aiAbs" style="top:14.5560%;right:19.7109%;">
+				<p class="g-aiPstyle3">Qaanaaq</p>
+			</div>
+			<div id="g-ai0-5" class="g-settings g-aiAbs" style="top:18.9229%;right:11.9041%;">
+				<p class="g-aiPstyle3">Nuuk</p>
+			</div>
+			<div id="g-ai0-6" class="g-settings g-aiAbs" style="top:20.3785%;left:1.4255%;">
+				<p class="g-aiPstyle4">Pacific</p>
+				<p class="g-aiPstyle4">Ocean</p>
+			</div>
+			<div id="g-ai0-7" class="g-settings g-aiAbs" style="top:32.0233%;left:45.4089%;">
+				<p class="g-aiPstyle5">Ottawa</p>
+			</div>
+			<div id="g-ai0-8" class="g-settings g-aiAbs" style="top:34.0611%;right:4.8890%;">
+				<p class="g-aiPstyle6">Atlantic</p>
+				<p class="g-aiPstyle6">Ocean</p>
+			</div>
+			<div id="g-ai0-9" class="g-settings g-aiAbs" style="top:37.2635%;left:50.0574%;">
+				<p class="g-aiPstyle5">D.C.</p>
+			</div>
+			<div id="g-ai0-10" class="g-Legend g-aiAbs" style="top:42.7948%;right:7.7572%;">
+				<p class="g-aiPstyle7">Arctic Ocean</p>
+			</div>
+			<div id="g-ai0-11" class="g-Legend g-aiAbs" style="top:48.4716%;left:25.3198%;width:75.3485%;margin-left:-37.6742%;">
+				<p class="g-aiPstyle8">Ellesmere Island</p>
+				<p class="g-aiPstyle9">(CANADA)</p>
+			</div>
+			<div id="g-ai0-12" class="g-Legend g-aiAbs" style="top:68.4134%;left:81.4457%;width:67.3245%;margin-left:-33.6622%;">
+				<p class="g-aiPstyle10">GREENLAND</p>
+				<p class="g-aiPstyle9">(DENMARK)</p>
+			</div>
+			<div id="g-ai0-13" class="g-Legend g-aiAbs" style="top:80.0582%;right:41.7705%;">
+				<p class="g-aiPstyle11">Petermann</p>
+				<p class="g-aiPstyle11">Glacier</p>
+			</div>
+			<div id="g-ai0-14" class="g-Legend g-aiAbs" style="top:84.8617%;left:84.0249%;width:43.4985%;margin-left:-21.7492%;">
+				<p class="g-aiPstyle12">Inland</p>
+				<p class="g-aiPstyle12">ice sheet</p>
+			</div>
+			<div id="g-ai0-15" class="g-Legend g-aiAbs" style="top:92.8675%;left:86.8886%;width:37.8864%;margin-left:-18.9432%;">
+				<p class="g-aiPstyle13">40 MILES</p>
+			</div>
+			<div id="g-ai0-16" class="g-Layer_11 g-aiAbs" style="top:97.2344%;left:1.1468%;">
+				<p class="g-aiPstyle14">Source: NASA MODIS</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- End ai2html - 2016-12-29 - 17:00 -->
+</div>        </div>
+                <div class="span8 col">
+<p>But then the Petermann Ice Shelf lost another two Manhattans of ice in 2012, and Muenchow decided to see for himself, launching a project to study the ice shelf intensively.</p>
+<p>He was back again in late August, no longer a skeptic. It was hard not to be a believer here at 81 degrees north latitude, where Greenland and Canada very nearly touch. The surface of the bumpy and misshapen ice was covered with pools and puddles, in some cases frozen over but with piercing blue water beneath. Streams carved through the vast shelf, swelling into larger ponds or even small lakes.</p>
+<p>The meltwater was a sign the ice shelf was growing more fragile, moving closer to the day when it might give up more city-size chunks of ice.</p>
+<p>The Petermann Ice Shelf serves as a plug of sorts to one of Greenland’s largest glaciers, lodged in a fjord that, from the height of its mountain walls down to the lowest point of the seafloor, is deeper than the Grand Canyon. There’s enough ice piled up behind Petermann to raise oceans globally by nearly a foot someday.</p>
+<p>The question for Muenchow is no longer whether Petermann is changing — it’s how fast it could give up still more ice to the seas. That’s why he and British Antarctic Survey colleague Keith Nicholls ventured here by helicopter to take the measure of the Petermann shelf, which had been shifting and surging in a way that damaged the scientific instruments they had left behind a year earlier — behaving as though it didn’t want to be known.</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/business/wp-content/uploads/sites/20/2016/12/Petermann11478022611.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20170101041658im_/http://www.washingtonpost.com/sf/business/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Members of the crew refuel the helicopter at a spot where they had left fuel on a previous trip in anticipation of this one.                                                                             (Whitney Shefte / The Washington Post)
+                                                </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<h3>CHAPTER 1</h3>
+<h2>Hard data, hard to reach</h2>
+<p class="firstgraf">Greenland is the largest island on Earth and home to its second-largest ice sheet after East Antarctica. It’s pouring 281 billion tons of that ice into the ocean each year, a major contribution to rising seas. Much of the loss comes from some 200 outlet glaciers, which extend out to the sea like fingers of the larger ice sheet.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S-phone padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox" data-ad-type="bigbox" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p>The great fear is that Greenland’s ice loss is accelerating, and that’s why much attention has been directed at Petermann. One expert has called it one of the island’s three major “floodgates,” and the only one that has not yet opened. In part, the Petermann Ice Shelf has been slower to disintegrate simply because it is in a much colder place.</p>
+<p>But that is beginning to change, and Muenchow and Nicholls are trying to understand the mechanics of how it might break apart.</p>
+<p>They are old-school scientists, focused on gathering hard data in the world’s most remote places. Each has a “great record in terms of publications,” says Marco Tedesco, a Greenland researcher at Columbia University’s Lamont-Doherty Earth Observatory.</p>
+<p>Muenchow, who was born in Germany, traveled to the United States to pursue oceanography and got his PhD studying the Delaware River. But before long he became infatuated with the idea of probing places that few have reached before, despite the hardships of leaving family and the comforts of home. The search took him five times to the Nares Strait, a tiny ocean passageway between northwest Greenland and Canada near Petermann glacier.</p>
+</div></div><div class="row">                <div class="span4 col pull-right right-content no-border visible-tablet visible-desktop graphic bg-none graphicPadTB30" id="raw">
+        <div id="g-PetermannSat-box" class="ai2html">
+	<!-- Generated by ai2html v0.55 - 2016-12-29 - 15:40 -->
+	<!-- ai file: PetermannSat -->
+
+	<style type="text/css" media="screen,print">
+		.g-artboard {
+			margin:0 auto;
+		}
+	</style>
+
+
+	<style type="text/css" media="screen,print">
+		/* Custom CSS block 1 */
+		
+		#g-PetermannSat-280 .g-aiPstyle6,
+		#g-PetermannSat-280 .g-aiPstyley,{
+		    text-shadow: 0px 0px 3px #000;
+		}
+		
+		
+		#g-PetermannSat-280 .g-aiPstyle0,
+		#g-PetermannSat-280 .g-aiPstyle1,
+		#g-PetermannSat-280 .g-aiPstyle4,
+		#g-PetermannSat-280 .g-aiPstyle2,
+		#g-PetermannSat-280 .g-aiPstyle9{
+		    text-shadow: 0px 0px 3px #fff;
+		}
+		
+		
+		
+		#g-PetermannSat-280 {
+			margin-left: 0;
+		}
+		
+		@media (max-width: 767px) {
+			#g-PetermannSat-280{
+				margin:0 auto;
+			}
+		 }
+	</style>
+
+	<!-- Artboard: 280 -->
+	<div id="g-PetermannSat-280" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-PetermannSat-280{
+				position:relative;
+				overflow:hidden;
+				width:280px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-PetermannSat-280 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-PetermannSat-280 .g-aiPstyle0 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannSat-280 .g-aiPstyle1 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:17px;
+				text-align:center;
+				color:#ffffff;
+			}
+			#g-PetermannSat-280 .g-aiPstyle2 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				font-style:italic;
+				text-align:center;
+				color:#ffffff;
+			}
+			#g-PetermannSat-280 .g-aiPstyle3 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#fff200;
+			}
+			#g-PetermannSat-280 .g-aiPstyle4 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#fff200;
+			}
+			#g-PetermannSat-280 .g-aiPstyle5 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:17px;
+				line-height:7px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#ffffff;
+			}
+			#g-PetermannSat-280 .g-aiPstyle6 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#ffffff;
+			}
+			#g-PetermannSat-280 .g-aiPstyle7 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:17px;
+				line-height:7px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#fff200;
+			}
+			#g-PetermannSat-280 .g-aiPstyle8 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				text-align:center;
+				color:#000000;
+			}
+			#g-PetermannSat-280 .g-aiPstyle9 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:15px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannSat-280 .g-aiPstyle10 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:15px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannSat-280 .g-aiPstyle11 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+		</style>
+		<div id="g-PetermannSat-280-graphic">
+			<img id="g-ai0-0" class="g-aiImg" src="http://web.archive.org/web/20170101041658im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/PetermannGlacier/PetermannSat-280.jpg?c=371"/>
+			<div id="g-ai0-1" class="g-Graphic_type g-aiAbs" style="top:0.2605%;left:0.7136%;">
+				<p class="g-aiPstyle0">How the ice shelf edge has</p>
+				<p class="g-aiPstyle0">changed since 2008</p>
+			</div>
+			<div id="g-ai0-2" class="g-Graphic_type g-aiAbs" style="top:5.5579%;left:86.9514%;width:36.6783%;margin-left:-18.3391%;">
+				<p class="g-aiPstyle1">10 MILES</p>
+			</div>
+			<div id="g-ai0-3" class="g-Map_type g-aiAbs" style="top:8.1632%;left:34.8795%;width:33.2561%;margin-left:-16.6281%;">
+				<p class="g-aiPstyle2">Sea ice</p>
+			</div>
+			<div id="g-ai0-4" class="g-Map_type g-aiAbs" style="top:17.3685%;left:60.6083%;width:27.4805%;margin-left:-13.7402%;">
+				<p class="g-aiPstyle3">2008</p>
+			</div>
+			<div id="g-ai0-5" class="g-Map_type g-aiAbs" style="top:18.8449%;left:60.6669%;width:24.5480%;margin-left:-12.2740%;">
+				<p class="g-aiPstyle4">shelf</p>
+				<p class="g-aiPstyle4">edge</p>
+			</div>
+			<div id="g-ai0-6" class="g-Map_type g-aiAbs" style="top:35.1713%;left:55.3853%;width:28.4113%;margin-left:-14.2057%;">
+				<p class="g-aiPstyle5">2016</p>
+			</div>
+			<div id="g-ai0-7" class="g-Map_type g-aiAbs" style="top:36.2134%;left:55.3864%;width:50.8514%;margin-left:-25.4257%;">
+				<p class="g-aiPstyle6">shelf edge</p>
+			</div>
+			<div id="g-ai0-8" class="g-Map_type g-aiAbs" style="top:41.0766%;left:38.8227%;width:28.4870%;margin-left:-14.2435%;">
+				<p class="g-aiPstyle7">2014</p>
+			</div>
+			<div id="g-ai0-9" class="g-Map_type g-aiAbs" style="top:47.3293%;left:54.0750%;width:44.2163%;margin-left:-22.1082%;">
+				<p class="g-aiPstyle8">Rift in ice</p>
+			</div>
+			<div id="g-ai0-10" class="g-Graphic_type g-aiAbs" style="top:60.0951%;left:21.4415%;">
+				<p class="g-aiPstyle9">Data </p>
+				<p class="g-aiPstyle9">stations</p>
+				<p class="g-aiPstyle9">along</p>
+				<p class="g-aiPstyle9">meltstream</p>
+			</div>
+			<div id="g-ai0-11" class="g-Graphic_type g-aiAbs" style="top:68.9531%;left:33.7564%;width:51.7351%;margin-left:-25.8676%;">
+				<p class="g-aiPstyle10">Grounding</p>
+				<p class="g-aiPstyle10">line</p>
+			</div>
+			<div id="g-ai0-12" class="g-Graphic_type g-aiAbs" style="top:77.3768%;left:55.4077%;width:79.6094%;margin-left:-39.8047%;">
+				<p class="g-aiPstyle10">Ice moves</p>
+				<p class="g-aiPstyle10">roughly one</p>
+				<p class="g-aiPstyle10">kilometer a year</p>
+			</div>
+			<div id="g-ai0-13" class="g-Graphic_type g-aiAbs" style="top:83.2821%;left:54.4315%;">
+				<p class="g-aiPstyle9">Summer </p>
+				<p class="g-aiPstyle9">meltwater</p>
+			</div>
+			<div id="g-ai0-14" class="g-Map_type g-aiAbs" style="top:92.4006%;left:62.9782%;width:95.7464%;margin-left:-47.8732%;">
+				<p class="g-aiPstyle8">Greenland ice sheet</p>
+			</div>
+			<div id="g-ai0-15" class="g-Graphic_type g-aiAbs" style="top:96.3954%;left:1.3860%;">
+				<p class="g-aiPstyle11">Composite satellite image from ESA Sentinel</p>
+			</div>
+			<div id="g-ai0-16" class="g-Graphic_type g-aiAbs" style="top:98.3928%;left:1.3860%;">
+				<p class="g-aiPstyle11">LARIS KARKLIS/THE WASHINGTON POST</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- End ai2html - 2016-12-29 - 15:40 -->
+</div>        </div>
+                <div class="span8 col">
+<p>“To me, this hardship is pleasure as it always shatters prior expectations,” he explained later. “The only constant, it feels, is change and new insights. This drives me. Perhaps I am addicted to it. . . . The field work gives me this chance or opportunity to ‘reset’ and take a new look at what I thought I knew or I knew I did not understand.”</p>
+<div id="attachment_3040" style="width: 2610px" class="wp-caption alignleft"><a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/sf/business/wp-content/uploads/sites/20/2016/12/Petermann814780226341478037324.jpg"><img class="wp-image-3040 size-full" src="http://web.archive.org/web/20170101041658im_/http://www.washingtonpost.com/sf/business/wp-content/uploads/sites/20/2016/12/Petermann814780226341478037324.jpg" alt="" width="2600" height="1607"/></a><p class="wp-caption-text">Keith Nicholls, left, and Andreas Muenchow look out of the helicopter to check the condition of equipment they had installed a year earlier.</p></div>
+<p>Nicholls, meanwhile, is an expert in his own sort of extreme pursuit — using hot water to drill holes hundreds of feet through the enormous ice shelves of Antarctica and now Greenland, and then analyzing data from the ocean beneath them.</p>
+<p>They first worked together in 2015 as part of a major National Science Foundation-sponsored ship voyage to Petermann, where Muenchow was taking ocean measurements and Nicholls was busy drilling through the ice. Now, they had returned as part of a much smaller mission to recover data and determine why their instruments had gone dead. Two Washington Post journalists accompanied them with the support of the foundation which, in keeping with its policies, provided transportation and accommodations.</p>
+<p>Their expedition began a day earlier from the United States’ Thule Air Base and the small village of Qaanaaq, Greenland’s most northern permanent settlement. This time they sought to reach Petermann by helicopter. The 300-mile journey was so long they had to break it in stages, picking up fuel from caches they strategically placed a year earlier when they had visited aboard a foundation-supported icebreaker.</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/business/wp-content/uploads/sites/20/2016/12/Petermann161478022619.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20170101041658im_/http://www.washingtonpost.com/sf/business/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    A deep gulley with rushing water feeds into a river on Petermann Glacier. The shelf has reached a record low size after losing pieces larger than Manhattan in recent years..                                                                            (Whitney Shefte / The Washington Post)
+                                                </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<h3>CHAPTER 2</h3>
+<h2><em>The data stopped coming</em></h2>
+<p class="firstgraf">As they crossed the desolate landscape, their Air Greenland chopper finally emerged from a series of inland canyons into the air above the ice shelf, which was streaked with thick veins of blue ice amid a sea of white, the landscape covered with meltwater pools. It was as though a fly had suddenly buzzed in through the window of a cathedral. The ice shelf was its sprawling floor, and it was rimmed on either side by enormous, symmetrical mountain walls sculpted into shapes resembling flying buttresses.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S-phone padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_2" data-ad-type="bigbox|2" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p>Along the shelf’s central aisle ran one of Petermann’s most distinctive features — a 30-mile-long meltwater river. A year ago, Muenchow and Nicholls had established three scientific data-collection stations on its banks — drilling through the football-field-thick ice and extending ocean sensors, attached to a long cable, into the dark and half-mile-deep waters beneath the shelf. These were to detect whether warming ocean water was causing a double-whammy of damage to Petermann by melting it from below, even as the warm air temperatures melt it from above.</p>
+<p>But the main station had stopped feeding back any data in February. Now, Muenchow and Nicholls were here to see what had happened.</p>
+<p>Muenchow sat in the second row of seats in the helicopter with earphones on to muffle the noise.</p>
+<p>His chief fear, he had explained before the trip, was that this might just be a mop-up mission: That the flowing ice might have damaged the stations beyond repair, snapping the cables extending into the ocean below, and that there would be no data to retrieve.</p>
+<p>Muenchow said he had prepared himself to be devastated if the data was lost. But he said he would give himself about “15 minutes” to mourn before adjusting to see what could be salvaged.</p>
+<p><!--[raw name="" raw="31707" align="full" border="no" size="both"]
+
+--></p>
+</div></div><div class="row">                <div class="span12 bTB1S marT10 no-border graphic bg-none graphicPadTB30" id="raw">
+        <!-- Auto-playing video | Added 7/7/15 -->
+
+<link rel="stylesheet" href="//web.archive.org/web/20170101041658cs_/http://css.washingtonpost.com/wp-stat/enterprise-raw-code/audio-warning-toast/audio-warning-toast-0.0.1.css" type="text/css">
+
+<link rel="stylesheet" href="//web.archive.org/web/20170101041658cs_/http://css.washingtonpost.com/wp-stat/enterprise-raw-code/autoplay-video/autoplay-video.css" type="text/css">
+
+<div class="video-headline franklin-bold">Watching the shelf shrink</div>
+<div id="video1" class="viewport-autoplay"></div>
+
+
+
+
+              
+        </div>
+                <div class="span8 marT30 col">
+<h3>CHAPTER 3</h3>
+<h2>Opinion evolves with evidence</h2>
+<p class="firstgraf">As nervous as he was about their equipment, Muenchow was much more in his element here than he had been in 2010, testifying before Congress. Then, Muenchow’s scientific caution and compunction for rigor didn’t translate very well for a political audience.</p>
+<p>Petermann glacier had just lost a chunk of its ice shelf, and NASA satellite images of the enormous ice “island” were circulating widely. At the hearing, Jay Inslee (D), then a congressman and now the governor of Washington, pressed Muenchow to be more outspoken about what was happening to the planet. The scientist demurred.</p>
+<p>The evidence “does not conclusively prove that this specific event is global warming,” Muenchow testified. The logic was simple — breaking off large pieces might just be something Petermann glacier does occasionally, if you go back far enough in time.</p>
+<p>But two years later, another vast island of ice cleaved from Petermann. That’s when Muenchow began to change his mind. The shelf had by then lost 23 miles of its prior length, reaching a record low in size.</p>
+<p>“It’s two extreme events in six years, so something is happening,” Muenchow said.</p>
+<p>In science — unlike in politics — being hesitant when you don’t know something, and being willing to change your mind in the face of new evidence, are virtues. He has since joined a growing wave of researchers working to learn more.</p>
+<p>Climate change doubters have continued to suggest — from a distance — that Petermann’s huge ice losses are just normal glacier behavior. Muenchow himself, no dogmatist about the matter, can still entertain the case for skepticism, in part because the glacier has never been as well observed as it now, by scientists and satellites. Conceivably, it lost as much ice during previous periods as it has lost in the present. Muenchow doubts that – the idea that the glacier has shifted to a new state, he says, is supported by the “preponderance of the evidence.”</p>
+<p>Petermann is looking suspicious again: At its front edge near the ocean, it features several additional cracks, including one that penetrates further toward the center than the others, arcing inward toward the central river and the shelf’s thinnest region.</p>
+<p>“I already see the beginning of a third break-up,” Muenchow said.</p>
+</div></div><div class="row">                <div class="span12 bTB1S marT10 no-border graphic bg-none graphicPadTB30" id="raw">
+        <div id="g-PetermannCross-box" class="ai2html">
+	<!-- Generated by ai2html v0.55 - 2016-12-29 - 15:40 -->
+	<!-- ai file: PetermannCross -->
+
+	<style type="text/css" media="screen,print">
+		.g-artboard {
+			margin:0 auto;
+		}
+	</style>
+
+
+	<style type="text/css" media="screen,print">
+		/* Custom CSS block 1 */
+		#g-PetermannCross-1170 .g-aiPstyle0,
+		#g-PetermannCross-1170 .g-aiPstyle1,
+		#g-PetermannCross-1170 .g-aiPstyle4,
+		#g-PetermannCross-1170 .g-aiPstyle2,
+		#g-PetermannCross-1170 .g-aiPstyle9{
+		    text-shadow: 0px 0px 3px #fff;
+		}
+		
+		#g-PetermannCross-600 .g-aiPstyle0,
+		#g-PetermannCross-600 .g-aiPstyle1,
+		#g-PetermannCross-600 .g-aiPstyle8,
+		#g-PetermannCross-600 .g-aiPstyle3{
+		    text-shadow: 0px 0px 3px #fff;
+		
+		}
+		#g-PetermannCross-280 .g-aiPstyle0,
+		#g-PetermannCross-280 .g-aiPstyle1,
+		#g-PetermannCross-280 .g-aiPstyle8,
+		#g-PetermannCross-280 .g-aiPstyle3{
+		    text-shadow: 0px 0px 3px #fff;
+		
+		}
+		
+		#g-PetermannCross-1170 {
+			display:block;
+			margin:0 auto;
+		}
+		
+		#g-PetermannCross-600,
+		#g-PetermannCross-280 {
+			display:none;
+			margin:0 auto;
+		}
+		
+		@media (max-width: 1020px) {
+			#g-PetermannCross-1170 {
+				display:none;
+			}
+			#g-PetermannCross-600 {
+				display:block;
+			}
+		 }
+		
+		@media (max-width: 650px) {
+			#g-PetermannCross-600 {
+				display:none;
+			}
+			#g-PetermannCross-280 {
+				display:block;
+			}
+		 }
+	</style>
+
+	<!-- Artboard: 280 -->
+	<div id="g-PetermannCross-280" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-PetermannCross-280{
+				position:relative;
+				overflow:hidden;
+				width:280px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-PetermannCross-280 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-PetermannCross-280 .g-aiPstyle0 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-280 .g-aiPstyle1 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-280 .g-aiPstyle2 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-280 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:12px;
+				line-height:16px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-280 .g-aiPstyle4 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-280 .g-aiPstyle5 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-280 .g-aiPstyle6 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				line-height:14px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#ffffff;
+			}
+			#g-PetermannCross-280 .g-aiPstyle7 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-280 .g-aiPstyle8 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				padding-bottom:10px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-280 .g-aiPstyle9 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:12px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+		</style>
+		<div id="g-PetermannCross-280-graphic">
+			<img id="g-ai0-0" class="g-aiImg" src="http://web.archive.org/web/20170101041658im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/PetermannGlacier/PetermannCross-280.jpg?c=631"/>
+			<div id="g-ai0-1" class="g-Graphic_type g-aiAbs" style="top:0.3018%;left:1.2183%;">
+				<p class="g-aiPstyle0">Cross section of Petermann Glacier </p>
+			</div>
+			<div id="g-ai0-2" class="g-Graphic_type g-aiAbs" style="top:7.5453%;right:7.5854%;">
+				<p class="g-aiPstyle1">Grounding</p>
+				<p class="g-aiPstyle1">line</p>
+			</div>
+			<div id="g-ai0-3" class="g-Graphic_type g-aiAbs" style="top:8.4507%;left:17.4541%;width:58.1090%;margin-left:-29.0545%;">
+				<p class="g-aiPstyle2">Ocean water</p>
+			</div>
+			<div id="g-ai0-4" class="g-Graphic_type g-aiAbs" style="top:13.3803%;left:2.2897%;width:42.8278%;">
+				<p class="g-aiPstyle3">Diagram is schematic</p>
+			</div>
+			<div id="g-ai0-5" class="g-Graphic_type g-aiAbs" style="top:16.4990%;left:4.0203%;width:96.6940%;">
+				<p class="g-aiPstyle4">Scientists hope temperature data collected underneath the shelf will help determine if warm waters are a bigger threat to the glacier than the rising air temperatures that are driving Petermann&rsquo;s surface melt.</p>
+			</div>
+			<div id="g-ai0-6" class="g-Graphic_type g-aiAbs" style="top:28.2696%;left:52.3826%;width:48.9279%;margin-left:-24.4639%;">
+				<p class="g-aiPstyle2">Fjord walls</p>
+			</div>
+			<div id="g-ai0-7" class="g-Graphic_type g-aiAbs" style="top:33.4004%;left:20.0677%;">
+				<p class="g-aiPstyle5">Petermann Ice Shelf</p>
+			</div>
+			<div id="g-ai0-8" class="g-Graphic_type g-aiAbs" style="top:39.0342%;left:6.8079%;width:5.0509%;margin-left:-2.5255%;">
+				<p class="g-aiPstyle6">1</p>
+			</div>
+			<div id="g-ai0-9" class="g-Graphic_type g-aiAbs" style="top:39.4366%;left:81.2755%;width:5.5678%;margin-left:-2.7839%;">
+				<p class="g-aiPstyle6">2</p>
+			</div>
+			<div id="g-ai0-10" class="g-Graphic_type g-aiAbs" style="top:39.5372%;left:32.2767%;width:80.1426%;margin-left:-40.0713%;">
+				<p class="g-aiPstyle2">Cold, Arctic water</p>
+			</div>
+			<div id="g-ai0-11" class="g-Graphic_type g-aiAbs" style="top:42.6559%;left:13.2080%;">
+				<p class="g-aiPstyle7">Warm, Atlantic</p>
+				<p class="g-aiPstyle7">water</p>
+			</div>
+			<div id="g-ai0-12" class="g-Graphic_type g-aiAbs" style="top:49.0946%;right:5.1127%;width:39.7747%;">
+				<p class="g-aiPstyle1">Grounding</p>
+				<p class="g-aiPstyle1">line</p>
+			</div>
+			<div id="g-ai0-13" class="g-Graphic_type g-aiAbs" style="top:56.1368%;left:15.9065%;width:82.1599%;">
+				<p class="g-aiPstyle8">Cold and buoyant Arctic water stays closer to the surface.</p>
+				<p class="g-aiPstyle8">Warm and dense Atlantic salt water travels deeper to the grounding line, weakening the point where floating ice meets the bedrock.</p>
+				
+			</div>
+			<div id="g-ai0-14" class="g-Graphic_type g-aiAbs" style="top:56.3380%;left:7.8793%;width:5.0509%;margin-left:-2.5255%;">
+				<p class="g-aiPstyle6">1</p>
+			</div>
+			<div id="g-ai0-15" class="g-Graphic_type g-aiAbs" style="top:60.2616%;left:7.8795%;width:5.5678%;margin-left:-2.7839%;">
+				<p class="g-aiPstyle6">2</p>
+			</div>
+			<div id="g-ai0-16" class="g-Graphic_type g-aiAbs" style="top:70.1207%;left:15.9061%;width:29.7232%;">
+				<p class="g-aiPstyle4">Melting also could be caused by cold water draining down and out at the grounding line, which allows warm water to flow in and erode more ice.</p>
+			</div>
+			<div id="g-ai0-17" class="g-Graphic_type g-aiAbs" style="top:69.8189%;left:7.8795%;width:5.7241%;margin-left:-2.8620%;">
+				<p class="g-aiPstyle6">3</p>
+			</div>
+			<div id="g-ai0-18" class="g-Graphic_type g-aiAbs" style="top:70.4225%;left:82.7115%;width:39.7747%;margin-left:-19.8873%;">
+				<p class="g-aiPstyle2">Surface</p>
+				<p class="g-aiPstyle2">meltwater</p>
+			</div>
+			<div id="g-ai0-19" class="g-Graphic_type g-aiAbs" style="top:75.8551%;left:87.1470%;width:5.7241%;margin-left:-2.8620%;">
+				<p class="g-aiPstyle6">3</p>
+			</div>
+			<div id="g-ai0-20" class="g-Graphic_type g-aiAbs" style="top:91.7505%;right:10.0731%;width:39.7747%;">
+				<p class="g-aiPstyle1">Grounding</p>
+				<p class="g-aiPstyle1">line</p>
+			</div>
+			<div id="g-ai0-21" class="g-Graphic_type g-aiAbs" style="top:96.8813%;left:1.7589%;">
+				<p class="g-aiPstyle9">DANI JOHNSON AND LARIS KARKLIS/</p>
+				<p class="g-aiPstyle9">THE WASHINGTON POST</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Artboard: 600 -->
+	<div id="g-PetermannCross-600" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-PetermannCross-600{
+				position:relative;
+				overflow:hidden;
+				width:600px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-PetermannCross-600 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-PetermannCross-600 .g-aiPstyle0 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-600 .g-aiPstyle1 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-600 .g-aiPstyle2 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:15px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-600 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-600 .g-aiPstyle4 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-600 .g-aiPstyle5 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-600 .g-aiPstyle6 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:16px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#898b8e;
+			}
+			#g-PetermannCross-600 .g-aiPstyle7 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:12px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-600 .g-aiPstyle8 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:12px;
+				line-height:16px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+		</style>
+		<div id="g-PetermannCross-600-graphic">
+			<img id="g-ai1-0" class="g-aiImg" src="http://web.archive.org/web/20170101041658im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/PetermannGlacier/PetermannCross-600.jpg?c=108"/>
+			<div id="g-ai1-1" class="g-Graphic_type g-aiAbs" style="top:0.0000%;left:0.3665%;">
+				<p class="g-aiPstyle0">Cross section of Petermann Glacier </p>
+			</div>
+			<div id="g-ai1-2" class="g-Graphic_type g-aiAbs" style="top:4.6853%;left:0.3666%;width:74.4612%;">
+				<p class="g-aiPstyle1">Scientists hope temperature data collected underneath the shelf will help determine if warm waters are a bigger threat to the glacier than the rising air temperatures that are driving Petermann&rsquo;s surface melt.</p>
+			</div>
+			<div id="g-ai1-3" class="g-Graphic_type g-aiAbs" style="top:9.7610%;left:93.1808%;width:22.5924%;margin-left:-11.2962%;">
+				<p class="g-aiPstyle2">Greenland</p>
+				<p class="g-aiPstyle2">Ice sheet</p>
+			</div>
+			<div id="g-ai1-4" class="g-Graphic_type g-aiAbs" style="top:20.6933%;left:60.2087%;width:22.8330%;margin-left:-11.4165%;">
+				<p class="g-aiPstyle3">Fjord walls</p>
+			</div>
+			<div id="g-ai1-5" class="g-Graphic_type g-aiAbs" style="top:20.8885%;left:88.8060%;">
+				<p class="g-aiPstyle4">Surface</p>
+				<p class="g-aiPstyle4">meltwater</p>
+			</div>
+			<div id="g-ai1-6" class="g-Graphic_type g-aiAbs" style="top:31.2351%;left:33.6239%;">
+				<p class="g-aiPstyle5">Petermann Ice Shelf</p>
+			</div>
+			<div id="g-ai1-7" class="g-Graphic_type g-aiAbs" style="top:35.5300%;left:76.0771%;width:25.2155%;margin-left:-12.6077%;">
+				<p class="g-aiPstyle6">Three data</p>
+				<p class="g-aiPstyle6">stations</p>
+			</div>
+			<div id="g-ai1-8" class="g-Graphic_type g-aiAbs" style="top:41.7770%;left:34.8020%;width:37.3999%;margin-left:-18.7000%;">
+				<p class="g-aiPstyle3">Cold, Arctic water</p>
+			</div>
+			<div id="g-ai1-9" class="g-Graphic_type g-aiAbs" style="top:42.5579%;left:86.5207%;width:18.5615%;">
+				<p class="g-aiPstyle5">Grounding</p>
+				<p class="g-aiPstyle5">line</p>
+			</div>
+			<div id="g-ai1-10" class="g-Graphic_type g-aiAbs" style="top:51.9284%;left:33.3477%;">
+				<p class="g-aiPstyle4">Warm, Atlantic water</p>
+			</div>
+			<div id="g-ai1-11" class="g-Graphic_type g-aiAbs" style="top:64.2272%;left:21.1115%;width:19.2173%;margin-left:-9.6086%;">
+				<p class="g-aiPstyle3">Sea floor</p>
+			</div>
+			<div id="g-ai1-12" class="g-Graphic_type g-aiAbs" style="top:76.9165%;left:24.9727%;width:34.0677%;">
+				<p class="g-aiPstyle1">Warm and dense Atlantic salt water travels deeper to the grounding line, weakening the point where floating ice meets the bedrock.</p>
+			</div>
+			<div id="g-ai1-13" class="g-Graphic_type g-aiAbs" style="top:77.3070%;left:63.4871%;width:36.5017%;">
+				<p class="g-aiPstyle1">Melting also could be caused by cold water draining down and out at the grounding line, which allows warm water to flow in and erode more ice.</p>
+			</div>
+			<div id="g-ai1-14" class="g-Graphic_type g-aiAbs" style="top:77.5022%;left:4.0623%;width:16.4523%;">
+				<p class="g-aiPstyle1">Cold and buoyant Arctic water stays closer to the surface.</p>
+			</div>
+			<div id="g-ai1-15" class="g-Graphic_type g-aiAbs" style="top:96.8289%;right:0.3166%;">
+				<p class="g-aiPstyle7">DANI JOHNSON AND LARIS KARKLIS/THE WASHINGTON POST</p>
+			</div>
+			<div id="g-ai1-16" class="g-Graphic_type g-aiAbs" style="top:96.8289%;left:0.3045%;width:19.9863%;">
+				<p class="g-aiPstyle8">Diagram is schematic</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Artboard: 1170 -->
+	<div id="g-PetermannCross-1170" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-PetermannCross-1170{
+				position:relative;
+				overflow:hidden;
+				width:1170px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-PetermannCross-1170 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-PetermannCross-1170 .g-aiPstyle0 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-1170 .g-aiPstyle1 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-1170 .g-aiPstyle2 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:15px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-1170 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-1170 .g-aiPstyle4 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-1170 .g-aiPstyle5 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:12px;
+				line-height:16px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-1170 .g-aiPstyle6 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:16px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#898b8e;
+			}
+			#g-PetermannCross-1170 .g-aiPstyle7 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#ffffff;
+			}
+			#g-PetermannCross-1170 .g-aiPstyle8 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannCross-1170 .g-aiPstyle9 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:12px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+		</style>
+		<div id="g-PetermannCross-1170-graphic">
+			<img id="g-ai2-0" class="g-aiImg" src="http://web.archive.org/web/20170101041658im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/PetermannGlacier/PetermannCross-1170.jpg?c=343"/>
+			<div id="g-ai2-1" class="g-Graphic_type g-aiAbs" style="top:0.3784%;left:1.1373%;">
+				<p class="g-aiPstyle0">Cross section of Petermann Glacier </p>
+			</div>
+			<div id="g-ai2-2" class="g-Graphic_type g-aiAbs" style="top:5.1080%;left:1.1374%;width:48.7027%;">
+				<p class="g-aiPstyle1">Scientists hope temperature data collected underneath the shelf will help determine if warm waters are a bigger threat to the glacier than the rising air temperatures that are driving Petermann&rsquo;s</p>
+				<p class="g-aiPstyle1">surface melt.</p>
+			</div>
+			<div id="g-ai2-3" class="g-Graphic_type g-aiAbs" style="top:6.0540%;left:96.7768%;width:11.5859%;margin-left:-5.7929%;">
+				<p class="g-aiPstyle2">Greenland</p>
+				<p class="g-aiPstyle2">ice sheet</p>
+			</div>
+			<div id="g-ai2-4" class="g-Graphic_type g-aiAbs" style="top:11.7295%;left:62.0688%;width:11.7092%;margin-left:-5.8546%;">
+				<p class="g-aiPstyle3">Fjord walls</p>
+			</div>
+			<div id="g-ai2-5" class="g-Graphic_type g-aiAbs" style="top:14.1890%;left:88.7561%;">
+				<p class="g-aiPstyle4">Surface</p>
+				<p class="g-aiPstyle4">meltwater</p>
+			</div>
+			<div id="g-ai2-6" class="g-Graphic_type g-aiAbs" style="top:26.2969%;left:0.9637%;width:12.2463%;">
+				<p class="g-aiPstyle5">Diagram is schematic</p>
+			</div>
+			<div id="g-ai2-7" class="g-Graphic_type g-aiAbs" style="top:28.5671%;left:44.8156%;">
+				<p class="g-aiPstyle0">Petermann Ice Shelf</p>
+			</div>
+			<div id="g-ai2-8" class="g-Graphic_type g-aiAbs" style="top:39.1615%;left:77.7070%;width:12.9310%;margin-left:-6.4655%;">
+				<p class="g-aiPstyle6">Three data</p>
+				<p class="g-aiPstyle6">stations</p>
+			</div>
+			<div id="g-ai2-9" class="g-Graphic_type g-aiAbs" style="top:55.8099%;left:17.3478%;width:21.4270%;">
+				<p class="g-aiPstyle7">Warm and dense Atlantic salt water travels deeper to the grounding line, weakening the point where floating ice meets the bedrock.</p>
+			</div>
+			<div id="g-ai2-10" class="g-Graphic_type g-aiAbs" style="top:55.8099%;left:1.9103%;width:11.9073%;">
+				<p class="g-aiPstyle7">Cold and buoyant Arctic water stays closer to the surface.</p>
+			</div>
+			<div id="g-ai2-11" class="g-Graphic_type g-aiAbs" style="top:55.8099%;left:44.4049%;width:23.7717%;">
+				<p class="g-aiPstyle7">Melting also could be caused by cold water draining down and out at the grounding line, which allows warm water to flow in and erode more ice.</p>
+			</div>
+			<div id="g-ai2-12" class="g-Graphic_type g-aiAbs" style="top:84.3770%;left:89.1445%;width:7.6999%;">
+				<p class="g-aiPstyle8">Grounding</p>
+				<p class="g-aiPstyle8">line</p>
+			</div>
+			<div id="g-ai2-13" class="g-Graphic_type g-aiAbs" style="top:88.7283%;left:20.9481%;width:9.8549%;margin-left:-4.9275%;">
+				<p class="g-aiPstyle3">Sea floor</p>
+			</div>
+			<div id="g-ai2-14" class="g-Graphic_type g-aiAbs" style="top:96.4849%;left:70.2665%;">
+				<p class="g-aiPstyle9">DANI JOHNSON AND LARIS KARKLIS/THE WASHINGTON POST</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- End ai2html - 2016-12-29 - 15:40 -->
+</div>        </div>
+                <div class="span8 marT30 col">
+<p>When ice shelves break away, the ice that had once fed the shelf instead flows directly into the ocean, helping to raise sea levels throughout the world. In the case of Petermann, that plug runs about 30 miles in length, floating over the fjord, to a “grounding line.” This is where the shelf ends and the ice touches the sea floor in 2,000-foot-deep waters. Farther back, the ice gets thicker and deeper.</p>
+<p>Scientists worry about possible “marine ice sheet instability” in the region, which would allow warm ocean water to melt the base of the glacier and chase it backward — hastening its losses along the way.</p>
+<p>It’s not clear where the retreat would end. Oregon State University geologist Alan Mix said researchers have recently discovered that behind Petermann glacier lies an enormous, ancient canyon that is nearly 500 miles long and cuts all the way to the center of the Greenland ice sheet. It was probably carved by a river long ago.</p>
+<p>So if the ice shelf collapses and Petermann glacier starts breaking off large icebergs and retreating backward, the ocean could someday gain access to this canyon.</p>
+<p>“You can think about this as a huge drain of Greenland,” Mix said of the Petermann fjord. “This is where the water gets out.”</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/business/wp-content/uploads/sites/20/2016/12/Petermann181478022621.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20170101041658im_/http://www.washingtonpost.com/sf/business/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    A pool of frozen water rests on the bumpy, often wet surface of Petermann Glacier.                                                                             (Whitney Shefte / The Washington Post)
+                                                </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<h3>CHAPTER 4</h3>
+<h2>When warm and cold collide</h2>
+<p class="firstgraf">As the helicopter circled the researchers’ central station, Nicholls spotted the non-responsive device first. Its weather beacon listed at a 30-degree angle, felled by the moving ice. That would explain why the station had not transmitted data in six months.</p>
+<p>Nicholls turned to his partner in the helicopter and drew a finger across his neck in a sign recognized universally: dead.</p>
+<p>Half an hour later, Muenchow was on the ice, busily using a hacksaw to cut through the weather station’s steel pole to try to free it. “I’m making progress,” he huffed, the temperatures at around 39 degrees in the early afternoon of an August day that, this far north, won’t ever lose its light.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S-phone padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_3" data-ad-type="bigbox|3" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p>Muenchow retrieved a memory card and plugged it into his computer. It was the moment of truth.</p>
+<p>And also, it turned out, one of pure scientific joy — the data was there, and the sensors were still recording more.</p>
+<p>After realizing that the last recording was just a few hours old, Muenchow was speechless. He covered his mouth with his hands.</p>
+<p>“That’s good news,” Nicholls deadpanned.</p>
+<p>Muenchow started clapping softly.</p>
+<p>It would take weeks, after the scientists got back home, to analyze the data. But they already knew it would give them an unprecedented image of the behavior of ocean waters in the deep cavity beneath the ice.</p>
+<p>There is still some mystery about how warm waters might be reaching and interacting with the Petermann Ice Shelf.</p>
+<p>The Atlantic’s warm, salty waters reach this fjord through a convoluted route that takes them north off Greenland’s eastern coast, along a full circuit of the Arctic Ocean, and ultimately south through the Nares Strait. Here, warmer Atlantic-originating waters are found at the greatest depths because their saltiness gives them more density, while fresher and colder Arctic waters lie at the surface.</p>
+</div></div><div class="row">                <div class="span12 bTB1S marT10 no-border graphic bg-none graphicPadTB30" id="raw">
+        <div id="g-PetermannWalk-box" class="ai2html">
+	<!-- Generated by ai2html v0.55 - 2016-12-29 - 14:12 -->
+	<!-- ai file: PetermannWalk -->
+
+	<style type="text/css" media="screen,print">
+		.g-artboard {
+			margin:0 auto;
+		}
+	</style>
+
+
+	<style type="text/css" media="screen,print">
+		/* Custom CSS block 1 */
+		
+		#g-PetermannWalk-1170 .g-aiPstyle0,
+		#g-PetermannWalk-1170 .g-aiPstyle1,
+		#g-PetermannWalk-1170 .g-aiPstyle4,
+		#g-PetermannWalk-1170 .g-aiPstyle2,
+		#g-PetermannWalk-1170 .g-aiPstyle9{
+		    text-shadow: 0px 0px 3px #fff;
+		}
+		
+		#g-PetermannWalk-600 .g-aiPstyle0,
+		#g-PetermannWalk-600 .g-aiPstyle1,
+		#g-PetermannWalk-600 .g-aiPstyle8,
+		#g-PetermannWalk-600 .g-aiPstyle3{
+		    text-shadow: 0px 0px 3px #fff;
+		
+		}
+		#g-PetermannWalk-280 .g-aiPstyle0,
+		#g-PetermannWalk-280 .g-aiPstyle1,
+		#g-PetermannWalk-280 .g-aiPstyle8,
+		#g-PetermannWalk-280 .g-aiPstyle3{
+		    text-shadow: 0px 0px 3px #fff;
+		
+		}
+		
+		#g-PetermannWalk-1170 {
+			display:block;
+			margin:0 auto;
+		}
+		
+		#g-PetermannWalk-600,
+		#g-PetermannWalk-280 {
+			display:none;
+			margin:0 auto;
+		}
+		
+		@media (max-width: 1020px) {
+			#g-PetermannWalk-1170{
+				display:none;
+			}
+			#g-PetermannWalk-600 {
+				display:block;
+			}
+		 }
+		
+		@media (max-width: 650px) {
+			#g-PetermannWalk-600 {
+				display:none;
+			}
+			#g-PetermannWalk-280 {
+				display:block;
+			}
+		 }
+	</style>
+
+	<!-- Artboard: 280 -->
+	<div id="g-PetermannWalk-280" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-PetermannWalk-280{
+				position:relative;
+				overflow:hidden;
+				width:280px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-PetermannWalk-280 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-PetermannWalk-280 .g-aiPstyle0 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannWalk-280 .g-aiPstyle1 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#da2128;
+			}
+			#g-PetermannWalk-280 .g-aiPstyle2 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannWalk-280 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannWalk-280 .g-aiPstyle4 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:17px;
+				text-align:center;
+				color:#000000;
+			}
+			#g-PetermannWalk-280 .g-aiPstyle5 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:19px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannWalk-280 .g-aiPstyle6 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:12px;
+				line-height:16px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannWalk-280 .g-aiPstyle7 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:12px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+		</style>
+		<div id="g-PetermannWalk-280-graphic">
+			<img id="g-ai0-0" class="g-aiImg" src="http://web.archive.org/web/20170101041658im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/PetermannGlacier/PetermannWalk-280.jpg?c=353"/>
+			<div id="g-ai0-1" class="g-Graphic_type g-aiAbs" style="top:0.6397%;left:0.7227%;width:100.1282%;">
+				<p class="g-aiPstyle0">In 2015, scientists installed instruments to measure the water temperature below the ice sheet; they returned a year later to repair the existing stations and install a new radar roughly a mile away from the meltwater river. </p>
+			</div>
+			<div id="g-ai0-2" class="g-Graphic_type g-aiAbs" style="top:15.4796%;left:78.0596%;">
+				<p class="g-aiPstyle0">Fjord</p>
+				<p class="g-aiPstyle0">walls</p>
+			</div>
+			<div id="g-ai0-3" class="g-Graphic_type g-aiAbs" style="top:24.1789%;left:13.0307%;width:77.3070%;">
+				<p class="g-aiPstyle1">Comparing</p>
+				<p class="g-aiPstyle1">Petermann to</p>
+				<p class="g-aiPstyle1">Manhattan</p>
+			</div>
+			<div id="g-ai0-4" class="g-Graphic_type g-aiAbs" style="top:35.8207%;right:55.6224%;">
+				<p class="g-aiPstyle2">New radar</p>
+				<p class="g-aiPstyle2">station</p>
+			</div>
+			<div id="g-ai0-5" class="g-Graphic_type g-aiAbs" style="top:45.4155%;right:70.4752%;">
+				<p class="g-aiPstyle2">Data</p>
+				<p class="g-aiPstyle2">station</p>
+			</div>
+			<div id="g-ai0-6" class="g-Graphic_type g-aiAbs" style="top:57.3131%;left:80.4456%;width:52.2726%;margin-left:-26.1363%;">
+				<p class="g-aiPstyle3">Melt water</p>
+				<p class="g-aiPstyle3">river</p>
+			</div>
+			<div id="g-ai0-7" class="g-Graphic_type g-aiAbs" style="top:66.2682%;left:79.1115%;width:32.2028%;margin-left:-16.1014%;">
+				<p class="g-aiPstyle4">2 MILES</p>
+			</div>
+			<div id="g-ai0-8" class="g-Legend g-aiAbs" style="top:83.1551%;left:73.9934%;">
+				<p class="g-aiPstyle5">NORTH</p>
+			</div>
+			<div id="g-ai0-9" class="g-Graphic_type g-aiAbs" style="top:89.4237%;left:29.9597%;">
+				<p class="g-aiPstyle0">Fjord</p>
+				<p class="g-aiPstyle0">walls</p>
+			</div>
+			<div id="g-ai0-10" class="g-Graphic_type g-aiAbs" style="top:95.5644%;left:0.3772%;width:120.0631%;">
+				<p class="g-aiPstyle6">Sources: Andreas Muenchow and ESA Sentinel</p>
+			</div>
+			<div id="g-ai0-11" class="g-Graphic_type g-aiAbs" style="top:97.8672%;left:0.3772%;">
+				<p class="g-aiPstyle7">LARIS KARKLIS/THE WASHINGTON POST</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Artboard: 600 -->
+	<div id="g-PetermannWalk-600" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-PetermannWalk-600{
+				position:relative;
+				overflow:hidden;
+				width:600px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-PetermannWalk-600 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-PetermannWalk-600 .g-aiPstyle0 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannWalk-600 .g-aiPstyle1 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:17px;
+				text-align:center;
+				color:#000000;
+			}
+			#g-PetermannWalk-600 .g-aiPstyle2 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannWalk-600 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannWalk-600 .g-aiPstyle4 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:21px;
+				letter-spacing:-0.00416666666667em;
+				color:#da2128;
+			}
+			#g-PetermannWalk-600 .g-aiPstyle5 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:12px;
+				line-height:16px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannWalk-600 .g-aiPstyle6 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:12px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+		</style>
+		<div id="g-PetermannWalk-600-graphic">
+			<img id="g-ai1-0" class="g-aiImg" src="http://web.archive.org/web/20170101041658im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/PetermannGlacier/PetermannWalk-600.jpg?c=17"/>
+			<div id="g-ai1-1" class="g-Graphic_type g-aiAbs" style="top:2.6580%;left:3.6571%;width:53.2020%;">
+				<p class="g-aiPstyle0">In 2015, scientists installed instruments to measure the water temperature below the ice sheet; they returned a year later to repair the existing stations and install a new radar roughly a mile away from the meltwater river. </p>
+			</div>
+			<div id="g-ai1-2" class="g-Graphic_type g-aiAbs" style="top:2.6580%;left:89.2923%;">
+				<p class="g-aiPstyle0">Fjord</p>
+				<p class="g-aiPstyle0">walls</p>
+			</div>
+			<div id="g-ai1-3" class="g-Graphic_type g-aiAbs" style="top:19.1967%;left:6.9352%;width:12.1722%;margin-left:-6.0861%;">
+				<p class="g-aiPstyle1">1 MILE</p>
+			</div>
+			<div id="g-ai1-4" class="g-Graphic_type g-aiAbs" style="top:21.4117%;right:43.4463%;">
+				<p class="g-aiPstyle2">New radar station</p>
+			</div>
+			<div id="g-ai1-5" class="g-Graphic_type g-aiAbs" style="top:27.7614%;right:61.3371%;">
+				<p class="g-aiPstyle2">Data station</p>
+			</div>
+			<div id="g-ai1-6" class="g-Graphic_type g-aiAbs" style="top:51.0927%;left:75.0111%;width:35.8353%;margin-left:-17.9176%;">
+				<p class="g-aiPstyle3">Melt water river</p>
+			</div>
+			<div id="g-ai1-7" class="g-Graphic_type g-aiAbs" style="top:61.1341%;left:49.7953%;width:26.9882%;">
+				<p class="g-aiPstyle4">Comparing Petermann</p>
+				<p class="g-aiPstyle4">to Manhattan</p>
+			</div>
+			<div id="g-ai1-8" class="g-Graphic_type g-aiAbs" style="top:79.5924%;left:0.9357%;">
+				<p class="g-aiPstyle0">Fjord</p>
+				<p class="g-aiPstyle0">walls</p>
+			</div>
+			<div id="g-ai1-9" class="g-Graphic_type g-aiAbs" style="top:87.1234%;right:66.6043%;">
+				<p class="g-aiPstyle2">Ocean water</p>
+				<p class="g-aiPstyle2">visible</p>
+			</div>
+			<div id="g-ai1-10" class="g-Graphic_type g-aiAbs" style="top:94.2114%;left:57.5652%;width:56.0295%;">
+				<p class="g-aiPstyle5">Sources: Andreas Muenchow and ESA Sentinel</p>
+			</div>
+			<div id="g-ai1-11" class="g-Graphic_type g-aiAbs" style="top:96.5741%;left:57.5651%;">
+				<p class="g-aiPstyle6">LARIS KARKLIS/THE WASHINGTON POST</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Artboard: 1170 -->
+	<div id="g-PetermannWalk-1170" class="g-artboard ">
+		<style type="text/css" media="screen,print">
+			#g-PetermannWalk-1170{
+				position:relative;
+				overflow:hidden;
+				width:1170px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+				width:100% !important;
+			}
+			#g-PetermannWalk-1170 p{
+				font-family:FranklinITCProLight,FranklinITCStdLight,'Franklin Gothic','ITC Franklin Gothic',Arial,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-PetermannWalk-1170 .g-aiPstyle0 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannWalk-1170 .g-aiPstyle1 {
+				font-family:FranklinITCProBold,Helvetica,Arial,sans-serif;
+				font-size:15px;
+				line-height:21px;
+				letter-spacing:-0.00416666666667em;
+				color:#da2128;
+			}
+			#g-PetermannWalk-1170 .g-aiPstyle2 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannWalk-1170 .g-aiPstyle3 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:16px;
+				line-height:17px;
+				text-align:center;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannWalk-1170 .g-aiPstyle4 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:19px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannWalk-1170 .g-aiPstyle5 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:17px;
+				text-align:center;
+				color:#000000;
+			}
+			#g-PetermannWalk-1170 .g-aiPstyle6 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				line-height:12px;
+				text-align:right;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+			#g-PetermannWalk-1170 .g-aiPstyle7 {
+				font-family:FranklinITCProLight,FranklinITCStdLight,Helvetica,Arial,sans-serif;
+				font-size:12px;
+				line-height:16px;
+				letter-spacing:-0.00416666666667em;
+				color:#000000;
+			}
+		</style>
+		<div id="g-PetermannWalk-1170-graphic">
+			<img id="g-ai2-0" class="g-aiImg" src="http://web.archive.org/web/20170101041658im_/https://www.washingtonpost.com/wp-stat/graphics/ai2html/PetermannGlacier/PetermannWalk-1170.jpg?c=362"/>
+			<div id="g-ai2-1" class="g-Graphic_type g-aiAbs" style="top:5.5575%;left:29.6955%;width:25.9685%;">
+				<p class="g-aiPstyle0">In 2015, scientists installed instruments to measure the water temperature below the ice sheet; they returned a year later to repair the existing stations and install a new radar roughly a mile away from the meltwater river. </p>
+			</div>
+			<div id="g-ai2-2" class="g-Graphic_type g-aiAbs" style="top:7.1784%;left:60.1373%;">
+				<p class="g-aiPstyle0">Data</p>
+				<p class="g-aiPstyle0">station</p>
+			</div>
+			<div id="g-ai2-3" class="g-Graphic_type g-aiAbs" style="top:8.7993%;left:67.1459%;">
+				<p class="g-aiPstyle0">New radar</p>
+				<p class="g-aiPstyle0">station</p>
+			</div>
+			<div id="g-ai2-4" class="g-Graphic_type g-aiAbs" style="top:14.3568%;left:13.3601%;">
+				<p class="g-aiPstyle0">Fjord</p>
+				<p class="g-aiPstyle0">walls</p>
+			</div>
+			<div id="g-ai2-5" class="g-Graphic_type g-aiAbs" style="top:54.8799%;left:66.7349%;width:17.9891%;">
+				<p class="g-aiPstyle1">Comparing Petermann</p>
+				<p class="g-aiPstyle1">to Manhattan</p>
+			</div>
+			<div id="g-ai2-6" class="g-Graphic_type g-aiAbs" style="top:67.6157%;right:89.7873%;">
+				<p class="g-aiPstyle2">Ocean water</p>
+				<p class="g-aiPstyle2">visible</p>
+			</div>
+			<div id="g-ai2-7" class="g-Graphic_type g-aiAbs" style="top:68.7736%;left:90.6625%;">
+				<p class="g-aiPstyle0">Fjord</p>
+				<p class="g-aiPstyle0">walls</p>
+			</div>
+			<div id="g-ai2-8" class="g-Graphic_type g-aiAbs" style="top:77.3413%;left:59.1379%;width:18.3771%;margin-left:-9.1885%;">
+				<p class="g-aiPstyle3">Melt water river</p>
+			</div>
+			<div id="g-ai2-9" class="g-Legend g-aiAbs" style="top:84.2881%;left:2.8072%;">
+				<p class="g-aiPstyle4">NORTH</p>
+			</div>
+			<div id="g-ai2-10" class="g-Graphic_type g-aiAbs" style="top:84.7512%;left:80.2982%;width:7.7067%;margin-left:-3.8533%;">
+				<p class="g-aiPstyle5">2 MILES</p>
+			</div>
+			<div id="g-ai2-11" class="g-Graphic_type g-aiAbs" style="top:96.0977%;right:0.2658%;">
+				<p class="g-aiPstyle6">LARIS KARKLIS/THE WASHINGTON POST</p>
+			</div>
+			<div id="g-ai2-12" class="g-Graphic_type g-aiAbs" style="top:96.3293%;left:0.2564%;width:28.7331%;">
+				<p class="g-aiPstyle7">Sources: Andreas Muenchow and ESA Sentinel</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- End ai2html - 2016-12-29 - 14:12 -->
+</div>        </div>
+                <div class="span8 marT30 col">
+<p>The warm waters then penetrate beneath the ice shelf and to the base of the glacier, and are somehow managing to melt and thin it at a rate of 30 to 40 feet per year. And the Atlantic waters in the area are getting still warmer over time.</p>
+<p>But the fundamental question is what’s pulling the Atlantic waters in and causing them to touch the shelf?</p>
+<p>One key idea, Nicholls suspected, turns on all the wetness atop Petermann — a sign of ever-rising Arctic air temperatures. “Our major hypothesis,” he said, is that some of this water is running off somehow, entering the ocean, and in the process, helping to draw in the warm water that causes the most extensive melting.</p>
+<p>It isn’t clear where the fresh water is spilling out, but it could be further up the fjord from here, at the grounding line. That would mean cold, fresh and buoyant water is suddenly pouring into warm, salty Atlantic-originating water at extreme, dark ocean depths. This interaction is probably very turbulent and dramatic, and it could be the key to growing melting.</p>
+<p>“Because the base of the ice shelf is sloping upwards, this water flows quickly up the bottom of the ice shelf, and as it does that, it mixes and stirs in the warm water from beneath,” said Nicholls.</p>
+<p>This may help explain the most dramatic feature atop Petermann — its central river. It has a frozen surface in some areas, but flowing water underneath. It’s noisy — constantly the source of cracking, crashing and sliding sounds. It’s fed by a seemingly endless network of ice-banked tributaries that, amid above-freezing temperatures on the second day of the team’s trip, were roaring with water.</p>
+<p>But why is it here in the first place? The reason seems to be below the surface, where ocean waters have carved an undersea channel into the bottom of the shelf. That changes the surface of the shelf, too, because thinner ice won’t float as high above the surface of the water. The result is a depression or chasm at the surface, which meltwater, flowing downhill, naturally fills.</p>
+<p>This river, and the channel beneath it, seems implicated in the ice shelf’s undoing. According to Muenchow, the previous major ice loss events seemed to occur whenever a crack in the shelf, coming in from the side, finally extends as far as the river.</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/business/wp-content/uploads/sites/20/2016/12/Petermann211478022625.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20170101041658im_/http://www.washingtonpost.com/sf/business/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    From above Petermann Glacier, cracks are visible on its surface.                                                                             (Whitney Shefte / The Washington Post)
+                                                </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<h3>CHAPTER 5</h3>
+<h2>Time to get out</h2>
+<p class="firstgraf">After an intense 24 hours of work in near-freezing temperatures — tearing apart, rebuilding and reprogramming scientific stations, and consigning four out of nine ocean sensors to a watery oblivion — the researchers had one remaining quest to complete.</p>
+<p>With their time on the ice dwindling, they wanted to install a radar that measures the ice’s thickness roughly a mile from the main station. This would let them compare the shelf’s thinning in different places.</p>
+<p>The helicopter had dropped off equipment at the spot, but to save fuel and flying time, they decided to hike the distance, guided by a GPS device.</p>
+<p>The hike was at a slight incline, out of Petermann’s riverine depression and into higher terrain. At one point, the trek required crossing a small, flowing tributary. Nicholls used the long bamboo poles and drill bits he was carrying to test the opposite ice bank, making sure it provided a good foothold, before they did so.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S-phone padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_4" data-ad-type="bigbox|4" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p>After three hours of work, trouble arose. A cold rain had arrived, turning the ice treacherously slick. “The one thing you do not want is rain on an ice shelf,” Nicholls said.</p>
+<p>The water complicated the trip back to the helicopter. The team made it to within about a football field of the aircraft but could go no further, blocked by a rain-swollen series of streams flowing so fast that their roars were audible.</p>
+<p>So with time running short before the pilots would start out to look for them, the researchers had to backtrack half a mile, where they found a crossing at higher ground.</p>
+<p>Returning to the helicopter, they considered the expedition a success — while the scientists had to jettison two scientific stations, they repaired one and established another. Most of all, they retrieved key ocean data. But they acknowledge that in the vastness of the Petermann Ice Shelf, those are still just two small points taking measurements.</p>
+<p>A month and a half later, as he was about to embark from Alaska on a research vessel bound for a different part of the Arctic, Muenchow told The Post what the data from beneath Petermann revealed.</p>
+<p>A sensor in 3,000-foot-deep waters had found that in the warm, salty Atlantic layer, temperatures were even warmer than just a year earlier, in 2015. Those waters are likely flowing toward Petermann glacier’s grounding line and helping to melt the shelf from below.</p>
+<p>“The temperatures at the bottom end of the array continue to increase,” said Muenchow. “It’s getting warmer.”</p>
+<p>In a recent paper he and Nicholls pointed out that several other glaciers in Greenland have already lost their ice shelves. Their work suggests that Petermann is now following this path.</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/business/wp-content/uploads/sites/20/2016/12/Petermann201478022624.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20170101041658im_/http://www.washingtonpost.com/sf/business/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Andreas Muenchow finishes work on a weather station, which has a cable that runs deep into the ocean.                                                                            (Whitney Shefte / The Washington Post)
+                                                </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<!-- DROP CAP | Added 7/6/15 -->
+
+
+<style type="text/css">
+.firstgraf::first-letter{
+     font-size:600%;
+     float:left;
+     margin-top:.3em;
+     margin-bottom: .1em;
+     font-family: 'PostoniTitling', Times, serif, Georgia;
+     padding-right: 5px;
+     color:#000000; /* CHANGE ME */
+}
+
+.firefox .firstgraf::first-letter{
+     font-size: 600%;
+     float: left;
+     margin-top: 0.1em;
+     margin-bottom: 0.1em;
+     font-family: "PostoniTitling",Times,serif,Georgia;
+     padding-right: 5px;
+}
+
+.span8.col h2{
+     font-family: 'PostoniDisplay', Times, serif, Georgia;
+     font-style: italic;
+     color:#000000; /* CHANGE ME */
+}
+.span8.col h3{
+     font-size: 16px;
+}
+.video-text-overlay{
+   position: absolute:
+   top: 100px;
+   left: 50px;
+}
+</style>
+
+						<div class="et-pagination ">
+								<div class="clearfix"></div>
+			</div>
+							                            </div><!-- span -->
+						</div> <!-- row -->
+					</div> <!-- container -->
+                    				</div> <!-- home/section -->
+				            <div id="section-comments" class="mobile-inactive bT1S bT0small">
+            <div class="container background">
+            <div class="row last">
+            <div class="span4 col pull-right credits">
+                <h4 class="franklin-bold light-black marT0">Credits</h4>
+                                                <div class="byline padTB10">
+            <span class="byline-title">Design by</span>
+                                                                                                <span class="name">Madia Brown</span>                                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/people/chris-mooney"><span class="name">Chris Mooney</span></a>                                                    <a href="http://web.archive.org/web/20170101041658/mailto:christopher.mooney@washpost.com"><i class="fa fa-envelope"></i></a>                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Video by</span>
+                                                                                                <a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/whitney-shefte/2011/05/20/AFmD0z7G_page.html"><span class="name">Whitney Shefte</span></a>                                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Graphics by</span>
+                                                                                                <a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/people/laris-karklis"><span class="name">Laris Karklis</span></a>,                                                                                                                                     <span class="name">Dani Johnson</span>                                                                        </div>
+                    </div>
+            <div id="comments" class="span8 col pretty-comments">
+                          <div class="pretty-comments">
+                  <div id="echo_container" class="echo_container count submitbox stream comment-vars" guid="http://www.washingtonpost.com/sf/business/2016/12/30/with-enough-evidence-even-skepticism-will-thaw/" maxitemstop="5" sectionid="/conversations" isallcomments="true" includeshare="false">
+                  </div>
+              </div>
+                        <!-- auto-assigns guid from page url -->
+            <!--script type="text/javascript">document.getElementById('echo_container').setAttribute('guid', document.location.href);</script -->
+            <!-- end comments -->
+            </div>
+            </div>
+            </div>
+            </div>
+        			</div> <!-- sections -->
+		</div> <!-- main container -->
+		<div id="et-nav-series-off-canvas">
+			<div id="et-nav-series-inner-off-canvas">
+	            	            	            
+	            	        </div>
+        </div>
+        <div id="et-sections-dropdown-list">
+            <ul class="et-dropdown sections-dropdown et-off-canvas">
+                <li><a href="http://web.archive.org/web/20170101041658/http://www.posttv.com/">Video</a></li>
+                <li><a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/politics">Politics</a></li>
+                <li><a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/opinions">Opinions</a></li>
+                <li><a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/local">Local</a></li>
+                <li><a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/sports">Sports</a></li>
+                <li><a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/national">National</a></li>
+                <li><a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/world">World</a></li>
+                <li><a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/business">Business</a></li>
+                <li><a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/business/technology">Tech</a></li>
+                <li><a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/lifestyle">Lifestyle</a></li>
+                <li><a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/entertainment">Entertainment</a></li>
+                <li><a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/classifieds">Classifieds</a></li>
+                <li><a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/jobs">Jobs</a></li>
+                <li><a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/realestate">Real Estate</a></li>
+                <li><a href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/events">Events</a></li>
+			</ul>
+			<div class="copyright-details">
+				<p><a class="franklin-bold" href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/">washingtonpost.com</a></p>
+				<p style="font-size: 12px" class="franklin-thin smaller-size">&copy; 1996-2017 The Washington Post</p>
+				<br/>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/terms-of-service/2011/11/18/gIQAldiYiN_story.html">Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/privacy-policy/2011/11/18/gIQASIiaiN_story.html">Privacy Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/discussion-and-submission-guidelines/2011/11/21/gIQAuvIbiN_story.html">Submission and Discussion Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/rss-terms-of-service/2012/01/16/gIQAadFYAQ_story.html">RSS Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/how-can-i-opt-out-of-online-advertising-cookies/2011/11/18/gIQABECbiN_story.html">Ad Choices</a></p>
+			</div>
+		</div>
+		       <script type="text/javascript">
+        // Omniture variables
+        var wp_page_name = 'business:article - 20161230 - with-enough-evidence-even-skepticism-will-thaw';
+        var wp_track_scrolling = true;
+
+        // etc.
+        // chartbeat variables
+        _sf_async_config={
+          sections: wp_channel,
+          path:document.location.pathname, // defaults to document.location.pathname if you don't pass it.
+          title:document.title,
+          useCanonical:true // defaults to true if you don't pass it.
+        };
+        </script>
+
+        <script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/http://www.washingtonpost.com/wp-srv/analytics/main.js"></script>
+        <script type="text/javascript">
+          //TWP.Analytics.init();
+          // FOR PREPRODUCTION
+          //TWP.Analytics.init( {suite:"preproduction",service:{omniture:true,omnitureTest:false,comscore:false,chartbeat:false}} );
+          TWP.Analytics.init({suite:"production"});
+        </script>
+
+        <!-- COMSCORE NOSCRIPT -->
+        <noscript><img src="http://web.archive.org/web/20170101041658im_/http://b.scorecardresearch.com/p?c1=2&amp;c2=3005617&amp;cv=2.0&amp;cj=1"/></noscript>
+        <!-- COMSCORE NOSCRIPT/Mobile -->
+        <!--<noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=3005617&c4=m.washingtonpost.com/nojs.html" /> </noscript>-->
+        
+        <noscript><img src="//web.archive.org/web/20170101041658im_/http://me.effectivemeasure.net/em_image" alt="" style="position:absolute; left:-5px;"/></noscript>
+        
+      <link rel="stylesheet" id="wapo-footnote-plugin-css" href="http://web.archive.org/web/20170101041658cs_/http://www.washingtonpost.com/sf/business/wp-content/plugins/wapo-footnote/parts/css/plugin.css?ver=1.0.0" type="text/css" media="screen, projection"/>
+<script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/http://js.washingtonpost.com/1d/twp-comments.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/http://www.washingtonpost.com/sf/business/wp-content/themes/enterprise-theme-nav/js/lib/html5.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/http://www.washingtonpost.com/sf/business/wp-content/plugins/wapo-footnote/parts/js/plugin.js?ver=1.0.0"></script>
+  
+              <script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/http://www.washingtonpost.com/sf/business/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme.js?1"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/http://www.washingtonpost.com/sf/business/wp-content/themes/enterprise-theme-nav/js/build/enterprise-theme-nav.js?1"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20170101041658js_/http://js.washingtonpost.com/posttv/resources/js/posttv/vendor/pubsub.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20170101041658js_/http://js.washingtonpost.com/posttv/resources/js/posttv/posttv-player.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/http://www.washingtonpost.com/sf/business/wp-content/themes/enterprise-theme-nav/js/build/embedded-content-video.js"></script>
+              <script src="http://web.archive.org/web/20170101041658js_/http://js.washingtonpost.com/wp-srv/ad/loaders/latest/js/min/loader.min.js" data-ad-site="wp" data-ad-page-type="responsive"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/https://www.washingtonpost.com/video/resources/env/LoopingVideo/dist/LoopingVideo.min.js"></script>              <script type="text/javascript">
+
+        var playlist = [
+            {
+                // Edit this line with the UUID from video
+                uuid: '2679cae8-b7df-11e6-939c-91749443c5e5',
+                // ===================================================
+                loopTimes: 1
+            }
+        ];
+
+        var v = new LoopingVideo('loopingVideo', playlist, {
+            loopTimes: 1,
+            muted: true,
+            autoplay: true,
+            controls: true,
+            showFirstFrame: true,
+
+            // Edit this line here with the image still from video
+            bgImage: ' http://www.washingtonpost.com/sf/business/wp-content/uploads/sites/20/2016/12/Cover_web.jpg'
+            // ===================================================
+
+        });
+
+</script>              <script type="text/javascript" src="http://web.archive.org/web/20170101041658js_/https://www.washingtonpost.com/wp-stat/enterprise-raw-code/loopingVideo-topper/loopingVideo-topper.min.js"></script>              <script type="text/javascript" src="//web.archive.org/web/20170101041658js_/http://js.washingtonpost.com/wp-stat/enterprise-raw-code/audio-warning-toast/audio-warning-toast.js?v1"></script>              <script type="text/javascript" src="//web.archive.org/web/20170101041658js_/http://js.washingtonpost.com/video/resources/env/LoopingVideo/dist/LoopingVideo.min.js"></script>              <script type="text/javascript">
+(function($){
+/*concede*/
+var v1 = new LoopingVideo('video1', [{uuid: '2e192296-bc92-11e6-ae79-bec72d34f8c9', loopTimes: 1}], {loopTimes: 1, muted: false, controls: true, bgImage: 'http://web.archive.org/web/20170101041658/http://www.washingtonpost.com/sf/business/wp-content/uploads/sites/20/2016/12/Petermann191478022622.jpg', showFirstFrame: true});
+
+function init() {
+  playInViewPort([v1]);
+}
+
+init();
+
+})(jQuery);
+</script>              <script>
+if ($.browser.mozilla) { $('body').addClass('firefox'); }
+</script>    
+<!-- This website is powered by Piklist. Learn more at http://piklist.com/ -->
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"707aabbc5c","applicationID":"4157428","transactionName":"MlABYUsACEJXARVaXgsaIlZNCAlfGQsPV1Qd","queueTime":0,"applicationTime":626,"ttGuid":"","agentToken":"","atts":"HhcCFwMaG0w=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

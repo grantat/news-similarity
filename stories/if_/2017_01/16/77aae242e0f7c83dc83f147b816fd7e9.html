@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+    <!--[if IE 7]><html class="ie ie7" lang="en-US"><![endif]-->
+    <!--[if IE 8]><html class="ie ie8" lang="en-US"><![endif]-->
+    <!--[if !(IE 7) | !(IE 8)  ]><!--><html lang="en-US"><!--<![endif]-->
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app39.us.archive.org';v.server_ms=1539;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/static/js/wbhack.js?v=1521067262.0" charset="utf-8"></script>
+
+<script type="text/javascript">
+__wbhack.init('http://web.archive.org/web');
+</script>
+<link rel="stylesheet" type="text/css" href="/static/css/banner-styles.css?v=1521067262.0" />
+<link rel="stylesheet" type="text/css" href="/static/css/iconochive.css?v=1521067262.0" />
+
+<!-- End Wayback Rewrite JS Include -->
+        <meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+        <title>Inside 'The Front Page': How to pull off an enormous Broadway production night after night | The Washington Post</title>                
+                
+        <meta property="fb:app_id" content="41245586762"/>
+        <meta property="article:publisher" content="https://www.facebook.com/washingtonpost"/>
+        <meta name="twitter:site" value="@WashingtonPost"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="og:title" content="Behind-the-scenes at 'The Front Page'">
+        <meta property="og:image" content="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2017/01/SA-marksfrontpage0251.jpg">
+        <meta property="og:url" content="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/sf/style/2017/01/12/the-front-page/">
+        <meta property="og:site_name" content="Washington Post">
+        <meta property="og:type" content="article">
+        <meta property="og:description" content="'Working on this play and seeing how the machinery works, it’s like mathematics' -- Nathan Lane">
+
+        <meta name="description" content="Inside 'The Front Page': How to pull off an enormous Broadway production night after night">
+        <meta name="keywords" content="The Front Page, broadway, Nathan Lane, John Slattery, John Goodman, Jefferson Mays, Holland Taylor, Sherie Rene Scott, Robert Morse, Dylan Baker, Dann Florek, Christopher McDonald, Jack O’Brien, Tripp Phillips">
+        <meta name="news_keywords" content="The Front Page, broadway, Nathan Lane, John Slattery, John Goodman, Jefferson Mays, Holland Taylor, Sherie Rene Scott, Robert Morse, Dylan Baker, Dann Florek, Christopher McDonald, Jack O’Brien, Tripp Phillips">
+
+        
+         <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-57-precomposed.png">
+
+                
+        		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/web.archive.org\/web\/20170116121330\/http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/web.archive.org\/web\/20170116121330\/http:\/\/www.washingtonpost.com\/sf\/style\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.7"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="rs-plugin-settings-css" href="http://web.archive.org/web/20170116121330cs_/http://www.washingtonpost.com/sf/style/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.1" type="text/css" media="all"/>
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<link rel="stylesheet" id="wp-bootstrap-min-css" href="http://web.archive.org/web/20170116121330cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-responsive-css" href="http://web.archive.org/web/20170116121330cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap-responsive.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-fonts-css" href="http://web.archive.org/web/20170116121330cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/fonts.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-inline-css" href="http://web.archive.org/web/20170116121330cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/inline.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-font-awesome-min-css" href="http://web.archive.org/web/20170116121330cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-v4.2-min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-enterprise-theme-style-css" href="http://web.archive.org/web/20170116121330cs_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/style.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-pretty-comments-css" href="http://web.archive.org/web/20170116121330cs_/http://css.wpdigital.net/wp-srv/graphics/css/pretty-comments.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="print-css" href="http://web.archive.org/web/20170116121330cs_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/css/print.css?ver=0.3.1.5" type="text/css" media="print"/>
+<!--[if IE]>
+<link rel='stylesheet' id='wp-general-ie-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/iefonts.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='wp-font-awesome-ie-min-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-ie7.min.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/http://www.washingtonpost.com/sf/style/wp-includes/js/jquery/jquery.js?ver=1.11.2"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/http://www.washingtonpost.com/sf/style/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/http://www.washingtonpost.com/sf/style/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/http://www.washingtonpost.com/sf/style/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/http://js.washingtonpost.com/1h/twp-scripts.js?ver=4.2.7"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/http://js.washingtonpost.com/1h/twp-internal.js?ver=4.2.7"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ET_OM = {"omniture":"entertainment\/theater_dance","wp_page_num":"1 of 1","wp_blogname":"","wp_author":"Peter Marks,McKenna Ewen,Matt McClain","commercialNode":"entertainment\/theater_dance"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme-ad-scripts.js?ver=1418247459"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/http://js.washingtonpost.com/pb/resources/js/utils/control-mod.js?ver=4.2.7"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.washingtonpost.com/sf/style/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.washingtonpost.com/sf/style/wp-includes/wlwmanifest.xml"/> 
+<link rel="prev" title="State of the Union" href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/sf/style/2017/01/12/state-of-the-union/"/>
+<meta name="generator" content="WordPress 4.2.7"/>
+<link rel="canonical" href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/sf/style/2017/01/12/the-front-page/"/>
+<link rel="shortlink" href="http://www.washingtonpost.com/sf/style/?p=12515"/>
+<meta name="generator" content="Piklist 0.9.9.7c"/>
+<link rel="https://api.w.org/" href="http://www.washingtonpost.com/sf/style/wp-json/"/>
+        <script type="text/javascript">
+          var ET_ASSETS = {
+            'post_title': 'The backstage mayhem of a Broadway hit',
+            'post_url': 'http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/sf/style/2017/01/12/the-front-page/',
+          };
+        </script>
+      <meta name="generator" content="Powered by Slider Revolution 5.2.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."/>
+        
+        <script>
+          var $ = jQuery.noConflict();
+        </script>
+
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/css/ie-fix.css" />
+        <![endif]-->
+    </head>
+    <body class="single single-post postid-12515 single-format-standard"> 
+        <div id="et-nav" style="top:0px">
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-sections-dropdown">
+                    <div id="et-nav-sections-regular-dropdown-wrapper" class="hidden-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-full-click"> 
+                            <div class="pull-left">Sections</div>
+                            <div class="share-icon pull-left"><i class="fa fa-reorder"></i></div>
+                        </a>
+                    </div>
+                    <div id="et-nav-sections-reduced-dropdown-wrapper" class="visible-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-reduced-click">
+                            <span class="share-icon pull-left"><i class="fa fa-reorder"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-company-icon">
+                    <a class="branding" href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/">
+                        <img id="branding-at-top" src="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/wp_full_white.png"/>
+                        <img id="branding-during-scroll" src="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/wp_logo_white.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="pull-left border-left hidden-phone no-left-margin-padding" id="et-title-wrap">
+                <div id="et-nav-story-title" class="hide-title-indent">
+                    <a href="#"><p>The backstage mayhem of a Broadway hit</p></a>
+                </div>
+            </div>
+
+
+                        
+            <div class="pull-right hidden-phone" id="share-series">
+                
+                <div class="pull-left border-left relative">
+                    <div id="et-nav-share-dropdown">
+                        <a href="#" class="clearfix pull-right">
+                            <div class="pull-left">
+                                <p class="pull-left">Share</p>
+                                <p class="share-icon pull-left"><i class="fa fa-share"></i></p>
+                            </div>
+                        </a>
+                        <ul class="et-dropdown hidden no-series-nav">
+                          <li><a target="_blank" href="http://web.archive.org/web/20170116121330/https://facebook.com/dialog/feed?app_id=41245586762&amp;link=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Fstyle%2F2017%2F01%2F12%2Fthe-front-page%2F&amp;name=Behind-the-scenes+at+%27The+Front+Page%27&amp;redirect_uri=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Fstyle%2F2017%2F01%2F12%2Fthe-front-page%2F"><i class="fa fa-facebook"></i><span class="social-name">Facebook</span></a></li>
+                          <li><a target="_blank" href="http://web.archive.org/web/20170116121330/https://twitter.com/intent/tweet?text=Behind-the-scenes+at+%27The+Front+Page%27 wapo.st%2Fbroadway"><i class="fa fa-twitter"></i><span class="social-name">Twitter</span></a></li>
+                          <li><a href="http://web.archive.org/web/20170116121330/mailto:/?subject=Behind-the-scenes at 'The Front Page' from the Washington Post&amp;body=wapo.st%2Fbroadway"><i class="fa fa-envelope"></i><span class="social-name">Email</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                            </div> 
+
+                    </div>
+
+    	<div id="main-container" style="padding-top: 50px">
+	<div class="sections">
+					<div class="home section" id="section-home">                <div class=" no-border graphic bg-none graphicPadTB30" id="raw">
+        <link href="http://web.archive.org/web/20170116121330cs_/https://www.washingtonpost.com/wp-stat/enterprise-raw-code/image-overlay/image-overlay.css" rel="stylesheet" type="text/css">
+
+<link href="http://web.archive.org/web/20170116121330cs_/https://www.washingtonpost.com/wp-stat/enterprise-raw-code/loopingVideo-topper/loopingVideo-topper.css" rel="stylesheet" type="text/css">
+
+<style>
+
+.overlay-title {
+    font-family: 'PostoniDisplay', Georgia;
+ text-shadow: 1px 1px  #000000; 
+}
+.overlay-blurb {
+    font-family: 'FranklinITCProLight', Helvetica, Arial;
+ text-shadow: 1px 1px  #000000;
+}
+
+@media (max-width:767px){
+
+  .overlay-title, .overlay-blurb{
+   text-shadow: none;
+   }
+
+}
+
+
+
+/* These styles only apply to bigger screens because we have set style for tablets and smaller */
+/* This is where you set the font size for overlay-title and overlay-blurb as well as the width of your overlay */ 
+@media (min-width: 980px) {
+    .overlay {
+        width: 45%;
+    }
+    .overlay-title {
+        font-size: 5vw;
+        line-height: 5.5vw;
+    }
+    .overlay-blurb {  
+        font-size: 2vw;
+        line-height: 2.5vw;
+    }
+}
+
+/* Use this style if you want a different image for smalls screens. Delete if not changing the image URL. */
+@media (max-width: 767px) {
+
+}
+
+</style>
+
+
+
+<div class="posrel">
+
+    <div id="loopingVideo"></div>
+    <div class="overlay sf-vertical-center sf-horizontal-center">
+        <h2 class="overlay-title">Places, please!</h2>
+        <h1 class="overlay-blurb">A behind-the-scenes look at how ‘The Front Page’s’ cast 
+and crew get into their groove </h1>
+        <a class="pg-button" id="overlay-button"><p>Click to hear audio</p></a>
+    </div>
+</div>
+
+
+
+
+
+
+
+        </div>
+                <div class="container background"><div class="row first">
+            <div class="span4 pull-right padB10 marB10">
+              <div class="bylines bTB1S padTB10 marB10">
+                                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <a href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/people/peter-marks"><span class="name">Peter Marks</span></a>                                                    <a href="http://web.archive.org/web/20170116121330/mailto:marksp@washpost.com"><i class="fa fa-envelope"></i></a>                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Video by</span>
+                                                                                                <a href="http://web.archive.org/web/20170116121330/https://www.washingtonpost.com/mckenna-ewen/2014/06/12/ba56c6a2-f271-11e3-bf76-447a5df6411f_page.html"><span class="name">McKenna Ewen</span></a>                                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Photos by</span>
+                                                                                                <span class="name">Matt McClain</span>                                                                        </div>
+                      </div>
+              <div class="publish-date">Published on January 12, 2017</div>
+              
+              <!-- <div class=" utility-tools-wrapper">
+                <div class="utility-tools-primary margin-top">
+                  <div class="social-tools ">
+                    <div class="textresizer tool first mobile">
+                      <span class="hideText" tabindex="_tbidx_">Resize Text</span>
+                      <span class="fa fa-font"></span>
+                    </div>
+                    <a onclick="window.print();" tabindex="_tbidx_">
+                      <div class="print tool mobile">
+                        <span class="hideText">Print Article</span>
+                        <span class="fa fa-print"></span>
+                      </div>
+                    </a>
+                    <a href="#comments" tabindex="_tbidx_">
+                      <div class="comments tool last mobile">
+                        <span class="hideText">Comments</span>
+                        <span class="fa fa-comments"></span>
+                        <span id="echo_container" class="echo_container comment-vars echo-counter text" guid="http://www.washingtonpost.com/sf/style/2017/01/12/the-front-page/">0</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div> -->
+              
+            </div>
+            
+        <div class="span8 col">
+<p class="article-body-p"><span class="dateline">NEW YORK — </span>A peculiar droning sound emanates from the stage of the Broadhurst Theatre on West 44th Street minutes before the start of that evening’s performance of “The Front Page.” Standing backstage, just behind the realistic set of a Chicago courthouse pressroom of the 1920s, you begin to make out the jumble of consonants and vowels that the actors are repeating in unison:</p>
+<p class="article-body-p">“Benedict Cumberbatch,” “Benedict Cumberbatch,” “Benedict Cumberbatch,” “Benedict Cumberbatch . . . ”</p>
+</div></div><div class="row">                <div class="span4 col pull-right right-content no-border graphic bg-none graphicPadTB30" id="raw">
+        <div id="timeline" class="super-stepper">
+    <div class="intro">
+        <div class="intro-title franklin-bold">Meet the cast</div>
+    </div>
+    <div class="super-stepper-wrapper on-first-slide">
+        <div class="super-stepper-main white-space-nowrap"></div>
+    </div>
+    <div class="super-stepper-nav align-center">
+        <div id="btn-prev" class="super-stepper-nav--arrow prev on-first-slide">
+            <i class="fa fa-angle-left"></i>
+        </div>
+        <div class="super-stepper-nav--dots"></div>
+        <div id="btn-next" class="super-stepper-nav--arrow next">
+            <i class="fa fa-angle-right"></i>
+        </div>
+    </div>
+</div>        </div>
+                <div class="span8 col">
+<p class="article-body-p">It might be amusing for the faraway Cumberbatch to learn that his name is invoked by the likes of Nathan Lane, John Slattery, John Goodman and a herd of other accomplished actors before the curtain rises on the sold-out Broadway revival of “The Front Page.” Not in benediction, but as an exercise in <i>diction</i>. The play’s rat-a-tat dialogue must be delivered over the course of three acts so crisply by the newsmen, politicians, cops, socialites and other assorted schleps, mobsters, street walkers and convicts who populate Ben Hecht and Charles MacArthur’s 1928 script that regular maintenance of enunciation and projection is needed. Therefore, <span id="soundcite2" class="soundcite">limbering the tongue</span> with a chorus of Cumberbatches is one of a number of preparation rituals these stage veterans, ages 29 to 85, execute as an audience 1,100 strong settles in each night for nearly three hours of bracing comedy and drama.</p>
+<p class="article-body-p">Wandering the warren of alcoves on two floors that defines the play’s backstage world, you’re likely to witness any number of these rituals: Goodman, who plays Sheriff Hartman, an oafish Chicago lawman, lying on the floor by the prop shelves and going through his warm-up calisthenics; Slattery, climbing the steps from the basement, muttering some of his lines as star reporter Hildy Johnson; Jefferson Mays, a Tony winner for “I Am My Own Wife,” racing back and forth across the length of the backstage like a harried commuter, before slipping on gloves and entering as pompous reporter Bensinger of the Tribune.</p>
+</div></div><div class="row">                <div class="span12 bTB1S marT10 no-border graphic bg-none graphicPadTB30" id="raw">
+        <!-- Auto-playing video | Added 7/7/15 -->
+
+<div class="video-headline franklin-bold">Video #1 subheadline</div>
+<div id="video1" class="viewport-autoplay"></div>        </div>
+                <div class="span8 marT30 col">
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox" data-ad-type="bigbox" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p class="article-body-p">Then there’s Robert Morse, whose career stretches from the original Broadway production of “How to Succeed in Business Without Really Trying” to TV’s “Mad Men.” Waiting to go on midway through the play as Mr. Pincus, a bewildered government clerk, Morse is available in the meantime to kibitz in the basement greenroom, imparting wisdom on such topics as why the first raising of the curtain is such a bellwether moment for the show:</p>
+<p class="article-body-p">“We all listen to the applause for the set,” Morse says. “If we don’t get that applause, it’s going to be a lousy evening.”</p>
+<div id="attachment_12523" style="width: 2310px" class="wp-caption aligncenter"><img class="wp-image-12523" src="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2017/01/SA-marksfrontpage005.jpg" alt="SA-marksfrontpage005" width="2300" height="1577"/><p class="wp-caption-text">Robert Morse prepares backstage for his role as Mr. Pincus, a bewildered government clerk. “I’m 85 and playing 25,” Morse said. “And getting away with it!”</p></div>
+<p class="article-body-p">The point is to have as few of those as possible. Washington Post videographer McKenna Ewen, photographer Matt McClain and I spent the production’s 86th through 88th performances backstage last month to answer this question: How does a cast of 25 actors, plus a dozen stage managers, stagehands, electricians, dressers, props handlers and makeup artists get into the proper groove to envelop a Broadway audience in the antics of an 88-year-old play?</p>
+<p class="article-body-p">Musicals these days are often as large or even larger. But rising costs and a shrinking pool of interested theatergoers have made straight plays of this magnitude an extreme rarity on Broadway. It’s a complex organism, a Broadway production of this caliber, with a backstage so teeming with experience, talent and ego it could be the subject of an anthropology class. Or as Lane puts it as he sits in his prime-location dressing room, the one with the shortest walk to the stage: “Working on this play and seeing how the machinery works, it’s like mathematics.”</p>
+<div id="attachment_12542" style="width: 2310px" class="wp-caption aligncenter"><img class="wp-image-12542" src="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2017/01/SA-marksfrontpage025.jpg" alt="SA-marksfrontpage025" width="2300" height="1547"/><p class="wp-caption-text">Christopher McDonald, seated, who plays Murphy of the Journal, and Lewis J. Stadlen, who plays Endicott, are seen in their dressing room. As Nathan Lane delivers his lines onstage, McDonald mouths them along with him backstage, and gives a victory gesture with each laugh from the audience.</p></div>
+<h3 class="subhead">ACT 1</h3>
+<p class="article-body-p">Much of the play’s formula is entrusted to the mind and annotated script of production stage manager Tripp Phillips. At this point in December of the play’s run — it had its official, and mostly well-received, opening in late October — the show’s machinery is well oiled. It now ends about 10 minutes earlier than six weeks ago, thanks largely to the cast’s improved mastery of the play’s rhythms.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_2" data-ad-type="bigbox|2" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p class="article-body-p">In the absence of director Jack O’Brien, whose guidance for the most part ended on opening night, Phillips is the production’s field marshal. At his console just offstage right, he “calls” the show through a headset and panels of switches that let the head electrician in the lighting booth, and the sound man and a carpenter at other stations, know when to activate each of the 200 lighting cues, as well as separate cues for such sound and special effects as ricocheting bullets, ringing phones, shattering windows and whining sirens.</p>
+<p class="article-body-p">“It’s not like you can be late with those,” says Phillips, who trained to be a director but switched 22 years ago to stage management; his longest stint was a four-year association with a revival of the musical “42nd Street.” He or stage manager Jason Hindelang will call each performance, watching on multiple TV monitors, and occasionally from out front, for imperfections creeping in, in the way lines are delivered or how the focus of a scene might be shifting.</p>
+<p class="article-body-p">“You want to make sure that the values stay correct,” Phillips says. “ . . . I’m a little OCD, I’m a little hyper-organized, so those things are actually benefits in this job.”</p>
+<div id="attachment_12550" style="width: 2310px" class="wp-caption aligncenter"><img class="wp-image-12550" src="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2017/01/SA-marksfrontpage033.jpg" alt="SA-marksfrontpage033" width="2300" height="1533"/><p class="wp-caption-text">Much of the play’s formula is entrusted to the mind and annotated script of production stage manager Tripp Phillips. At his console just offstage right, Phillips “calls” the show through a headset and panels of switches.</p></div>
+<p class="article-body-p">“The Front Page” is a drama with two intermissions and a dual nature: It’s both a valentine and a poison-pen letter to the gritty, profane worlds of Chicago journalism and politics. “It was like the Wild West, Chicago in the 1920s,” says Lane, who plays the evening’s most galvanizing comic character, the hard-boiled schemer Walter Burns, a volcano of bluster whom Hecht and MacArthur based on a feared Chicago newspaper editor. A much-loved 1940 movie comedy, “His Girl Friday,” starring Cary Grant and Rosalind Russell, was adapted from the more acerbic “Front Page.”</p>
+<p class="article-body-p">“The play is more cynical, darker, melodramatic,” Lane notes. “And then it starts twisting and turning till it turns into almost a farce by the third act. I can’t think of anything else quite like it.”</p>
+<p class="article-body-p">It was Lane’s idea to mount the play, its first Broadway revival since 1986, a notion hatched over a meal with his friend producer Scott Rudin. Many cast members say they owe their participation to having worked with Lane before, and they speak of him with an affection that borders on reverence.</p>
+<p class="article-body-p">“Usually by the time Nathan comes on, it’s gangbusters,” says Goodman, who was in a New York production of “A Midsummer Night’s Dream” with Lane and another cast member, Dann Florek, 40 years ago. “I listen to him every night. And I don’t know how he does it.”</p>
+</div></div><div class="row">            <div class="bg-none  text-center padTB10  bTB1S">
+                <!--SPECIAL AD 0 BEGIN-->
+                <div id="slug_enterprise" data-ad-type="enterprise" style="display:none;" class="advertisement"></div>
+
+                <div id="slug_mob_enterprise" data-ad-type="mob_enterprise" style="display:none;" class="advertisement"></div>
+                <!--SPECIAL AD 0 END-->
+            </div>
+                <div class="span8 marT30 col">
+<p class="article-body-p">The audience response is different at each show we witness that December week, as if ticket holders are the actors’ frenemies: supportive or withholding at any given moment. The actors are keenly attuned to the divergent reactions, and they’ve heard plenty about what strikes some people as the interminable Act 1. While, for instance, the set is greeted with varying amounts of applause at the curtain rise at the Wednesday matinee and evening performances, the audience is silent Tuesday night. On that occasion, Morse’s reaction is a desultory shrug.</p>
+<p class="article-body-p">Over the next two days, the actors and technical crew members, falling into patterns that make a long run look like an endless looping of the movie “Groundhog Day,” will stop to relate the rigors of their particular track.</p>
+<p>“Every one of us in this play is running a different sort of race,” Mays says. Those races include unique pitfalls. Sherie Rene Scott, preparing in an upstairs dressing room for her role as prostitute Mollie Malloy, reveals the nasty bruise she acquired courtesy of one of the piece’s most dangerous stunts: In despair,<span id="soundcite1" class="soundcite">Mollie jumps out of a window in the pressroom,</span> which means that, eight times a week, Scott must leap nine feet into a specially built, foam-padded chamber in the basement that’s not always as easy a landing as you might think.</p>
+<div id="attachment_12554" style="width: 2310px" class="wp-caption alignright"><img class="wp-image-12554 size-full" src="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2017/01/SA-marksfrontpage038.jpg" alt="SA-marksfrontpage038" width="2300" height="1533"/><p class="wp-caption-text">Sherie Rene Scott is attended to by hair and makeup supervisor Jenna B. DeJesus. Scott&#8217;s character, Mollie Malloy, jumps out of a window in the pressroom, which means that, eight times a week, she must leap nine feet into a specially built, foam-padded chamber in the basement.</p></div>
+<p class="article-body-p">John Magaro, sitting at the table of hair and makeup supervisor Jenna B. DeJesus, reveals the knee and elbow pads he wears under his jailhouse garb as nebbishy escaped convict Earl Williams. Nightly, he bursts through another window made of breakaway glass, imported from California. In her dressing room, meanwhile, Holland Taylor talks about overcoming her reticence to play the part of Hildy’s mother-in-law, Mrs. Grant, which she initially saw as too minor to bother O’Brien about during rehearsals.</p>
+<p class="article-body-p">“I’ve never had the experience,” she explains, “of being a cog in such a magnificent vehicle.”</p>
+<p class="article-body-p">Act 1 introduces us to the gaggle of reporters — played by Mays, Dylan Baker, David Pittu, Lewis J. Stadlen, Clarke Thorell, Christopher McDonald and Joey Slotnick — who are staying late in the pressroom to report on a sensational event: the dawn execution of Earl, whom Mollie insists is innocent of the murder of which he’s been convicted. The reporters mercilessly taunt Mollie, and on her exit from one scene, the sobbing Scott can be spied at a backstage mirror, wiping tears off her smeared face.</p>
+<p class="article-body-p">“Once the waterworks get going, it’s not easy to turn them off,” she explains later.</p>
+<p class="article-body-p">It’s all a long setup for the antics and complications to come, including the efforts of Lane’s Walter to stop Slattery’s Hildy from leaving his paper to move to New York and marry pretty, young Peggy Grant (Halley Feiffer).</p>
+<p class="article-body-p">The production’s physical detail is remarkable, down to the coating of dust applied to the window sills, the 1920s Chicago Cubs pennant on the wall, even the working vintage water cooler in the corner. (“We did have an issue when the spigot accidentally got left on,” Phillips says. “Actors were skating around the stage.”)</p>
+</div></div><div class="row">        <div class="photo-right span4 col pull-right ">
+                                                    <div class="spinner">
+            <img class=" image " data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2017/01/SA-marksfrontpage034.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2017/01/SA-marksfrontpage034.jpg&amp;w=1040&amp;authapi-mob-redir=0"/>
+                    </div>
+                                                            <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Props head Laura Koch cooks vegetable patties on a grill for a scene in which the reporters bamboozle a dim policeman to fetch them burgers.                                                                         </p>
+                                    </div>
+                            </div>
+        <div class="span8 col">
+<p class="article-body-p">The accuracy extends to a nightly culinary routine. About 10 minutes into the show, props head Laura Koch pulls five patties out of a refrigerator backstage to cook on a George Foreman grill. The reporters bamboozle a dim policeman (Micah Stock) to fetch them “hamburger sandwiches.” And so, burgers are made, vegetable patties on slider buns, “because big buns are too much to talk and eat,” Koch says. Everything that goes into the brown bag Stock fetches is routinized: the ketchup bottle (diluted with eight ounces of water for easy pouring); the arrangement of five burgers in the bag (one with lettuce, for Mays’s Bensinger); even the bag itself. Koch sprays a bit of Pam on the same edge of the bag every night to simulate leaking burger grease.</p>
+<p class="article-body-p">The script doesn’t specify this level of precision. But as Koch recounts, it instills a sense of reality that extends to the offstage banter.</p>
+<p class="article-body-p">“One of the guys always says: ‘That was the best burger ever!’ ”</p>
+</div></div><div class="row">                <div class="span12 bTB1S marT10 no-border graphic bg-none graphicPadTB30" id="raw">
+        <!-- Auto-playing video | Added 7/7/15 -->
+
+<div class="video-headline franklin-bold">Video #2 subheadline</div>
+<div id="video2" class="viewport-autoplay"></div>        </div>
+                <div class="span8 marT30 col">
+<h3 class="subhead">ACT 2</h3>
+<p class="article-body-p">“Places, please,” Phillips announces into the backstage P.A. system. “Have a great second act.”</p>
+<p class="article-body-p">Out of Lane’s dressing room, behind Phillips’s console, pop three actors: Feiffer, Slattery and Taylor. It’s another ritual, running lines during intermission with Lane. Although Walter is heard all through Acts 1 and 2 — via hyperbolic phone calls, barking orders at Hildy — he doesn’t physically enter until just before the end of Act 2. Most of Lane’s phone-call lines are prerecorded; at two points, though, they’re delivered live from a soundproof booth behind the set. The running of lines in his dressing room, which Lane confesses is often just an excuse for shooting the breeze, helps to loosen him up.</p>
+<p class="article-body-p">“It’s more taxing than I thought it would be,” Lane says of the play. “I thought, ‘Oh, what a blast, I don’t even have to come on till the end of the second act.’ Well, it’s nerve-racking to wait till the end of the second act. You really have to sort of pace yourself, because you don’t want to get ready too soon. Then you’re just sitting around in a three-piece suit like at a doctor’s office, and you have to get ready to jump on the speeding train.”</p>
+<div id="attachment_12527" style="width: 2310px" class="wp-caption aligncenter"><img class="wp-image-12527" src="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2017/01/SA-marksfrontpage010.jpg" alt="SA-marksfrontpage010" width="2300" height="1533"/><p class="wp-caption-text">Dylan Baker, Lewis J. Stadlen and Nathan Lane talk backstage. Baker, who plays McCue of the City News Bureau, said, “Learning the rhythm, you don’t want to let anybody down, you don’t want to drop a stitch, because the whole thing can undo so easily.”</p></div>
+<p class="article-body-p">The actor-reporters are the play’s workhorses, especially Slattery. Most everyone else has ample down time, but Hildy is the linchpin figure. The character is torn between his opportunity to settle down with Peggy and a job in the “advertising” business — given Slattery’s “Mad Men” history, that mention always gets a big laugh — and his desire to report out Williams’s escape. He and the others playing reporters have developed a special esprit de corps. Says Baker, who plays McCue of the City News Bureau: “Learning the rhythm, you don’t want to let anybody down, you don’t want to drop a stitch, because the whole thing can undo so easily.”</p>
+<p class="article-body-p">As other actors stretch out on couches in the greenroom or wait for their stage reentries in their dressing rooms, Slattery can be seen dashing this way and that, trailed by his omnipresent dresser, and stopping at DeJesus’s table for some quick toupee management.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_3" data-ad-type="bigbox|3" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p class="article-body-p">Feiffer and Stock occupy spots on the sofas, she with a laptop, he sharing the quiche he’s brought from home and reading a screenplay of a movie for which he’s auditioning. Feiffer, a playwright like her father, Jules, is tapping away at a new piece and gabbing with Stock. They’ve become friends, and she’s asked him to participate in a reading of her new work. As a closed-circuit broadcast of the production runs on a screen above them, they’re joined by Patricia Conolly, who plays the minor part of the cleaning lady, Jennie.</p>
+<p class="article-body-p">“Before this, I hadn’t worked in a year,” Stock confides. It’s a stunning admission from the 29-year-old actor, and another indication of how tough this business is, given the enthusiastic notices — and the Tony nomination — Stock received when he appeared with Lane on Broadway in 2014-2015 in the Terrence McNally comedy “It’s Only a Play.”</p>
+<p class="article-body-p">By this point in the “Front Page” run, which ends Jan. 29, the actors have memorized one another’s habits and are only too happy to share the details — who sneaks out for a smoke, who’s about to get married. They all rib one another and share stories, with Morse as raconteur-in-chief.</p>
+<div id="attachment_12530" style="width: 2310px" class="wp-caption aligncenter"><img class="wp-image-12530" src="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2017/01/SA-marksfrontpage013.jpg" alt="SA-marksfrontpage013" width="2300" height="1533"/><p class="wp-caption-text">Nightly, John Magaro, who plays convict Earl Williams, bursts through a window made of breakaway glass.</p></div>
+<p class="article-body-p">Act 2 is when most of the crucial stunts occur. Magaro dons a plastic eye shield and climbs onto the outside edge of the upstage window to prepare for crashing into the pressroom; carpenter Brian Munroe cleans up glass fragments that fall into the pit that will soon cushion Scott’s leap.</p>
+<p class="article-body-p">Off the stage sweep Goodman and Florek, he of “Law and Order: SVU” fame, who plays the self-serving Mayor. (He later reports that he watched the presidential candidates to find his character’s public buffoonishness and private malice.) Taylor exits a scene shortly thereafter, when Mrs. Grant is kidnapped at Walter’s behest, by a hoodlum played by Danny Mastrogiorgio.</p>
+<p class="article-body-p">Even if things can seem a bit sedate offstage, Taylor offers a thought about the galloping pace onstage as she races breathlessly back to her dressing room. “It’s like you’re on the roof of a train in a heist movie,” she says, “jumping from car to car.”</p>
+<div id="attachment_12647" style="width: 2610px" class="wp-caption aligncenter"><img class="wp-image-12647" src="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2017/01/SA-marksfrontpage043.jpg" alt="SA-marksfrontpage043" width="2600" height="1733"/><p class="wp-caption-text">Manhattan&#8217;s Broadhurst Theatre on West 44th Street, where the sold-out Broadway revival of “The Front Page” is playing.</p></div>
+<h3 class="subhead">ACT 3</h3>
+<p class="article-body-p">This is when Lane’s performance reliably goes into overdrive. Hildy has hidden Earl in a roll-top desk; its false back allows the curled-up Magaro to stretch out backstage. Lane’s Walter has arrived, and seeking to preserve the paper’s scoop about William’s recapture, tries to move the immovable desk out of the room by himself. He can’t, but refuses to stop trying. As Lane sinks to the floor, “The Front Page” gets its biggest laugh of the night.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_4" data-ad-type="bigbox|4" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p class="article-body-p">The gag came to him during previews. “I said, ‘I’m going to try and lift it,’ and my feet started to slide and . . . I could hear them laughing,” Lane says. “And the longer I let it go — it’s just one of those things you discover in performance.”</p>
+<p class="article-body-p">As Lane delivers his zingers, McDonald, known for his roles in such movies as “Thelma and Louise” and “Quiz Show,” and who here plays Murphy of the Journal, mouths them along with him, backstage. He hears the audience’s guffaws and gives with each laugh a victory gesture.</p>
+<p class="article-body-p">The Wednesday night audience is the warmest yet. They applaud vigorously at the curtain rise. “They’re glad to be here,” Phillips says. The warmth never wears off this night, and even actors like Morse, who’ve been here and done this countless times, are tickled. “I’m 85 and playing 25,” he declares. “And getting away with it!”</p>
+<p class="article-body-p">The bows that occur two hours and 40 minutes or so after the curtain is first pulled receive an even more exuberant reception. That’s partly because the audience gets a reminder of what they’ve experienced, through a curtain-call tableau of the entire company, the actors all posed as if for a group portrait.</p>
+</div></div><div class="row">                <div class="span4 col pull-right right-content no-border graphic bg-none graphicPadTB30" id="raw">
+        <!-- Auto-playing video | Added 7/7/15 -->
+
+<div class="video-headline franklin-bold">Video #3 subheadline</div>
+<div id="video3" class="viewport-autoplay"></div>        </div>
+                <div class="span8 col">
+<p class="article-body-p">The curtain comes down, and Phillips announces into his mic that it has been another fine performance. But the evening isn’t quite over. The cast remains onstage to recognize Magaro, the actor getting married that weekend. He’s presented with a gift and a card signed by everyone. He’ll miss the Friday, Saturday and Sunday shows for his nuptials.</p>
+<p class="article-body-p">Magaro could also take Thursday off, but just enjoys coming to work too much — another measure how all those complicated backstage mathematics add up to an enterprise that remains distinctly human.</p>
+<div id="attachment_12537" style="width: 2310px" class="wp-caption aligncenter"><img class="wp-image-12537" src="http://web.archive.org/web/20170116121330im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2017/01/SA-marksfrontpage020.jpg" alt="SA-marksfrontpage020" width="2300" height="1528"/><p class="wp-caption-text">The actor-reporters are the play’s workhorses, especially John Slattery, shown here backstage. Most everyone else has ample down time, but Slattery&#8217;s Hildy Johnson is the linchpin figure.</p></div>
+
+ 
+
+<!-- Do not re-use this code. Visit the following URL for the most recent slider code. https://docs.google.com/document/d/1ztIwthLpJz6hH8i4_4WF0Q2kRNBJ0DritzRXyN48dHI/edit?usp=sharing -->
+
+<link rel="stylesheet" href="http://web.archive.org/web/20170116121330cs_/https://css.washingtonpost.com/graphics/_modules/super-stepper/TWP.Module.super-stepper-1.5.4.min.css" type="text/css" media="all"/> 
+
+ 
+
+
+
+<!-- ICH templates -->
+
+
+
+
+<link href="http://web.archive.org/web/20170116121330cs_/https://cdn.knightlab.com/libs/soundcite/latest/css/player.css" rel="stylesheet" type="text/css">
+
+<style> 
+.soundcite {
+display: inline; 
+} 
+</style>
+
+
+<link rel="stylesheet" href="//web.archive.org/web/20170116121330cs_/http://css.washingtonpost.com/wp-stat/enterprise-raw-code/autoplay-video/autoplay-video.css" type="text/css">
+
+
+              
+
+						<div class="et-pagination ">
+								<div class="clearfix"></div>
+			</div>
+							                            </div><!-- span -->
+						</div> <!-- row -->
+					</div> <!-- container -->
+                    				</div> <!-- home/section -->
+				            <div id="section-comments" class="mobile-inactive bT1S bT0small">
+            <div class="container background">
+            <div class="row last">
+            <div class="span4 col pull-right credits">
+                <h4 class="franklin-bold light-black marT0">Credits</h4>
+                                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <a href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/people/peter-marks"><span class="name">Peter Marks</span></a>                                                    <a href="http://web.archive.org/web/20170116121330/mailto:marksp@washpost.com"><i class="fa fa-envelope"></i></a>                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Video by</span>
+                                                                                                <a href="http://web.archive.org/web/20170116121330/https://www.washingtonpost.com/mckenna-ewen/2014/06/12/ba56c6a2-f271-11e3-bf76-447a5df6411f_page.html"><span class="name">McKenna Ewen</span></a>                                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Photos by</span>
+                                                                                                <span class="name">Matt McClain</span>                                                                        </div>
+                    </div>
+            <div id="comments" class="span8 col pretty-comments">
+                          <div class="pretty-comments">
+                  <div id="echo_container" class="echo_container count submitbox stream comment-vars" guid="http://www.washingtonpost.com/sf/style/2017/01/12/the-front-page/" maxitemstop="5" sectionid="/conversations" isallcomments="true" includeshare="false">
+                  </div>
+              </div>
+                        <!-- auto-assigns guid from page url -->
+            <!--script type="text/javascript">document.getElementById('echo_container').setAttribute('guid', document.location.href);</script -->
+            <!-- end comments -->
+            </div>
+            </div>
+            </div>
+            </div>
+        			</div> <!-- sections -->
+		</div> <!-- main container -->
+		<div id="et-nav-series-off-canvas">
+			<div id="et-nav-series-inner-off-canvas">
+	            	            	            
+	            	        </div>
+        </div>
+        <div id="et-sections-dropdown-list">
+            <ul class="et-dropdown sections-dropdown et-off-canvas">
+                <li><a href="http://web.archive.org/web/20170116121330/http://www.posttv.com/">Video</a></li>
+                <li><a href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/politics">Politics</a></li>
+                <li><a href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/opinions">Opinions</a></li>
+                <li><a href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/local">Local</a></li>
+                <li><a href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/sports">Sports</a></li>
+                <li><a href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/national">National</a></li>
+                <li><a href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/world">World</a></li>
+                <li><a href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/business">Business</a></li>
+                <li><a href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/business/technology">Tech</a></li>
+                <li><a href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/lifestyle">Lifestyle</a></li>
+                <li><a href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/entertainment">Entertainment</a></li>
+                <li><a href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/classifieds">Classifieds</a></li>
+                <li><a href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/jobs">Jobs</a></li>
+                <li><a href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/realestate">Real Estate</a></li>
+                <li><a href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/events">Events</a></li>
+			</ul>
+			<div class="copyright-details">
+				<p><a class="franklin-bold" href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/">washingtonpost.com</a></p>
+				<p style="font-size: 12px" class="franklin-thin smaller-size">&copy; 1996-2017 The Washington Post</p>
+				<br/>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/terms-of-service/2011/11/18/gIQAldiYiN_story.html">Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/privacy-policy/2011/11/18/gIQASIiaiN_story.html">Privacy Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/discussion-and-submission-guidelines/2011/11/21/gIQAuvIbiN_story.html">Submission and Discussion Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/rss-terms-of-service/2012/01/16/gIQAadFYAQ_story.html">RSS Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/how-can-i-opt-out-of-online-advertising-cookies/2011/11/18/gIQABECbiN_story.html">Ad Choices</a></p>
+			</div>
+		</div>
+		       <script type="text/javascript">
+        // Omniture variables
+        var wp_page_name = 'entertainment:article - 20170112 - the-front-page';
+        var wp_track_scrolling = true;
+
+        // etc.
+        // chartbeat variables
+        _sf_async_config={
+          sections: wp_channel,
+          path:document.location.pathname, // defaults to document.location.pathname if you don't pass it.
+          title:document.title,
+          useCanonical:true // defaults to true if you don't pass it.
+        };
+        </script>
+
+        <script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/http://www.washingtonpost.com/wp-srv/analytics/main.js"></script>
+        <script type="text/javascript">
+          //TWP.Analytics.init();
+          // FOR PREPRODUCTION
+          //TWP.Analytics.init( {suite:"preproduction",service:{omniture:true,omnitureTest:false,comscore:false,chartbeat:false}} );
+          TWP.Analytics.init({suite:"production"});
+        </script>
+
+        <!-- COMSCORE NOSCRIPT -->
+        <noscript><img src="http://web.archive.org/web/20170116121330im_/http://b.scorecardresearch.com/p?c1=2&amp;c2=3005617&amp;cv=2.0&amp;cj=1"/></noscript>
+        <!-- COMSCORE NOSCRIPT/Mobile -->
+        <!--<noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=3005617&c4=m.washingtonpost.com/nojs.html" /> </noscript>-->
+        
+        <noscript><img src="//web.archive.org/web/20170116121330im_/http://me.effectivemeasure.net/em_image" alt="" style="position:absolute; left:-5px;"/></noscript>
+        
+      <link rel="stylesheet" id="wapo-footnote-plugin-css" href="http://web.archive.org/web/20170116121330cs_/http://www.washingtonpost.com/sf/style/wp-content/plugins/wapo-footnote/parts/css/plugin.css?ver=1.0.0" type="text/css" media="screen, projection"/>
+<script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/http://js.washingtonpost.com/1d/twp-comments.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/lib/html5.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/http://www.washingtonpost.com/sf/style/wp-content/plugins/wapo-footnote/parts/js/plugin.js?ver=1.0.0"></script>
+  
+              <script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme.js?1"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/build/enterprise-theme-nav.js?1"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20170116121330js_/http://js.washingtonpost.com/posttv/resources/js/posttv/vendor/pubsub.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20170116121330js_/http://js.washingtonpost.com/posttv/resources/js/posttv/posttv-player.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/build/embedded-content-video.js"></script>
+              <script src="http://web.archive.org/web/20170116121330js_/http://js.washingtonpost.com/wp-srv/ad/loaders/latest/js/min/loader.min.js" data-ad-site="wp" data-ad-page-type="responsive"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/https://www.washingtonpost.com/video/resources/env/LoopingVideo/dist/LoopingVideo.min.js"></script>              <script type="text/javascript">
+
+        var playlist = [
+            {
+                // Edit this line with the UUID from video
+                uuid: '25d10eaa-d358-11e6-9651-54a0154cf5b3',
+                // ===================================================
+                loopTimes: 1
+            }
+        ];
+
+        var v = new LoopingVideo('loopingVideo', playlist, {
+            loopTimes: 1,
+            muted: true,
+            autoplay: true,
+            controls: true,
+            showFirstFrame: true,
+
+            // Edit this line here with the image still from video
+            bgImage: ' http://s3.amazonaws.com/posttv-thumbnails-prod/01-05-2017/t_1483642203745_name_0112thumbnail.jpg'
+            // ===================================================
+
+        });
+
+</script>              <script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/https://www.washingtonpost.com/wp-stat/enterprise-raw-code/loopingVideo-topper/loopingVideo-topper.min.js"></script>              <script type="text/javascript" src="//web.archive.org/web/20170116121330js_/http://js.washingtonpost.com/video/resources/env/WapoVideo/dist/WapoVideoEmbed.min.js"></script>              <script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/https://js.washingtonpost.com/graphics/_modules/super-stepper/TWP.Module.super-stepper-1.5.4.min.js"></script>              <script>
+function checkPageLoad(){
+    if (TWP.PostTV){
+        
+    TWP.Module.SuperStepper({
+        element: '#timeline',
+        key: '1JKnlUVdFWRXaWey8IxDV7gSz3Xsv34KnImMr--LF8a4',
+        alignment: 'right',
+        video: false,
+        mobileVideo: false,
+        showSteps: false,
+    });
+     
+    window.clearInterval(interval);
+
+    } else {
+        console.debug("Video player hasn't loaded yet");
+    }
+}
+
+jQuery(window).load(function() {
+    interval = window.setInterval(checkPageLoad, 500);
+});
+
+</script>              <script id="panel" type="text/html">
+<div class="super-stepper--item">
+    {{#uuid}}
+    <div class="panel-video" data-uuid="{{ uuid }}">
+        <div class="video-container">
+            <div class="bkgd-image"><img src="{{ image }}" /></div>
+            <div id="player-{{ uuid }}" class="ui-widget-content" data-video-uuid="{{ uuid }}" data-autoplay="0" data-ad-freq="0" data-show-ad="0" data-show-ads-for-first-video-only="0" data-show-endscreen="0" data-show-play="1" data-companion-ad="0"></div>
+        </div>
+        {{#step}} 
+        <div class="number">{{ step }}</div>
+        {{/step}}
+    </div>
+    {{/uuid}}
+    {{^uuid}}
+        {{#image}}
+        <div class="bkgd-image"><img src="{{ image }}" /></div>
+        {{/image}}
+    {{/uuid}}
+    <div class="panel-txt-wrap">
+        {{#kicker}}<div class="panel-txt kicker franklin align-center white-space-normal">{{{ kicker }}}</div>{{/kicker}}
+        {{#title}}<div class="panel-txt step franklin-bold uppercase align-center white-space-normal">{{{ title }}}</div>{{/title}}
+        {{#description}}<div class="panel-txt franklin description white-space-normal">{{{ description }}}</div>{{/description}}
+    </div>
+    <div class="clear"></div>
+</div>
+</script>              <script>
+$('#soundcite1').attr('data-url','http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2017/01/fall.mp3').attr('data-start', '0').attr('data-end', "12000").attr('data-plays','1')
+
+$('#soundcite2').attr('data-url','http://web.archive.org/web/20170116121330/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2017/01/vocalwarmup.mp3').attr('data-start', '0').attr('data-end', "21000").attr('data-plays','1')
+</script>              <script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js"></script>              <script type="text/javascript" src="http://web.archive.org/web/20170116121330js_/https://www.washingtonpost.com/wp-stat/enterprise-raw-code/video-overlay/video-overlay.js"></script>              <script type="text/javascript">
+(function($){
+
+var v1 = new LoopingVideo('video1', [{uuid: 'cd851462-d35c-11e6-9651-54a0154cf5b3', loopTimes: 1}], {loopTimes: 1, muted: false, controls: true, bgImage: 'http://web.archive.org/web/20170116121330/http://s3.amazonaws.com/posttv-thumbnails-prod/01-05-2017/t_1483639862131_name_0112goodman.jpg', showFirstFrame: true});
+
+var v2 = new LoopingVideo('video2', [{uuid: '725c721e-d35d-11e6-9651-54a0154cf5b3', loopTimes: 1}], {loopTimes: 1, muted: false, controls: true, bgImage: 'http://web.archive.org/web/20170116121330/http://s3.amazonaws.com/posttv-thumbnails-prod/01-05-2017/t_1483639579578_name_0112timelapse_thumbnail.jpg', showFirstFrame: true});
+
+var v3 = new LoopingVideo('video3', [{uuid: 'd1a7f24c-d35e-11e6-9651-54a0154cf5b3', loopTimes: 1}], {loopTimes: 1, muted: false, controls: true, bgImage: 'http://web.archive.org/web/20170116121330/http://s3.amazonaws.com/posttv-thumbnails-prod/01-05-2017/t_1483639367129_name_0112magaro.jpg', showFirstFrame: true});
+
+function init() {
+  playInViewPort([v1, v2, v3]);
+}
+
+init();
+
+})(jQuery);
+</script>    
+<!-- This website is powered by Piklist. Learn more at http://piklist.com/ -->
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"707aabbc5c","applicationID":"4157428","transactionName":"MlABYUsACEJXARVaXgsaIlZNCAlfGQsPV1Qd","queueTime":0,"applicationTime":518,"ttGuid":"","agentToken":"","atts":"HhcCFwMaG0w=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

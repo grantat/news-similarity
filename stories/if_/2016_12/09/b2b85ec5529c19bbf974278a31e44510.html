@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+    <!--[if IE 7]><html class="ie ie7" lang="en-US"><![endif]-->
+    <!--[if IE 8]><html class="ie ie8" lang="en-US"><![endif]-->
+    <!--[if !(IE 7) | !(IE 8)  ]><!--><html lang="en-US"><!--<![endif]-->
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app41.us.archive.org';v.server_ms=501;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/static/js/wbhack.js?v=1521067262.0" charset="utf-8"></script>
+
+<script type="text/javascript">
+__wbhack.init('http://web.archive.org/web');
+</script>
+<link rel="stylesheet" type="text/css" href="/static/css/banner-styles.css?v=1521067262.0" />
+<link rel="stylesheet" type="text/css" href="/static/css/iconochive.css?v=1521067262.0" />
+
+<!-- End Wayback Rewrite JS Include -->
+        <meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+        <title>Video games are more addictive than ever. This is what happens when kids can’t turn them off. | The Washington Post</title>                
+                
+        <meta property="fb:app_id" content="41245586762"/>
+        <meta property="article:publisher" content="https://www.facebook.com/washingtonpost"/>
+        <meta name="twitter:site" value="@WashingtonPost"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="og:title" content="Video games are more addictive than ever. This is what happens when kids can’t turn them off.">
+        <meta property="og:image" content="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/GenZ5c.jpg">
+        <meta property="og:url" content="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/12/07/video-games-are-more-addictive-than-ever-this-is-what-happens-when-kids-cant-turn-them-off/">
+        <meta property="og:site_name" content="Washington Post">
+        <meta property="og:type" content="article">
+        <meta property="og:description" content="More parents are worried that their kids can't separate from games.">
+
+        <meta name="description" content="Video games are more addictive than ever. This is what happens when kids can’t turn them off.">
+        <meta name="keywords" content="Video games;video game addiction;compulsive video gaming;Internet;children;kids;addictive;Xbox;therapy;rehabilitation;research;reSTART;wilderness therapy;MMOs;computers">
+        <meta name="news_keywords" content="Video games;video game addiction;compulsive video gaming;Internet;children;kids;addictive;Xbox;therapy;rehabilitation;research;reSTART;wilderness therapy;MMOs;computers">
+
+        
+         <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/ico/apple-touch-icon-57-precomposed.png">
+
+                
+        		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/web.archive.org\/web\/20161208231108\/http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/web.archive.org\/web\/20161208231108\/http:\/\/www.washingtonpost.com\/sf\/style\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.7"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="rs-plugin-settings-css" href="http://web.archive.org/web/20161208231108cs_/http://www.washingtonpost.com/sf/style/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.1" type="text/css" media="all"/>
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<link rel="stylesheet" id="wp-bootstrap-min-css" href="http://web.archive.org/web/20161208231108cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-responsive-css" href="http://web.archive.org/web/20161208231108cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/wpbootstrap-responsive.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-bootstrap-min-fonts-css" href="http://web.archive.org/web/20161208231108cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/fonts.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-inline-css" href="http://web.archive.org/web/20161208231108cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/inline.min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-font-awesome-min-css" href="http://web.archive.org/web/20161208231108cs_/http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-v4.2-min.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-enterprise-theme-style-css" href="http://web.archive.org/web/20161208231108cs_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/style.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="wp-pretty-comments-css" href="http://web.archive.org/web/20161208231108cs_/http://css.wpdigital.net/wp-srv/graphics/css/pretty-comments.css?ver=0.3.1.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="print-css" href="http://web.archive.org/web/20161208231108cs_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/css/print.css?ver=0.3.1.5" type="text/css" media="print"/>
+<!--[if IE]>
+<link rel='stylesheet' id='wp-general-ie-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/iefonts.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='wp-font-awesome-ie-min-css'  href='http://www.washingtonpost.com/wp-srv/graphics/templates/mobile/css/font-awesome-ie7.min.css?ver=0.3.1.5' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript" src="http://web.archive.org/web/20161208231108js_/http://www.washingtonpost.com/sf/style/wp-includes/js/jquery/jquery.js?ver=1.11.2"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161208231108js_/http://www.washingtonpost.com/sf/style/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161208231108js_/http://www.washingtonpost.com/sf/style/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161208231108js_/http://www.washingtonpost.com/sf/style/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.1"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161208231108js_/http://js.washingtonpost.com/1h/twp-scripts.js?ver=4.2.7"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161208231108js_/http://js.washingtonpost.com/1h/twp-internal.js?ver=4.2.7"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ET_OM = {"omniture":"lifestyle\/style","wp_page_num":"1 of 1","wp_blogname":"","wp_author":"Caitlin Gibson,Mark Abramson,Kate Miller,Jake Crump","commercialNode":"lifestyle\/style"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://web.archive.org/web/20161208231108js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme-ad-scripts.js?ver=1418247459"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161208231108js_/http://js.washingtonpost.com/pb/resources/js/utils/control-mod.js?ver=4.2.7"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.washingtonpost.com/sf/style/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.washingtonpost.com/sf/style/wp-includes/wlwmanifest.xml"/> 
+<link rel="prev" title="In good hands" href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/11/29/in-good-hands/"/>
+<link rel="next" title="When every moment of childhood can be recorded and shared, what happens to childhood?" href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/12/07/when-every-moment-of-childhood-can-be-recorded-and-shared-what-happens-to-childhood/"/>
+<meta name="generator" content="WordPress 4.2.7"/>
+<link rel="canonical" href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/12/07/video-games-are-more-addictive-than-ever-this-is-what-happens-when-kids-cant-turn-them-off/"/>
+<link rel="shortlink" href="http://www.washingtonpost.com/sf/style/?p=12045"/>
+<meta name="generator" content="Piklist 0.9.9.7c"/>
+<link rel="https://github.com/WP-API/WP-API" href="http://www.washingtonpost.com/sf/style/wp-json/"/>
+        <script type="text/javascript">
+          var ET_ASSETS = {
+            'post_title': 'Video games are more addictive than ever. This is what happens when kids can’t turn them off.',
+            'post_url': 'http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/12/07/video-games-are-more-addictive-than-ever-this-is-what-happens-when-kids-cant-turn-them-off/',
+          };
+        </script>
+      <meta name="generator" content="Powered by Slider Revolution 5.2.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."/>
+        
+        <script>
+          var $ = jQuery.noConflict();
+        </script>
+
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/css/ie-fix.css" />
+        <![endif]-->
+    </head>
+    <body class="single single-post postid-12045 single-format-standard"> 
+        <div id="et-nav" style="top:0px">
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-sections-dropdown">
+                    <div id="et-nav-sections-regular-dropdown-wrapper" class="hidden-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-full-click"> 
+                            <div class="pull-left">Sections</div>
+                            <div class="share-icon pull-left"><i class="fa fa-reorder"></i></div>
+                        </a>
+                    </div>
+                    <div id="et-nav-sections-reduced-dropdown-wrapper" class="visible-phone">
+                        <a href="#" class="clearfix sections-click" id="et-nav-sections-reduced-click">
+                            <span class="share-icon pull-left"><i class="fa fa-reorder"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left no-left-margin-padding">
+                <div id="et-nav-company-icon">
+                    <a class="branding" href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/">
+                        <img id="branding-at-top" src="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/wp_full_white.png"/>
+                        <img id="branding-during-scroll" src="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/wp_logo_white.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="pull-left border-left hidden-phone no-left-margin-padding" id="et-title-wrap">
+                <div id="et-nav-story-title" class="hide-title-indent">
+                    <a href="#"><p>Video games are more addictive than ever. This is what happens when kids can’t turn them off.</p></a>
+                </div>
+            </div>
+
+
+                        
+            <div class="pull-right hidden-phone" id="share-series">
+                
+                <div class="pull-left border-right border-left relative">
+                    <div id="et-nav-share-dropdown">
+                        <a href="#" class="clearfix pull-right">
+                            <div class="pull-left">
+                                <p class="pull-left">Share</p>
+                                <p class="share-icon pull-left"><i class="fa fa-share"></i></p>
+                            </div>
+                        </a>
+                        <ul class="et-dropdown hidden">
+                          <li><a target="_blank" href="http://web.archive.org/web/20161208231108/https://facebook.com/dialog/feed?app_id=41245586762&amp;link=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Fstyle%2F2016%2F12%2F07%2Fvideo-games-are-more-addictive-than-ever-this-is-what-happens-when-kids-cant-turn-them-off%2F&amp;name=Video+games+are+more+addictive+than+ever.+This+is+what+happens+when+kids+can%E2%80%99t+turn+them+off.&amp;redirect_uri=http%3A%2F%2Fwww.washingtonpost.com%2Fsf%2Fstyle%2F2016%2F12%2F07%2Fvideo-games-are-more-addictive-than-ever-this-is-what-happens-when-kids-cant-turn-them-off%2F"><i class="fa fa-facebook"></i><span class="social-name">Facebook</span></a></li>
+                          <li><a target="_blank" href="http://web.archive.org/web/20161208231108/https://twitter.com/intent/tweet?text=Video+games+are+more+addictive+than+ever.+This+is+what+happens+when+kids+can%E2%80%99t+turn+them+off. http%3A%2F%2Fwapo.st%2Fnextlevel"><i class="fa fa-twitter"></i><span class="social-name">Twitter</span></a></li>
+                          <li><a href="http://web.archive.org/web/20161208231108/mailto:/?subject=Video games are more addictive than ever. This is what happens when kids can’t turn them off. from the Washington Post&amp;body=http%3A%2F%2Fwapo.st%2Fnextlevel"><i class="fa fa-envelope"></i><span class="social-name">Email</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                                    <div class="pull-right hidden-phone">
+                        <div id="et-nav-series-dropdown" class="pull-right">
+                            <a href="#" class="clearfix">
+                                <p class="pull-left">The Screen Age</p>
+                                <p class="pull-left"><i class="fa fa-list-ul"></i></p> 
+                            </a>
+                        </div>
+                    </div>
+                            </div> 
+
+                            <div class="pull-right visible-phone border-left">
+                    <div id="mobile-menu-icon">
+                        <a href="#"><i class="fa fa-list-ul"></i></a>
+                    </div>
+                </div>
+                    </div>
+
+    	<div id="main-container" style="padding-top: 50px">
+	<div class="sections">
+					<div class="home section" id="section-home">                <div class=" no-border graphic bg-none graphicPadTB30" id="raw">
+        <style>
+.overlay-title {
+    font-family: 'PostoniDisplay', Georgia; 
+}
+.overlay-blurb {
+    font-family: 'FranklinITCProThin', Helvetica, Arial;
+    font-weight:100
+}
+.sf-horizontal-center{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+.sf-top{
+    top: 5vh;
+}
+.gen-z-illo{
+    width: 90%;
+    margin-top: 35px;
+}
+.gen-z-series{
+    border-bottom-style:solid;
+    border-bottom-width:4px;
+    border-radius:3px;
+    border-color:#000;
+    display: table;
+    margin: 0 auto;
+    margin-top:20px;
+    line-height:2.2em;
+    color:#000;
+    font-weight:900;
+    text-transform: uppercase;
+    font-size:14px;
+}
+.overlay {
+    width: 90%;
+    margin-top:60px;
+    z-index: 3;
+    color: #000;
+}
+.overlay-title {
+    margin-top:45px;
+    font-size: 8.5vw;
+    line-height: 5.5vw;
+    margin-bottom:45px;
+}
+.overlay-blurb {  
+font-size: 30px;
+line-height: 1.4em;
+max-width: 800px;
+margin: 0 auto;
+}
+@media (max-width: 767px) {
+.overlay-title {
+    font-size: 16vw;
+    line-height:0.8em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.overlay-blurb {
+    font-size: 1.7em;
+    line-height:1.4em;
+    margin-top: 5px;
+}
+.gen-z-illo{
+    width:100%;
+}
+}
+</style>
+
+<div class="posrel">
+    <div class="overlay sf-top sf-horizontal-center">
+        <h3 class="gen-z-series">The Screen Age</h3>
+        <img class="gen-z-illo" src="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/GenZ5c.jpg">
+        <h2 class="overlay-title">The next level</h2>
+        <h1 class="overlay-blurb">Video games are more addictive than ever. This is what happens when kids can’t turn them off.</h1>
+    </div>
+    <div class="clear"></div>
+</div>        </div>
+                <div class="container background"><div class="row first">
+            <div class="span4 pull-right padB10 marB10">
+              <div class="bylines bTB1S padTB10 marB10">
+                                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/people/caitlin-gibson"><span class="name">Caitlin Gibson</span></a>                                                    <a href="http://web.archive.org/web/20161208231108/mailto:caitlin.gibson@washpost.com"><i class="fa fa-envelope"></i></a>                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Photos by</span>
+                                                                                                <span class="name">Mark Abramson</span>                                                                        </div>
+                      </div>
+              <div class="publish-date">Published on December 7, 2016</div>
+              
+              <!-- <div class=" utility-tools-wrapper">
+                <div class="utility-tools-primary margin-top">
+                  <div class="social-tools ">
+                    <div class="textresizer tool first mobile">
+                      <span class="hideText" tabindex="_tbidx_">Resize Text</span>
+                      <span class="fa fa-font"></span>
+                    </div>
+                    <a onclick="window.print();" tabindex="_tbidx_">
+                      <div class="print tool mobile">
+                        <span class="hideText">Print Article</span>
+                        <span class="fa fa-print"></span>
+                      </div>
+                    </a>
+                    <a href="#comments" tabindex="_tbidx_">
+                      <div class="comments tool last mobile">
+                        <span class="hideText">Comments</span>
+                        <span class="fa fa-comments"></span>
+                        <span id="echo_container" class="echo_container comment-vars echo-counter text" guid="http://www.washingtonpost.com/sf/style/2016/12/07/video-games-are-more-addictive-than-ever-this-is-what-happens-when-kids-cant-turn-them-off/">0</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div> -->
+              
+            </div>
+            
+        <div class="span8 col">
+<p class="article-body-p"><strong>It was nearing midnight when she slipped out of bed,</strong> padded across the wood floors and peered into the room across the hall. Her 15-year-old son was still awake, like she knew he would be, sitting in his bed, staring at his laptop screen. This had long been his nightly ritual: After hours spent playing video games — riveted by a world of guns and gore, adrenaline pumping — he would unwind by watching videos of other gamers playing.</p>
+<p class="article-body-p"><i>Turn it off, </i>she said.</p>
+<p class="article-body-p"><i>I need to finish,</i> he said.</p>
+<p class="article-body-p"><i>No,</i> she said.</p>
+<p class="article-body-p">Their voices got louder. She doesn’t remember exactly what made him reach for the glass on his bedside table. He threw it with such force that it spun across the room and shattered against his closet door, carving a two-inch gash in the white painted wood. Tiny shards glinted on the striped rug.</p>
+</div></div><div class="row">            <div class="bg-none  text-center padTB10  bTB1S">
+                <!--SPECIAL AD 0 BEGIN-->
+                <div id="slug_enterprise" data-ad-type="enterprise" style="display:none;" class="advertisement"></div>
+
+                <div id="slug_mob_enterprise" data-ad-type="mob_enterprise" style="display:none;" class="advertisement"></div>
+                <!--SPECIAL AD 0 END-->
+            </div>
+                <div class="span8 marT30 col">
+<p class="article-body-p">By then, the family’s stately home in New York was riddled with such scars — nicks in the walls, scratches in the floor, a divot in the marble countertop lining the kitchen sink. All remnants of the boy’s outbursts, which had intensified over the years, almost always triggered by a simple request from his parents: <i>Byrne, please turn off the game. Please get off the computer.</i></p>
+<p class="article-body-p">When Byrne threw the glass, his mother, Robin, didn’t panic; she mostly felt numb. For five years, she and her husband, Terrence, had felt their son slipping away — descending deeper and deeper into a realm they didn’t like or understand, consumed by the virtual worlds shared by millions of strangers, all reachable through his Xbox and his computer. Robin and Terrence had conferred with therapists, medical experts and school counselors to try to help their son.</p>
+<p class="article-body-p">Just weeks before, they had turned to an education consultant, who helped them come up with a plan: Byrne had to go away — first, to a summerlong wilderness therapy program, where he could reconnect with himself and the real world around him, and then to a boarding school. He had to start over, in a place with strict structure, where he couldn’t spend his days immersed in video games.</p>
+<p class="article-body-p">His parents knew it was their last option. If this new plan couldn’t save their son, maybe nothing could.</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/112016_WaPoVideoGame_06.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Byrne plays Overwatch. (Mark Abramson/for The Washington Post)                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<p class="article-body-p"><strong>Video games are nothing new,</strong> and neither are reports of game addiction. But today’s most popular games are wholly immersive: Vast digital landscapes unfold in eye-popping detail, nuanced characters evolve from one level to the next.<b> </b>These games are deliberately designed, with the help of psychology consultants, to make players want to keep playing, and they are available on every platform — gaming consoles, computers, smartphones<b>.</b> Today’s teens are more tethered to this technology than any previous generation; these so-called “digital natives” have been playing more sophisticated games at younger ages than their parents ever did.</p>
+<p class="article-body-p">The games have been criticized as an escape from human interaction, but some offer a different sort of social connection: MMOs — or massively multiplayer online games — allow gamers to play together from any place at any time, and many describe a powerful sense of attachment to those who share this virtual realm. Logging off is that much harder for kids who feel a very real bond to their online friends and teammates.</p>
+<p class="article-body-p">The result, experts say, is a steep rise in the number of parents worried that their kids are in fact addicted, or at least compulsively devoted, to the games. A residential facility called reSTART, the nation’s first therapeutic retreat devoted specifically to Internet addiction, launched a new <a href="http://web.archive.org/web/20161208231108/https://netaddictionrecovery.com/tour-and-visit/119-serenity-mountain-campus-adolescents.html">adolescent program</a> last month after receiving a barrage of calls from parents desperate to separate their children from video games, consoles, computers and smartphones. A small but growing number of psychologists across the United States have begun to specialize in treating children who struggle with compulsive gaming and screen use.</p>
+<p class="interstitial-link" channel="wp.com">
+  <i>
+    [<a href="http://web.archive.org/web/20161208231108/https://www.washingtonpost.com/business/economy/for-many-young-americans-compulsive-internet-use-is-a-very-very-real-struggle/2016/05/20/be637a24-130d-11e6-8967-7ac733c56f12_story.html?utm_term=.6d7b2c7febf8">This dark side of the Internet is costing young people their jobs and social lives</a>]
+  </i>
+</p>
+<p class="article-body-p">“I don’t think we know exactly how many are suffering from this, but we know it’s a big problem,” said psychologist Kimberly Young, founder of the <a href="http://web.archive.org/web/20161208231108/http://netaddiction.com/">Center for Internet Addiction</a>. “A modest estimate might be 5 percent. But 5 percent of American kids is a <i>lot</i>.”</p>
+<p class="article-body-p">Boys tend to be more susceptible to compulsive gaming than girls, but any kid who is trying to avoid overwhelming stress<b> </b><b></b>— bullies at school, a difficult home environment, social anxiety — might be especially drawn to video games. Experts also see a correlation between obsessive video game use and traits associated with autism, attention deficit disorders, anxiety and depression, although the exact nature of the connection is not fully understood.</p>
+<p class="article-body-p">Whatever the causes behind this unhealthy attachment, at least one common factor comes through, said Kim McDaniel, a therapist and <a href="http://web.archive.org/web/20161208231108/http://www.kimmcdanielcoaching.com/">parent coach</a> who specializes in the compulsive use of electronics.</p>
+<p class="article-body-p">“The biggest impression I get,” she said, “is that we have this generation of teens and kids who are just so lonely.”</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/112016_WaPoVideoGame_01AAA.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Terrence holds a letter and drawing Byrne made as a small child. (Mark Abramson/for The Washington Post)                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<p class="article-body-p"><strong>Terrence and Robin say</strong> they were never the kind of parents who parked their children in front of the TV or relied on computer games and electronic gadgets to keep them occupied. Terrence, a pragmatic government employee, and Robin, an artistic owner of a small business, made it a priority to spend uninterrupted time with their two boys. They read books with Byrne and his brother, who is three years older, every day. The family cooked meals together and often took long outdoor walks.</p>
+<p class="article-body-p">The couple revisited their memories of Byrne’s childhood on a recent November evening, sitting together at their dining room table in the 1920s-era house where Byrne and his older brother grew up<b>,</b> nestled behind a row of tall pines on a quiet, small-town street. They both spoke thoughtfully, often completing each other’s sentences. They asked that their family be identified using middle names to protect their privacy.</p>
+<p class="article-body-p">The first signs of Byrne’s anxious and obsessive behavior surfaced at 4, when he would agonize over which book to read at bedtime: “It had to be the <i>just right </i>book,” Robin recalled. In first grade, he excitedly brought his class roster home and called his classmates over and over to set up play dates, with such persistence that the families on the other end of the line rarely obliged.</p>
+<p class="article-body-p">Byrne was 6 when he first saw a therapist. At 10, he was hospitalized in a pediatric psychiatric unit; doctors told his parents that their highly intelligent, highly sensitive son had severe anxiety. Soon after, his therapist diagnosed him with ADD.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox" data-ad-type="bigbox" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p class="article-body-p">Byrne had trouble making friends, partly because of his obsessive behavior, partly because of his strong personal convictions. In fourth grade, when Byrne heard a couple of classmates complain that the school’s celebration of Black History Month was unnecessary, he launched into a passionate and eloquent rebuke. His teachers were impressed; his peers shunned him even more.</p>
+<p class="article-body-p">It was around that time when a relative gave Byrne and his brother an Xbox. Gaming was deemed a privilege Byrne would lose if he misbehaved. But that structure soon proved hard to implement.</p>
+<p class="article-body-p">“He was relentless about asking when he could play — it was a continuous negotiation,” Robin said. The routine grew exhausting, she added, and sometimes she and Terrence caved in to Byrne’s demands. “The games were his refuge.”</p>
+<p class="article-body-p">The pattern worsened after Byrne entered middle school.</p>
+<p class="article-body-p"><i>“In seventh grade the downward spiral began, after having maintained High Honor Roll for one quarter, I was given a laptop. This is when my addiction to screens began.”</i></p>
+<p class="article-body-p">Byrne wrote these words years later as part of a reflective essay assignment while he was away at the wilderness therapy program<b>.</b></p>
+<p class="article-body-p"><i>“In eighth grade, my grades continued to be high, but my parents began to notice my addiction to xbox and my laptop worsening.”</i></p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/112016_WaPoVideoGame_19.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Robin and Terrence take a walk together near their home.                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<p class="article-body-p">Byrne had frequent arguments with his brother, who had once enjoyed playing games with him, and the two began to spend less time together. One by one, Byrne quit the sports teams that he’d once loved — football, baseball, basketball, lacrosse, sailing. He protested whenever his family made plans to leave the house.</p>
+<p class="article-body-p">“Anything other than video games,” Robin said, “he called ‘a waste of time.’ ”</p>
+<p class="article-body-p"><strong>At the height of his obsession,</strong> Byrne’s games of choice were from the “Call of Duty: Modern Warfare” series — first-person shooter games that are every bit as absorbing and nerve-racking as a real military battle simulation or an action movie, replete with stunning graphics, sound effects and atmospheric theme music. The gamer becomes the soldier: Leaves crunch beneath his combat boots as he stalks through an open field, gun raised. There is the sound of a thumping heartbeat when an enemy guard appears in the crosshairs, the soft <i>ping </i>of the bullet firing, a sharp inhalation of breath and a burst of dark blood as the guard falls.</p>
+<p class="article-body-p">Every movement, every shot fired, every victory within the game is accompanied by real-life physical and neurological responses: The gamer’s muscles tighten, the pulse pounds, and the brain’s prefrontal cortex — its pleasure center — is activated.</p>
+<p class="interstitial-link" channel="wp.com">
+  <i>
+    [<a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/12/07/instagram-wattpad-and-younow-arent-just-apps-for-many-teens-theyre-more-than-that/">Instagram, Wattpad and YouNow aren’t just apps — for many teens, they’re more than that.</a>]
+  </i>
+</p>
+<p class="article-body-p">Researchers are still trying to figure out exactly how and why video games affect the brain. One <a href="http://web.archive.org/web/20161208231108/http://www.nature.com/nature/journal/v393/n6682/full/393266a0.html">1998 study</a> showed that video games raise the level of dopamine in the brain by about 100 percent, roughly the same increase triggered by sex. (And that was nearly 20 years ago — today’s games have evolved far beyond what was available then.) More <a href="http://web.archive.org/web/20161208231108/http://newsinfo.iu.edu/web/page/normal/20602.html">recent research</a> found measurable changes in the parts of the brain linked to cognitive function and emotional control after study subjects spent one week playing violent video games.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_2" data-ad-type="bigbox|2" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p class="article-body-p">After Byrne’s prolonged periods of play, his parents noticed that his temperament was unusually volatile. The muscles in his back and neck felt tense and tight. His eyes would sometimes twitch. Lines of dialogue from the games would pop into his mind unbidden. At school, the class dismissal bell occasionally sounded just like the two-tone chime that signaled a new friend joining a game online <b>— </b>a sort of auditory hallucination that researchers refer to as <a href="http://web.archive.org/web/20161208231108/https://www.theguardian.com/technology/gamesblog/2011/sep/22/game-transfer-phenomena">Game Transfer Phenomena</a>(GTP), in which the boundaries between reality and the game begin to blur.</p>
+<p class="article-body-p">Nicholas Kardaras, a New York <a href="http://web.archive.org/web/20161208231108/http://drkardaras.com/">psychotherapist and author </a>who specializes in addiction, still remembers the very first gamer he treated who suffered from GTP: a teenage boy in a Metallica T-shirt who appeared frightened and confused as he sat in Kardaras’s office.</p>
+<p class="article-body-p">The boy blinked, looking up at the ceiling, then down at the floor.</p>
+<p class="article-body-p">“Do you know where you are?” the psychotherapist asked him.</p>
+<p class="article-body-p">The boy was quiet for a moment. Then he asked: “Are we still in the game?”</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/112016_WaPoVideoGame_10.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Byrne plays video games at his family’s home.                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<p class="article-body-p"><i><strong>“When ninth grade rolled around,</strong> I began to ignore my responsibilities as a student for screens. I began to [make] more friends, however I did not notice that these people were making fun of me nonstop.”</i></p>
+<p class="article-body-p">Byrne’s classmates only really hung out with him through video games — each in their separate homes, connected online and through headsets that allowed them to chat while they played. But the same social hierarchy followed Byrne from his school hallways into the games, where the other boys continued to tease him.</p>
+<p class="article-body-p">Byrne tried to laugh it off; being mocked still seemed better than being ignored altogether. His parents noticed that he was often upset when the games ended. But he insisted on going back, because he felt he had nowhere else to go.</p>
+<p class="interstitial-link" channel="wp.com">
+  <i>
+    [<a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/lifestyle/style/how-to-protect-kids-online-apps-and-tactics-used-by-experts--and-real-parents/2016/12/07/42ef7f14-ad13-11e6-a31b-4b6397e625d0_story.html">How to protect kids online: Apps and tactics used by experts – and real parents</a>]
+  </i>
+</p>
+<p class="article-body-p">When Byrne started failing classes and refusing to go to school in 10th grade, his parents knew their situation had grown dire. They hired the education consultant who urged them to enroll Byrne in a private boarding school. The thought of sending him away was wrenching — but also hopeful.</p>
+<p class="article-body-p">“Finally, we had a path,” Terrence said. “We just had to figure out how to pay for it.”</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_3" data-ad-type="bigbox|3" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p class="article-body-p">Because video-game addiction isn’t recognized as an official diagnosis by the guidebook of American psychiatry, the Diagnostic and Statistical Manual of Mental Disorders — which <a href="http://web.archive.org/web/20161208231108/https://www.psychologytoday.com/blog/here-there-and-everywhere/201407/internet-gaming-disorder-in-dsm-5">cites</a> “Internet Gaming Disorder” as a condition warranting more research — medical insurance doesn’t cover treatment, which can quickly climb into the tens of thousands.</p>
+<p class="article-body-p">Byrne’s parents said they took out a second mortgage on their home, raided their savings, ran up their credit cards and applied for financial aid to help cover<b> </b>the $25,000 summer-long therapy program and the annual $50,000 private school tuition.<b></b></p>
+<p class="article-body-p">“We knew, if we do this, and it doesn’t work, then we know we’ve done everything,” Robin said. “And you will do anything for your kid.”</p>
+<p class="article-body-p">Byrne wanted to go to the boarding school; he was eager to get away, to start over. He was less thrilled about the wilderness program but understood that it was mandatory. When his family dropped him off for 10 weeks in Vermont in June 2015, he handed over his phone and said goodbye.</p>
+<p class="article-body-p">His parents returned to a quiet house, filled with memories of a painful past that they wanted to leave behind. So Robin gathered years’ worth of files — towering stacks of teachers’ reports, special education plans, insurance forms and her own notes — and carried them into the sunny living room. She knelt beside the brick-lined fireplace and struck a match. Then she fed the papers to the flames, watching as they withered and crumbled to ash.</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/112016_WaPoVideoGame_27.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Byrne relaxes with his mother during a visit at home over fall break.                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<p class="article-body-p"><strong>Byrne is 17 now,</strong> a sweet-natured, soft-spoken kid with glasses and a mop of tousled brown hair. He speaks with his father’s baritone voice and his mother’s thoughtful eloquence.</p>
+<p class="article-body-p">He lives on a sloping, wooded campus in New England, where his days are filled with classes and organized outings. Now in his junior year — he had to repeat 10th grade <b>—</b> he earns mostly A’s and B’s. He has a circle of friends and a roommate he describes as “hilarious” and “compassionate.” On Saturdays, Byrne goes sailing with the school team. On Sundays, he does his homework and orders pizza for dinner with his friends.</p>
+<p class="article-body-p">And, once or twice a week, he allows himself to play video games. This concerns his parents; they worry that his struggle to distance himself from the games isn’t over, that the risk of relapse always looms.</p>
+<p>Byrne feels he has a healthier relationship to the games now. “I have to do my work, then I can play,” he said. “It’s much more like, ‘I can do this for a treat.’ ” But he knows he’ll always have to monitor himself carefully. He wants to go to college to become a counselor, to help other kids who are struggling like he has. He is repairing his relationship with his big brother, who began to drift away from Byrne when he became consumed by the games.</p>
+<p class="article-body-p">Lately, he’s been into a game called Overwatch, a multiplayer first-person shooter game made by the creators of World of Warcraft, the most lucrative online video game in history. Set in a future version of Earth, Overwatch has an intricate story line and a cast of “heroes,” each with different skills and detailed biographies. Byrne plays the game with online friends and has become close to many of them: “Everyone likes me there,” he said.</p>
+</div></div><div class="row">            <div class="span4 col pull-right right-content  bTB1S padTB30">
+                <!--BOX AD 0 BEGIN-->
+                <div id="slug_bigbox_4" data-ad-type="bigbox|4" style="display:none;" class="padTB10 advertisement"></div>
+                <!--BOX AD 0 END-->
+            </div>
+                <div class="span8 col">
+<p class="article-body-p">He plays at his desk in the corner of his dorm room, a bright, messy space strewn with shoes and laundry and smelling faintly of microwave popcorn and gym socks. On a recent Sunday afternoon, he settled into his chair and opened his laptop, a model specifically designed for gameplay.</p>
+<p class="article-body-p">The screen was a blur of chaotic motion as his character stormed from one level to the next, through bright streets and towering canyons and apocalyptic underworlds. The illuminated keyboard bathed Byrne’s fingers in rainbow-colored lights. The speakers blasted the sounds of grunts, gunfire and shouts.</p>
+<p class="article-body-p"><i>The world is worth fighting for!</i> said the character he’d chosen for the game, a nerdy but powerful female scientist named Mei. Byrne smiled. “That’s one of the lines that pops into my mind sometimes,” he said, and repeated it as his right hand furiously clicked the mouse.</p>
+<p class="article-body-p">“The world is worth fighting for.”</p>
+<p class="article-body-p">Outside the tall windows, the day faded to late afternoon, the shadows of trees lengthening over the yellowed grass. Soon it was four o’clock, and Byrne had been playing for several hours. The guys would be ordering pizza soon, before evening study hall. Byrne had final exams to prepare for.</p>
+<p class="article-body-p">The sound of his friends’ laughter echoed in the hallway.</p>
+<p class="article-body-p">On the computer, a countdown ticked:<i> Next game starts in 20 seconds … 19 … 18 …</i></p>
+<p class="article-body-p">His hand moved across the glowing keyboard, and with a soft <i>click</i>, the world on the screen disappeared.</p>
+</div></div><div class="row">                                        <div class="span12 bTB1S marT10 padTB30 bTB1S">
+            
+                        <div class="photo-full temp-pad">
+                    <div class="spinner">
+            <img class="lazy-image image " data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/112016_WaPoVideoGame_15.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                    </div>
+                    
+            
+        </div>
+
+                                                <div class="marT10">
+                                            <p class="marTB0 light-grey size-fourteen franklin-light">
+                                                    Byrne visits his family at home during fall break from school.                                                                        </p>
+                                    </div>
+                            
+                    </div>
+                    <div class="span8 marT30 col">
+<link href="//web.archive.org/web/20161208231108cs_/http://css.washingtonpost.com/wp-stat/sub/css/wp-story-style.css" rel="stylesheet" type="text/css">
+<div class="sub">
+<form id="form_583dc4272fef5db9052bbe44" role="form" action="" novalidate="novalidate">
+</form>
+</div>
+
+
+</div></div><div class="row">                <div class="span4 col pull-right right-content no-border graphic bg-none graphicPadTB30" id="raw">
+        <!-- Updated 12/7/15 by EY to fix a bug with single quotes --> 
+
+<link rel="stylesheet" href="//web.archive.org/web/20161208231108cs_/http://css.washingtonpost.com/wp-stat/enterprise-raw-code/sharebar/enterprise-sharebar.css?v3"/>
+
+<!-- To switch to grayscale share buttons, remove the 'color-top' class from top-sharebar-wrapper div -->
+
+<div class="top-sharebar-wrapper color-top large-8 large-centered columns cf" id="top-sharebar_123534312321">
+<div class="social-tools-wrapper">
+    <div class="social-tools-primary ">
+        <div class="social-tools ">
+            <!-- FB -->
+            <a id="facebook-raw-share" data-service="facebook" onclick="" tabindex="1">
+                <div class="facebook tool first mobile"><span class="hideText">Share on Facebook</span><span class="fa fa-facebook-square"></span></div>
+            </a>
+            <!-- Twitter -->
+            <a id="twitter-raw-share" data-service="twitter" onclick="" tabindex="2">
+                <div class="twitter tool mobile"><span class="hideText">Share on Twitter</span><span class="fa fa-twitter"></span></div>
+            </a>
+            <!-- Google Plus -->
+            <a id="google-plus-raw-share" data-service="google-plus" onclick="" tabindex="3">
+                <div class="google-plus tool mobile"><span class="hideText">Share on Google Plus</span><span class="fa fa-google-plus"></span></div>
+            </a>
+            <!-- Email -->
+            <a id="email-raw-share" data-service="email" href="" tabindex="4">
+                <div class="email tool mobile"><span class="hideText">Share via Email</span><span class="fa fa-envelope"></span></div>
+            </a>
+            <!-- More -->
+            <a onclick="return false;">
+                <div class="more last tool mobile"><span class="hideText" tabindex="5">More Options</span><span class="fa fa-plus"> </span></div>
+            </a>
+        </div>
+    </div>
+    <div class="social-tools-additional">
+        <div class="social-tools ">
+            <!-- LinkedIn -->
+<!--             <a id="linkedIn-raw-share" data-service="linkedin" onclick="" tabindex="6">
+                <div class="linkedin tool mobile first"><span class="hideText">Share on LinkedIn</span><span class="fa fa-linkedin"></span></div>
+            </a> -->
+            <!-- Pinterest -->
+            <a id="pinterest-raw-share" data-service="pinterest" onclick="" tabindex="7">
+                <div class="pinterest tool mobile first"><span class="hideText">Share on Pinterest</span><span class="fa fa-pinterest"></span></div>
+            </a>
+            <!-- Tumblr  -->
+            <a id="tumblr-raw-share" data-service="tumblr" onclick="" tabindex="8">
+                <div class="tumblr tool mobile last"><span class="hideText">Share on Tumblr</span><span class="fa fa-tumblr"></span></div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+</div>
+
+
+
+        </div>
+                <div class="span8 col">
+                <div class="et-pagination">
+                        <div class="clearfix"></div>
+        </div>
+        </div> <!-- Close off span 8 -->
+        </div> <!-- Close off row -->
+        </div>
+        <div class="bT1S padT30 padB10small padB30">
+        <div class="container">
+            <h4 class="light-black marB20 franklin-bold marT0">The Screen Age</h4>
+        <div class="row">
+                <div class="span6">
+        <div class="row-fluid">
+        <div class="span6">
+            <a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/09/06/teen-lives-depend-on-the-internet-what-happens-when-they-cant-afford-it/">
+                <div class="spinner">
+                    <img class="lazy-image image pick" data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/08/GenZ-disconnected-web.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </a>
+        </div>
+        <div class="span6">
+            <h4 class="franklin-bold marT0 marT10small"><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/09/06/teen-lives-depend-on-the-internet-what-happens-when-they-cant-afford-it/" class="light-black">The Disconnected</a></h4>
+            <p class="franklin-light size-fourteen lh18em light-grey">Teen lives and futures depend on the Internet. What happens when they can’t afford it?            <a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/09/06/teen-lives-depend-on-the-internet-what-happens-when-they-cant-afford-it/" class="light-black">
+                <span class="fa fa-circle-arrow-right"></span>
+            </a>
+            </p>
+        </div>
+        </div>
+        </div>
+                <div class="span6">
+        <div class="row-fluid">
+        <div class="span6">
+            <a href="<br />
+http://www.washingtonpost.com/sf/style/2016/12/07/when-every-moment-of-childhood-can-be-recorded-and-shared-what-happens-to-childhood/">
+                <div class="spinner">
+                    <img class="lazy-image image pick" data-right="true" data-original="http://www.washingtonpost.com/sf/wp-content/themes/wapo-blogs/inc/imrs.php?src=http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/12/Gen6c.jpg&amp;authapi-mob-redir=0" src="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/images/pixel.png?authapi-mob-redir=0"/>
+                </div>
+            </a>
+        </div>
+        <div class="span6">
+            <h4 class="franklin-bold marT0 marT10small"><a href="<br />
+http://www.washingtonpost.com/sf/style/2016/12/07/when-every-moment-of-childhood-can-be-recorded-and-shared-what-happens-to-childhood/" class="light-black">Their Tube</a></h4>
+            <p class="franklin-light size-fourteen lh18em light-grey">When every moment of childhood can be recorded and shared, what happens to childhood?            <a href="<br />
+http://www.washingtonpost.com/sf/style/2016/12/07/when-every-moment-of-childhood-can-be-recorded-and-shared-what-happens-to-childhood/" class="light-black">
+                <span class="fa fa-circle-arrow-right"></span>
+            </a>
+            </p>
+        </div>
+        </div>
+        </div>
+                </div>
+        </div>
+        </div>
+        
+
+
+<style>
+
+
+
+.sub{
+	padding:20px;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.sub h1{
+	font-size:28px;
+}
+.sub h2{ 
+	font-size: 22px;
+}
+.byline:first-child{
+    float:left;
+    margin-right:30px;
+}
+.hide-title-indent {
+    overflow: hidden;
+    text-indent: -900px;
+}
+.bigwords{
+     font-size: 35px;
+     font-family: PostoniDisplay,Georgia;
+     text-align: center;
+     border-top: solid 1px #ccc;
+     border-bottom: solid 1px #ccc;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     margin:0 auto;
+     max-width:950px;
+     line-height: 1.5em;
+     margin-bottom:10px;
+}  
+.bigwords span{
+     color: #0077ab;
+}
+.bigwords-attr{
+    font-family:FranklinITCProBold;
+    display:block;
+    text-transform:uppercase;
+    font-size:16px;
+    color: #000 !important;
+    text-align:center;
+    line-height: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Overriding styles */
+
+strong{
+    font-family:PostoniDisplay, Georgia;
+    font-size:28px;
+    color: #0077ab;
+    font-weight:100 !important;
+}
+.bTB1S {
+    margin-bottom: 10px;
+}
+.container.background {
+    background-image: none !important;
+}
+.container{
+    padding-left:45px;
+}
+.span12.graphicPadTB30.bTB1S{
+	margin-left:0 !important;
+}
+.bg-none{
+	background: none;
+}
+.span12.bTB1S.padTB30{ 
+	border-top: 0; 
+	border-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 10px;
+}
+.span8.marT30.col{ 
+	margin-top: 0; 
+}
+[class*="span"].pull-right{
+	float:none;
+}
+.span4.pull-right{
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 660px;
+}
+.span12.graphicPadTB30.bTB1S {
+	border-top:0;
+	border-bottom:0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.pull-right.credits{
+	float:right;
+	padding-top:20px;
+	width:430px !important;
+}
+.span8.col{
+	margin-left: auto;
+	margin-right: auto;
+	float:none;
+	width: 620px;
+	max-width: 100%;
+        margin-top:0px !important;
+}
+.span8.col.pretty-comments{
+	margin-left: 30px;
+	float: left;
+}
+
+@media (min-width: 1200px){
+    .span8.col{
+    	margin-left: auto;
+    	margin-right: auto;
+    	width: 620px;
+    }
+    .container.background{
+        background-image: none;
+    }
+    .span4.pull-right{
+    	width: 620px;
+    }   
+    .span8.col.pretty-comments{
+		margin-left: 30px;
+    }
+}
+
+@media (max-width: 979px) and (min-width: 768px){
+	.span8.col {
+		margin-left: auto;
+		margin-right: auto;
+		width: 620px;
+
+    }
+	.span8.col.pretty-comments{
+		margin-left: inherit;
+    }
+}
+@media (max-width: 767px){
+
+	.byline:first-child{
+		float:none;
+		margin-right:0px;
+	}
+	.span8.col{
+		margin-left: auto;
+		margin-right: auto;
+    }
+	.container{
+		padding-left:0px;
+    }
+        
+	.span8.col.pretty-comments{
+		margin-left: 0px;
+    }
+	.span4.pull-right{
+		width: 100%;
+    }
+	.pull-right.credits {
+		float: none;
+		padding-top: 0px;
+		width: 430px !important;
+    }
+ }
+.light-grey.size-fourteen.franklin-light {
+	margin-bottom: 30px;
+}
+.span4.col.right-content.bTB1S.padTB30 { 
+	text-align: center; 
+}
+</style>												</div> <!-- home/section -->
+				            <div id="section-comments" class="mobile-inactive bT1S bT0small">
+            <div class="container background">
+            <div class="row last">
+            <div class="span4 col pull-right credits">
+                <h4 class="franklin-bold light-black marT0">Credits</h4>
+                                                <div class="byline padTB10">
+            <span class="byline-title">Story by</span>
+                                                                                                <a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/people/caitlin-gibson"><span class="name">Caitlin Gibson</span></a>                                                    <a href="http://web.archive.org/web/20161208231108/mailto:caitlin.gibson@washpost.com"><i class="fa fa-envelope"></i></a>                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Photos by</span>
+                                                                                                <span class="name">Mark Abramson</span>                                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Illustration by</span>
+                                                                                                <span class="name">Kate Miller</span>                                                                        </div>
+                                <div class="byline padTB10">
+            <span class="byline-title">Design by</span>
+                                                                                                <span class="name">Jake Crump</span>                                                                        </div>
+                    </div>
+            <div id="comments" class="span8 col pretty-comments">
+                        <!-- auto-assigns guid from page url -->
+            <!--script type="text/javascript">document.getElementById('echo_container').setAttribute('guid', document.location.href);</script -->
+            <!-- end comments -->
+            </div>
+            </div>
+            </div>
+            </div>
+        			</div> <!-- sections -->
+		</div> <!-- main container -->
+		<div id="et-nav-series-off-canvas">
+			<div id="et-nav-series-inner-off-canvas">
+	            	            	            
+	            	            			            <img src="http://web.archive.org/web/20161208231108im_/http://www.washingtonpost.com/sf/style/wp-content/uploads/sites/5/2016/05/genz-seriestopper.jpg"/>
+		            <div id="series-info">
+		                <ul class="grey-list et-off-canvas">
+		                			                    	<li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/05/25/13-right-now-this-is-what-its-like-to-grow-up-in-the-age-of-likes-lols-and-longing/"><span class="part">Part 1</span> 13, right now</a></li>
+		                   			                    	<li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/05/25/inside-the-race-to-decipher-todays-teens-who-will-transform-society-as-we-know-it/"><span class="part">Part 2</span> Who are these kids?</a></li>
+		                   			                    	<li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/09/06/the-sext-was-meant-to-impress-him-instead-it-nearly-destroyed-her/"><span class="part">Part 3</span> And everyone saw it</a></li>
+		                   			                    	<li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/09/06/teen-lives-depend-on-the-internet-what-happens-when-they-cant-afford-it/"><span class="part">Part 4</span> The disconnected</a></li>
+		                   			                    	<li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/12/07/video-games-are-more-addictive-than-ever-this-is-what-happens-when-kids-cant-turn-them-off/"><span class="part">Part 5</span> The next level</a></li>
+		                   			                    	<li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/12/07/when-every-moment-of-childhood-can-be-recorded-and-shared-what-happens-to-childhood/"><span class="part">Part 6</span> Their Tube</a></li>
+		                   			                </ul>
+
+		                <div id="about-series">
+		                    <p class="about-text">About the series</p>
+		                    <p class="about-description">The kids of Generation Z have never known a world without smartphones and social media. The Washington Post examines what it means to grow up in an era where learning, flirting and hanging out all happens on screens.</p>
+		                </div>
+		            </div>
+		        	        </div>
+        </div>
+        <div id="et-sections-dropdown-list">
+            <ul class="et-dropdown sections-dropdown et-off-canvas">
+                <li><a href="http://web.archive.org/web/20161208231108/http://www.posttv.com/">Video</a></li>
+                <li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/politics">Politics</a></li>
+                <li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/opinions">Opinions</a></li>
+                <li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/local">Local</a></li>
+                <li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sports">Sports</a></li>
+                <li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/national">National</a></li>
+                <li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/world">World</a></li>
+                <li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/business">Business</a></li>
+                <li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/business/technology">Tech</a></li>
+                <li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/lifestyle">Lifestyle</a></li>
+                <li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/entertainment">Entertainment</a></li>
+                <li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/classifieds">Classifieds</a></li>
+                <li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/jobs">Jobs</a></li>
+                <li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/realestate">Real Estate</a></li>
+                <li><a href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/events">Events</a></li>
+			</ul>
+			<div class="copyright-details">
+				<p><a class="franklin-bold" href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/">washingtonpost.com</a></p>
+				<p style="font-size: 12px" class="franklin-thin smaller-size">&copy; 1996-2016 The Washington Post</p>
+				<br/>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/terms-of-service/2011/11/18/gIQAldiYiN_story.html">Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/privacy-policy/2011/11/18/gIQASIiaiN_story.html">Privacy Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/discussion-and-submission-guidelines/2011/11/21/gIQAuvIbiN_story.html">Submission and Discussion Policy</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/rss-terms-of-service/2012/01/16/gIQAadFYAQ_story.html">RSS Terms of Service</a></p>
+				<p><a class="franklin-thin" href="http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/how-can-i-opt-out-of-online-advertising-cookies/2011/11/18/gIQABECbiN_story.html">Ad Choices</a></p>
+			</div>
+		</div>
+		       <script type="text/javascript">
+        // Omniture variables
+        var wp_page_name = 'lifestyle:article - 20161207 - video-games-are-more-addictive-than-ever-this-is-what-happens-when-kids-cant-turn-them-off';
+        var wp_track_scrolling = true;
+
+        // etc.
+        // chartbeat variables
+        _sf_async_config={
+          sections: wp_channel,
+          path:document.location.pathname, // defaults to document.location.pathname if you don't pass it.
+          title:document.title,
+          useCanonical:true // defaults to true if you don't pass it.
+        };
+        </script>
+
+        <script type="text/javascript" src="http://web.archive.org/web/20161208231108js_/http://www.washingtonpost.com/wp-srv/analytics/main.js"></script>
+        <script type="text/javascript">
+          //TWP.Analytics.init();
+          // FOR PREPRODUCTION
+          //TWP.Analytics.init( {suite:"preproduction",service:{omniture:true,omnitureTest:false,comscore:false,chartbeat:false}} );
+          TWP.Analytics.init({suite:"production"});
+        </script>
+
+        <!-- COMSCORE NOSCRIPT -->
+        <noscript><img src="http://web.archive.org/web/20161208231108im_/http://b.scorecardresearch.com/p?c1=2&amp;c2=3005617&amp;cv=2.0&amp;cj=1"/></noscript>
+        <!-- COMSCORE NOSCRIPT/Mobile -->
+        <!--<noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=3005617&c4=m.washingtonpost.com/nojs.html" /> </noscript>-->
+        
+        <noscript><img src="//web.archive.org/web/20161208231108im_/http://me.effectivemeasure.net/em_image" alt="" style="position:absolute; left:-5px;"/></noscript>
+        
+      <link rel="stylesheet" id="wapo-footnote-plugin-css" href="http://web.archive.org/web/20161208231108cs_/http://www.washingtonpost.com/sf/style/wp-content/plugins/wapo-footnote/parts/css/plugin.css?ver=1.0.0" type="text/css" media="screen, projection"/>
+<script type="text/javascript" src="http://web.archive.org/web/20161208231108js_/http://js.washingtonpost.com/1d/twp-comments.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161208231108js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/lib/html5.js?ver=0.3.1.5"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20161208231108js_/http://www.washingtonpost.com/sf/style/wp-content/plugins/wapo-footnote/parts/js/plugin.js?ver=1.0.0"></script>
+  
+              <script type="text/javascript" src="http://web.archive.org/web/20161208231108js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/build/enterprisetheme.js?1"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161208231108js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/build/enterprise-theme-nav.js?1"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20161208231108js_/http://js.washingtonpost.com/posttv/resources/js/posttv/vendor/pubsub.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161208231108js_/https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+              <script type="text/javascript" src="//web.archive.org/web/20161208231108js_/http://js.washingtonpost.com/posttv/resources/js/posttv/posttv-player.js"></script>
+              <script type="text/javascript" src="http://web.archive.org/web/20161208231108js_/http://www.washingtonpost.com/sf/style/wp-content/themes/enterprise-theme-nav/js/build/embedded-content-video.js"></script>
+              <script src="http://web.archive.org/web/20161208231108js_/http://js.washingtonpost.com/wp-srv/ad/loaders/latest/js/min/loader.min.js" data-ad-site="wp" data-ad-page-type="responsive"></script>
+              <script>$(function() {SubmissionPlatform.services.displayForm("583dc4272fef5db9052bbe44", "prod");});</script>              <script src="//web.archive.org/web/20161208231108js_/http://sub.washingtonpost.com/javascripts/embed/0.0.5/embed.min.js"></script>              <script type="text/javascript" src="//web.archive.org/web/20161208231108js_/http://js.washingtonpost.com/wp-stat/enterprise-raw-code/sharebar/enterprise-sharebar.js"></script>              <script type="text/javascript">
+$(document).ready(function() {
+
+    //append social buttons to bylines
+    $('.bylines').parent().append($('.top-sharebar-wrapper').parent());
+
+    //store metadata
+    var ogTitleSelector = document.querySelector('meta[property="og:title"]');
+    var ogTitleContent = (encodeURIComponent(ogTitleSelector && ogTitleSelector.getAttribute("content"))).replace(/'/g, "%27");
+
+    var ogImageSelector = document.querySelector('meta[property="og:image"]');
+    var ogImageContent = ogImageSelector && ogImageSelector.getAttribute("content");
+
+    var ogURLSelector = document.querySelector('meta[property="og:url"]');
+    var ogURLContent = encodeURI(ogURLSelector && ogURLSelector.getAttribute("content"));
+
+    var ogDescriptionSelector = document.querySelector('meta[property="og:description"]');
+    var ogDescriptionContent = (encodeURIComponent(ogDescriptionSelector && ogDescriptionSelector.getAttribute("content"))).replace(/'/g, "%27");
+
+    //populate share button click events with metadata
+    var facebookString = "window.open('http://web.archive.org/web/20161208231108/https://www.facebook.com/sharer/sharer.php?u="+ogURLContent+"','share_facebook','width=658,height=354,scrollbars=no');return false;";
+    $('#facebook-raw-share')[0].setAttribute("onclick", facebookString);
+
+    var twitterString = "window.open('http://web.archive.org/web/20161208231108/https://twitter.com/share?url="+ogURLContent+"&amp;text="+ogTitleContent+"','share_twitter','width=550, height=350, scrollbars=no');return false;";
+    $('#twitter-raw-share')[0].setAttribute("onclick", twitterString);
+
+    var googlePlusString = "window.open('http://web.archive.org/web/20161208231108/https://plus.google.com/share?url="+ogURLContent+"','share_google-plus','width=832,height=472,scrollbars=no');return false;"; 
+    $('#google-plus-raw-share')[0].setAttribute("onclick", googlePlusString);
+
+    var emailString = "mailto:?subject="+ogTitleContent+" from the Washington Post&body="+ogURLContent+""; 
+    $('#email-raw-share')[0].setAttribute("href", emailString);
+
+    // var linkedInString = "window.open('http://web.archive.org/web/20161208231108/http://www.linkedin.com/shareArticle?mini=true&amp;url="+ogURLContent+"&amp;title=','share_linkedin','width=830,height=460,scrollbars=no');return false;"; 
+    // $('#linkedIn-raw-share')[0].setAttribute("onclick", linkedInString);
+
+    var pinterestString = "window.open('//web.archive.org/web/20161208231108/http://pinterest.com/pin/create/bookmarklet/?url="+ogURLContent+"&amp;media="+ogImageContent+"&amp;description=','share_pinterest','width=550,height=450,scrollbars=no');return false;"; 
+    $('#pinterest-raw-share')[0].setAttribute("onclick", pinterestString);
+
+    var tumblrString = "window.open('http://web.archive.org/web/20161208231108/http://www.tumblr.com/share/link?url="+ogURLContent+"&amp;name="+ogTitleContent+"&amp;description="+ogDescriptionContent+"','share_tumblr','width=550,height=450,scrollbars=no');return false;"; 
+    $('#tumblr-raw-share')[0].setAttribute("onclick", tumblrString);
+}); 
+</script>              <script>
+
+$(window).on('load', function(){
+
+$('#about-series').append("<div class='glossary-wrap'><p class='about-text'>What's a 'tbh?'<p class='about-description'><a href='http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/05/25/whats-a-tbh-terms-we-had-to-explain-to-our-editors-when-reporting-on-generation-z/'>Terms we had to explain to our editors while reporting these stories.</a></div>");
+
+$('#about-series').append("<div class='glossary-wrap'><p class='about-text'>This is the place<p class='about-description'><a href='http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/sf/style/2016/12/07/instagram-wattpad-and-younow-arent-just-apps-for-many-teens-theyre-more-than-that/'>Instagram, Wattpad and YouNow aren’t just apps — for many teens, they’re more than that.</a></div>");
+
+$('#about-series').append("<div class='glossary-wrap'><p class='about-text'>'They call it bunny hunting'<p class='about-description'><a href='http://web.archive.org/web/20161208231108/https://www.washingtonpost.com/lifestyle/style/they-call-it-bunny-hunting-how-authorities-warn-kids-about-online-predators/2016/09/06/2044ee40-5980-11e6-9767-f6c947fd0cb8_story.html'>As online threats intensify, authorities are warning kids as early as sixth grade.</a></div>");
+
+$('#about-series').append("<div class='glossary-wrap'><p class='about-text'>How to protect kids online<p class='about-description'><a href='http://web.archive.org/web/20161208231108/http://www.washingtonpost.com/lifestyle/style/how-to-protect-kids-online-apps-and-tactics-used-by-experts--and-real-parents/2016/12/07/42ef7f14-ad13-11e6-a31b-4b6397e625d0_story.html'>Face it: As the elder, you’re navigating foreign lands. But here’s a map to put you back in control.</a></div>");
+
+});
+</script>    
+<!-- This website is powered by Piklist. Learn more at http://piklist.com/ -->
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"707aabbc5c","applicationID":"4157428","transactionName":"MlABYUsACEJXARVaXgsaIlZNCAlfGQsPV1Qd","queueTime":0,"applicationTime":728,"ttGuid":"","agentToken":"","atts":"HhcCFwMaG0w=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
