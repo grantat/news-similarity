@@ -16,7 +16,7 @@ We retrieved stories from the following websites:
 
 The directories are described as follows:
 - The `timemaps` directory contains the timemap of each of the news sites.
-- The `mementos` directory contains the mementos closest to 1AM GMT for every day in November 2016, collected from the Internet Archive.
+- The `mementos` directory contains the mementos closest to 1AM GMT every day from 2016-05-01 to 2017-05-31, collected from the Internet Archive.
 The directories are named according to a website's md5 hash which can be seen in `news-websites-hashes.json`.
 - The `stories/if_/` directory contains the news stories retrieved from the Internet Archive without banner/HTML injections.
 - The `col_sim` directory contains the similarity calculations per day for the links where k = 1, 3, 10.
